@@ -277,11 +277,11 @@ Combustível: Avgas 100LL ≈ 0,72 kg/L (≈ 6 lb/US gal); 1 US gal = 3,785 L.
 
 **Teoria de voo**: L = CL · ½ρV² · S. Fator de carga n = 1/cos(inclinação): 30° → 1,15; 45° → 1,41;
 60° → 2,0. Vs em curva = Vs × √n (60° → +41 %). Arrasto induzido ∝ 1/V²; parasita ∝ V²; arrasto total
-mínimo onde são iguais (≈ L/D máx = melhor planeio). Estol ocorre sempre no MESMO ângulo de ataque crítico,
+mínimo onde são iguais (≈ L/D máx = melhor planeio). Estol ocorre sempre no MESMO ângulo de ataque crítico (para uma mesma configuração),
 em qualquer velocidade/atitude. Eixo longitudinal → rolagem (ailerons); eixo lateral → arfagem (profundor);
 eixo vertical → guinada (leme). Estabilidade LONGITUDINAL = em torno do eixo LATERAL (arfagem).
 Hélice girando no sentido horário visto do piloto: torque (rola à esquerda), esteira helicoidal, fator P
-e precessão → tendência de guinar/rolar à esquerda. Precessão: a força age 90° adiante no sentido de rotação.
+→ tendência de guinar/rolar à esquerda. Precessão: a força age 90° adiante no sentido de rotação — baixar o nariz/levantar a cauda → guinada à esquerda; levantar o nariz → à direita.
 CG dianteiro: mais estável, Vs maior, mais força no profundor. CG traseiro: menos estável, Vs menor,
 recuperação de parafuso/estol mais difícil. Categorias: normal +3,8 g/−1,52 g; utilidade +4,4/−1,76;
 acrobática +6/−3. Arcos: branco (Vs0 → Vfe), verde (Vs1 → Vno), amarelo (Vno → Vne), linha vermelha Vne.
