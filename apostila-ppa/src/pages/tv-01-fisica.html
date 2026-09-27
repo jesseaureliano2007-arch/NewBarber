@@ -42,7 +42,7 @@
           <rect x="10" y="94" width="320" height="30" rx="3" fill="#475569"/>
           <path d="M40 109 H300" stroke="#fff" stroke-width="2" stroke-dasharray="12 8"/>
           <text x="22" y="114" class="tw" style="font-size:13px">09</text><text x="306" y="114" class="tw" style="font-size:13px">27</text>
-          <g transform="translate(78 109) rotate(90) translate(-17 -17)"><use href="#plane-top" width="34" height="34"/></g>
+          <g transform="translate(78 109) rotate(90) translate(-17 -17)"><use href="#plane-top" width="34" height="34" filter="url(#f-shadow)"/></g>
           <line x1="300" y1="8" x2="213.4" y2="58" stroke="#e0313b" stroke-width="5" marker-end="url(#arr-r)"/>
           <line x1="300" y1="8" x2="215" y2="8" stroke="#1d6fd1" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arr-b)"/>
           <line x1="213.4" y1="10" x2="213.4" y2="58" stroke="#2e9b45" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arr-g)"/>
@@ -94,8 +94,8 @@
         <svg viewBox="0 0 220 64" width="100%">
           <path d="M10 60 H212" stroke="#2e9b45" stroke-width="3"/>
           <path d="M26 16 Q110 24 196 52" fill="none" stroke="#0e9fb3" stroke-width="2" stroke-dasharray="5 4"/>
-          <use href="#plane-side" x="8" y="2" width="44" height="18"/>
-          <use href="#plane-side" x="164" y="34" width="44" height="18" transform="rotate(10 186 43)"/>
+          <use href="#plane-side" x="8" y="2" width="44" height="18" filter="url(#f-shadow)"/>
+          <use href="#plane-side" x="164" y="34" width="44" height="18" transform="rotate(10 186 43)" filter="url(#f-shadow)"/>
           <text x="6" y="36" class="tb" style="font-size:12px;fill:#0b5c68">altura (Ep)</text>
           <text x="104" y="30" class="tb" style="font-size:12px;fill:#8f1219">→ velocidade (Ec)</text>
         </svg>
@@ -111,7 +111,7 @@
           <g>
             <rect x="2" y="2" width="232" height="136" rx="8" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="1.5"/>
             <text x="12" y="20" class="th" style="fill:#0f3f86">1ª · INÉRCIA</text>
-            <use href="#plane-side" x="62" y="50" width="110" height="44"/>
+            <use href="#plane-side" x="62" y="50" width="110" height="44" filter="url(#f-shadow)"/>
             <line x1="120" y1="64" x2="120" y2="30" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="126" y="36" class="tb" style="font-size:12px;fill:#16582a">L</text>
             <line x1="120" y1="80" x2="120" y2="114" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="126" y="112" class="tb" style="font-size:12px;fill:#8f1219">P</text>
             <line x1="172" y1="72" x2="210" y2="72" stroke="#1d6fd1" stroke-width="4" marker-end="url(#arr-b)"/><text x="200" y="64" class="tb" style="font-size:12px;fill:#0f3f86">T</text>
@@ -121,7 +121,7 @@
           <g transform="translate(244 0)">
             <rect x="2" y="2" width="232" height="136" rx="8" fill="#eaf7ec" stroke="#2e9b45" stroke-width="1.5"/>
             <text x="12" y="20" class="th" style="fill:#16582a">2ª · F = m · a</text>
-            <use href="#plane-side" x="52" y="50" width="110" height="44"/>
+            <use href="#plane-side" x="52" y="50" width="110" height="44" filter="url(#f-shadow)"/>
             <line x1="162" y1="72" x2="226" y2="72" stroke="#1d6fd1" stroke-width="5" marker-end="url(#arr-b)"/><text x="196" y="64" class="tb" style="font-size:12px;fill:#0f3f86">T</text>
             <line x1="52" y1="72" x2="30" y2="72" stroke="#f08a12" stroke-width="4" marker-end="url(#arr-o)"/><text x="22" y="64" class="tb" style="font-size:12px;fill:#9a4d00">D</text>
             <line x1="80" y1="112" x2="170" y2="112" stroke="#16582a" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arr-g)"/><text x="176" y="116" class="tb" style="font-size:12px;fill:#16582a">a</text>
@@ -130,7 +130,7 @@
           <g transform="translate(488 0)">
             <rect x="2" y="2" width="230" height="136" rx="8" fill="#fff4e3" stroke="#f08a12" stroke-width="1.5"/>
             <text x="12" y="20" class="th" style="fill:#9a4d00">3ª · AÇÃO E REAÇÃO</text>
-            <use href="#plane-side" x="100" y="50" width="110" height="44"/>
+            <use href="#plane-side" x="100" y="50" width="110" height="44" filter="url(#f-shadow)"/>
             <g stroke="#1d6fd1" stroke-width="2.5" marker-end="url(#arr-b)"><line x1="100" y1="58" x2="40" y2="58"/><line x1="100" y1="72" x2="30" y2="72"/><line x1="100" y1="86" x2="40" y2="86"/></g>
             <text x="12" y="48" class="tb" style="font-size:12px;fill:#0f3f86">ar empurrado p/ trás</text>
             <line x1="176" y1="112" x2="222" y2="112" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="80" y="116" class="tb" style="font-size:12px;fill:#8f1219">avião p/ frente</text>
@@ -151,7 +151,7 @@
           <div class="formula none" style="width:62mm"><span class="fx" style="font-size:13pt">Pot = τ ÷ t = F · v</span><small>watt (W = J/s) · 1 hp ≈ 746 W</small></div>
           <div class="f1 small"><b>Potência</b> = rapidez em realizar trabalho. A potência necessária para voar nivelado = <b>arrasto × velocidade</b> (por isso voar rápido custa caro).</div>
           <div class="ex small f1"><span class="et">Exemplo resolvido</span><br>Tração 2.000 N a 50 m/s (≈ 97 kt) → Pot = 2.000 × 50 = <b>100 kW</b> ÷ 746 ≈ <b>134 hp</b>.</div>
-          <svg class="none" width="34" height="62" viewBox="0 0 60 120"><use href="#propeller"/></svg>
+          <svg class="none" width="34" height="62" viewBox="0 0 60 120"><use href="#propeller" filter="url(#f-shadow)"/></svg>
         </div>
       </div>
     </div>
