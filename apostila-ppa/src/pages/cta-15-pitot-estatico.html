@@ -1,0 +1,103 @@
+<section class="page mod-cta" id="cta-pitot" data-toc="Sistema pitot-estático e bloqueios">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-cockpit"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Instrumentos</span>
+      <div class="title sm">Sistema pitot-estático</div>
+    </div>
+    <div class="def"><b>Pitot</b> capta a pressão <b>total</b> (dinâmica + estática). A <b>tomada estática</b> capta a pressão do ar parado. Velocímetro usa as <b>duas</b>; altímetro e VSI, <b>só a estática</b>.</div>
+    <div class="postit"><div class="pt">Quem usa o quê</div>
+      <ol><li>Velocímetro: pitot + estática</li><li>Altímetro: estática</li><li>VSI (climb): estática</li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-purple s12 solid">
+      <div class="bh"><span class="n">1</span>Diagrama: tomadas, linhas e instrumentos</div>
+      <div class="bb">
+        <svg viewBox="0 0 729 242" width="100%">
+          <!-- asa com pitot -->
+          <path d="M8 38 H200 Q210 38 210 46 V56 H8Z" fill="#f1f5f9" stroke="#334155" stroke-width="2"/>
+          <text x="100" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#334155">asa esquerda (vista de lado)</text>
+          <path d="M40 56 V76 H4" stroke="#475569" stroke-width="5" fill="none"/>
+          <circle cx="4" cy="76" r="4" fill="#fff" stroke="#e0313b" stroke-width="2"/>
+          <path d="M-20 76 H0" stroke="#e0313b" stroke-width="2" marker-end="url(#arr-r)"/>
+          <circle cx="26" cy="80" r="2" fill="#0f172a"/>
+          <text x="10" y="100" font-size="11" font-weight="700" fill="#8f1219">tubo de PITOT</text>
+          <text x="10" y="114" font-size="10.5" font-weight="600">(orifício de dreno embaixo)</text>
+          <!-- fuselagem com estática -->
+          <path d="M8 150 H230 Q250 150 250 170 V210 H8Z" fill="#f1f5f9" stroke="#334155" stroke-width="2"/>
+          <circle cx="60" cy="176" r="7" fill="#fff" stroke="#1d6fd1" stroke-width="3"/><circle cx="60" cy="176" r="2" fill="#1d6fd1"/>
+          <text x="76" y="172" font-size="11" font-weight="700" fill="#0f3f86">tomada ESTÁTICA</text><text x="76" y="186" font-size="10.5" font-weight="600">(lateral da fuselagem)</text>
+          <rect x="150" y="190" width="70" height="16" rx="3" fill="#fef3c7" stroke="#b45309"/><text x="185" y="202" text-anchor="middle" font-size="10" font-weight="700">estática altern.</text>
+          <text x="130" y="226" font-size="10" font-weight="700" fill="#7a5a00">(dentro da cabine)</text>
+          <!-- linhas -->
+          <path d="M40 76 V130 H300 V70 H350" stroke="#e0313b" stroke-width="4" fill="none"/>
+          <path d="M60 176 V150 H320 V104 H350 M320 150 V220 H680 V160 M540 220 V160 M185 190 V150" stroke="#1d6fd1" stroke-width="4" fill="none" stroke-linejoin="round"/>
+          <text x="150" y="124" font-size="11" font-weight="700" fill="#8f1219">linha de pressão total</text>
+          <text x="370" y="236" font-size="11" font-weight="700" fill="#0f3f86">linha de pressão estática</text>
+          <!-- instrumentos -->
+          <g>
+            <use href="#dial-ticks" x="350" y="30" width="110" height="110"/>
+            <path d="M405 85 L430 57" stroke="#fff" stroke-width="3"/><text x="405" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">KT</text>
+            <text x="405" y="22" text-anchor="middle" font-size="12" font-weight="700">VELOCÍMETRO</text>
+            <text x="346" y="62" text-anchor="end" font-size="10" font-weight="700" fill="#8f1219">total</text><text x="346" y="98" text-anchor="end" font-size="10" font-weight="700" fill="#0f3f86">estática</text>
+          </g>
+          <g>
+            <use href="#alt-face" x="485" y="50" width="110" height="110"/>
+            <text x="540" y="42" text-anchor="middle" font-size="12" font-weight="700">ALTÍMETRO</text>
+          </g>
+          <g>
+            <use href="#dial-ticks" x="620" y="50" width="110" height="110"/>
+            <path d="M675 105 L645 99" stroke="#fff" stroke-width="3"/><text x="675" y="84" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">UP</text><text x="675" y="136" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">DN</text>
+            <text x="675" y="42" text-anchor="middle" font-size="12" font-weight="700">VSI</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-red s12">
+      <div class="bh"><span class="n">2</span>Quadro de bloqueios — o comportamento de cada instrumento</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--red)">
+          <tr><th>Situação</th><th>Velocímetro</th><th>Altímetro</th><th>VSI</th></tr>
+          <tr><td><b>Pitot bloqueado, dreno livre</b> (ex.: gelo na entrada)</td><td>a pressão do pitot escapa pelo dreno → indica <b>zero</b></td><td>normal</td><td>normal</td></tr>
+          <tr><td><b>Pitot e dreno bloqueados</b></td><td>pressão total “presa”: age como <b>altímetro</b> — <b>aumenta na subida</b>, diminui na descida; não reage à velocidade</td><td>normal</td><td>normal</td></tr>
+          <tr><td><b>Estática bloqueada</b></td><td>indica <b>menos na subida</b> e <b>mais na descida</b></td><td><b>congela</b> na altitude do bloqueio</td><td><b>zero</b></td></tr>
+          <tr><td><b>Fonte estática alternada</b> aberta (pressão da cabine é menor)</td><td>indica <b>a mais</b></td><td>indica <b>a mais</b> (mais alto)</td><td>salto momentâneo de subida</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">3</span>Como raciocinar (sem decorar)</div>
+      <div class="bb">
+        <ul class="l small">
+          <li>Velocímetro mede <b>total − estática</b>. Se a estática fica “velha” (maior que a real ao subir), a diferença diminui → indica <b>menos</b>.</li>
+          <li>Altímetro só vê a estática: se ela não muda, ele <b>não se mexe</b>.</li>
+          <li>VSI mede a <b>variação</b> da estática: sem variação → <b>zero</b>.</li>
+        </ul>
+        <div class="ex"><span class="et">Perigo real</span> Estática bloqueada e o piloto desce: o velocímetro indica a mais → ele reduz… e pode <b>estolar</b>. Na subida, indica a menos → ele acelera demais.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">4</span>Prevenção e alternativas</div>
+      <div class="bb">
+        <ul class="chk small">
+          <li><b>Pré-voo</b>: retire a <b>capa do pitot</b>, verifique pitot e tomadas estáticas livres (insetos, fita, cera).</li>
+          <li><b>Pitot aquecido</b> (elétrico) em umidade visível com temperatura próxima ou abaixo de 0 °C, conforme POH.</li>
+          <li><b>Estática alternada</b>: abrir quando suspeitar de bloqueio da estática; aplicar as correções do POH.</li>
+          <li>Sem estática alternada: quebrar o vidro do <b>VSI</b> é o último recurso (a cabine vira fonte estática; o VSI fica inutilizável/invertido).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Pitot bloqueado <b>não afeta</b> o altímetro nem o VSI. Estática bloqueada afeta <b>os três</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Pressões</div>total = estática + dinâmica<br>dinâmica = ½ ρ V² → é o que o velocímetro “sente”</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Estática congela o altímetro e zera o VSI.</b> Pitot + dreno fechados: velocímetro vira altímetro.”</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Em subida, o velocímetro aumenta de forma contínua mesmo com velocidade constante. Qual a falha?<div class="ans"><b>Pitot e dreno obstruídos</b>: a pressão total fica presa e, com a estática diminuindo na subida, a diferença cresce.</div></div>
+  </div>
+</section>

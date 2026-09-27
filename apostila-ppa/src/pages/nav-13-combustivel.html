@@ -1,0 +1,135 @@
+<section class="page mod-nav" id="nav-combustivel" data-toc="Consumo, autonomia e reserva de combustível">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-hangar"/></svg>
+    <div class="ht">
+      <span class="kicker">Navegação · Combustível</span>
+      <div class="title sm">Combustível e autonomia</div>
+      <div class="sub">Litros · galões · quilos · tempo de voo</div>
+    </div>
+    <div class="def"><b>Autonomia</b> = quanto <b>tempo</b> o avião voa com o combustível utilizável. <b>Consumo</b> = quanto gasta por hora. Planejamento: <b>rota + reserva</b> (+ táxi, subida e margem).</div>
+    <div class="postit"><div class="pt">Ordem mental</div><ol><li>Consumo (L/h ou gal/h)</li><li>× tempo de voo</li><li>+ reserva regulamentar</li><li>+ táxi e margem</li><li>≤ combustível utilizável?</li></ol></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-orange s5 r2">
+      <div class="bh"><span class="n">1</span>O tanque dividido</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="104" height="220" viewBox="0 0 110 232">
+            <rect x="20" y="6" width="70" height="220" rx="12" fill="#fff" stroke="#13294b" stroke-width="3"/>
+            <rect x="23" y="9" width="64" height="31" rx="9" fill="#e2e8f0"/>
+            <rect x="23" y="40" width="64" height="18" fill="#94a3b8"/>
+            <rect x="23" y="58" width="64" height="54" fill="#f6c945"/>
+            <rect x="23" y="112" width="64" height="100" fill="#2e9b45"/>
+            <rect x="23" y="212" width="64" height="11" fill="#8f1219"/>
+            <g class="tb" style="font-size:13px" text-anchor="middle">
+              <text x="55" y="29">vazio</text><text x="55" y="53" style="fill:#fff">táxi</text><text x="55" y="84">reserva</text><text x="55" y="100">30 min</text><text x="55" y="160" style="fill:#fff">ROTA</text><text x="55" y="178" style="fill:#fff">54 L</text>
+            </g>
+          </svg>
+          <div class="f1 small">
+            <div><b style="color:#16582a">Rota</b>: consumo × tempo estimado (EET).</div>
+            <div style="margin-top:1mm"><b style="color:#7a5a00">Reserva</b>: VFR diurno ≈ <b>+30 min</b>; noturno ≈ <b>+45 min</b> de voo após o destino.</div>
+            <div style="margin-top:1mm"><b style="color:#475569">Táxi, partida e subida</b>: conforme POH.</div>
+            <div style="margin-top:1mm"><b style="color:#8f1219">Não utilizável</b>: fica no fundo do tanque; <b>não</b> entra na autonomia.</div>
+          </div>
+        </div>
+        <div class="warn small">Reserva mínima e combustível para alternativa: confirme no <b>RBAC 91</b> vigente. Consumos e combustível utilizável: <b>POH/AFM</b> da aeronave.</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s7">
+      <div class="bh"><span class="n">2</span>Fórmulas</div>
+      <div class="bb">
+        <div class="row">
+          <div class="formula f1"><span class="fx" style="font-size:12pt">Q = C × T</span><small>quantidade = consumo × tempo</small></div>
+          <div class="formula f1"><span class="fx" style="font-size:12pt">A = Q ÷ C</span><small>autonomia = utilizável ÷ consumo</small></div>
+        </div>
+        <div class="small">Consumo por distância = C ÷ GS (L/NM). Com vento de proa, a GS cai e o gasto <b>por milha</b> aumenta — mesmo com o mesmo consumo por hora.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s7">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 1 — combustível para a navegação</div>
+      <div class="bb">
+        <div class="ex"><span class="et">Consumo 36 L/h · EET 1h30 · táxi 5 L · reserva 30 min (diurno)</span><ol class="small">
+          <li>Rota: 36 × 1,5 = <b>54 L</b>.</li>
+          <li>Reserva: 36 × 0,5 = <b>18 L</b>.</li>
+          <li>Total mínimo: 54 + 18 + 5 = <b>77 L</b>.</li>
+          <li>Em massa: 77 × 0,72 ≈ <b>55 kg</b> · em galões: 77 ÷ 3,785 ≈ <b>20,3 US gal</b>.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 2 — autonomia</div>
+      <div class="bb">
+        <div class="ex"><span class="et">150 L utilizáveis · consumo 36 L/h</span><ol class="small">
+          <li>A = 150 ÷ 36 = 4,17 h.</li>
+          <li>0,17 × 60 ≈ 10 min → <b>4h10</b> (no plano de voo: <span class="code">0410</span>).</li>
+          <li>Em voo, após <b>1h20</b>: gastou 36 × 1,33 = 48 L → restam 102 L → 102 ÷ 36 = <b>2h50</b>.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">★</span>Exemplo 3 — o vento come combustível</div>
+      <div class="bb">
+        <div class="ex"><span class="et">180 NM · consumo 36 L/h</span><ol class="small">
+          <li>GS 120 kt: T = 1,5 h → <b>54 L</b> (0,3 L/NM).</li>
+          <li>GS 90 kt (vento de proa): T = 2 h → <b>72 L</b> (0,4 L/NM).</li>
+          <li>Diferença: <b>+18 L</b> = exatamente a reserva de 30 min!</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">3</span>Unidades de combustível</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="64" height="70" viewBox="0 0 50 60"><use href="#fuel-pump"/></svg>
+          <table class="tb f1" style="--c:var(--teal)"><tr><th>De</th><th>Para</th><th>Faça</th></tr>
+            <tr><td>US gal</td><td>L</td><td>× 3,785</td></tr>
+            <tr><td>L</td><td>kg (AvGas)</td><td>× 0,72</td></tr>
+            <tr><td>US gal</td><td>lb (AvGas)</td><td>× 6</td></tr></table>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s6">
+      <div class="bh"><span class="n">4</span>Boas práticas em voo</div>
+      <div class="bb">
+        <ul class="chk small">
+          <li>Compare, em cada ponto, combustível <b>previsto × real</b>.</li>
+          <li>GS menor que a planejada? <b>Recalcule</b> a autonomia na hora.</li>
+          <li>Nunca planeje pousar “com a reserva”: ela é para o <b>imprevisto</b>.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blk c-yellow s7">
+      <div class="bh"><span class="n">5</span>Planilha de combustível preenchida</div>
+      <div class="bb">
+        <table class="tb" style="--c:#d9a400">
+          <tr><th>Item</th><th>Base</th><th class="c">Litros</th></tr>
+          <tr><td>Partida, táxi, decolagem</td><td>POH (exemplo)</td><td class="c">5</td></tr>
+          <tr><td>Rota até o destino</td><td>1h30 × 36 L/h</td><td class="c">54</td></tr>
+          <tr><td>Destino → alternativa</td><td>20 min × 36 L/h</td><td class="c">12</td></tr>
+          <tr><td>Reserva VFR diurna</td><td>30 min × 36 L/h</td><td class="c">18</td></tr>
+          <tr><td><b>Total mínimo</b> (+ margem do piloto)</td><td>≤ 150 L utilizáveis? <b>Sim</b></td><td class="c"><b>89</b></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="blk c-pink s5">
+      <div class="bh"><span class="n">6</span>O que muda o consumo</div>
+      <div class="bb">
+        <div class="cause" style="--c:var(--pink)"><span>↑ potência</span><i>→</i><span>↑ L/h</span></div>
+        <div class="cause" style="--c:var(--pink)"><span>mistura empobrecida (POH)</span><i>→</i><span>↓ L/h</span></div>
+        <div class="cause" style="--c:var(--pink)"><span>vento de proa</span><i>→</i><span>↓ GS</span><i>→</i><span>↑ L/NM</span></div>
+        <div class="small">Peso maior e subidas longas também aumentam o gasto. Use as tabelas de desempenho do POH.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Autonomia usa o combustível <b>utilizável</b>, não a capacidade total do tanque.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 US gal = 3,785 L<br>AvGas ≈ 0,72 kg/L ≈ 6 lb/gal</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Dia 30, noite 45</b>” (minutos de reserva VFR após o destino).</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Consumo 10 US gal/h; autonomia desejada 3h30. Quantos litros?<div class="ans">10 × 3,5 = 35 gal × 3,785 ≈ <b>132 L</b>.</div></div>
+  </div>
+</section>
