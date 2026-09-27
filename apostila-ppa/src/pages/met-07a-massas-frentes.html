@@ -22,7 +22,7 @@
       <div class="bb">
         <div class="row">
           <svg class="none" width="128" height="140" viewBox="0 0 160 176">
-            <path d="M56 8 L92 12 L96 20 L120 36 L156 48 L156 64 L140 80 L140 100 L132 116 L116 122 L104 132 L100 144 L84 164 L68 148 L80 132 L76 124 L64 108 L64 92 L56 84 L36 72 L16 68 L4 56 L16 44 L20 24 L32 24 L44 12Z" fill="#d9f99d" stroke="#16582a" stroke-width="2"/>
+            <path d="M56 8 L92 12 L96 20 L120 36 L156 48 L156 64 L140 80 L140 100 L132 116 L116 122 L104 132 L100 144 L84 164 L68 148 L80 132 L76 124 L64 108 L64 92 L56 84 L36 72 L16 68 L4 56 L16 44 L20 24 L32 24 L44 12Z" fill="url(#g-grass)" stroke="#16582a" stroke-width="2" filter="url(#f-shadow)"/>
             <circle cx="50" cy="48" r="16" fill="#e0313b" opacity=".35"/><text x="50" y="52" text-anchor="middle" class="tb" style="font-size:13px;fill:#8f1219">mEc</text>
             <circle cx="142" cy="100" r="15" fill="#f08a12" opacity=".35"/><text x="142" y="104" text-anchor="middle" class="tb" style="font-size:13px;fill:#9a4d00">mTa</text>
             <circle cx="60" cy="110" r="15" fill="#d9a400" opacity=".4"/><text x="60" y="114" text-anchor="middle" class="tb" style="font-size:13px;fill:#7a5a00">mTc</text>
@@ -55,19 +55,22 @@
       <div class="bb">
         <div class="row">
           <svg class="f2" viewBox="0 0 470 176" width="100%" style="align-self:center;max-height:41mm">
-            <rect width="470" height="176" fill="#fde2e4"/>
-            <path d="M0 176 L0 58 C60 60 140 90 210 176Z" fill="#bfdbfe"/>
-            <path d="M0 58 C60 60 140 90 210 176" fill="none" stroke="#1d6fd1" stroke-width="3"/>
-            <rect y="166" width="470" height="10" fill="#2e9b45"/>
-            <text x="14" y="120" class="th" style="fill:#0f3f86">AR FRIO</text><text x="14" y="138" class="tb" style="font-size:12px;fill:#0f3f86">(denso, avança)</text>
-            <path d="M40 150 L120 150" stroke="#1d6fd1" stroke-width="4" marker-end="url(#arr-b)"/>
-            <text x="380" y="130" class="th" style="fill:#8f1219">AR QUENTE</text><text x="380" y="148" class="tb" style="font-size:12px;fill:#8f1219">úmido, é</text><text x="380" y="162" class="tb" style="font-size:12px;fill:#8f1219">levantado</text>
-            <use href="#cb" x="150" y="0" width="150" height="150"/><use href="#rain" x="190" y="130" width="60" height="36"/><use href="#bolt" x="232" y="118" width="16" height="30"/>
-            <use href="#tcu" x="290" y="60" width="60" height="70"/>
-            <path d="M330 150 C290 150 250 120 230 60" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/>
-            <use href="#cloud" x="20" y="10" width="60" height="34"/><text x="50" y="54" text-anchor="middle" class="tb" style="font-size:12px">céu limpa após</text>
-            <text x="232" y="16" class="tb" style="font-size:12px">linha de CB, pancadas,</text><text x="232" y="30" class="tb" style="font-size:12px">rajadas, turbulência</text>
-            <text x="200" y="172" text-anchor="middle" class="tw" style="font-size:11px">superfície frontal</text>
+            <defs><linearGradient id="m7-wsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f5fb8"/><stop offset=".6" stop-color="#7fb2e6"/><stop offset="1" stop-color="#f3c9a8"/></linearGradient><linearGradient id="m7-cold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e40af" stop-opacity=".75"/><stop offset="1" stop-color="#60a5fa" stop-opacity=".45"/></linearGradient><linearGradient id="m7-warmtint" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f08a12" stop-opacity="0"/><stop offset="1" stop-color="#e0313b" stop-opacity=".22"/></linearGradient><linearGradient id="m7-coldR" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e40af" stop-opacity=".7"/><stop offset="1" stop-color="#60a5fa" stop-opacity=".4"/></linearGradient></defs>
+            <rect width="470" height="176" rx="6" fill="url(#m7-wsky)"/><rect x="200" width="270" height="176" fill="url(#m7-warmtint)"/>
+            <use href="#cloud" x="16" y="8" width="64" height="36"/>
+            <path d="M0 176 L0 58 C60 60 140 90 210 176Z" fill="url(#m7-cold)"/>
+            <path d="M0 58 C60 60 140 90 210 176" fill="none" stroke="#fff" stroke-width="6" opacity=".5"/><path d="M0 58 C60 60 140 90 210 176" fill="none" stroke="#1d4ed8" stroke-width="3"/>
+            <use href="#tcu" x="296" y="56" width="62" height="76"/>
+            <use href="#cb" x="140" y="-6" width="170" height="170"/>
+            <circle cx="244" cy="136" r="22" fill="url(#rg-bolt)"/><use href="#bolt" x="236" y="118" width="18" height="34"/>
+            <path d="M0 168 Q120 162 240 168 T470 166 L470 176 L0 176Z" fill="url(#g-grass)"/>
+            <text x="14" y="120" class="th" style="fill:#fff;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">AR FRIO</text><text x="14" y="138" class="tb" style="font-size:12px;fill:#fff;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">(denso, avança)</text>
+            <path d="M40 150 L120 150" stroke="#fff" stroke-width="4" marker-end="url(#arr-b)"/>
+            <text x="380" y="126" class="th" style="fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">AR QUENTE</text><text x="380" y="144" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">úmido, é</text><text x="380" y="158" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">levantado</text>
+            <path d="M330 150 C290 150 250 120 230 60" stroke="#fff" stroke-width="6" fill="none" opacity=".6"/><path d="M330 150 C290 150 250 120 230 60" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/>
+            <text x="50" y="54" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">céu limpa após</text>
+            <text x="300" y="16" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">linha de CB, pancadas,</text><text x="300" y="30" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">rajadas, turbulência</text>
+            <text x="120" y="174" text-anchor="middle" class="tw" style="font-size:11px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">superfície frontal</text>
           </svg>
           <div class="f1 small">
             <ul class="l"><li>Inclinação <b>forte</b> (≈ 1:50 a 1:100): mau tempo em faixa <b>estreita</b> e intensa.</li><li>Ar quente levantado → <b>CB, trovoadas, pancadas</b>, windshear; às vezes <b>linha de instabilidade</b> à frente.</li><li>No Brasil avança de <b>SW/S para NE/N</b>.</li></ul>
@@ -82,20 +85,25 @@
       <div class="bb">
         <div class="row">
           <svg class="f2" viewBox="0 0 470 150" width="100%" style="max-height:36mm">
-            <rect width="470" height="150" fill="#fde2e4"/>
-            <path d="M40 142 C200 116 330 64 470 24 L470 150 L40 150Z" fill="#bfdbfe"/>
-            <path d="M40 142 C200 116 330 64 470 24" fill="none" stroke="#e0313b" stroke-width="3"/>
-            <rect y="142" width="470" height="8" fill="#2e9b45"/>
-            <text x="8" y="22" class="th" style="fill:#8f1219">AR QUENTE</text>
+            <rect width="470" height="150" rx="6" fill="url(#m7-wsky)"/><rect width="470" height="150" fill="url(#m7-warmtint)" transform="scale(-1 1) translate(-470 0)"/>
+            <path d="M40 142 C200 116 330 64 470 24 L470 150 L40 150Z" fill="url(#m7-coldR)"/>
+            <path d="M40 142 C200 116 330 64 470 24" fill="none" stroke="#fff" stroke-width="6" opacity=".5"/><path d="M40 142 C200 116 330 64 470 24" fill="none" stroke="#e0313b" stroke-width="3"/>
+            <use href="#cirrus" x="370" y="0" width="90" height="24"/>
+            <rect x="274" y="22" width="96" height="16" rx="8" fill="#fff" opacity=".7" filter="url(#f-blur3)"/>
+            <use href="#cloud-dark" x="160" y="40" width="120" height="40" opacity=".55"/><use href="#stratus" x="162" y="50" width="116" height="24"/>
+            <path d="M60 96 L150 96 L146 140 L56 140Z" fill="url(#g-rainshaft)" filter="url(#f-blur1)"/>
+            <use href="#cloud-dark" x="18" y="30" width="150" height="76"/><use href="#rain" x="56" y="96" width="90" height="42"/>
+            <ellipse cx="220" cy="128" rx="60" ry="9" fill="#f1f5f9" opacity=".9" filter="url(#f-blur3)"/>
+            <path d="M0 144 Q120 138 240 144 T470 142 L470 150 L0 150Z" fill="url(#g-grass)"/>
+            <text x="8" y="22" class="th" style="fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">AR QUENTE</text>
             <path d="M6 132 L50 132" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
             <path d="M160 112 C230 96 290 70 330 44" stroke="#e0313b" stroke-width="2.5" stroke-dasharray="5 4" fill="none" marker-end="url(#arr-r)"/>
-            <text x="440" y="126" text-anchor="end" class="th" style="fill:#0f3f86">AR FRIO (cunha)</text>
-            <use href="#cloud-dark" x="30" y="36" width="130" height="66"/><use href="#rain" x="56" y="96" width="90" height="42"/><text x="96" y="76" text-anchor="middle" class="tw" style="font-size:13px">Ns</text>
-            <rect x="170" y="56" width="100" height="18" rx="9" fill="#cbd5e1"/><text x="220" y="70" text-anchor="middle" class="tb" style="font-size:12px">As</text>
-            <rect x="282" y="30" width="80" height="12" rx="6" fill="#fff" opacity=".9" stroke="#94a3b8"/><text x="322" y="26" text-anchor="middle" class="tb" style="font-size:12px">Cs</text>
-            <use href="#cirrus" x="380" y="0" width="80" height="22" style="filter:drop-shadow(0 0 1px #475569)"/><text x="400" y="36" text-anchor="middle" class="tb" style="font-size:12px">Ci</text>
-            <use href="#stratus" x="170" y="120" width="100" height="18"/><text x="280" y="134" class="tb" style="font-size:11.5px;fill:#0f3f86">St / FG de precip.</text>
-            <text x="40" y="150" text-anchor="middle" class="tw" style="font-size:10px"> </text>
+            <text x="460" y="120" text-anchor="end" class="th" style="fill:#fff;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">AR FRIO (cunha)</text>
+            <text x="92" y="72" text-anchor="middle" class="tw" style="font-size:14px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">Ns</text>
+            <text x="220" y="48" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">As</text>
+            <text x="322" y="18" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">Cs</text>
+            <text x="410" y="36" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">Ci</text>
+            <text x="286" y="138" class="tb" style="font-size:11.5px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">St / FG de precip.</text>
           </svg>
           <div class="f1 small">
             <ul class="l"><li>Inclinação <b>suave</b> (≈ 1:150 a 1:300): mau tempo <b>extenso</b>, chega devagar.</li><li>Sequência de nuvens: <b>Ci → Cs → As → Ns</b> (os Ci aparecem centenas de km antes).</li><li>Chuva <b>contínua</b>, tetos e visibilidade baixos, <b>nevoeiro de precipitação</b>; se o ar quente for instável, CB <b>embutidos</b>.</li><li>Pressão cai devagar antes; T sobe após a passagem.</li><li>No Brasil é <b>menos frequente</b> e mais fraca que a fria.</li></ul>
