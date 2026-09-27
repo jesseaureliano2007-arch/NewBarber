@@ -205,7 +205,7 @@ A–E controlados; F e G não controlados. FIRs do Brasil: Amazônica, Brasília
 controlado — só informação). ATZ, CTR, TMA: dimensões variam — sempre "conforme publicado na AIP/cartas".
 
 **Direito de passagem**: aeronave em emergência tem prioridade absoluta. Ordem geral de prioridade
-(menos manobrável tem preferência): balão > planador > dirigível > aeronave rebocando > aerodino motorizado.
+(ICA 100-12/Anexo 2): aerodinos motorizados cedem a dirigíveis, planadores e balões; dirigíveis cedem a planadores e balões; planadores cedem a balões; TODA aeronave motorizada (inclusive dirigível) cede à aeronave que está rebocando outra aeronave/objeto.
 Aproximação de frente: ambas guinam para a DIREITA. Convergência (mesmo nível): quem vê a outra à sua
 DIREITA cede passagem. Ultrapassagem: a ultrapassada tem preferência; a que ultrapassa desvia para a
 DIREITA. Pouso: aeronave mais baixa tem prioridade (sem cortar a frente de outra na final); aeronave em
