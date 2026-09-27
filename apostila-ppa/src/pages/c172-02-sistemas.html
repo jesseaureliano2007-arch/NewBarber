@@ -3,7 +3,7 @@
     <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-airport"/></svg>
     <div class="ht">
       <span class="kicker">Cessna 172R · Sistemas</span>
-      <div class="title sm">Elétrico, flapes, trem e instrumentos</div>
+      <div class="title xs">Elétrico, flapes, trem e instrumentos</div>
     </div>
     <div class="def">Referência do modelo: sistema elétrico de <b>28 V</b>, <b>flapes elétricos de 0° a 30°</b>, <b>trem triciclo fixo</b> com bequilha comandada pelos pedais e freios nos pedais.</div>
   </div>
@@ -51,18 +51,17 @@
     <div class="blk c-blue s6">
       <div class="bh"><span class="n">3</span>Trem triciclo fixo, bequilha e freios</div>
       <div class="bb">
-        <svg viewBox="0 0 346 108" width="100%">
-          <use href="#plane-side" x="40" y="0" width="240" height="96"/>
-          <path d="M300 40 H330 M300 40 L292 70" stroke="#1d6fd1" stroke-width="2" stroke-dasharray="4 3" fill="none"/>
+        <svg viewBox="0 0 346 98" width="100%">
+          <use href="#plane-side" x="40" y="-8" width="240" height="96"/>
+          <circle cx="244" cy="74" r="9" fill="none" stroke="#1d6fd1" stroke-width="2.5"/><circle cx="184" cy="73" r="9" fill="none" stroke="#e0313b" stroke-width="2.5"/>
+          <path d="M250 81 L262 86" stroke="#0f3f86" stroke-width="1.5"/><path d="M178 80 L160 86" stroke="#8f1219" stroke-width="1.5"/>
           <g font-size="11" font-weight="700">
-            <text x="248" y="106" fill="#0f3f86">bequilha comandada</text><text x="210" y="14" fill="#0f3f86">pedais → bequilha</text>
-            <text x="4" y="100" fill="#8f1219">freios a disco nas rodas principais</text>
+            <text x="342" y="95" text-anchor="end" fill="#0f3f86">bequilha comandada (pedais)</text>
+            <text x="4" y="95" fill="#8f1219">freios a disco (rodas principais)</text>
           </g>
-          <path d="M184 90 L178 80" stroke="#8f1219" stroke-width="1.5"/><path d="M244 12 L240 20" stroke="#0f3f86" stroke-width="1"/>
         </svg>
         <ul class="l small">
           <li><b>Pedais</b>: parte de baixo → leme e <b>bequilha</b> (direção no táxi); <b>parte de cima</b> (pontas) → <b>freios</b> das rodas principais, independentes (freio diferencial).</li>
-          <li>Freio de estacionamento e cuidados: conforme POH/checklist.</li>
         </ul>
       </div>
     </div>
@@ -98,6 +97,19 @@
           </ul>
           <table class="tb f1" style="--c:var(--navy)"><tr><td>posição do pitot</td><td>______</td></tr><tr><td>posição da estática</td><td>______</td></tr><tr><td>comando da estática alternada</td><td>______</td></tr><tr><td>RPM do teste de magnetos</td><td>______</td></tr></table>
         </div>
+      </div>
+    </div>
+    <div class="blk c-orange s12">
+      <div class="bh"><span class="n">6</span>Da teoria da prova ao PT-WVR</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--orange)">
+          <tr><th>Conceito da prova (módulo 5)</th><th>Como aparece no C172R (referência do modelo)</th></tr>
+          <tr><td>asa alta semicantilever · fuselagem semimonocoque</td><td>asa alta com <b>montantes</b>; estrutura metálica semimonocoque</td></tr>
+          <tr><td>trem triciclo × convencional</td><td><b>triciclo fixo</b>: CG à frente do trem principal → estável no solo</td></tr>
+          <tr><td>gelo de carburador × injeção</td><td><b>injetado</b>: sem gelo de carburador; gelo de indução → ar alternado</td></tr>
+          <tr><td>hélice de passo fixo</td><td>potência pela <b>RPM</b> (tacômetro); sem manete de hélice</td></tr>
+          <tr><td>peso e balanceamento</td><td><b>ficha de P&amp;B atual</b> e gráficos do POH do PT-WVR</td></tr>
+        </table>
       </div>
     </div>
   </div>
