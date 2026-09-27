@@ -1,0 +1,103 @@
+<section class="page mod-tv" id="tv-decolagem-pouso" data-toc="Decolagem, pouso, efeito solo e fatores de desempenho">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-airport"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Desempenho (3/3)</span>
+      <div class="title sm">Decolagem e pouso</div>
+      <div class="sub">Efeito solo · vento · peso · altitude-densidade</div>
+    </div>
+    <div class="def" style="max-width:132mm">Decolagem e pouso são as fases em que <b>peso, vento e densidade do ar</b> mais mudam as distâncias. Os números vêm sempre das tabelas do <b>POH</b>.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">1</span>Decolagem</div>
+      <div class="bb">
+        <ol class="l small">
+          <li><b>Corrida</b>: potência máxima, reta no eixo (pedal direito — efeitos da hélice).</li>
+          <li><b>Rotação</b> na velocidade do POH; α sobe, L &gt; P → o avião sai do chão.</li>
+          <li><b>Subida inicial</b> em Vx (obstáculo) ou Vy.</li>
+        </ol>
+        <div class="small">Contra o vento: menor GS para a mesma IAS → corrida menor. Vento cruzado: aileron <b>para o lado do vento</b>, reduzindo com a velocidade.</div>
+        <div class="warn small">Cessna 172R (POH do modelo): vento cruzado máximo <b>demonstrado</b> 15 kt — não é limite estrutural. PT-WVR: ____</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">2</span>Pouso</div>
+      <div class="bb">
+        <ol class="l small">
+          <li><b>Aproximação</b> estabilizada na velocidade do POH (energia controlada).</li>
+          <li><b>Arredondamento</b> (<i>flare</i>): cabrar progressivamente para reduzir a razão de descida.</li>
+          <li><b>Toque</b> com a menor velocidade segura; <b>corrida</b> com frenagem.</li>
+        </ol>
+        <div class="small"><b>Velocidade sobrando</b> → <b>flutua</b> e consome pista. <b>Faltando</b> → afundamento, toque duro ou estol alto.</div>
+        <div class="tip small">Pouse contra o vento: menor velocidade no solo e menor corrida.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">3</span>Efeito solo</div>
+      <div class="bb">
+        <svg viewBox="0 0 340 104" width="100%">
+          <rect x="0" y="92" width="340" height="12" fill="#94a3b8"/>
+          <use href="#plane-front" x="10" y="4" width="120" height="60"/>
+          <g fill="none" stroke="#1d6fd1" stroke-width="2"><circle cx="16" cy="30" r="12"/><circle cx="124" cy="30" r="12"/><path d="M40 40 L40 70 M70 40 L70 76 M100 40 L100 70" stroke-dasharray="4 3" marker-end="url(#arr-b)"/></g>
+          <use href="#plane-front" x="190" y="46" width="120" height="60"/>
+          <g fill="none" stroke="#1d6fd1" stroke-width="2"><ellipse cx="192" cy="72" rx="10" ry="5"/><ellipse cx="308" cy="72" rx="10" ry="5"/><path d="M220 80 L220 88 M250 80 L250 88 M280 80 L280 88" stroke-dasharray="3 2"/></g>
+          <line x1="330" y1="68" x2="330" y2="92" stroke="#e0313b" stroke-width="2" marker-start="url(#arr-r)" marker-end="url(#arr-r)"/>
+          <text x="140" y="24" class="tb" style="font-size:12.5px;fill:#0f3f86">longe do solo:</text><text x="140" y="38" class="tb" style="font-size:12.5px;fill:#0f3f86">vórtices e downwash livres</text>
+          <text x="4" y="88" class="tb" style="font-size:12.5px;fill:#16582a">perto do solo: vórtices “achatados” →</text>
+        </svg>
+        <div class="small">Até ≈ <b>uma envergadura</b> de altura (forte abaixo de meia), o solo reduz <i>downwash</i> e vórtices → <b>menos arrasto induzido</b>. Na decolagem, “descola” antes da hora e pode <b>afundar</b> ao sair do efeito; no pouso, <b>flutua</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">4</span>Altitude-densidade</div>
+      <div class="bb">
+        <div class="small">Altitude da atmosfera padrão com a <b>mesma densidade</b> do ar atual. Quente, alto e úmido = <b>AD alta</b>: o avião “voa como se estivesse mais alto”.</div>
+        <div class="cause small" style="--c:var(--red)"><span>↑ T, ↑ altitude, ↑ umidade</span><i>→</i><span>↓ ρ</span><i>→</i><span>↓ potência, ↓ hélice, ↓ L</span></div>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:12pt">AD ≈ AP + 120 × (T − T<sub>ISA</sub>)</span><small>regra prática · ft e °C · T<sub>ISA</sub> ≈ 15 − 2 °C por 1.000 ft</small></div>
+        <div class="ex small"><span class="et">Exemplo</span> AP 3.000 ft, 30 °C: T<sub>ISA</sub> = 15 − 6 = 9 °C → AD ≈ 3.000 + 120 × 21 ≈ <b>5.520 ft</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">5</span>Tabela causa-efeito do desempenho</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--navy)">
+          <tr><th>Fator</th><th class="c">Corrida de decolagem</th><th class="c">Subida</th><th class="c">Corrida de pouso</th><th>Por quê</th></tr>
+          <tr><td><b>↑ Peso</b></td><td class="c">↑</td><td class="c">↓</td><td class="c">↑</td><td>Vs maior, mais massa para acelerar/frear</td></tr>
+          <tr><td><b>↑ Altitude-densidade</b></td><td class="c">↑</td><td class="c">↓</td><td class="c">↑</td><td>↓ potência e L; mesma IAS = TAS/GS maiores</td></tr>
+          <tr><td><b>Vento de proa</b></td><td class="c">↓</td><td class="c">ângulo ↑</td><td class="c">↓</td><td>GS menor para a mesma IAS (razão de subida igual)</td></tr>
+          <tr><td><b>Vento de cauda</b></td><td class="c">↑↑</td><td class="c">ângulo ↓</td><td class="c">↑↑</td><td>GS maior — evite</td></tr>
+          <tr><td><b>Pista em aclive</b></td><td class="c">↑</td><td class="c">—</td><td class="c">↓</td><td>componente do peso contra/a favor</td></tr>
+          <tr><td><b>Grama, lama, pista molhada</b></td><td class="c">↑</td><td class="c">—</td><td class="c">↑ (molhada)</td><td>atrito de rolagem; frenagem pior</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">6</span>Exemplo resolvido: qual cabeceira usar?</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="100" height="70" viewBox="0 0 120 84">
+            <rect x="48" y="4" width="24" height="76" rx="2" fill="#475569"/><path d="M60 12 V72" stroke="#fff" stroke-width="1.5" stroke-dasharray="6 5"/>
+            <text x="60" y="80" text-anchor="middle" class="tw" style="font-size:13px">36</text><text x="60" y="14" text-anchor="middle" class="tw" style="font-size:13px">18</text>
+            <line x1="106" y1="10" x2="80" y2="41" stroke="#e0313b" stroke-width="3.5" marker-end="url(#arr-r)"/>
+            <text x="2" y="46" class="tb" style="font-size:13px;fill:#8f1219">vento</text><text x="2" y="60" class="tb" style="font-size:13px;fill:#8f1219">040/20</text>
+          </svg>
+          <div class="ex small f1"><span class="et">Vento 040°/20 kt · pista 36/18</span><br>Pista 36: ângulo 40° → través = 20 × sen 40° ≈ <b>12,9 kt</b>; proa = 20 × cos 40° ≈ <b>15,3 kt</b>. Na 18 seriam ≈ 15,3 kt de <b>cauda</b> → use a <b>36</b>.</div>
+          <div class="rel small f1">Compare o través (≈ 13 kt) com o <b>vento cruzado demonstrado</b> do POH e com a sua proficiência. Distâncias reais: tabelas do POH/AFM.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Em aeródromo alto e quente a <b>IAS</b> de decolagem é a mesma; a <b>TAS/GS</b> é maior → corrida maior.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>ISA: −2 °C por 1.000 ft · +1 °C acima da ISA ≈ +120 ft de AD</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>3 H</b>”: <i>High, Hot, Humid</i> = alto, quente e úmido = desempenho ruim.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Por que o avião pode “flutuar” no pouso?<div class="ans"><b>Efeito solo</b> + velocidade acima da prevista: arrasto induzido menor, o avião demora a perder velocidade.</div></div>
+  </div>
+</section>

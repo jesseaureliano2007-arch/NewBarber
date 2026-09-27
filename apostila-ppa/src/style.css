@@ -78,7 +78,7 @@ svg{display:block;}
 .hero .kicker{font:600 9pt "Barlow Condensed",sans-serif;text-transform:uppercase;letter-spacing:1.5px;
   background:rgba(0,0,0,.35);display:inline-block;padding:1px 8px;border-radius:3px;}
 .hero .title{font:700 34pt/1.02 "Oswald",sans-serif;text-transform:uppercase;letter-spacing:.5px;
-  margin:1mm 0 0;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.35),0 0 18px rgba(0,0,0,.35);}
+  margin:1mm 0 0;color:#fff;text-shadow:0 1px 0 #d7e7ff,0 2px 0 #a9c9f3,0 3px 0 #7aa7e0,0 4px 0 #4d7fbf,0 5px 0 #2d5a96,0 7px 10px rgba(0,0,0,.55),0 0 22px rgba(0,0,0,.35);}
 .hero .title.sm{font-size:26pt;}
 .hero .title.xs{font-size:21pt;}
 .hero .sub{font:600 12pt "Barlow Condensed",sans-serif;margin-top:1mm;text-shadow:0 1px 3px rgba(0,0,0,.6);}

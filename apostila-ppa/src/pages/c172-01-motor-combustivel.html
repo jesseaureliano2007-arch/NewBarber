@@ -1,0 +1,110 @@
+<section class="page mod-c172" id="c172-motor" data-toc="C172R: motor injetado, hélice, combustível e óleo">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-hangar"/></svg>
+    <div class="ht">
+      <span class="kicker">Cessna 172R · Grupo motopropulsor</span>
+      <div class="title sm">Motor, combustível e óleo</div>
+    </div>
+    <div class="def">Referência do modelo C172R (POH): motor <b>Lycoming IO-360-L2A</b>, injetado, <b>160 hp a 2.400 rpm</b>, com hélice de <b>passo fixo</b>. Confirme tudo no POH/AFM do PT-WVR.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-orange s7">
+      <div class="bh"><span class="n">1</span>IO-360-L2A: por que injeção e o que muda</div>
+      <div class="bb">
+        <div class="tokrow">
+          <span class="tok t-red"><b>I</b><small>injeção</small></span><span class="tok t-blue"><b>O</b><small>opostos</small></span><span class="tok t-green"><b>360</b><small>pol³ de cilindrada</small></span><span class="tok t-gray"><b>L2A</b><small>variante</small></span>
+          <span class="tok t-orange"><b>160 hp</b><small>a 2.400 rpm (POH)</small></span>
+        </div>
+        <table class="tb" style="--c:var(--orange)">
+          <tr><th>Assunto</th><th>No C172R injetado</th></tr>
+          <tr><td><b>Gelo de carburador</b></td><td><b>não existe</b> (não há carburador nem ar quente do carburador)</td></tr>
+          <tr><td><b>Gelo de indução</b></td><td>existe (impacto no filtro/entrada) → <b>ar alternado</b> (confira no POH se abre automaticamente)</td></tr>
+          <tr><td><b>Partida</b></td><td>usa a <b>bomba auxiliar elétrica</b> para escorvar; técnicas próprias para motor <b>quente</b> e <b>afogado</b></td></tr>
+          <tr><td><b>Mistura</b></td><td>empobrecimento com auxílio de <b>EGT/fluxo</b>, conforme POH</td></tr>
+          <tr><td><b>Ignição</b></td><td>dupla: 2 magnetos, 2 velas por cilindro; teste no cheque de motor</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">2</span>Hélice de passo fixo</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="60" height="110" viewBox="0 0 60 120"><use href="#propeller" width="60" height="120"/></svg>
+          <ul class="l f1 small">
+            <li>Metálica, de <b>passo fixo</b>: não há manete de hélice.</li>
+            <li>A <b>manete</b> controla a <b>RPM</b> (tacômetro), que também varia com a velocidade.</li>
+            <li>Não ultrapasse a <b>linha vermelha</b> do tacômetro.</li>
+          </ul>
+        </div>
+        <table class="tb" style="--c:var(--blue)">
+          <tr><td>RPM máxima (linha vermelha)</td><td>PT-WVR: ______</td></tr>
+          <tr><td>faixa verde do tacômetro</td><td>PT-WVR: ______</td></tr>
+          <tr><td>queda máx. no teste de magnetos</td><td>PT-WVR: ______</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-red s12 solid">
+      <div class="bh"><span class="n">3</span>Sistema de combustível do C172R (esquema didático — o diagrama oficial está no POH, seção de sistemas)</div>
+      <div class="bb">
+        <svg viewBox="0 0 729 196" width="100%">
+          <g font-size="11.5" font-weight="700">
+            <rect x="8" y="24" width="220" height="40" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/><rect x="10" y="44" width="216" height="18" rx="8" fill="#60a5fa"/>
+            <text x="118" y="40" text-anchor="middle" fill="#0f3f86">TANQUE ASA ESQ.</text>
+            <rect x="501" y="24" width="220" height="40" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/><rect x="503" y="44" width="216" height="18" rx="8" fill="#60a5fa"/>
+            <text x="611" y="40" text-anchor="middle" fill="#0f3f86">TANQUE ASA DIR.</text>
+          </g>
+          <text x="364" y="20" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f3f86">total 56 US gal · utilizável 53 US gal (tanques padrão, POH)</text>
+          <path d="M30 24 V8 H6" stroke="#0e9fb3" stroke-width="2.5" fill="none" marker-end="url(#arr)"/><text x="40" y="12" font-size="10.5" font-weight="700" fill="#0b5c68">respiro</text>
+          <g fill="#e0313b"><path d="M200 64 l6 10 l6 -10Z"/><path d="M515 64 l6 10 l6 -10Z"/></g>
+          <text x="216" y="84" font-size="10.5" font-weight="700" fill="#8f1219">drenos</text>
+          <g stroke="#1d6fd1" stroke-width="5" fill="none" stroke-linejoin="round"><path d="M118 64 V96 H334"/><path d="M611 64 V96 H394"/><path d="M364 126 V140 H300"/><path d="M252 140 H228"/><path d="M180 140 H160"/><path d="M110 140 H90"/></g>
+          <circle cx="364" cy="98" r="26" fill="#1f2937"/>
+          <g font-size="11" font-weight="700" fill="#0f172a"><text x="334" y="68" text-anchor="end">LEFT</text><text x="364" y="66" text-anchor="middle">BOTH</text><text x="394" y="68">RIGHT</text></g>
+          <path d="M364 98 V76" stroke="#f6c945" stroke-width="6" stroke-linecap="round"/>
+          <text x="400" y="120" font-size="11" font-weight="700">seletora (piso)</text>
+          <rect x="252" y="128" width="48" height="24" rx="4" fill="#e0313b"/><text x="276" y="144" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">CORTE</text>
+          <text x="276" y="168" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8f1219">válvula de corte</text><text x="276" y="181" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8f1219">(separada)</text>
+          <rect x="180" y="126" width="48" height="28" rx="4" fill="#fef3c7" stroke="#b45309" stroke-width="2"/><text x="204" y="144" text-anchor="middle" font-size="10" font-weight="700">FILTRO</text>
+          <path d="M198 154 l6 10 l6 -10Z" fill="#e0313b"/>
+          <rect x="110" y="126" width="50" height="28" rx="4" fill="#fdecee" stroke="#e0313b" stroke-width="2"/><text x="135" y="144" text-anchor="middle" font-size="10" font-weight="700">BOMBA AUX.</text>
+          <rect x="16" y="120" width="74" height="40" rx="6" fill="#475569"/><text x="53" y="136" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">bomba motor</text><text x="53" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">→ injeção</text>
+          <text x="470" y="150" font-size="11" font-weight="700" fill="#334155"><tspan x="440" dy="0">Ordem dos componentes ilustrativa.</tspan><tspan x="440" dy="15">Quantidade e posição dos drenos,</tspan><tspan x="440" dy="15">uso da bomba auxiliar e posição da</tspan><tspan x="440" dy="15">seletora em cada fase: POH/checklist.</tspan></text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">4</span>Seletora e válvula de corte</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>LEFT / BOTH / RIGHT</b> escolhe de qual tanque o motor se alimenta (BOTH = os dois).</li>
+          <li>A <b>válvula de corte</b> é um comando <b>separado</b> (ON/OFF): usada, por exemplo, em fogo e em pouso forçado, conforme checklist.</li>
+          <li>Com a asa alta, o combustível desce por gravidade até o sistema de injeção, que ainda usa as bombas.</li>
+        </ul>
+        <table class="tb" style="--c:var(--teal)"><tr><td>posição da seletora na decolagem/pouso</td><td>PT-WVR: ______</td></tr><tr><td>número de drenos no pré-voo</td><td>PT-WVR: ______</td></tr></table>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">5</span>Óleo</div>
+      <div class="bb">
+        <ul class="l small">
+          <li>Cárter úmido; verificação pela <b>vareta</b> no pré-voo.</li>
+          <li>Capacidade de referência do modelo: <b>8 qt</b> (POH).</li>
+          <li>Pressão e temperatura no painel: fique no <b>arco verde</b>.</li>
+        </ul>
+        <table class="tb" style="--c:var(--green)"><tr><td>mínimo para voo</td><td>PT-WVR: ______</td></tr><tr><td>tipo/viscosidade de óleo</td><td>PT-WVR: ______</td></tr><tr><td>limites de pressão/temperatura</td><td>PT-WVR: ______</td></tr></table>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>“Aplicar ar quente do carburador ao suspeitar de gelo” <b>não se aplica</b> ao C172R: ele é injetado (use o procedimento de ar alternado do POH).</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>53 US gal × 3,785 ≈ <b>200,6 L</b> · 53 × 6 = <b>318 lb</b> (≈ 144 kg)</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Seletora <b>L/BOTH/R</b> + válvula de <b>corte</b> separada + <b>bomba aux.</b> elétrica.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Qual a diferença entre o combustível total e o utilizável?<div class="ans">O <b>não utilizável</b> (56 − 53 = 3 US gal no modelo) fica no sistema e não pode ser usado em voo; entra no peso vazio básico.</div></div>
+  </div>
+</section>

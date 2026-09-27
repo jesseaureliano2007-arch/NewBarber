@@ -124,6 +124,23 @@ Classes de texto SVG: `class="t"` (9px), `tb` (10px negrito), `tw` (branco), `th
 SVG ocupa 95 mm, 9px viram ~6 pt (reprovado pelo verificador). Use `style="font-size:13px"` ou mais nesses casos.
 Regra prática: texto SVG final ≥ 7 pt. Sempre dê `width`/`height` ou `width="100%"` ao `<svg>`.
 
+### 4.1 Padrão de acabamento V2 (obrigatório — "nível da referência METAR")
+As ilustrações devem ter VOLUME e LUZ, não traço chapado:
+- Superfícies com gradiente: `g-fus-v` / `g-fus-h` (fuselagem), `g-wing-top` (asa/superfície clara), `g-cyl` (metal
+  cilíndrico: mastros, tubos, montantes, cilindros de motor), `g-metal`, `g-panel` (painel escuro), `g-asphalt`,
+  `g-grass`, `g-wet`, `g-build`, `g-glassfacade`/`g-window` (vidros com reflexo), `g-blue-stripe`/`g-red-stripe`,
+  `g-sky-clear`, `g-sunset2`, `g-storm-sky`, `g-mount`, `g-paper`, `g-wood`.
+- Esferas/bolhas/lâmpadas: `rg-ring` (metal), `rg-bulb-r`/`rg-bulb-b`, `rg-drop`, `rg-hail`, `rg-leaf`, `rg-light`
+  (luz acesa com halo), `rg-sunglow` (brilho do sol), `rg-bolt` (clarão de raio).
+- Sombra projetada: `filter="url(#f-shadow)"` no grupo do objeto (avião, instrumento, caixa, carta).
+  Desfoque: `f-blur1`, `f-blur3`. Bordas de nuvem: `f-fluffy`.
+- Nuvens: use os símbolos `cloud`, `cloud-dark`, `cloud-sunset`, `tcu`, `cb`, `stratus` (volumétricos) em vez de
+  desenhar nuvens com poucos círculos chapados.
+- Céu e solo de fundo nos diagramas de cenário (ex.: corte de espaço aéreo, frente, circuito visto de lado):
+  retângulo com `g-sky-clear` em cima e `g-grass`/`g-earth` embaixo, em vez de fundo branco.
+- Reflexo de vidro em instrumentos: `<use href="#glass" .../>` sobre o mostrador; aro metálico com `rg-ring`.
+- Mantenha as setas/vetores/rótulos NÍTIDOS e contrastados por cima (sem filtro), para não perder a função didática.
+
 ## 5. Regras de conteúdo (de cada assunto)
 
 Para cada assunto, cubra (distribuído entre blocos e rodapé): o que é · como funciona · para que serve ·
@@ -177,7 +194,7 @@ RBAC 61 (licenças/habilitações) · RBAC 67 (CMA) · RBAC 91 (regras gerais de
 RBAC 43 (manutenção). ICA 100-12 (Regras do Ar) · ICA 100-11 (plano de voo) · ICA 100-37 (serviços de tráfego
 aéreo) · MCA 100-16 (fraseologia). AIP Brasil (GEN/ENR/AD) · ROTAER · SUP AIP · AIC · NOTAM · AISWEB · REDEMET.
 
-**PP**: idade mínima 17 anos; CMA de 2ª classe. Validade CMA 2ª classe (RBAC 67): 60 meses se < 40 anos;
+**PP**: idade mínima 18 anos e ensino médio (RBAC 61 — confirmar); CMA de 2ª classe. Validade CMA 2ª classe (RBAC 67): 60 meses se < 40 anos;
 24 meses de 40 a < 50; 12 meses a partir de 50 (confirmar emenda vigente). PP não pode ser remunerado nem
 atuar em transporte aéreo público. Experiência recente para levar passageiros: 3 decolagens e 3 pousos nos
 últimos 90 dias na categoria/classe (noite: pousos noturnos) — "confirme RBAC 61 vigente".

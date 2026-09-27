@@ -1,0 +1,105 @@
+<section class="page mod-met" id="met-decisao" data-toc="Briefing meteorológico e decisão VFR (go/no-go)">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-cockpit"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Aplicação</span>
+      <div class="title sm">Briefing e decisão VFR</div>
+      <div class="sub">Juntar tudo para responder: vou, adio ou mudo o plano?</div>
+    </div>
+    <div class="postit" style="top:2mm"><div class="pt">Do geral ao particular</div>
+      <ol><li><span class="pi">Superfície + satélite + radar</span></li><li><span class="pi">SIGWX · SIGMET · AIRMET</span></li><li><span class="pi">TAF e METAR (origem, rota, destino, alternativa)</span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-navy s12 solid">
+      <div class="bh"><span class="n">1</span>Fluxograma de decisão (go / no-go)</div>
+      <div class="bb">
+        <svg viewBox="0 0 720 226" width="100%">
+          <rect width="720" height="226" fill="#f8fafc"/>
+          <g font-family="Barlow Condensed">
+            <rect x="10" y="10" width="150" height="46" rx="8" fill="#13294b"/><text x="85" y="30" text-anchor="middle" class="tw" style="font-size:13px">BRIEFING COMPLETO</text><text x="85" y="46" text-anchor="middle" style="font-size:11.5px;fill:#ffe46b;font-weight:700">mensagens + cartas + NOTAM</text>
+            <path d="M160 33 L190 33" stroke="#13294b" stroke-width="3" marker-end="url(#arr-k)"/>
+            <path d="M280 6 L372 33 L280 60 L188 33Z" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><text x="280" y="30" text-anchor="middle" class="tb" style="font-size:12px">Destino/alternativa ≥</text><text x="280" y="44" text-anchor="middle" class="tb" style="font-size:12px">mínimos na ETA?</text>
+            <path d="M372 33 L402 33" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/><text x="386" y="26" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">sim</text>
+            <path d="M494 6 L586 33 L494 60 L402 33Z" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><text x="494" y="30" text-anchor="middle" class="tb" style="font-size:12px">Rota livre de CB,</text><text x="494" y="44" text-anchor="middle" class="tb" style="font-size:12px">SIGMET/AIRMET?</text>
+            <path d="M586 33 L616 33 L616 84" stroke="#2e9b45" stroke-width="3" fill="none" marker-end="url(#arr-g)"/><text x="600" y="26" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">sim</text>
+            <path d="M616 90 L708 117 L616 144 L524 117Z" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><text x="616" y="114" text-anchor="middle" class="tb" style="font-size:12px">Tendência estável e</text><text x="616" y="128" text-anchor="middle" class="tb" style="font-size:12px">rota de fuga?</text>
+            <path d="M616 144 L616 170" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/><text x="630" y="162" class="tb" style="font-size:12px;fill:#16582a">sim</text>
+            <path d="M494 172 L586 199 L494 226 L402 199Z" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><text x="494" y="196" text-anchor="middle" class="tb" style="font-size:12px">Combustível p/ alternativa</text><text x="494" y="210" text-anchor="middle" class="tb" style="font-size:12px">+ reserva? Piloto apto?</text>
+            <path d="M616 176 L616 199 L588 199" stroke="#2e9b45" stroke-width="3" fill="none" marker-end="url(#arr-g)"/>
+            <path d="M402 199 L330 199" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/><text x="366" y="192" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">sim</text>
+            <rect x="220" y="176" width="108" height="46" rx="23" fill="#2e9b45"/><text x="274" y="205" text-anchor="middle" class="tw" style="font-size:18px">GO ✔</text>
+            <!-- não -->
+            <rect x="10" y="98" width="200" height="72" rx="10" fill="#fdecee" stroke="#e0313b" stroke-width="2.5"/>
+            <text x="110" y="120" text-anchor="middle" class="th" style="fill:#8f1219;font-size:16px">NO-GO / ADIE</text>
+            <text x="110" y="140" text-anchor="middle" class="tb" style="font-size:12px">mude horário, rota, altitude</text><text x="110" y="156" text-anchor="middle" class="tb" style="font-size:12px">ou destino — e reavalie</text>
+            <path d="M280 60 L280 90 L212 110" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><text x="290" y="82" class="tb" style="font-size:12px;fill:#8f1219">não</text>
+            <path d="M494 60 L494 80 L214 124" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><text x="504" y="78" class="tb" style="font-size:12px;fill:#8f1219">não</text>
+            <path d="M524 117 L214 140" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/><text x="480" y="112" class="tb" style="font-size:12px;fill:#8f1219">não</text>
+            <path d="M440 214 L380 222 L150 222 L110 172" stroke="#e0313b" stroke-width="2.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arr-r)"/><text x="150" y="216" class="tb" style="font-size:12px;fill:#8f1219">não</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">2</span>Mínimos: legais e pessoais</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--blue)">
+          <tr><th>Situação</th><th>Mínimo (VMC/VFR)</th></tr>
+          <tr><td>Pouso/decolagem em aeródromo controlado</td><td>teto ≥ <b>1.500 ft</b> e vis. ≥ <b>5 km</b></td></tr>
+          <tr><td>VFR especial (CTR/ATZ, com autorização)</td><td>teto ≥ 1.000 ft e vis. ≥ 3.000 m</td></tr>
+          <tr><td>Em rota abaixo do FL100</td><td>vis. 5 km; 1.500 m horizontal e 1.000 ft vertical das nuvens</td></tr>
+          <tr><td>F/G, até 3.000 ft AMSL ou 1.000 ft AGL</td><td>vis. 5 km, livre de nuvens, com a superfície à vista</td></tr>
+        </table>
+        <div class="small"><b>Meus mínimos</b> (acima dos legais — ICA 100-12): teto ____ ft · vis. ____ km · través ____ kt.</div>
+        
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">3</span>Sinais para não ir (ou voltar)</div>
+      <div class="bb">
+        <ul class="chk x small">
+          <li>CB/TCU, SIGMET de TS ou linha de instabilidade na rota.</li>
+          <li><b>TEMPO/PROB</b> abaixo dos mínimos na janela da chegada.</li>
+          <li>Teto baixando e terreno subindo: o “<b>sanduíche</b>” entre nuvem e serra.</li>
+          <li>Spread ≤ 2–3 °C ao entardecer, vento calmo → nevoeiro no destino.</li>
+          <li>Vento/rajada acima do vento cruzado demonstrado (POH) ou dos seus mínimos.</li>
+          <li>Frente fria chegando no horário do voo.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-green s12">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido — decolagem às 13Z, chegada prevista às 15Z</div>
+      <div class="bb">
+        <div class="msg">METAR SBTA 271200Z 33010KT 9999 SCT040 29/17 Q1012<br>TAF SBTA 271100Z 2712/2812 33010KT 9999 SCT040 TX31/2717Z TN18/2809Z TEMPO 2714/2718 3000 TSRA BKN015 FEW030CB BECMG 2720/2722 16008KT 9999 SCT020</div>
+        <div class="row">
+          <ol class="l small f1">
+            <li>METAR agora: VMC. Mas a ETA (15Z) cai dentro do <b>TEMPO 14Z–18Z</b>: vis. 3 km, teto 1.500 ft, <b>CB</b>.</li>
+            <li>3.000 m e trovoada: <b>abaixo</b> dos mínimos VFR para pouso e perigoso (windshear, rajadas).</li>
+          </ol>
+          <div class="f1 small"><b>Decisão</b>: <b>NO-GO</b> no horário. Opções: sair mais cedo com chegada antes das 14Z (com margem) ou após as 18Z; ou escolher destino fora da área. Confirme com METAR/radar antes de sair.</div>
+        </div>
+      </div>
+    </div>
+    <div class="blk c-purple s12">
+      <div class="bh"><span class="n">4</span>Durante o voo — a decisão continua</div>
+      <div class="bb">
+        <div class="row">
+          <ul class="chk small f1"><li>Atualize: ATIS, VOLMET, órgãos ATS, PIREPs.</li><li>Tenha um <b>ponto de decisão</b> e a alternativa.</li></ul>
+          <ul class="chk small f1"><li><b>Nunca</b> entre em nuvem voando VFR (desorientação espacial).</li><li>Pousar na alternativa é decisão <b>boa</b>, não fracasso.</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>METAR bom agora não garante nada: a decisão é pela previsão na hora da <b>chegada</b> (TAF) e pela tendência.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>15Z = 12h local (UTC−3)<br>3.000 m &lt; 5 km (mínimo VMC)</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Na dúvida, não decole.</b>” Tenha sempre uma saída: <b>180°</b> ou alternativa.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Em voo VFR, o teto baixa à frente e a visibilidade piora. Melhor ação?<div class="ans"><b>Curva de 180°</b> (ou desvio para área melhor/alternativa) <b>antes</b> de entrar em nuvem; peça apoio ao ATC.</div></div>
+  </div>
+</section>

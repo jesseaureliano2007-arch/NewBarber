@@ -1,0 +1,164 @@
+<section class="page mod-cta" id="cta-wb-exemplo" data-toc="Peso e balanceamento (2/2): exemplo resolvido">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-airport"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Peso e balanceamento</span>
+      <div class="title sm">Exemplo resolvido de W&amp;B</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-navy s12 solid">
+      <div class="bh"><span class="n">★</span>Carregamento do AVIÃO DIDÁTICO (dados fictícios — não use para o PT-WVR)</div>
+      <div class="bb">
+        <div class="row">
+          <table class="tb f2" style="--c:var(--navy)">
+            <tr><th>Item</th><th class="c">Peso (lb)</th><th class="c">Braço (pol)</th><th class="c">Momento (lb·pol)</th></tr>
+            <tr><td>Peso vazio básico (ficha de pesagem)</td><td class="c">1.420</td><td class="c">38,5</td><td class="c">54.670</td></tr>
+            <tr><td>Piloto (170) + passageiro dianteiro (180)</td><td class="c">350</td><td class="c">37,0</td><td class="c">12.950</td></tr>
+            <tr><td>Passageiro traseiro</td><td class="c">160</td><td class="c">73,0</td><td class="c">11.680</td></tr>
+            <tr><td>Bagagem</td><td class="c">50</td><td class="c">95,0</td><td class="c">4.750</td></tr>
+            <tr><td>Combustível: 40 US gal × 6 lb</td><td class="c">240</td><td class="c">48,0</td><td class="c">11.520</td></tr>
+            <tr><td><b>TOTAL (decolagem)</b></td><td class="c"><b>2.220</b></td><td class="c"><b>43,05</b></td><td class="c"><b>95.570</b></td></tr>
+          </table>
+          <div class="f1 small">
+            <div class="lbl">Limites do avião didático</div>
+            <ul class="l"><li>Peso máximo: <b>2.300 lb</b>.</li><li>CG dianteiro: 35,0 pol até 1.900 lb, subindo em linha reta até 38,5 pol a 2.300 lb.</li><li>CG traseiro: <b>46,0 pol</b> em qualquer peso.</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s7">
+      <div class="bh"><span class="n">1</span>Decolagem — passo a passo</div>
+      <div class="bb">
+        <div class="ex"><span class="et">Solução</span><ol>
+          <li>Momento de cada linha = peso × braço (ex.: 160 × 73,0 = 11.680).</li>
+          <li>Σ pesos = 1.420 + 350 + 160 + 50 + 240 = <b>2.220 lb</b> ≤ 2.300 ✔</li>
+          <li>Σ momentos = <b>95.570 lb·pol</b>.</li>
+          <li>CG = 95.570 ÷ 2.220 = <b>43,05 pol</b>.</li>
+          <li>Limite dianteiro a 2.220 lb: 35,0 + (2.220 − 1.900) × 3,5 ÷ 400 = <b>37,8 pol</b>. Traseiro: 46,0.</li>
+          <li>37,8 ≤ 43,05 ≤ 46,0 → <b>dentro do envelope</b> ✔</li>
+        </ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-green s5">
+      <div class="bh"><span class="n">2</span>No gráfico</div>
+      <div class="bb">
+<svg viewBox="0 0 400 226" width="100%">
+<path d="M50 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M75 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M100 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M125 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M150 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M175 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M200 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M225 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M250 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M275 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M300 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M325 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M350 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M375 10 V190" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 190.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 170.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 150.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 130.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 110.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 90.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 70.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 50.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 30.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<path d="M50 10.0 H375" stroke="#e2e8f0" stroke-width="1"/>
+<polygon points="75,190.0 75,110.0 162.5,30.0 350,30.0 350,190.0" fill="#cdeed4" stroke="#2e9b45" stroke-width="3"/>
+<path d="M50 10 V190 H375" stroke="#334155" stroke-width="2" fill="none"/>
+<text x="50" y="206" text-anchor="middle" font-size="15.4" font-weight="600">34</text>
+<text x="100" y="206" text-anchor="middle" font-size="15.4" font-weight="600">36</text>
+<text x="150" y="206" text-anchor="middle" font-size="15.4" font-weight="600">38</text>
+<text x="200" y="206" text-anchor="middle" font-size="15.4" font-weight="600">40</text>
+<text x="250" y="206" text-anchor="middle" font-size="15.4" font-weight="600">42</text>
+<text x="300" y="206" text-anchor="middle" font-size="15.4" font-weight="600">44</text>
+<text x="350" y="206" text-anchor="middle" font-size="15.4" font-weight="600">46</text>
+<text x="46" y="194.0" text-anchor="end" font-size="15.4" font-weight="600">1.500</text>
+<text x="46" y="134.0" text-anchor="end" font-size="15.4" font-weight="600">1.800</text>
+<text x="46" y="74.0" text-anchor="end" font-size="15.4" font-weight="600">2.100</text>
+<text x="212" y="222" text-anchor="middle" font-size="16.1" font-weight="700">CG (pol. atrás do datum)</text>
+<text x="54" y="14" font-size="14" font-weight="700">peso (lb)</text>
+<text x="212.5" y="140.0" text-anchor="middle" font-size="16.8" font-weight="700" fill="#16582a">ENVELOPE</text>
+<text x="212.5" y="155.0" text-anchor="middle" font-size="14.7" font-weight="700" fill="#16582a">(área permitida)</text>
+<text x="250" y="24.0" text-anchor="middle" font-size="14.7" font-weight="700" fill="#8f1219">peso máx. 2.300 lb</text>
+<text x="71" y="170.0" text-anchor="end" font-size="14" font-weight="700" fill="#16582a"></text>
+<circle cx="276.2" cy="46.0" r="6" fill="#1d6fd1" stroke="#fff" stroke-width="2"/>
+<text x="285.2" y="50.0" font-size="15.4" font-weight="700" fill="#1d6fd1">decol.</text>
+<circle cx="267.2" cy="76.0" r="6" fill="#8b46d6" stroke="#fff" stroke-width="2"/>
+<text x="276.2" y="80.0" font-size="15.4" font-weight="700" fill="#8b46d6">pouso</text>
+</svg>
+      </div>
+    </div>
+
+    <div class="blk c-blue s4">
+      <div class="bh"><span class="n">3</span>Pouso</div>
+      <div class="bb">
+        <ol class="l small">
+          <li>Voo consome 25 US gal = 25 × 6 = <b>150 lb</b>.</li>
+          <li>Momento retirado = 150 × 48,0 = <b>7.200</b>.</li>
+          <li>Peso = 2.220 − 150 = <b>2.070 lb</b>.</li>
+          <li>Momento = 95.570 − 7.200 = <b>88.370</b>.</li>
+          <li>CG = 88.370 ÷ 2.070 = <b>42,69 pol</b> → dentro ✔ (limite diant. 36,5).</li>
+        </ol>
+        <div class="small">O combustível está atrás do CG → ao queimar, o CG <b>avança</b> um pouco.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s4">
+      <div class="bh"><span class="n">4</span>Deslocando peso</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">ΔCG = p × d ÷ P</span><small>p = peso movido · d = distância · P = peso total</small></div>
+        <ol class="l small">
+          <li>Mover os 50 lb de bagagem (95,0) para o banco traseiro (73,0): d = 22 pol.</li>
+          <li>ΔCG = 50 × 22 ÷ 2.220 = <b>0,50 pol</b> para a frente.</li>
+          <li>Novo CG = 43,05 − 0,50 = <b>42,55 pol</b>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="blk c-red s4">
+      <div class="bh"><span class="n">5</span>Quanto ainda cabe?</div>
+      <div class="bb">
+        <ol class="l small">
+          <li>Margem de peso: 2.300 − 2.220 = <b>80 lb</b>.</li>
+          <li>Colocando 80 lb no bagageiro (95,0): momento + 7.600 → 103.170.</li>
+          <li>CG = 103.170 ÷ 2.300 = <b>44,86 pol</b> ≤ 46,0 ✔</li>
+        </ol>
+        <div class="small">Peso ok e CG ok — mas <b>confira também o limite estrutural do bagageiro</b> no POH.</div>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">6</span>O mesmo raciocínio em kg e metros (formato frequente em questões)</div>
+      <div class="bb">
+        <div class="row">
+          <table class="tb f2" style="--c:var(--teal)">
+            <tr><th>Item</th><th class="c">Peso (kg)</th><th class="c">Braço (m)</th><th class="c">Momento (kg·m)</th></tr>
+            <tr><td>Peso vazio básico</td><td class="c">600</td><td class="c">2,00</td><td class="c">1.200,0</td></tr>
+            <tr><td>Piloto + passageiro</td><td class="c">80 + 70</td><td class="c">1,80</td><td class="c">270,0</td></tr>
+            <tr><td>Combustível: 100 L × 0,72 kg/L</td><td class="c">72</td><td class="c">2,20</td><td class="c">158,4</td></tr>
+            <tr><td>Bagagem</td><td class="c">20</td><td class="c">3,00</td><td class="c">60,0</td></tr>
+            <tr><td><b>Total</b></td><td class="c"><b>842</b></td><td class="c"><b>2,005</b></td><td class="c"><b>1.688,4</b></td></tr>
+          </table>
+          <div class="f1 small">
+            <div class="ex"><span class="et">Conta</span> CG = 1.688,4 ÷ 842 ≈ <b>2,01 m</b> atrás do datum.</div>
+            <div style="margin-top:1mm">Muitos manuais usam <b>momento ÷ 1.000</b> (“índice de momento”) para encurtar os números: 95.570 lb·pol → <b>95,6</b>. Some e divida do mesmo jeito, mas multiplique de volta por 1.000 antes de achar o CG — ou compare direto com o gráfico “momento × peso” do POH.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Esquecer de converter combustível para peso: 40 US gal não são 40 lb! (40 × 6 = 240 lb.)</div>
+    <div class="f-conv"><div class="fh">⇄ Unidades</div>kg × m = kg·m · lb × pol = lb·pol<br>não misture unidades na mesma tabela</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Tabela: <b>P × B = M</b>, soma P, soma M, divide. Faça <b>decolagem e pouso</b>.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Peso total 2.000 lb, CG 40,0 pol. Adiciona-se 100 lb a 90 pol. Novo CG?<div class="ans">M = 80.000 + 9.000 = 89.000; P = 2.100 → CG = 89.000 ÷ 2.100 ≈ <b>42,38 pol</b>.</div></div>
+  </div>
+</section>

@@ -1,0 +1,125 @@
+<section class="page mod-tv" id="tv-cg" data-toc="Centro de gravidade: CG dianteiro × traseiro">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-hangar"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Peso e balanceamento</span>
+      <div class="title sm">CG e CP</div>
+      <div class="sub">A balança do avião · CG dianteiro × traseiro</div>
+    </div>
+    <div class="def" style="max-width:132mm"><b>CG</b> = ponto onde se considera aplicado o <b>peso</b>. <b>CP</b> = ponto onde se considera aplicada a <b>resultante aerodinâmica</b>. A distância entre eles cria momentos.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">1</span>CG × CP</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--blue)">
+          <tr><th></th><th>CG</th><th>CP</th></tr>
+          <tr><td><b>É</b></td><td>ponto do peso</td><td>ponto da sustentação</td></tr>
+          <tr><td><b>Muda com</b></td><td>carga, passageiros, consumo de combustível</td><td><b>ângulo de ataque</b> (↑ α → CP avança)</td></tr>
+          <tr><td><b>Quem controla</b></td><td>o piloto, ao <b>carregar</b> o avião</td><td>o piloto, ao <b>pilotar</b></td></tr>
+        </table>
+        <div class="small">Nos aviões convencionais o <b>CG fica à frente do CP</b>: o nariz tende a cair e a cauda equilibra com força para baixo — é a base da estabilidade longitudinal.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">2</span>A balança do avião</div>
+      <div class="bb">
+        <svg viewBox="0 0 400 150" width="100%">
+          <use href="#plane-side" x="20" y="34" width="360" height="144" opacity=".18"/>
+          <rect x="20" y="76" width="360" height="8" rx="4" fill="#475569"/>
+          <path d="M230 84 L218 110 L242 110Z" fill="#2e9b45"/>
+          <line x1="230" y1="76" x2="230" y2="14" stroke="#2e9b45" stroke-width="5" marker-end="url(#arr-g)"/>
+          <line x1="276" y1="84" x2="276" y2="138" stroke="#e0313b" stroke-width="5" marker-end="url(#arr-r)"/>
+          <line x1="36" y1="84" x2="36" y2="116" stroke="#8b46d6" stroke-width="5" marker-end="url(#arr-p)"/>
+          <circle cx="276" cy="80" r="7" fill="#fff" stroke="#0f172a" stroke-width="2"/><path d="M276 73 A7 7 0 0 1 283 80 L276 80Z M276 87 A7 7 0 0 1 269 80 L276 80Z" fill="#0f172a"/>
+          <line x1="230" y1="124" x2="276" y2="124" stroke="#0f172a" stroke-width="1.5" marker-start="url(#arr-k)" marker-end="url(#arr-k)"/>
+          <g class="tb" style="font-size:13.5px">
+            <text x="238" y="22" style="fill:#16582a">L no CP (apoio)</text>
+            <text x="284" y="138" style="fill:#8f1219">P no CG</text>
+            <text x="46" y="112" style="fill:#4c1d95">cauda: força p/ baixo</text>
+            <text x="232" y="146" style="font-size:12px">braço</text>
+            <text x="300" y="66" style="fill:#0f172a;font-size:12px">nariz →</text>
+          </g>
+        </svg>
+        <div class="small">Momento nariz-abaixo (P × braço) = momento nariz-acima (força da cauda × distância). <b>CG mais à frente</b> → braço maior → a cauda precisa empurrar <b>mais para baixo</b> → a asa precisa de <b>mais L</b> para o mesmo peso.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">3</span>CG dianteiro (à frente)</div>
+      <div class="bb">
+        <ul class="chk small">
+          <li><b>Mais estável</b> longitudinalmente.</li>
+        </ul>
+        <ul class="chk x small">
+          <li><b>Vs maior</b> (mais carga na cauda → mais L necessária).</li>
+          <li><b>Mais força no profundor</b>: comando “pesado”.</li>
+          <li>Mais arrasto de compensação → <b>menor velocidade de cruzeiro</b> e maior consumo.</li>
+          <li>Dificuldade para <b>arredondar</b> no pouso e para levantar o nariz na decolagem.</li>
+        </ul>
+        <div class="warn small">Além do limite dianteiro, o profundor pode não ter autoridade para o arredondamento.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">4</span>CG traseiro (atrás)</div>
+      <div class="bb">
+        <ul class="chk small">
+          <li><b>Vs menor</b> e cruzeiro ligeiramente mais rápido (menos carga na cauda).</li>
+        </ul>
+        <ul class="chk x small">
+          <li><b>Menos estável</b>: o nariz sobe e desce com facilidade.</li>
+          <li>Comandos <b>leves</b> → risco de sobrecomandar e de <b>estol</b> inadvertido.</li>
+          <li><b>Recuperação de estol e de parafuso mais difícil</b> (ou impossível).</li>
+        </ul>
+        <div class="trap small">Além do limite traseiro o avião pode ficar <b>instável</b> — é a condição mais perigosa.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s7">
+      <div class="bh"><span class="n">5</span>Calculando o CG (exemplo fictício)</div>
+      <div class="bb">
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:11pt">Momento = peso × braço · CG = Σ momentos ÷ Σ pesos</span></div>
+        <table class="tb" style="--c:var(--green)">
+          <tr><th>Item</th><th class="c">Peso (kg)</th><th class="c">Braço (m)</th><th class="c">Momento (kg·m)</th></tr>
+          <tr><td>Avião vazio</td><td class="c">700</td><td class="c">1,00</td><td class="c">700,0</td></tr>
+          <tr><td>Piloto + passageiro</td><td class="c">80 + 70</td><td class="c">0,95</td><td class="c">142,5</td></tr>
+          <tr><td>Combustível</td><td class="c">100</td><td class="c">1,20</td><td class="c">120,0</td></tr>
+          <tr><td>Bagagem</td><td class="c">20</td><td class="c">2,40</td><td class="c">48,0</td></tr>
+          <tr><td><b>Total</b></td><td class="c"><b>970</b></td><td class="c"><b>1,042</b></td><td class="c"><b>1.010,5</b></td></tr>
+        </table>
+        <div class="small">CG = 1.010,5 ÷ 970 ≈ <b>1,042 m</b>. Queimados 50 kg de combustível (braço 1,20): 950,5 ÷ 920 ≈ <b>1,033 m</b> — o CG avançou.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s5">
+      <div class="bh"><span class="n">6</span>Envelope de CG</div>
+      <div class="bb">
+        <svg viewBox="0 0 280 170" width="100%">
+          <path d="M40 8 V140 H280" fill="none" stroke="#0f172a" stroke-width="2"/>
+          <path d="M80 140 L80 68 L120 32 L240 32 L240 140Z" fill="#e4f7fa" stroke="#0e9fb3" stroke-width="2.5"/>
+          <circle cx="193.4" cy="51.2" r="5" fill="#e0313b"/><circle cx="186.5" cy="63.2" r="5" fill="#1d6fd1"/>
+          <line x1="192" y1="55" x2="188" y2="59" stroke="#0f172a" stroke-width="1.5"/>
+          <g class="tb" style="font-size:12px">
+            <text x="200" y="50" style="fill:#8f1219">decolagem</text><text x="120" y="80" style="fill:#0f3f86">após consumo</text>
+            <text x="44" y="154">0,85</text><text x="72" y="154">0,90</text><text x="228" y="154">1,10</text>
+            <text x="160" y="168" text-anchor="middle">posição do CG (m) →</text>
+            <text x="36" y="36" text-anchor="end">1.050</text><text x="36" y="144" text-anchor="end">600</text>
+            <text x="10" y="90" transform="rotate(-90 10 90)" text-anchor="middle">peso (kg)</text>
+            <text x="130" y="112" style="fill:#0b5c68">dentro = OK</text>
+          </g>
+        </svg>
+        <div class="warn small">Limites reais: <b>somente</b> os do POH/AFM e da ficha de peso e balanceamento do avião.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>CG <b>traseiro</b> reduz a Vs, mas é <b>menos estável</b> e dificulta sair do parafuso. “Menor Vs” não significa “mais seguro”.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 lb ≈ 0,454 kg · 1 in = 2,54 cm<br>momento em lb·in ou kg·m</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>CG <b>D</b>ianteiro = <b>D</b>uro e estável · CG <b>T</b>raseiro = <b>T</b>raiçoeiro.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Com o CG mais à frente, a velocidade de estol…<div class="ans"><b>Aumenta</b>: a cauda precisa de mais força para baixo, exigindo mais sustentação da asa.</div></div>
+  </div>
+</section>

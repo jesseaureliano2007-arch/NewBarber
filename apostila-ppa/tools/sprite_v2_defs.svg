@@ -1,0 +1,129 @@
+  <!-- ====== V2: GRADIENTES DE VOLUME E FILTROS ====== -->
+  <radialGradient id="rg-puff" cx=".36" cy=".28" r=".78">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#f3f6fb"/><stop offset=".82" stop-color="#cdd7e5"/><stop offset="1" stop-color="#9fb0c6"/>
+  </radialGradient>
+  <radialGradient id="rg-puff-mid" cx=".36" cy=".28" r=".8">
+    <stop offset="0" stop-color="#eef2f7"/><stop offset=".55" stop-color="#c5cfdc"/><stop offset="1" stop-color="#7f8ea3"/>
+  </radialGradient>
+  <radialGradient id="rg-puff-dark" cx=".38" cy=".3" r=".8">
+    <stop offset="0" stop-color="#a9b4c3"/><stop offset=".55" stop-color="#6f7d91"/><stop offset="1" stop-color="#3a4557"/>
+  </radialGradient>
+  <radialGradient id="rg-puff-sunset" cx=".5" cy=".95" r=".9">
+    <stop offset="0" stop-color="#ffd08a"/><stop offset=".35" stop-color="#f59a7c"/><stop offset=".7" stop-color="#9b6b93"/><stop offset="1" stop-color="#5c4b7c"/>
+  </radialGradient>
+  <linearGradient id="g-anvil" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e3e9f1"/><stop offset="1" stop-color="#aab8ca"/>
+  </linearGradient>
+  <linearGradient id="g-rainshaft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4b5a70" stop-opacity=".75"/><stop offset="1" stop-color="#4b5a70" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="g-fus-v" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#eef2f7"/><stop offset="1" stop-color="#aeb9c8"/>
+  </linearGradient>
+  <linearGradient id="g-fus-h" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#b9c4d2"/><stop offset=".35" stop-color="#ffffff"/><stop offset=".65" stop-color="#f2f5f9"/><stop offset="1" stop-color="#a9b5c4"/>
+  </linearGradient>
+  <linearGradient id="g-wing-top" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#e9eef4"/><stop offset="1" stop-color="#b4c0cf"/>
+  </linearGradient>
+  <linearGradient id="g-blue-stripe" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3b8ff0"/><stop offset="1" stop-color="#0f4fa8"/>
+  </linearGradient>
+  <linearGradient id="g-red-stripe" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ff5a5f"/><stop offset="1" stop-color="#b3121b"/>
+  </linearGradient>
+  <linearGradient id="g-window" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d9f1ff"/><stop offset=".45" stop-color="#6fb7ea"/><stop offset=".55" stop-color="#2d6fae"/><stop offset="1" stop-color="#16395f"/>
+  </linearGradient>
+  <linearGradient id="g-cyl" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7c8898"/><stop offset=".3" stop-color="#eef2f6"/><stop offset=".55" stop-color="#cfd7e1"/><stop offset="1" stop-color="#6b7686"/>
+  </linearGradient>
+  <linearGradient id="g-tire" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4b5563"/><stop offset="1" stop-color="#0b0f16"/>
+  </linearGradient>
+  <linearGradient id="g-asphalt" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#5a616c"/><stop offset="1" stop-color="#2a2f37"/>
+  </linearGradient>
+  <linearGradient id="g-grass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#6fae57"/><stop offset="1" stop-color="#2f6b2e"/>
+  </linearGradient>
+  <linearGradient id="g-wet" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3a3340"/><stop offset=".5" stop-color="#262a33"/><stop offset="1" stop-color="#15181e"/>
+  </linearGradient>
+  <linearGradient id="g-build" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3a4a6b"/><stop offset="1" stop-color="#1b2335"/>
+  </linearGradient>
+  <linearGradient id="g-glassfacade" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe0a8"/><stop offset=".3" stop-color="#7fb4e0"/><stop offset=".7" stop-color="#2b5f95"/><stop offset="1" stop-color="#1a3558"/>
+  </linearGradient>
+  <linearGradient id="g-sock" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/>
+  </linearGradient>
+  <linearGradient id="g-mount" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8aa17a"/><stop offset=".6" stop-color="#5a7550"/><stop offset="1" stop-color="#34492f"/>
+  </linearGradient>
+  <linearGradient id="g-storm-sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#101c2c"/><stop offset=".5" stop-color="#2b4658"/><stop offset=".85" stop-color="#6d8b92"/><stop offset="1" stop-color="#a7b8b4"/>
+  </linearGradient>
+  <linearGradient id="g-sky-clear" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0f5bc4"/><stop offset=".55" stop-color="#4f9de6"/><stop offset="1" stop-color="#bfe2fb"/>
+  </linearGradient>
+  <linearGradient id="g-sunset2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#0d1838"/><stop offset=".35" stop-color="#3a2f66"/><stop offset=".6" stop-color="#a24e6e"/><stop offset=".8" stop-color="#f08a4b"/><stop offset="1" stop-color="#ffd27a"/>
+  </linearGradient>
+  <linearGradient id="g-wood" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#6b4424"/><stop offset=".5" stop-color="#8a5a31"/><stop offset="1" stop-color="#5a3719"/>
+  </linearGradient>
+  <linearGradient id="g-paper" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fbf7e6"/><stop offset="1" stop-color="#e9e0bf"/>
+  </linearGradient>
+  <linearGradient id="g-panel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#3a414b"/><stop offset="1" stop-color="#1a1e24"/>
+  </linearGradient>
+  <linearGradient id="g-glare" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="rg-sunglow" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#fff6d6" stop-opacity="1"/><stop offset=".25" stop-color="#ffd27a" stop-opacity=".9"/><stop offset=".6" stop-color="#ff9a4a" stop-opacity=".35"/><stop offset="1" stop-color="#ff7a3a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="rg-light" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#fffbe6"/><stop offset=".35" stop-color="#ffd76a" stop-opacity=".8"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="rg-bolt" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#fffbe0" stop-opacity=".95"/><stop offset=".4" stop-color="#bfe1ff" stop-opacity=".5"/><stop offset="1" stop-color="#8ec5ff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="rg-leaf" cx=".35" cy=".3" r=".75">
+    <stop offset="0" stop-color="#8fd06a"/><stop offset=".6" stop-color="#3f9442"/><stop offset="1" stop-color="#1f5a26"/>
+  </radialGradient>
+  <radialGradient id="rg-ring" cx=".5" cy=".35" r=".65">
+    <stop offset="0" stop-color="#f1f4f8"/><stop offset=".6" stop-color="#9aa4b2"/><stop offset="1" stop-color="#3d4450"/>
+  </radialGradient>
+  <radialGradient id="rg-bulb-r" cx=".35" cy=".3" r=".7"><stop offset="0" stop-color="#ff9a9a"/><stop offset=".5" stop-color="#e0313b"/><stop offset="1" stop-color="#7a0d13"/></radialGradient>
+  <radialGradient id="rg-bulb-b" cx=".35" cy=".3" r=".7"><stop offset="0" stop-color="#9fd0ff"/><stop offset=".5" stop-color="#1d6fd1"/><stop offset="1" stop-color="#0b2f66"/></radialGradient>
+  <radialGradient id="rg-drop" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#d7eeff"/><stop offset=".5" stop-color="#4aa3f0"/><stop offset="1" stop-color="#11549e"/></radialGradient>
+  <radialGradient id="rg-hail" cx=".35" cy=".3" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#d5e6f7"/><stop offset="1" stop-color="#7f9dbd"/></radialGradient>
+  <filter id="f-fluffy" x="-15%" y="-15%" width="130%" height="130%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="3" seed="7" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="f-fluffy-big" x="-15%" y="-15%" width="130%" height="130%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="11" result="n"/>
+    <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="f-shadow" x="-20%" y="-20%" width="140%" height="160%">
+    <feDropShadow dx="0" dy="2" stdDeviation="1.8" flood-color="#0b1a33" flood-opacity=".35"/>
+  </filter>
+  <filter id="f-blur1" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="1.2"/></filter>
+  <filter id="f-blur3" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="f-blur8" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+  <radialGradient id="rg-puff-lo" cx=".36" cy=".28" r=".8"><stop offset="0" stop-color="#f7f9fc"/><stop offset=".55" stop-color="#e1e8f1"/><stop offset="1" stop-color="#a7b6ca"/></radialGradient>
+  <radialGradient id="rg-puff-base" cx=".4" cy=".25" r=".85"><stop offset="0" stop-color="#e8edf4"/><stop offset=".6" stop-color="#bfcadb"/><stop offset="1" stop-color="#8a9bb3"/></radialGradient>
+  <linearGradient id="lg-core" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f7"/><stop offset="1" stop-color="#a9b7ca"/></linearGradient>
+  <radialGradient id="rg-puff-d1" cx=".38" cy=".3" r=".8"><stop offset="0" stop-color="#c3ccd8"/><stop offset=".6" stop-color="#8794a8"/><stop offset="1" stop-color="#4f5c70"/></radialGradient>
+  <radialGradient id="rg-puff-d2" cx=".4" cy=".3" r=".8"><stop offset="0" stop-color="#8a96a8"/><stop offset=".6" stop-color="#5a677b"/><stop offset="1" stop-color="#2e3847"/></radialGradient>
+  <radialGradient id="rg-puff-s1" cx=".4" cy=".25" r=".85"><stop offset="0" stop-color="#ffe9c7"/><stop offset=".55" stop-color="#f6b29a"/><stop offset="1" stop-color="#b0708d"/></radialGradient>
+  <radialGradient id="rg-puff-s2" cx=".45" cy=".85" r=".9"><stop offset="0" stop-color="#ffcf7d"/><stop offset=".5" stop-color="#e98b7d"/><stop offset="1" stop-color="#7e5a86"/></radialGradient>
+  <radialGradient id="rg-puff-s3" cx=".5" cy=".95" r=".9"><stop offset="0" stop-color="#ffb866"/><stop offset=".5" stop-color="#c7707d"/><stop offset="1" stop-color="#5a4776"/></radialGradient>
+  <linearGradient id="lg-core-d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8e9aac"/><stop offset="1" stop-color="#3b4658"/></linearGradient>
+  <linearGradient id="lg-core-s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3b99d"/><stop offset="1" stop-color="#6d5282"/></linearGradient>
+  <linearGradient id="lg-core-cb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f7"/><stop offset=".7" stop-color="#9aa8bb"/><stop offset="1" stop-color="#4f5c70"/></linearGradient>

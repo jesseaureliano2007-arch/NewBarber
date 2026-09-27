@@ -1,0 +1,121 @@
+<section class="page mod-tv" id="tv-planeio" data-toc="Curva, descida, planeio e melhor planeio">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Desempenho (2/3)</span>
+      <div class="title sm">Curva e planeio</div>
+      <div class="sub">Raio e razão de curva · descida · razão de planeio</div>
+    </div>
+    <div class="def" style="max-width:132mm">No <b>planeio</b> (sem tração), a componente do peso ao longo da trajetória substitui a tração. A distância depende da <b>razão L/D</b>.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s7">
+      <div class="bh"><span class="n">1</span>Curva coordenada</div>
+      <div class="bb">
+        <div class="row">
+          <div class="f1 small">
+            <ul class="l"><li>Inclinar com <b>aileron + leme</b> juntos (bola centrada).</li><li><b>Cabrar</b> para manter a altitude (↑ α; n &gt; 1); em curva de grande inclinação, <b>+ potência</b>.</li><li><b>Mais inclinação</b> → raio menor e curva mais rápida. <b>Mais velocidade</b> → raio maior.</li><li><b>Curva padrão</b> (razão 1) = 3°/s → 360° em 2 min. Inclinação ≈ TAS/10 + 7 (regra prática).</li></ul>
+          </div>
+          <div class="none" style="width:48mm">
+            <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:11.5pt">r = V² ÷ (g·tg φ)</span><small>r em m, V em m/s</small></div>
+            <table class="tb" style="--c:var(--blue);margin-top:1mm"><tr><th>100 kt, φ</th><th class="c">raio</th></tr><tr><td>15°</td><td class="c">≈ 1.007 m</td></tr><tr><td>30°</td><td class="c">≈ 467 m</td></tr><tr><td>45°</td><td class="c">≈ 270 m</td></tr><tr><td>60°</td><td class="c">≈ 156 m</td></tr></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s5">
+      <div class="bh"><span class="n">2</span>Descida com motor</div>
+      <div class="bb">
+        <div class="cause small" style="--c:var(--orange)"><span>↓ potência</span><i>→</i><span>T &lt; D</span><i>→</i><span>desce</span></div>
+        <ul class="l small">
+          <li>Na descida estabilizada: <b>T + P·sen γ = D</b> — o peso “ajuda” a tração.</li>
+          <li>Com a mesma potência, <b>baixar o nariz</b> aumenta a velocidade; para descer sem acelerar, <b>reduza a potência</b>.</li>
+          <li>Em ar turbulento, fique <b>abaixo da Vno</b> (fora do arco amarelo).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-green s7">
+      <div class="bh"><span class="n">3</span>Forças no planeio</div>
+      <div class="bb">
+        <svg viewBox="0 0 400 160" width="100%" style="max-height:36mm">
+          <rect x="0" y="151" width="400" height="9" fill="#94a3b8"/>
+          <line x1="30" y1="34" x2="390" y2="151" stroke="#2e9b45" stroke-width="2" stroke-dasharray="7 5"/>
+          <line x1="30" y1="34" x2="30" y2="151" stroke="#475569" stroke-width="1.5" marker-start="url(#arr-k)" marker-end="url(#arr-k)"/>
+          <text x="36" y="100" class="tb" style="font-size:15px">h</text>
+          <text x="210" y="148" class="tb" style="font-size:15px">d (distância)</text>
+          <g transform="translate(150 73) rotate(18) translate(-50 -22)"><use href="#plane-side" width="100" height="40"/></g>
+          <line x1="150" y1="73" x2="169.2" y2="14" stroke="#2e9b45" stroke-width="5" marker-end="url(#arr-g)"/>
+          <line x1="150" y1="73" x2="150" y2="138" stroke="#e0313b" stroke-width="5" marker-end="url(#arr-r)"/>
+          <line x1="150" y1="73" x2="131" y2="66.8" stroke="#f08a12" stroke-width="5" marker-end="url(#arr-o)"/>
+          <line x1="150" y1="73" x2="172" y2="80.2" stroke="#8f1219" stroke-width="3" stroke-dasharray="4 2" marker-end="url(#arr-r)"/>
+          <g class="tb" style="font-size:13px">
+            <text x="176" y="20" style="fill:#16582a">L</text><text x="156" y="132" style="fill:#8f1219">P</text><text x="100" y="60" style="fill:#9a4d00">D</text><text x="180" y="96" style="fill:#8f1219">P·sen γ = D</text>
+            <text x="250" y="60" style="fill:#16582a">razão de planeio</text><text x="250" y="76" style="fill:#16582a">= d ÷ h = L ÷ D</text>
+          </g>
+        </svg>
+        <div class="small">Fora de escala (o ângulo real é pequeno). Quanto <b>maior o L/D</b>, menor o ângulo de planeio e <b>maior a distância</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s5">
+      <div class="bh"><span class="n">4</span>Melhor planeio</div>
+      <div class="bb">
+        <ul class="chk small"><li>Velocidade de <b>L/D máx</b> = maior distância por altura.</li><li>Mais rápido <b>ou</b> mais lento → planeia <b>menos</b>.</li></ul>
+        <table class="tb" style="--c:var(--purple)">
+          <tr><th>Fator</th><th>Distância no solo</th></tr>
+          <tr><td>↑ peso</td><td><b>igual</b> (voe a velocidade maior)</td></tr>
+          <tr><td>vento de proa</td><td><b>menor</b> (voe um pouco mais rápido)</td></tr>
+          <tr><td>vento de cauda</td><td><b>maior</b></td></tr>
+          <tr><td>flapes, trem, hélice em molinete</td><td><b>menor</b> (↑ arrasto)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">5</span>Exemplo resolvido: pane de motor</div>
+      <div class="bb">
+        <div class="ex small"><span class="et">Dados</span> 3.000 ft de altura (AGL) · razão de planeio 9:1 · melhor planeio 65 kt</div>
+        <ol class="l small">
+          <li>Distância = h × razão = 3.000 × 9 = <b>27.000 ft</b>.</li>
+          <li>27.000 ÷ 6.076 (ft por NM) ≈ <b>4,4 NM</b> (≈ 3.000 × 0,3048 × 9 ≈ <b>8,2 km</b>).</li>
+          <li>Tempo: 65 kt ≈ 6.580 ft/min na horizontal ÷ 9 ≈ <b>730 ft/min</b> de afundamento → 3.000 ÷ 730 ≈ <b>4 min</b>.</li>
+          <li>Com <b>vento de proa de 15 kt</b> (GS 50 kt): 4,4 × 50 ÷ 65 ≈ <b>3,4 NM</b>.</li>
+        </ol>
+        
+      </div>
+    </div>
+
+    <div class="blk c-teal s5">
+      <div class="bh"><span class="n">6</span>Cessna 172R — referência</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--teal)">
+          <tr><th>Item</th><th class="c">POH do modelo</th><th class="c">PT-WVR</th></tr>
+          <tr><td>Melhor planeio</td><td class="c"><b>65 KIAS</b></td><td class="c">____</td></tr>
+          <tr><td>Razão de planeio</td><td class="c">confirme no POH</td><td class="c">____</td></tr>
+        </table>
+        <div class="warn small">Referência do modelo Cessna 172R (POH) — confirme no POH/AFM, suplementos e checklist do PT-WVR.</div>
+        <div class="tip small">Campo <b>dentro</b> do alcance e <b>contra o vento</b>.</div>
+      </div>
+    </div>
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">7</span>Mais dois exemplos que caem</div>
+      <div class="bb">
+        <div class="row">
+          <div class="ex small f1"><span class="et">Curva padrão a 90 kt</span><ol><li>Inclinação ≈ 90 ÷ 10 + 7 = <b>16°</b>.</li><li>Razão 3°/s: 180° em <b>1 min</b>; 360° em <b>2 min</b>.</li></ol></div>
+          <div class="ex small f1"><span class="et">Dobrar a velocidade na mesma inclinação</span><ol><li>r ∝ V²: raio × 2² = <b>4 vezes maior</b>.</li><li>Ex.: 30°, 100 kt → ≈ 467 m; 50 kt → ≈ 117 m.</li></ol></div>
+          <div class="trap small f1">Pane logo após a decolagem: voltar para a pista exige curva inclinada (n &gt; 1, Vs maior) e consome muita altura. Em geral, pousa-se <b>à frente</b> — siga o POH e a instrução.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>O <b>peso não muda a distância</b> de planeio (mesmo L/D); muda a <b>velocidade</b> de melhor planeio.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 NM ≈ 6.076 ft = 1.852 m · 1 ft = 0,3048 m</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Planeio = <b>altura × razão</b>. 10:1 a 1 NM (≈ 6.000 ft) de altura → ≈ 10 NM.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Razão de planeio 8:1 a 2.000 m de altura. Distância?<div class="ans">2.000 × 8 = <b>16.000 m = 16 km</b> (≈ 8,6 NM), sem vento.</div></div>
+  </div>
+</section>
