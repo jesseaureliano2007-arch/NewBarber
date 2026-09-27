@@ -1,0 +1,13 @@
+# Ordem de montagem. Curingas (*) são expandidos em ordem alfabética.
+gen-00-*.html
+gen-01-*.html
+gen-02-*.html
+gen-03-*.html
+reg-*.html
+met-*.html
+nav-*.html
+tv-*.html
+cta-*.html
+c172-*.html
+form-*.html
+sim-*.html
