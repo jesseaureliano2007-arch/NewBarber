@@ -1,0 +1,149 @@
+<section class="page mod-cta" id="cta-ignicao" data-toc="Ignição: magnetos, velas, teste de magnetos, detonação">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-cockpit"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Grupo motopropulsor</span>
+      <div class="title sm">Ignição e dupla ignição</div>
+    </div>
+    <div class="def">Dois <b>magnetos</b> independentes, cada um ligado a <b>uma vela de cada cilindro</b>. O magneto gera a própria energia ao girar: o motor funciona <b>mesmo sem bateria e sem alternador</b>.</div>
+    <div class="postit"><div class="pt">Chave de ignição</div>
+      <ol><li>OFF — aterra os dois</li><li>R — só magneto direito</li><li>L — só magneto esquerdo</li><li>BOTH — os dois (voo)</li><li>START — arranque</li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-purple s7">
+      <div class="bh"><span class="n">1</span>Circuito de ignição</div>
+      <div class="bb">
+        <svg viewBox="0 0 413 176" width="100%">
+          <!-- chave -->
+          <circle cx="56" cy="80" r="44" fill="#1f2937"/>
+          <g fill="#fff" font-size="11" font-weight="700" text-anchor="middle">
+            <text x="22" y="100">OFF</text><text x="22" y="62">R</text><text x="56" y="48">L</text><text x="90" y="62">BOTH</text><text x="90" y="104" fill="#fca5a5">START</text>
+          </g>
+          <circle cx="56" cy="80" r="16" fill="#94a3b8" stroke="#fff" stroke-width="2"/><path d="M56 80 L72 71" stroke="#f6c945" stroke-width="5" stroke-linecap="round"/>
+          <text x="56" y="140" text-anchor="middle" font-size="11" font-weight="700">chave (em BOTH)</text>
+          <!-- p-leads -->
+          <path d="M100 70 H170 V44 H196" stroke="#475569" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
+          <path d="M100 90 H170 V124 H196" stroke="#475569" stroke-width="2" stroke-dasharray="5 3" fill="none"/>
+          <text x="134" y="84" text-anchor="middle" font-size="10.5" font-weight="700" fill="#334155">P-lead</text>
+          <!-- magnetos -->
+          <rect x="196" y="28" width="70" height="32" rx="6" fill="#f08a12"/><text x="231" y="49" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">MAG E</text>
+          <rect x="196" y="108" width="70" height="32" rx="6" fill="#8b46d6"/><text x="231" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">MAG D</text>
+          <!-- velas -->
+          <g>
+            <rect x="330" y="20" width="76" height="136" rx="8" fill="#f1f5f9" stroke="#334155" stroke-width="1.5"/>
+            <text x="368" y="170" text-anchor="middle" font-size="11" font-weight="700">cilindros 1 a 4</text>
+            <g fill="#fff" stroke="#334155" stroke-width="1.2"><rect x="340" y="30" width="20" height="10"/><rect x="340" y="62" width="20" height="10"/><rect x="340" y="94" width="20" height="10"/><rect x="340" y="126" width="20" height="10"/><rect x="376" y="30" width="20" height="10"/><rect x="376" y="62" width="20" height="10"/><rect x="376" y="94" width="20" height="10"/><rect x="376" y="126" width="20" height="10"/></g>
+            <text x="350" y="56" text-anchor="middle" font-size="10" font-weight="700">sup.</text><text x="386" y="56" text-anchor="middle" font-size="10" font-weight="700">inf.</text>
+          </g>
+          <g stroke="#f08a12" stroke-width="2" fill="none"><path d="M266 40 L340 35 M266 42 L340 67 M266 46 L396 99 M266 50 L396 131"/></g>
+          <g stroke="#8b46d6" stroke-width="2" fill="none"><path d="M266 118 L396 35 M266 122 L396 67 M266 126 L340 99 M266 130 L340 131"/></g>
+          <text x="112" y="164" font-size="10.5" font-weight="700" fill="#8f1219">OFF = P-lead aterra o magneto → sem centelha</text>
+        </svg>
+        <div class="small">Com o <b>P-lead rompido</b>, o magneto fica “vivo” mesmo com a chave em OFF: <b>nunca gire a hélice com a mão</b> achando que o motor está desligado.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s5">
+      <div class="bh"><span class="n">2</span>Magneto e vela</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="100" height="110" viewBox="0 0 100 110">
+            <rect x="30" y="4" width="24" height="22" rx="3" fill="#475569"/>
+            <rect x="26" y="26" width="32" height="44" rx="4" fill="#f8fafc" stroke="#334155" stroke-width="1.5"/>
+            <path d="M24 70 H60 V84 H24Z" fill="#94a3b8" stroke="#334155"/>
+            <path d="M24 74 H60 M24 78 H60" stroke="#64748b"/>
+            <path d="M42 84 V96 M36 100 H48" stroke="#334155" stroke-width="3"/>
+            <path d="M42 96 l-4 6 l8 -2 l-4 7" stroke="#f08a12" stroke-width="2" fill="none"/>
+            <g font-size="10" font-weight="700"><text x="60" y="44">isolante</text><text x="62" y="80">rosca</text><text x="48" y="108">eletrodos</text></g>
+          </svg>
+          <ul class="l f1 small">
+            <li><b>Magneto</b>: ímã girando + bobinas (primária e secundária) + platinado/condensador → gera <b>alta tensão</b> no tempo certo.</li>
+            <li><b>Acoplamento de impulso</b>: na partida, atrasa a centelha e a “dispara” forte, pois o motor gira devagar.</li>
+            <li><b>Vela</b>: salta a centelha entre os eletrodos. Marcha lenta longa com mistura rica → <b>velas sujas</b> (carvão/chumbo).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">3</span>Por que dupla ignição?</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="120" height="84" viewBox="0 0 120 84">
+            <rect x="10" y="6" width="100" height="72" rx="6" fill="#fff4e3" stroke="#334155" stroke-width="2"/>
+            <circle cx="28" cy="42" r="6" fill="#f08a12"/><circle cx="92" cy="42" r="6" fill="#8b46d6"/>
+            <g fill="none" stroke-width="2"><circle cx="28" cy="42" r="16" stroke="#f08a12"/><circle cx="28" cy="42" r="28" stroke="#f08a12" stroke-dasharray="4 3"/><circle cx="92" cy="42" r="16" stroke="#8b46d6"/><circle cx="92" cy="42" r="28" stroke="#8b46d6" stroke-dasharray="4 3"/></g>
+            <text x="60" y="80" text-anchor="middle" font-size="10" font-weight="700">2 frentes de chama</text>
+          </svg>
+          <ul class="chk f1 small">
+            <li><b>Segurança</b>: se um magneto ou vela falhar, o motor continua.</li>
+            <li><b>Eficiência</b>: duas frentes de chama queimam a mistura mais rápido e por completo → mais potência.</li>
+            <li>Por isso, em um só magneto a queima é mais lenta e a <b>RPM cai um pouco</b>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">4</span>Teste de magnetos (cheque de motor)</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--red)">
+          <tr><th>Ao passar BOTH → R (e depois L)</th><th>Diagnóstico</th></tr>
+          <tr><td>queda pequena, parecida nos dois, motor suave</td><td><b>normal</b></td></tr>
+          <tr><td><b>nenhuma queda</b></td><td>magneto não desliga (P-lead aberto) — <b>perigo</b></td></tr>
+          <tr><td>queda excessiva ou motor áspero</td><td>vela suja/defeituosa, cabo, magneto</td></tr>
+          <tr><td>motor quase para</td><td>magneto selecionado inoperante</td></tr>
+        </table>
+        <div class="warn small">RPM do teste, queda máxima e diferença máxima entre R e L: <b>POH/checklist da aeronave</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">5</span>Detonação × pré-ignição</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="300" height="130" viewBox="0 0 300 130">
+            <g transform="translate(0 0)">
+              <path d="M10 20 V110 M120 20 V110 M10 20 H120" stroke="#334155" stroke-width="4" fill="none"/>
+              <rect x="12" y="22" width="106" height="52" fill="#fde68a"/>
+              <path d="M65 22 Q30 40 30 74 M65 22 Q100 40 100 74" stroke="#f08a12" stroke-width="2.5" fill="none"/>
+              <path d="M18 30 l6 4 l-6 4 l6 4 M112 30 l-6 4 l6 4 l-6 4" stroke="#e0313b" stroke-width="2.5" fill="none"/>
+              <path d="M16 50 L6 44 L16 40 L8 32 L20 36Z M114 50 L124 44 L114 40 L122 32 L110 36Z" fill="#e0313b"/>
+              <rect x="60" y="8" width="10" height="16" fill="#f8fafc" stroke="#334155"/><path d="M65 24 l-3 5 l6 -1 l-3 5" stroke="#f08a12" stroke-width="2" fill="none"/>
+              <rect x="12" y="74" width="106" height="26" fill="url(#g-metal)" stroke="#334155" stroke-width="1.5"/>
+              <text x="65" y="124" text-anchor="middle" font-size="11.5" font-weight="700" fill="#8f1219">DETONAÇÃO</text>
+              <text x="65" y="94" text-anchor="middle" font-size="10" font-weight="700">após a centelha</text>
+            </g>
+            <g transform="translate(160 0)">
+              <path d="M10 20 V110 M120 20 V110 M10 20 H120" stroke="#334155" stroke-width="4" fill="none"/>
+              <rect x="12" y="22" width="106" height="40" fill="#dbeafe"/>
+              <circle cx="100" cy="30" r="8" fill="#e0313b"/><circle cx="100" cy="30" r="15" fill="none" stroke="#e0313b" stroke-width="2" stroke-dasharray="3 2"/>
+              <rect x="60" y="8" width="10" height="16" fill="#f8fafc" stroke="#334155"/>
+              <text x="36" y="44" font-size="10" font-weight="700" fill="#0f3f86">sem centelha</text>
+              <rect x="12" y="62" width="106" height="26" fill="url(#g-metal)" stroke="#334155" stroke-width="1.5"/>
+              <path d="M130 90 V60" stroke="#475569" stroke-width="3" marker-end="url(#arr-k)"/>
+              <text x="65" y="124" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f3f86">PRÉ-IGNIÇÃO</text>
+              <text x="65" y="104" text-anchor="middle" font-size="10" font-weight="700">ponto quente, pistão subindo</text>
+            </g>
+          </svg>
+          <table class="tb f1" style="--c:var(--navy)">
+            <tr><th></th><th>Detonação</th><th>Pré-ignição</th></tr>
+            <tr><td><b>O que é</b></td><td>queima <b>explosiva</b> e instantânea da mistura restante, <b>depois</b> da centelha</td><td>queima que começa <b>antes</b> da centelha, por um <b>ponto quente</b></td></tr>
+            <tr><td><b>Causas</b></td><td>combustível de octanagem <b>menor</b> que a especificada, mistura <b>pobre</b>, motor quente, potência alta</td><td>depósitos de carvão incandescentes, vela superaquecida, motor muito quente</td></tr>
+            <tr><td><b>Sinais</b></td><td colspan="2">CHT/EGT altas, perda de potência, motor áspero; pode danificar pistões e cilindros</td></tr>
+            <tr><td><b>O que fazer</b></td><td colspan="2">enriquecer a mistura, reduzir potência, aumentar a velocidade de subida (mais ar de arrefecimento), abrir cowl flaps (se houver)</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>“Com pane elétrica total o motor para” — <b>falso</b>. Os magnetos não dependem da bateria nem do alternador.</div>
+    <div class="f-conv"><div class="fh">⇄ Termos</div>detonação = <i>detonation/knock</i> · pré-ignição = <i>preignition</i> · P-lead = fio de aterramento do magneto</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div><b>DE</b>tonação = <b>DE</b>pois da centelha; <b>PRÉ</b>-ignição = <b>antes</b> dela.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>No cheque, ao selecionar R a RPM não cai nada. O que suspeitar?<div class="ans">O magneto esquerdo <b>não está sendo aterrado</b> (P-lead aberto): ele continua gerando centelha. Não voe; motor pode dar partida ao girar a hélice.</div></div>
+  </div>
+</section>

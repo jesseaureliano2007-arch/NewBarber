@@ -1,0 +1,134 @@
+<section class="page mod-cta" id="cta-helice" data-toc="Hélice (1/2): ângulo de pá, torção e tipos">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-hangar"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Grupo motopropulsor</span>
+      <div class="title sm">Hélice (1/2) — a pá</div>
+    </div>
+    <div class="def">Cada pá é uma <b>asa girando</b>: a “sustentação” da pá, voltada para a frente, é a <b>tração</b>. <b>Ângulo de pá</b> = entre a corda e o plano de rotação.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-purple s7">
+      <div class="bh"><span class="n">1</span>Ângulo de pá × ângulo de ataque</div>
+      <div class="bb">
+        <svg viewBox="0 0 413 206" width="100%">
+          <path d="M20 120 H400" stroke="#475569" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="400" y="136" text-anchor="end" font-size="11" font-weight="700" fill="#334155">plano de rotação</text>
+          <g transform="rotate(-35 190 120)">
+            <path d="M80 120 H330" stroke="#f08a12" stroke-width="1.5" stroke-dasharray="5 3"/>
+            <path d="M122 120 Q190 106 250 113 Q264 120 250 127 Q190 130 122 120Z" fill="#334155"/>
+          </g>
+          <text x="316" y="30" font-size="11" font-weight="700" fill="#9a4d00">corda</text>
+          <path d="M335 58 L230 101" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr-b)"/>
+          <text x="330" y="94" font-size="11" font-weight="700" fill="#0f3f86">vento relativo</text>
+          <path d="M280 120 A90 90 0 0 0 263.7 68.4" stroke="#8b46d6" stroke-width="2.5" fill="none"/>
+          <text x="284" y="106" font-size="13" font-weight="700" fill="#4c1d95">β</text>
+          <path d="M301.3 75 A120 120 0 0 0 288.3 51.2" stroke="#e0313b" stroke-width="3" fill="none"/>
+          <text x="300" y="60" font-size="13" font-weight="700" fill="#8f1219">α</text>
+          <path d="M190 100 V40" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/><text x="160" y="34" font-size="11" font-weight="700" fill="#16582a">tração ↑</text>
+          <!-- triângulo de velocidades -->
+          <g transform="translate(0 6)">
+            <path d="M10 186 H110" stroke="#334155" stroke-width="2.5" marker-end="url(#arr-k)"/>
+            <path d="M110 186 V146" stroke="#2e9b45" stroke-width="2.5" marker-end="url(#arr-g)"/>
+            <path d="M10 186 L108 148" stroke="#0ea5e9" stroke-width="2.5" marker-end="url(#arr-b)"/>
+            <g font-size="10.5" font-weight="700"><text x="10" y="200">velocidade de giro (2πrn)</text><text x="116" y="172" fill="#16582a">vel. do avião</text><text x="14" y="160" fill="#0f3f86">resultante</text></g>
+          </g>
+        </svg>
+        <div class="small"><b>α = β − ângulo do vento relativo.</b> Com o avião mais <b>rápido</b> (mesma RPM), o vento relativo vem mais “de frente” e o <b>α diminui</b> — por isso a hélice de passo fixo é sempre um compromisso.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s5">
+      <div class="bh"><span class="n">2</span>Por que a pá é torcida?</div>
+      <div class="bb">
+        <svg viewBox="0 0 287 106" width="100%">
+          <path d="M14 52 Q20 40 40 42 L270 46 Q280 52 270 58 L40 62 Q20 64 14 52Z" fill="#cbd5e1" stroke="#334155" stroke-width="1.5"/>
+          <circle cx="14" cy="52" r="10" fill="url(#g-metal)" stroke="#334155"/>
+          <g fill="#334155">
+            <g transform="rotate(-45 62 52)"><path d="M46 52 Q62 47 76 50 Q80 52 76 54 Q62 56 46 52Z"/></g>
+            <g transform="rotate(-28 150 52)"><path d="M134 52 Q150 47 164 50 Q168 52 164 54 Q150 56 134 52Z"/></g>
+            <g transform="rotate(-12 238 52)"><path d="M222 52 Q238 47 252 50 Q256 52 252 54 Q238 56 222 52Z"/></g>
+          </g>
+          <g stroke="#0ea5e9" stroke-width="2.5"><path d="M50 84 H80" marker-end="url(#arr-b)"/><path d="M130 84 H190" marker-end="url(#arr-b)"/><path d="M210 84 H280" marker-end="url(#arr-b)"/></g>
+          <g font-size="10.5" font-weight="700" text-anchor="middle"><text x="62" y="22" fill="#4c1d95">raiz: β grande</text><text x="150" y="22">meio</text><text x="238" y="22" fill="#4c1d95">ponta: β pequeno</text><text x="144" y="102" fill="#0f3f86">velocidade cresce com o raio</text></g>
+        </svg>
+        <div class="small">A <b>ponta gira mais rápido</b> que a raiz. A torção (ângulo de pá decrescente da raiz para a ponta) mantém o <b>ângulo de ataque quase igual</b> ao longo da pá e distribui a tração.</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">3</span>Passo geométrico × efetivo</div>
+      <div class="bb">
+        <svg viewBox="0 0 287 70" width="100%">
+          <path d="M10 40 Q30 10 50 40 T90 40 T130 40 T170 40 T210 40 T250 40" stroke="#1d6fd1" stroke-width="2" fill="none" stroke-dasharray="5 3"/>
+          <path d="M10 40 Q34 18 58 40 T106 40 T154 40 T202 40 T250 40" stroke="#e0313b" stroke-width="2.5" fill="none"/>
+          <path d="M10 60 H58" stroke="#e0313b" stroke-width="2" marker-start="url(#arr-r)" marker-end="url(#arr-r)"/>
+          <g font-size="10.5" font-weight="700"><text x="62" y="64" fill="#8f1219">passo geométrico (teórico)</text><text x="160" y="16" fill="#0f3f86">efetivo (real)</text></g>
+        </svg>
+        <div class="small"><b>Passo geométrico</b>: quanto a hélice avançaria em 1 volta “como um parafuso”. <b>Passo efetivo</b>: quanto avança de fato. A diferença é o <b>recuo</b> (<i>slip</i>).</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s7">
+      <div class="bh"><span class="n">4</span>Hélice de passo fixo: subida ou cruzeiro?</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--green)">
+          <tr><th></th><th>Passo baixo (“de subida”)</th><th>Passo alto (“de cruzeiro”)</th></tr>
+          <tr><td><b>Pá</b></td><td>ângulo pequeno (“fina”)</td><td>ângulo grande (“grossa”)</td></tr>
+          <tr><td><b>Bom em</b></td><td>decolagem e subida (RPM alta)</td><td>cruzeiro rápido e econômico</td></tr>
+          <tr><td><b>Ruim em</b></td><td>cruzeiro (pode exceder RPM)</td><td>decolagem longa, subida fraca</td></tr>
+        </table>
+        <div class="small">No passo fixo a <b>manete controla a RPM</b> (tacômetro). A RPM também muda com a velocidade: mergulho → RPM sobe; subida → RPM cai.</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">5</span>Tipos de hélice quanto ao passo</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="170" height="92" viewBox="0 0 170 92">
+            <use href="#propeller" x="2" y="0" width="46" height="92"/>
+            <g transform="translate(60 18)">
+              <path d="M0 30 Q20 14 44 22 Q50 26 44 30 Q20 34 0 30Z" fill="#334155" transform="rotate(-12 22 26)"/>
+              <path d="M56 30 Q76 14 100 22 Q106 26 100 30 Q76 34 56 30Z" fill="#1d6fd1" transform="rotate(-40 78 26)"/>
+              <text x="22" y="66" text-anchor="middle" font-size="10.5" font-weight="700">passo mín.</text><text x="80" y="66" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0f3f86">passo máx.</text>
+            </g>
+          </svg>
+          <table class="tb f1" style="--c:var(--navy)">
+            <tr><th>Tipo</th><th>Como muda o passo</th><th>Uso</th></tr>
+            <tr><td><b>Fixo</b></td><td>não muda (peça única)</td><td>treinamento, C172</td></tr>
+            <tr><td><b>Ajustável no solo</b></td><td>mecânico ajusta com motor parado</td><td>raro</td></tr>
+            <tr><td><b>Controlável</b></td><td>piloto muda em voo (2 posições ou contínuo)</td><td>antigos, alguns leves</td></tr>
+            <tr><td><b>Velocidade constante</b></td><td><b>governador</b> ajusta o passo para manter a RPM escolhida</td><td>monomotores potentes</td></tr>
+            <tr><td><b>Embandeirável</b></td><td>pá fica de “faca” para o vento (menor arrasto)</td><td>multimotores (pane)</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="blk c-red s12">
+      <div class="bh"><span class="n">6</span>Hélice no pré-voo e no solo</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="100" height="50" viewBox="0 0 120 60">
+            <path d="M6 30 Q50 14 112 24 Q118 30 112 36 Q50 46 6 30Z" fill="#94a3b8" stroke="#334155" stroke-width="1.5"/>
+            <path d="M100 24 Q110 26 112 30 Q110 34 100 36Z" fill="#f6c945"/>
+            <path d="M60 19 l4 5 l4 -6" stroke="#e0313b" stroke-width="2.5" fill="none"/><circle cx="64" cy="22" r="9" fill="none" stroke="#e0313b" stroke-width="2"/>
+            <text x="60" y="58" text-anchor="middle" font-size="13" font-weight="700" fill="#8f1219">mossa no bordo</text>
+          </svg>
+          <ul class="l f1 small">
+            <li><b>Mossas, entalhes e trincas</b> no bordo de ataque concentram tensões e podem levar à <b>ruptura da pá</b>: reporte à manutenção.</li>
+            <li>Trate a hélice como <b>sempre “viva”</b> (P-lead pode estar rompido); nunca a use como apoio para empurrar o avião.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Ângulo de <b>pá</b> ≠ ângulo de <b>ataque</b>: o de pá é fixo na estrutura (passo fixo); o de ataque muda com a velocidade e a RPM.</div>
+    <div class="f-conv"><div class="fh">⇄ Conta</div>Ponta de hélice de 1,9 m a 2.400 rpm: v = π × 1,9 × 2.400 ÷ 60 ≈ <b>239 m/s</b></div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Passo <b>baixo</b> = pá <b>fina</b> = RPM <b>alta</b> = decolagem.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Por que o ângulo de pá é maior na raiz do que na ponta?<div class="ans">Porque a raiz gira mais devagar; a torção compensa a diferença de velocidade e mantém α quase constante na pá.</div></div>
+  </div>
+</section>

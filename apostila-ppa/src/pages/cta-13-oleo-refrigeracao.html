@@ -1,0 +1,115 @@
+<section class="page mod-cta" id="cta-oleo" data-toc="Sistema de óleo e refrigeração do motor">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-hangar"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Sistemas do motor</span>
+      <div class="title sm">Óleo e refrigeração</div>
+    </div>
+    <div class="def">O óleo <b>lubrifica, arrefece, veda, limpa e protege</b>. O motor é arrefecido <b>a ar</b> (aletas + defletores) e também pelo óleo e pela mistura rica.</div>
+    <div class="postit"><div class="pt">Funções do óleo</div>
+      <ol><li>Lubrificar</li><li>Arrefecer</li><li>Vedar (anéis)</li><li>Limpar</li><li>Proteger (corrosão)</li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-orange s12 solid">
+      <div class="bh"><span class="n">1</span>Circuito de óleo — cárter úmido (genérico)</div>
+      <div class="bb">
+        <svg viewBox="0 0 729 200" width="100%">
+          <g stroke="#b45309" stroke-width="5" fill="none" stroke-linejoin="round">
+            <path d="M120 150 H160"/><path d="M220 150 H270"/><path d="M330 150 H380"/><path d="M440 150 H480 V100 H520"/><path d="M600 80 V40 H120 V120"/>
+            <path d="M190 170 V186 H70 V172" stroke-dasharray="6 4" stroke-width="3"/>
+          </g>
+          <path d="M600 110 V160 H80" stroke="#b45309" stroke-width="3" fill="none" stroke-dasharray="2 5" marker-end="url(#arr-o)"/>
+          <!-- cárter -->
+          <path d="M20 120 H120 V170 Q120 180 110 180 H30 Q20 180 20 170Z" fill="#fde68a" stroke="#334155" stroke-width="2"/>
+          <path d="M22 140 H118" stroke="#b45309" stroke-dasharray="4 3"/>
+          <text x="70" y="136" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7a5a00">CÁRTER</text>
+          <path d="M44 100 V150" stroke="#334155" stroke-width="3"/><text x="44" y="94" text-anchor="middle" font-size="10.5" font-weight="700">vareta</text>
+          <!-- bomba -->
+          <circle cx="190" cy="150" r="26" fill="#fff" stroke="#334155" stroke-width="2"/><circle cx="182" cy="150" r="9" fill="#94a3b8"/><circle cx="198" cy="150" r="9" fill="#cbd5e1"/>
+          <text x="190" y="118" text-anchor="middle" font-size="11" font-weight="700">bomba</text>
+          <text x="130" y="198" font-size="10.5" font-weight="700" fill="#9a4d00">válvula de alívio → retorna ao cárter</text>
+          <!-- manômetro -->
+          <circle cx="245" cy="120" r="14" fill="#1f2937"/><path d="M245 120 L253 112" stroke="#fff" stroke-width="2"/><path d="M245 134 V150" stroke="#475569" stroke-width="1.5"/>
+          <text x="245" y="100" text-anchor="middle" font-size="10.5" font-weight="700">PRESSÃO</text>
+          <!-- filtro -->
+          <rect x="270" y="128" width="60" height="44" rx="6" fill="url(#p-hatch)" stroke="#334155" stroke-width="2"/><text x="300" y="190" text-anchor="middle" font-size="11" font-weight="700">filtro</text>
+          <!-- radiador -->
+          <rect x="380" y="124" width="60" height="52" rx="4" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+          <g stroke="#64748b" stroke-width="2"><path d="M390 128 V172 M400 128 V172 M410 128 V172 M420 128 V172 M430 128 V172"/></g>
+          <text x="410" y="192" text-anchor="middle" font-size="11" font-weight="700">radiador de óleo</text>
+          <text x="410" y="116" text-anchor="middle" font-size="10" font-weight="700" fill="#4c1d95">termostática</text>
+          <!-- termômetro -->
+          <circle cx="480" cy="126" r="0"/>
+          <rect x="468" y="104" width="24" height="10" rx="2" fill="#e0313b"/><text x="480" y="98" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8f1219">TEMP.</text>
+          <!-- motor -->
+          <rect x="520" y="70" width="180" height="46" rx="8" fill="#475569"/>
+          <text x="610" y="90" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">GALERIAS DO MOTOR</text>
+          <text x="610" y="106" text-anchor="middle" font-size="10.5" font-weight="600" fill="#e2e8f0">mancais · virabrequim · comando</text>
+          <text x="340" y="32" text-anchor="middle" font-size="11" font-weight="700" fill="#9a4d00">respiro do cárter · (em hélice de velocidade constante: óleo para o governador)</text>
+          <text x="610" y="176" text-anchor="middle" font-size="11" font-weight="700" fill="#9a4d00">retorno por gravidade ao cárter</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">2</span>Lendo pressão e temperatura do óleo</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--red)">
+          <tr><th>Indicação</th><th>Provável causa</th><th>Ação</th></tr>
+          <tr><td>sem pressão após a partida</td><td>falha de lubrificação/indicação</td><td><b>cortar o motor</b> (prazo no POH)</td></tr>
+          <tr><td>pressão ↓ e temperatura ↑</td><td>pouco óleo, vazamento, bomba</td><td>pane iminente: pousar já</td></tr>
+          <tr><td>temperatura ↑, pressão normal</td><td>subida longa e lenta, mistura pobre, potência alta</td><td>↑ velocidade, enriquecer, ↓ potência</td></tr>
+          <tr><td>pressão alta na partida fria</td><td>óleo frio e viscoso</td><td>aquecer antes de acelerar</td></tr>
+        </table>
+        <div class="small">O sensor de temperatura fica na <b>entrada</b> do óleo no motor. Óleo baixo → menos massa para absorver calor → aquece.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s5">
+      <div class="bh"><span class="n">3</span>Tipo e quantidade</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>Cárter úmido</b> (óleo no próprio cárter, típico dos leves) × <b>cárter seco</b> (tanque separado, acrobáticos).</li>
+          <li>Óleo <b>mineral</b> (amaciamento) × <b>dispersante</b> (uso normal); a viscosidade depende da temperatura ambiente.</li>
+          <li>Verifique pela <b>vareta</b> no pré-voo: mínimo e máximo no POH; não complete com tipo diferente.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-teal s7">
+      <div class="bh"><span class="n">4</span>Refrigeração a ar: o caminho do ar</div>
+      <div class="bb">
+        <svg viewBox="0 0 413 130" width="100%">
+          <path d="M20 20 H300 Q360 20 380 60 L380 110 H300 L280 96 H20Z" fill="#f1f5f9" stroke="#334155" stroke-width="2"/>
+          <g fill="#94a3b8" stroke="#334155"><rect x="120" y="50" width="120" height="30" rx="4"/></g>
+          <g stroke="#64748b" stroke-width="3"><path d="M130 46 V84 M142 46 V84 M154 46 V84 M166 46 V84 M178 46 V84 M190 46 V84 M202 46 V84 M214 46 V84 M226 46 V84"/></g>
+          <path d="M110 36 H250 V48" stroke="#e0313b" stroke-width="3" fill="none"/><text x="180" y="32" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8f1219">defletores (baffles)</text>
+          <g stroke="#0ea5e9" stroke-width="3" fill="none" marker-end="url(#arr-b)"><path d="M0 40 H100"/><path d="M180 44 V92"/><path d="M280 104 L316 124"/></g>
+          <path d="M300 110 L330 126" stroke="#2e9b45" stroke-width="5"/><text x="336" y="126" font-size="10.5" font-weight="700" fill="#16582a">cowl flap</text>
+          <g font-size="10.5" font-weight="700"><text x="4" y="30" fill="#0f3f86">ar entra (alta pressão)</text><text x="20" y="112" fill="#0f3f86">passa pelas aletas e sai por baixo (baixa pressão)</text><text x="280" y="48">hélice/motor →</text></g>
+        </svg>
+        <div class="small"><b>Cowl flaps</b> (flapes de arrefecimento, se houver): <b>abertos</b> em decolagem/subida (muito calor, pouca velocidade); <b>fechados</b> em cruzeiro e descida.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s5">
+      <div class="bh"><span class="n">5</span>Superaquecimento e choque térmico</div>
+      <div class="bb">
+        <div class="cause" style="--c:var(--purple)"><span>↓ velocidade</span><span>↑ potência</span><span>mistura pobre</span><i>→</i><span>↑ CHT e óleo</span></div>
+        <ul class="l small">
+          <li>Corrigir: <b>↑ velocidade</b> (menos ângulo de subida), <b>enriquecer</b>, <b>↓ potência</b>, abrir cowl flaps.</li>
+          <li><b>Choque térmico</b>: reduzir potência bruscamente em descida rápida esfria os cilindros de uma vez → trincas. Reduza aos poucos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Pressão do óleo <b>zero</b> com temperatura normal logo após perder pressão: a temperatura <b>ainda não subiu</b> — não conclua que é só falha de indicação.</div>
+    <div class="f-conv"><div class="fh">⇄ Unidades</div>pressão do óleo em <b>psi</b> · temperatura em <b>°F</b> ou °C<br>°C = (°F − 32) ÷ 1,8</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Óleo: “<b>LAVLP</b>” — Lubrifica, Arrefece, Veda, Limpa, Protege.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Em subida longa, a temperatura do óleo passa do arco verde. Primeira ação?<div class="ans"><b>Reduzir o ângulo de subida</b> (mais velocidade = mais ar de arrefecimento), enriquecer e, se preciso, reduzir potência.</div></div>
+  </div>
+</section>

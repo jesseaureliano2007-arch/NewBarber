@@ -1,0 +1,170 @@
+<section class="page mod-nav" id="nav-cartas" data-toc="Mapas e cartas, escalas, Lambert × Mercator, ortodromia × loxodromia">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht">
+      <span class="kicker">Navegação · Cartografia</span>
+      <div class="title sm">Cartas, escalas e projeções</div>
+      <div class="sub">Lambert · Mercator · ortodromia · loxodromia</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-green s5">
+      <div class="bh"><span class="n">1</span>Mapa × carta aeronáutica</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>Mapa</b>: representação plana da superfície terrestre.</li>
+          <li><b>Carta aeronáutica</b>: mapa feito para a navegação aérea — relevo, obstáculos, aeródromos, espaços aéreos, auxílios-rádio, declinação.</li>
+          <li>Qualidades desejadas: <b>conformidade</b> (ângulos certos), <b>equidistância</b> (escala constante) e <b>equivalência</b> (áreas certas). <b>Nenhuma</b> projeção tem todas.</li>
+        </ul>
+        <div class="warn small">Cartas do Brasil (WAC 1:1.000.000, ENRC, ARC, REA, VAC…) são publicadas pelo DECEA — use sempre a edição <b>vigente</b> (AISWEB).</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s7">
+      <div class="bh"><span class="n">2</span>Escala</div>
+      <div class="bb">
+        <div class="row c">
+          <div class="formula f1"><span class="fx" style="font-size:12pt">Dreal = Dcarta × denominador</span><small>1:1.000.000 → 1 cm na carta = 1.000.000 cm = 10 km</small></div>
+          <table class="tb f1" style="--c:var(--blue)"><tr><th>Escala</th><th>1 cm =</th></tr><tr><td>1:250.000</td><td>2,5 km</td></tr><tr><td>1:500.000</td><td>5 km</td></tr><tr><td>1:1.000.000</td><td>10 km</td></tr></table>
+        </div>
+        <div class="small"><b>Grande escala</b> = denominador <b>pequeno</b> (1:250.000) → área pequena, <b>mais detalhe</b>. <b>Pequena escala</b> = denominador grande → área grande, menos detalhe.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s12">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido — distância na carta</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="330" height="76" viewBox="0 0 440 102">
+            <rect x="4" y="4" width="432" height="52" rx="6" fill="#f4efd9" stroke="#8a7a4a"/>
+            <path d="M4 40 Q120 26 220 44 T436 36" fill="none" stroke="#1d6fd1" stroke-width="3"/>
+            <line x1="20" y1="30" x2="390" y2="30" stroke="#e0313b" stroke-width="3"/>
+            <circle cx="20" cy="30" r="7" fill="#fff" stroke="#e0313b" stroke-width="3"/><circle cx="390" cy="30" r="7" fill="#fff" stroke="#e0313b" stroke-width="3"/>
+            <text x="20" y="20" text-anchor="middle" class="tb" style="font-size:15px">A</text><text x="390" y="20" text-anchor="middle" class="tb" style="font-size:15px">B</text>
+            <rect x="10" y="62" width="420" height="36" fill="#fff8d9" stroke="#7a5a00"/>
+            <g stroke="#7a5a00" stroke-width="1.5">
+              <line x1="20" y1="62" x2="20" y2="80"/><line x1="60" y1="62" x2="60" y2="74"/><line x1="100" y1="62" x2="100" y2="80"/><line x1="140" y1="62" x2="140" y2="74"/><line x1="180" y1="62" x2="180" y2="80"/><line x1="220" y1="62" x2="220" y2="74"/><line x1="260" y1="62" x2="260" y2="80"/><line x1="300" y1="62" x2="300" y2="74"/><line x1="340" y1="62" x2="340" y2="80"/><line x1="380" y1="62" x2="380" y2="74"/><line x1="420" y1="62" x2="420" y2="80"/>
+            </g>
+            <g class="tb" style="font-size:14px" text-anchor="middle"><text x="20" y="95">0</text><text x="100" y="95">4</text><text x="180" y="95">8</text><text x="260" y="95">12</text><text x="340" y="95">16</text><text x="420" y="95">20 cm</text></g>
+            <line x1="390" y1="30" x2="390" y2="62" stroke="#e0313b" stroke-width="2" stroke-dasharray="3 2"/>
+            <text x="360" y="54" class="tb" style="font-size:14px;fill:#8f1219">18,5 cm</text>
+          </svg>
+          <div class="ex f1"><span class="et">WAC 1:1.000.000 — A a B mede 18,5 cm</span><ol class="small">
+            <li>18,5 cm × 1.000.000 = 18.500.000 cm.</li>
+            <li>÷ 100.000 (cm → km) = <b>185 km</b>.</li>
+            <li>185 ÷ 1,852 = <b>≈ 100 NM</b>.</li>
+            <li>Atalho: na 1:1.000.000, cm × 10 = km.</li></ol></div>
+        </div>
+        <div class="small"><b>Inverso:</b> 50 NM numa carta 1:500.000 → 50 × 1,852 = 92,6 km → 92,6 ÷ 5 km/cm = <b>18,5 cm</b>. Na prática, meça com a <b>régua da própria carta</b> ou pela <b>escala de latitude</b> na borda (1' = 1 NM).</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">3</span>Lambert — cônica conforme</div>
+      <div class="bb">
+        <svg viewBox="0 0 330 124" width="100%">
+<circle cx="62" cy="72" r="40" fill="#3b8fd6" stroke="#13294b" stroke-width="2"/>
+<ellipse cx="62" cy="72" rx="40" ry="8" fill="none" stroke="#e0313b" stroke-width="1.5"/>
+<line x1="62" y1="2" x2="10.3" y2="108.1" stroke="#f08a12" stroke-width="3"/>
+<line x1="62" y1="2" x2="113.7" y2="108.1" stroke="#f08a12" stroke-width="3"/>
+<path d="M10.3 108.1 Q62 122.1 113.7 108.1" fill="none" stroke="#f08a12" stroke-width="2.5"/>
+<ellipse cx="62" cy="35.5" rx="16.3" ry="5" fill="none" stroke="#f6c945" stroke-width="2.5"/>
+<ellipse cx="62" cy="81.6" rx="38.8" ry="5" fill="none" stroke="#f6c945" stroke-width="2.5"/>
+<text x="62" y="122" text-anchor="middle" class="tb" style="font-size:14px">cone secante</text>
+<text x="108" y="39.5" class="tb" style="font-size:14px;fill:#7a5a00">paralelos-</text><text x="108" y="54.5" class="tb" style="font-size:14px;fill:#7a5a00">padrão</text>
+<g>
+<path d="M280.0 22.2 A80 80 0 0 1 220.0 22.2" fill="none" stroke="#475569" stroke-width="1.2"/>
+<path d="M287.5 40.7 A100 100 0 0 1 212.5 40.7" fill="none" stroke="#f6c945" stroke-width="2.5"/>
+<path d="M295.0 59.3 A120 120 0 0 1 205.0 59.3" fill="none" stroke="#475569" stroke-width="1.2"/>
+<path d="M302.4 77.8 A140 140 0 0 1 197.6 77.8" fill="none" stroke="#f6c945" stroke-width="2.5"/>
+<path d="M309.9 96.3 A160 160 0 0 1 190.1 96.3" fill="none" stroke="#475569" stroke-width="1.2"/>
+<line x1="280.0" y1="22.2" x2="309.9" y2="96.3" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="265.3" y1="26.5" x2="280.5" y2="105.1" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="250.0" y1="28.0" x2="250.0" y2="108.0" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="234.7" y1="26.5" x2="219.5" y2="105.1" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="220.0" y1="22.2" x2="190.1" y2="96.3" stroke="#1d6fd1" stroke-width="1.5"/>
+</g>
+<path d="M160 60 H184" stroke="#13294b" stroke-width="2" marker-end="url(#arr-k)"/>
+<text x="250" y="122" text-anchor="middle" class="tb" style="font-size:14px">meridianos convergem</text>
+</svg>
+        <div class="small">Cone <b>secante</b> em 2 <b>paralelos-padrão</b> → escala quase constante. <b>Conforme</b>; <b>ortodromia ≈ reta</b>. Usada na <b>WAC</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">4</span>Mercator — cilíndrica conforme</div>
+      <div class="bb">
+        <svg viewBox="0 0 330 124" width="100%">
+<rect x="12" y="4" width="80" height="106" fill="#fff4e3" stroke="#f08a12" stroke-width="2.5"/>
+<circle cx="52" cy="58" r="40" fill="#3b8fd6" stroke="#13294b" stroke-width="2"/>
+<ellipse cx="52" cy="58" rx="40" ry="8" fill="none" stroke="#e0313b" stroke-width="3"/>
+<text x="52" y="62" text-anchor="middle" class="tw" style="font-size:13px">Equador</text>
+<text x="52" y="122" text-anchor="middle" class="tb" style="font-size:14px">cilindro</text>
+<path d="M100 60 H124" stroke="#13294b" stroke-width="2" marker-end="url(#arr-k)"/>
+<line x1="138" y1="106.0" x2="286" y2="106.0" stroke="#e0313b" stroke-width="2.5"/><text x="290" y="111.0" class="tb" style="font-size:14px">0°</text>
+<line x1="138" y1="83.9" x2="286" y2="83.9" stroke="#475569" stroke-width="1.2"/><text x="290" y="88.9" class="tb" style="font-size:14px">20°</text>
+<line x1="138" y1="58.7" x2="286" y2="58.7" stroke="#475569" stroke-width="1.2"/><text x="290" y="63.7" class="tb" style="font-size:14px">40°</text>
+<line x1="138" y1="24.3" x2="286" y2="24.3" stroke="#475569" stroke-width="1.2"/><text x="290" y="29.3" class="tb" style="font-size:14px">60°</text>
+<line x1="138" y1="16" x2="138" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="166" y1="16" x2="166" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="194" y1="16" x2="194" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="222" y1="16" x2="222" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="250" y1="16" x2="250" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<line x1="278" y1="16" x2="278" y2="106" stroke="#1d6fd1" stroke-width="1.5"/>
+<text x="212" y="122" text-anchor="middle" class="tb" style="font-size:14px">paralelos se afastam</text>
+</svg>
+        <div class="small">Cilindro <b>tangente no Equador</b>; meridianos <b>paralelos</b>. <b>Conforme</b>; <b>loxodromia = reta</b>. Escala <b>cresce</b> com a latitude.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">5</span>Ortodromia × loxodromia</div>
+      <div class="bb">
+        <div class="row c">
+          <div class="f1"><svg viewBox="0 0 300 186" width="100%">
+<line x1="20" y1="140.0" x2="270" y2="140.0" stroke="#94a3b8" stroke-width="1.2"/><text x="274" y="144.0" class="tb" style="font-size:16px">0°</text>
+<line x1="20" y1="109.7" x2="270" y2="109.7" stroke="#94a3b8" stroke-width="1.2"/><text x="274" y="113.7" class="tb" style="font-size:16px">20°</text>
+<line x1="20" y1="75.2" x2="270" y2="75.2" stroke="#94a3b8" stroke-width="1.2"/><text x="274" y="79.2" class="tb" style="font-size:16px">40°</text>
+<line x1="20" y1="28.1" x2="270" y2="28.1" stroke="#94a3b8" stroke-width="1.2"/><text x="274" y="32.1" class="tb" style="font-size:16px">60°</text>
+<line x1="20" y1="10" x2="20" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="70" y1="10" x2="70" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="120" y1="10" x2="120" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="170" y1="10" x2="170" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="220" y1="10" x2="220" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="270" y1="10" x2="270" y2="140" stroke="#94a3b8" stroke-width="1.2"/>
+<line x1="45" y1="112" x2="245" y2="56" stroke="#1d6fd1" stroke-width="3.5"/>
+<path d="M45 112 Q120 18 245 56" fill="none" stroke="#e0313b" stroke-width="3.5" stroke-dasharray="8 4"/>
+<circle cx="45" cy="112" r="5" fill="#13294b"/><circle cx="245" cy="56" r="5" fill="#13294b"/><text x="41" y="130" class="tb" style="font-size:14px">A</text><text x="247" y="74" class="tb" style="font-size:14px">B</text>
+<line x1="20" y1="160" x2="50" y2="160" stroke="#1d6fd1" stroke-width="3.5"/><text x="56" y="165" class="tb" style="font-size:16px;fill:#0f3f86">loxodromia: rumo constante</text><line x1="20" y1="180" x2="50" y2="180" stroke="#e0313b" stroke-width="3.5" stroke-dasharray="8 4"/><text x="56" y="185" class="tb" style="font-size:16px;fill:#8f1219">ortodromia: menor distância</text>
+</svg></div>
+          <div class="f1 small">
+            <div><b style="color:#8f1219">Ortodromia</b> (círculo máximo): <b>menor distância</b>; corta os meridianos com ângulos <b>diferentes</b> (rumo varia).</div>
+            <div style="margin-top:1mm"><b style="color:#0f3f86">Loxodromia</b> (linha de rumo): corta todos os meridianos com o <b>mesmo ângulo</b>; mais fácil de voar, porém <b>mais longa</b>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s5">
+      <div class="bh"><span class="n">6</span>Lambert × Mercator</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--teal)">
+          <tr><th></th><th>Lambert</th><th>Mercator</th></tr>
+          <tr><td>superfície</td><td>cone</td><td>cilindro</td></tr>
+          <tr><td>meridianos</td><td>convergem</td><td>paralelos</td></tr>
+          <tr><td>reta =</td><td>≈ ortodromia</td><td>loxodromia</td></tr>
+          <tr><td>escala</td><td>≈ constante</td><td>varia (lat)</td></tr>
+        </table>
+        <div class="small">Em trechos VFR curtos, a diferença entre as duas linhas é desprezível.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>“Grande escala” = <b>mais detalhe</b> e denominador <b>menor</b>. 1:250.000 é escala <b>maior</b> que 1:1.000.000.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1:1.000.000 → 1 cm = 10 km ≈ 5,4 NM<br>1:500.000 → 1 cm = 5 km ≈ 2,7 NM</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div><b>L</b>ambert = <b>L</b>inha reta ≈ ortodromia (círculo máximo). <b>M</b>ercator = <b>M</b>esmo rumo (loxodromia).</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Numa carta 1:500.000, 12 cm correspondem a quanto?<div class="ans">12 × 5 km = <b>60 km</b> ≈ 60 ÷ 1,852 = <b>32,4 NM</b>.</div></div>
+  </div>
+</section>

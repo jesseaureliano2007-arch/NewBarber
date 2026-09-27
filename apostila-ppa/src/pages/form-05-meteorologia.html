@@ -1,0 +1,111 @@
+<section class="page mod-gen" id="form-atmosfera" data-toc="Formulário: base de nuvem, ISA, erro de altímetro e TAS">
+  <div class="hero mini">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-storm"/></svg>
+    <div class="ht"><span class="kicker">Formulário (5/6) · atmosfera e altimetria</span><div class="title sm">Nuvem, ISA, altímetro e TAS</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">16</span>Base de nuvem pelo spread</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">base ≈ (T − Td) × 400 ft</span><small>ou × 125 m · altura AGL da base cumuliforme · °C</small></div>
+        <div class="row c">
+          <svg class="none" width="150" height="128" viewBox="0 0 160 136">
+            <line x1="18" y1="115" x2="156" y2="115" stroke="#334155" stroke-width="1.5"/><line x1="18" y1="115" x2="18" y2="4" stroke="#334155" stroke-width="1.5"/>
+            <line x1="18" y1="35" x2="150" y2="35" stroke="#94a3b8" stroke-dasharray="4 3"/>
+            <use href="#cloud" x="20" y="4" width="54" height="32"/>
+            <line x1="128" y1="115" x2="41.6" y2="35" stroke="#e0313b" stroke-width="3.5"/>
+            <line x1="56" y1="115" x2="41.6" y2="35" stroke="#1d6fd1" stroke-width="3.5"/>
+            <circle cx="41.6" cy="35" r="4" fill="#13294b"/>
+            <g class="tb" style="font-size:12px"><text x="120" y="130" style="fill:#8f1219">T 28</text><text x="46" y="130" style="fill:#0f3f86">Td 20</text><text x="80" y="31" style="fill:#0b5c68">3.200 ft</text><text x="98" y="82" style="fill:#8f1219">−3 °C/1.000 ft</text><text x="60" y="100" style="fill:#0f3f86">−0,5</text></g>
+          </svg>
+          <div class="f1 small">T cai ≈ <b>3 °C</b> e Td ≈ <b>0,5 °C</b> por 1.000 ft: o spread fecha 2,5 °C/1.000 ft → <b>400 ft por °C</b>.</div>
+        </div>
+        <div class="ex" style="--c:var(--teal)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>28/20 → spread 8 °C → 8 × 400 = <b>3.200 ft</b> AGL.</li><li>22/19 → 3 °C → 3 × 125 = <b>375 m</b> (≈ 1.200 ft): base baixa.</li><li>Aeródromo a 2.500 ft, spread 5 °C → 2.000 ft AGL = <b>4.500 ft</b> AMSL.</li></ol></div>
+        <div class="trap small">o resultado é <b>altura sobre o solo</b>. Para altitude, some a elevação.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">17</span>Temperatura ISA na altitude</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">T<sub>ISA</sub> = 15 − 2 × (alt ÷ 1.000)</span><small>°C · altitude-pressão em ft · desvio ISA = OAT − T<sub>ISA</sub></small></div>
+        <div class="row c">
+          <svg class="none" width="150" height="128" viewBox="0 0 160 136">
+            <line x1="20" y1="115" x2="156" y2="115" stroke="#334155" stroke-width="1.5"/><line x1="20" y1="115" x2="20" y2="8" stroke="#334155" stroke-width="1.5"/>
+            <line x1="95" y1="115" x2="35" y2="20" stroke="#f08a12" stroke-width="3.5"/>
+            <line x1="20" y1="34" x2="156" y2="34" stroke="#94a3b8" stroke-dasharray="4 3"/>
+            <circle cx="44" cy="34" r="4.5" fill="#f08a12"/><circle cx="80" cy="34" r="4.5" fill="#e0313b"/>
+            <line x1="48" y1="34" x2="74" y2="34" stroke="#e0313b" stroke-width="2.5" marker-end="url(#arr-r)"/>
+            <g class="tb" style="font-size:12px"><text x="64" y="28" text-anchor="middle" style="fill:#8f1219">ISA +12</text><text x="98" y="112" style="fill:#9a4d00">15 °C</text><text x="78" y="86" style="fill:#9a4d00">linha ISA</text><text x="88" y="48" style="fill:#8f1219">OAT +10 °C</text><text x="24" y="48" style="fill:#9a4d00">−2</text><text x="104" y="30" style="fill:#475569">FL085</text></g>
+            <text x="88" y="130" text-anchor="middle" class="t" style="font-size:12px">temperatura →</text>
+          </svg>
+          <div class="f1 small">Nível do mar ISA: <b>15 °C</b> e <b>1013,25 hPa</b>. Cai ≈ <b>2 °C/1.000 ft</b> até a tropopausa (−56,5 °C).</div>
+        </div>
+        <div class="ex" style="--c:var(--orange)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>6.000 ft → 15 − 2 × 6 = <b>3 °C</b>.</li><li>FL085, OAT +10 °C → ISA = 15 − 17 = −2 °C → desvio = 10 − (−2) = <b>ISA +12</b>.</li><li>3.000 ft com 30 °C → ISA = 9 °C → <b>ISA +21</b>.</li></ol></div>
+        <div class="trap small">ISA <b>positivo</b> = ar mais quente, menos denso → decolagem mais longa.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">18</span>Erro de altímetro (ajuste errado)</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">erro ≈ ΔhPa × 30 ft</span><small>1 hPa ≈ 30 ft perto do nível do mar (didático; exato ≈ 27 ft)</small></div>
+        <svg viewBox="0 0 340 104" width="100%" style="height:25mm">
+          <rect x="0" y="0" width="340" height="104" fill="#fdecee" opacity=".5"/>
+          <text x="8" y="16" class="tb" style="font-size:13px;fill:#0f3f86">ALTA · QNH 1023</text>
+          <text x="332" y="16" text-anchor="end" class="tb" style="font-size:13px;fill:#8f1219">BAIXA · QNH 1013</text>
+          <line x1="20" y1="30" x2="320" y2="30" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6 4"/>
+          <text x="170" y="26" text-anchor="middle" class="tb" style="font-size:12px;fill:#475569">o que o piloto acha: 3.000 ft</text>
+          <path d="M20 30 L320 60" stroke="#e0313b" stroke-width="3.5" marker-end="url(#arr-r)"/>
+          <g transform="translate(284 44) rotate(6)"><use href="#plane-side" x="0" y="0" width="44" height="18"/></g>
+          <text x="272" y="76" text-anchor="end" class="tb" style="font-size:12px;fill:#8f1219">real ≈ 2.700 ft</text>
+          <path d="M0 104 L120 104 L180 90 L230 96 L262 84 L300 96 L340 92 L340 104 Z" fill="#6b7f5e"/>
+        </svg>
+        <div class="ex" style="--c:var(--red)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>De 1023 para 1013 sem reajustar: 10 × 30 = 300 ft → indica 3.000, real ≈ <b>2.700 ft</b> (mais baixo).</li><li>De 1008 para 1018 sem reajustar: indica 300 ft a <b>menos</b> → indica 2.500, real ≈ <b>2.800 ft</b>.</li><li>Altitude-pressão: elev. 2.000 ft, QNH 1003 → 2.000 + 10 × 30 = <b>2.300 ft</b>.</li></ol></div>
+        <div class="trap small">“De <b>ALTA para BAIXA</b> (pressão ou temperatura), cuidado: o altímetro indica <b>MAIS</b> do que a altitude real.”</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">19</span>TAS a partir da IAS</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">TAS ≈ IAS + 2 % por 1.000 ft</span><small>TAS ≈ IAS × (1 + 0,02 × altitude em milhares de ft) · kt · aproximação para ISA</small></div>
+        <div class="row c">
+          <svg class="none" width="160" height="112" viewBox="0 0 160 112">
+            <line x1="10" y1="96" x2="156" y2="96" stroke="#334155" stroke-width="1.5"/>
+            <rect x="16" y="46" width="34" height="50" fill="#93c5fd"/><rect x="62" y="42" width="34" height="54" fill="#3b82f6"/><rect x="108" y="38" width="34" height="58" fill="#1d4ed8"/>
+            <line x1="10" y1="46" x2="156" y2="46" stroke="#94a3b8" stroke-dasharray="4 3"/>
+            <g class="tb" style="font-size:12px" text-anchor="middle"><text x="33" y="40">100</text><text x="79" y="36">108</text><text x="125" y="32">116</text></g>
+            <g class="t" style="font-size:12px" text-anchor="middle"><text x="33" y="110">0 ft</text><text x="79" y="110">4.000</text><text x="125" y="110">8.000</text></g>
+            <text x="12" y="14" class="tb" style="font-size:12px;fill:#0f3f86">TAS com IAS 100 kt</text>
+          </svg>
+          <div class="f1 small">Mais alto = ar menos denso: para a mesma <b>IAS</b>, o avião anda mais depressa em relação à massa de ar (<b>TAS</b>). Cadeia: IAS → CAS → TAS → GS.</div>
+        </div>
+        <div class="ex" style="--c:var(--blue)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>IAS 100 kt a 6.000 ft → 6 × 2 = +12 % → TAS ≈ <b>112 kt</b>.</li><li>IAS 110 kt no FL085 → 8,5 × 2 = +17 % → 110 × 1,17 ≈ <b>129 kt</b>; com 20 kt de proa, GS ≈ <b>109 kt</b>.</li></ol></div>
+        <div class="trap small">são <b>2 % da IAS</b> por 1.000 ft, não “+2 kt”. E o estol é na mesma <b>IAS</b> em qualquer altitude.</div>
+      </div>
+    </div>
+    <div class="blk c-purple s12">
+      <div class="bh"><span class="n">★</span>Juntando tudo · altitude-pressão e altitude-densidade</div>
+      <div class="bb">
+        <div class="row c">
+          <div class="formula" style="flex:none;font-size:10.5pt;padding:1mm 2.5mm"><span class="fx" style="font-size:12pt">PA = elev. + (1013 − QNH) × 30</span><br><span class="fx" style="font-size:12pt">DA ≈ PA + 120 ft × desvio ISA</span></div>
+          <div class="f1 small"><b>Ex.:</b> aeródromo a 3.000 ft com QNH 1013 e 30 °C → PA = 3.000 ft; ISA = 9 °C → ISA +21 → DA ≈ 3.000 + 21 × 120 ≈ <b>5.500 ft</b>: o avião decola como se estivesse 2.500 ft mais alto.
+            <div class="cause" style="margin-top:1mm;--c:var(--purple)"><span>↑ temperatura</span><i>→</i><span>↓ densidade</span><i>→</i><span>↑ DA</span><i>→</i><span>↓ desempenho</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Base pelo spread é <b>AGL</b> (sobre o solo), igual à altura de nuvens do METAR.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 hPa ≈ 30 ft · 1 °C de spread ≈ 400 ft ≈ 125 m</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>ISA: <b>15 menos 2 por mil</b> · QNH: <b>alta → baixa, indica mais</b>.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>FL065 com OAT +12 °C. Qual o desvio ISA?<div class="ans">ISA = 15 − 13 = 2 °C → 12 − 2 = <b>ISA +10</b>.</div></div>
+  </div>
+</section>

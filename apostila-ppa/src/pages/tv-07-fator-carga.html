@@ -1,0 +1,135 @@
+<section class="page mod-tv" id="tv-fator-carga" data-toc="Fator de carga, curvas e estol em curva">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-cockpit"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Cargas na estrutura</span>
+      <div class="title sm">Fator de carga</div>
+      <div class="sub">n = L ÷ P · curvas · Vs × √n · categorias</div>
+    </div>
+    <div class="def" style="max-width:132mm"><b>Fator de carga (n)</b> = sustentação ÷ peso, medido em <b>g</b>. Em curva nivelada, <b>n = 1 ÷ cos φ</b> (φ = inclinação).</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">1</span>Forças numa curva nivelada (φ = 45°)</div>
+      <div class="bb">
+        <svg viewBox="0 0 400 196" width="100%" style="max-height:50mm">
+          <line x1="190" y1="4" x2="190" y2="192" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 4"/>
+          <g opacity=".55" transform="translate(190 100) rotate(45) translate(-110 -55)"><use href="#plane-front" width="220" height="110"/></g>
+          <path d="M190 32 L258 32 L258 100" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <line x1="190" y1="100" x2="190" y2="35" stroke="#2e9b45" stroke-width="4" stroke-dasharray="8 4" marker-end="url(#arr-g)"/>
+          <line x1="190" y1="100" x2="255" y2="100" stroke="#8b46d6" stroke-width="4" stroke-dasharray="8 4" marker-end="url(#arr-p)"/>
+          <line x1="190" y1="100" x2="256" y2="34" stroke="#16582a" stroke-width="6.5" marker-end="url(#arr-g)"/>
+          <line x1="190" y1="100" x2="190" y2="166" stroke="#e0313b" stroke-width="6" marker-end="url(#arr-r)"/>
+          <line x1="190" y1="100" x2="124" y2="166" stroke="#334155" stroke-width="3" stroke-dasharray="3 3" marker-end="url(#arr-k)"/>
+          <path d="M190 60 A40 40 0 0 1 218.3 71.7" fill="none" stroke="#f08a12" stroke-width="3"/>
+          <text x="197" y="56" class="tb" style="font-size:15px;fill:#9a4d00">φ</text>
+          <circle cx="190" cy="100" r="4.5" fill="#0f172a"/>
+          <g class="tb" style="font-size:14px">
+            <text x="264" y="28" style="fill:#16582a">SUSTENTAÇÃO (L)</text><text x="264" y="43" class="t" style="font-size:12.5px">perpendicular às asas</text>
+            <text x="6" y="22" style="fill:#16582a">componente vertical</text><text x="6" y="37" class="t" style="font-size:12.5px">= P → mantém o nível</text>
+            <text x="264" y="96" style="fill:#4c1d95">componente horizontal</text><text x="264" y="111" class="t" style="font-size:12.5px">= força centrípeta</text>
+            <text x="198" y="186" style="fill:#8f1219">PESO (P)</text>
+            <text x="6" y="160" style="fill:#334155">carga = n · P</text><text x="6" y="175" class="t" style="font-size:12.5px">(“peso aparente”)</text>
+            <text x="396" y="150" text-anchor="end" style="fill:#4c1d95">centro da curva →</text>
+            <text x="396" y="190" text-anchor="end" class="t" style="font-size:12px">vista de trás · curva à direita</text>
+          </g>
+        </svg>
+        <div class="small">Para <b>não perder altura</b> o piloto <b>puxa (↑ α)</b> até a componente vertical igualar P → L e <b>n crescem</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">2</span>O que é o fator de carga</div>
+      <div class="bb">
+        <div class="formula" style="padding:1mm 2mm"><span class="fx">n = L ÷ P</span><small>em g · curva nivelada: n = 1 ÷ cos φ</small></div>
+        <ul class="l small">
+          <li>Voo reto nivelado: <b>n = 1 g</b>.</li>
+          <li>Curva nivelada, puxada, rajada ascendente: <b>n &gt; 1</b> (você “pesa” mais no assento).</li>
+          <li>Empurrar o manche, rajada descendente: <b>n &lt; 1</b> ou negativo.</li>
+        </ul>
+        <div class="ex small"><span class="et">Exemplo</span> 1.000 kg a 60° (n = 2): a asa sustenta <b>2.000 kgf</b>; passageiro de 80 kg “pesa” 160 kgf.</div>
+        <div class="tip small">Em curva nivelada, n depende <b>só da inclinação</b> — não do peso nem da velocidade.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">3</span>Gráfico <span style="text-transform:none">n</span> × inclinação</div>
+      <div class="bb">
+        <svg viewBox="0 0 330 190" width="100%" style="max-height:37mm">
+          <g stroke="#e2e8f0"><path d="M40 118 H326 M40 66 H326 M40 14 H326 M145 10 V170 M197.5 10 V170 M250 10 V170"/></g>
+          <path d="M40 6 V170 H326" fill="none" stroke="#0f172a" stroke-width="2"/>
+          <path d="M40.0 144.0 L61.0 143.9 L82.0 143.4 L103.0 142.7 L124.0 141.5 L145.0 140.0 L166.0 137.9 L187.0 135.0 L208.0 131.1 L229.0 125.8 L243.0 120.9 L257.0 114.6 L271.0 106.1 L285.0 94.0 L292.0 85.9 L299.0 75.7 L306.0 62.5 L313.0 44.9 L320.0 20.3" fill="none" stroke="#f08a12" stroke-width="3.5"/>
+          <g fill="#e0313b"><circle cx="145" cy="140" r="4.5"/><circle cx="197.5" cy="133.2" r="4.5"/><circle cx="250" cy="118" r="4.5"/><circle cx="302.5" cy="69.5" r="4.5"/></g>
+          <g class="tb" style="font-size:12.5px">
+            <text x="133" y="130" style="fill:#8f1219">1,15</text><text x="180" y="124" style="fill:#8f1219">1,41</text><text x="226" y="110" style="fill:#8f1219">2,0</text><text x="262" y="66" style="fill:#8f1219">3,86</text>
+            <g fill="#0f172a" text-anchor="middle"><text x="40" y="184">0°</text><text x="145" y="184">30°</text><text x="197.5" y="184">45°</text><text x="250" y="184">60°</text><text x="302.5" y="184">75°</text></g>
+            <g fill="#0f172a" text-anchor="end"><text x="34" y="148">1</text><text x="34" y="122">2</text><text x="34" y="70">4</text><text x="34" y="18">6</text></g>
+            <text x="60" y="40" style="fill:#9a4d00">acima de 60° a carga</text><text x="60" y="54" style="fill:#9a4d00">dispara (→ ∞ a 90°)</text>
+            <text x="12" y="100" transform="rotate(-90 12 100)" text-anchor="middle">n (g)</text>
+          </g>
+        </svg>
+        <div class="small">Até 30° a carga quase não muda; de 60° em diante ela <b>dispara</b>. Curva nivelada a 90° seria impossível: não sobraria componente vertical para sustentar o peso.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">4</span>Tabela de curva nivelada</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--green)">
+          <tr><th>Inclinação</th><th class="c" style="text-transform:none">n = 1/cos φ</th><th class="c" style="text-transform:none">√n</th><th class="c" style="text-transform:none">Vs aumenta</th></tr>
+          <tr><td>0° (nivelado)</td><td class="c">1,00</td><td class="c">1,00</td><td class="c">—</td></tr>
+          <tr><td><b>30°</b></td><td class="c"><b>1,15</b></td><td class="c">1,07</td><td class="c">≈ +7 %</td></tr>
+          <tr><td><b>45°</b></td><td class="c"><b>1,41</b></td><td class="c">1,19</td><td class="c">≈ +19 %</td></tr>
+          <tr><td><b>60°</b></td><td class="c"><b>2,00</b></td><td class="c">1,41</td><td class="c">≈ +41 %</td></tr>
+          <tr><td>75°</td><td class="c">3,86</td><td class="c">1,97</td><td class="c">≈ +97 %</td></tr>
+        </table>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:13.5pt">Vs curva = Vs × √n</span><small>o α crítico é o mesmo; só a velocidade em que ele é atingido sobe</small></div>
+        <div class="mem small">30° → 1,15 · 45° → 1,41 · 60° → 2.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">5</span>Exemplos resolvidos</div>
+      <div class="bb">
+        <div class="ex small"><span class="et">A · Vs = 55 kt, curva de 45°</span><ol><li>n = 1 ÷ cos 45° = 1 ÷ 0,707 ≈ 1,41 → √n ≈ 1,19.</li><li>Vs = 55 × 1,19 ≈ <b>65,4 kt</b>.</li></ol></div>
+        <div class="ex small"><span class="et">B · Mesmo avião, 60°</span><ol><li>n = 2 → √2 ≈ 1,414.</li><li>Vs = 55 × 1,414 ≈ <b>77,8 kt</b> (+41 %).</li></ol></div>
+        <div class="ex small"><span class="et">C · Limite de 3,8 g</span><ol><li>n = 3,8 → cos φ = 1 ÷ 3,8 ≈ 0,263.</li><li>φ ≈ <b>75°</b>: acima disso, curva nivelada ultrapassa o limite da categoria normal.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s6">
+      <div class="bh"><span class="n">6</span>Limites e diagrama V-n</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--navy)">
+          <tr><th>Categoria</th><th class="c">positivo</th><th class="c">negativo</th></tr>
+          <tr><td>Normal</td><td class="c"><b>+3,8 g</b></td><td class="c">−1,52 g</td></tr>
+          <tr><td>Utilidade</td><td class="c"><b>+4,4 g</b></td><td class="c">−1,76 g</td></tr>
+          <tr><td>Acrobática</td><td class="c"><b>+6 g</b></td><td class="c">−3 g</td></tr>
+        </table>
+        <svg viewBox="0 6 300 112" width="100%" style="max-height:23mm">
+          <path d="M30.0 80.0 L45.6 79.4 L61.2 77.6 L76.8 74.5 L92.4 70.3 L108.0 64.8 L123.6 58.1 L139.2 50.2 L154.8 41.1 L170.4 30.7 L186.0 19.2 L286.0 19.2 L286.0 104.3 L157.2 104.3 L140.2 98.2 L123.3 93.1 L106.3 88.7 L89.4 85.3 L72.4 82.7 L55.4 81.0 L30.0 80.0Z" fill="#e9eef6" stroke="#13294b" stroke-width="2.2"/>
+          <line x1="30" y1="64" x2="286" y2="64" stroke="#2e9b45" stroke-dasharray="4 3"/>
+          <line x1="186" y1="19.2" x2="186" y2="112" stroke="#8b46d6" stroke-dasharray="3 3"/>
+          <circle cx="186" cy="19.2" r="4" fill="#8b46d6"/>
+          <g class="tb" style="font-size:12px">
+            <text x="190" y="14" style="fill:#4c1d95">Va</text><text x="232" y="14" style="fill:#13294b">+3,8 g</text>
+            <text x="276" y="116" style="fill:#8f1219">Vne</text>
+            <text x="34" y="60" style="fill:#16582a">1 g</text>
+            <text x="36" y="30" style="fill:#e0313b">estol</text>
+            <text x="200" y="40" style="fill:#e0313b">dano estrutural ↑</text>
+            <text x="196" y="94" style="fill:#13294b">envelope seguro</text>
+          </g>
+        </svg>
+        <div class="small"><b>Va</b>: abaixo dela o avião <b>estola antes</b> de se danificar. Va ≈ Vs × √n<sub>lim</sub>; <b>diminui com menos peso</b>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Em curva nivelada o estol ocorre numa velocidade <b>maior</b>, mas no <b>mesmo α crítico</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>cos 30° ≈ 0,866 · cos 45° ≈ 0,707 · cos 60° = 0,5</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>60 dobra</b>”: 60° de inclinação = 2 g = Vs × 1,41.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Vs = 50 kt. Qual a Va aproximada para limite de 3,8 g?<div class="ans">Va ≈ 50 × √3,8 ≈ 50 × 1,95 ≈ <b>97 kt</b>.</div></div>
+  </div>
+</section>

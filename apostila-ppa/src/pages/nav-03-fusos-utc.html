@@ -1,0 +1,227 @@
+<section class="page mod-nav" id="nav-fusos" data-toc="Fusos horários, UTC, hora local e linha internacional de data">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht">
+      <span class="kicker">Navegação · Tempo</span>
+      <div class="title sm">Fusos horários e UTC</div>
+      <div class="sub">Hora local · UTC (“Zulu”) · linha internacional de data</div>
+    </div>
+    <div class="postit" style="top:2mm"><div class="pt">Ordem mental</div><ol><li>Qual o fuso? (−2, −3, −4, −5)</li><li>UTC = hora local − fuso</li><li>&gt; 24 h: +1 dia · &lt; 0: −1 dia</li></ol></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">1</span>Como nascem os fusos</div>
+      <div class="bb">
+        <svg viewBox="0 0 300 96" width="100%">
+          <g stroke="#13294b" stroke-width="1">
+            <rect x="10" y="20" width="40" height="46" fill="#fde68a"/><rect x="50" y="20" width="40" height="46" fill="#bfdbfe"/><rect x="90" y="20" width="40" height="46" fill="#fde68a"/><rect x="130" y="20" width="40" height="46" fill="#bfdbfe"/><rect x="170" y="20" width="40" height="46" fill="#fde68a"/><rect x="210" y="20" width="40" height="46" fill="#bfdbfe"/><rect x="250" y="20" width="40" height="46" fill="#fde68a"/>
+          </g>
+          <g class="tb" style="font-size:14px" text-anchor="middle">
+            <text x="30" y="14">90°W</text><text x="110" y="14">60°W</text><text x="190" y="14">30°W</text><text x="270" y="14">0°</text>
+            <text x="30" y="48">−6</text><text x="70" y="48">−5</text><text x="110" y="48">−4</text><text x="150" y="48">−3</text><text x="190" y="48">−2</text><text x="230" y="48">−1</text><text x="270" y="48">UTC</text>
+          </g>
+          <path d="M150 74 H270" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="150" y="92" class="tb" style="font-size:13px;fill:#0f3f86">+1 h a cada 15° para leste</text>
+        </svg>
+        <div class="small">24 fusos de <b>15°</b> (fuso −3 centrado em 45°W); limites reais seguem fronteiras.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s7 r2">
+      <div class="bh"><span class="n">2</span>Fusos horários do Brasil (esquemático)</div>
+      <div class="bb">
+        <div class="row">
+          <div class="f2"><svg viewBox="0 0 260 236" width="100%">
+<defs><clipPath id="br-clip"><polygon points="129.1,12.4 131.8,17.8 137.7,25.4 136.1,31.9 142.0,36.2 145.8,41.6 153.9,38.9 167.4,48.1 182.0,50.8 199.8,55.1 206.8,61.6 217.6,63.7 219.8,74.5 217.1,84.8 207.9,94.5 199.8,105.3 197.1,117.7 196.0,131.2 190.1,144.7 186.3,153.9 174.4,159.3 164.7,162.5 156.6,165.2 147.4,173.3 145.3,179.8 144.2,189.0 137.2,198.2 131.2,206.8 123.7,217.1 118.8,216.5 119.3,210.6 107.5,202.0 96.7,198.2 105.3,187.4 112.9,173.3 114.5,164.7 108.5,164.2 106.9,156.1 95.0,154.4 95.6,143.1 93.4,129.6 82.6,123.1 82.1,116.6 83.7,108.0 74.0,107.5 56.7,99.4 55.1,93.4 48.1,88.6 37.3,94.5 26.5,94.5 26.5,86.4 17.8,89.1 12.4,85.9 8.6,75.1 14.0,63.2 29.7,57.8 32.9,41.6 30.2,29.7 45.9,24.3 47.0,28.6 62.1,24.3 65.3,14.0 79.9,7.0 84.8,13.5 85.9,25.4 102.6,24.8 116.1,23.2 125.3,23.2"/></clipPath></defs>
+<rect width="260" height="236" fill="#e8f2fd"/>
+<g clip-path="url(#br-clip)">
+<rect width="260" height="236" fill="#fde68a"/>
+<polygon points="-24.3,-8.1 88.0,-8.1 87.5,26.5 92.9,41.6 101.0,49.1 93.4,75.1 99.9,85.3 136.1,88.0 134.5,104.2 132.3,118.8 124.2,129.6 132.3,137.7 132.3,145.8 122.6,156.6 115.0,164.2 110.7,175.5 -24.3,175.5" fill="#86efac"/>
+<polygon points="-24.3,45.9 43.2,47.5 57.8,75.6 52.4,91.3 -24.3,99.9" fill="#f9a8d4"/>
+</g>
+<polygon points="129.1,12.4 131.8,17.8 137.7,25.4 136.1,31.9 142.0,36.2 145.8,41.6 153.9,38.9 167.4,48.1 182.0,50.8 199.8,55.1 206.8,61.6 217.6,63.7 219.8,74.5 217.1,84.8 207.9,94.5 199.8,105.3 197.1,117.7 196.0,131.2 190.1,144.7 186.3,153.9 174.4,159.3 164.7,162.5 156.6,165.2 147.4,173.3 145.3,179.8 144.2,189.0 137.2,198.2 131.2,206.8 123.7,217.1 118.8,216.5 119.3,210.6 107.5,202.0 96.7,198.2 105.3,187.4 112.9,173.3 114.5,164.7 108.5,164.2 106.9,156.1 95.0,154.4 95.6,143.1 93.4,129.6 82.6,123.1 82.1,116.6 83.7,108.0 74.0,107.5 56.7,99.4 55.1,93.4 48.1,88.6 37.3,94.5 26.5,94.5 26.5,86.4 17.8,89.1 12.4,85.9 8.6,75.1 14.0,63.2 29.7,57.8 32.9,41.6 30.2,29.7 45.9,24.3 47.0,28.6 62.1,24.3 65.3,14.0 79.9,7.0 84.8,13.5 85.9,25.4 102.6,24.8 116.1,23.2 125.3,23.2" fill="none" stroke="#13294b" stroke-width="1.8"/>
+<line x1="2.7" y1="0" x2="2.7" y2="236" stroke="#1d6fd1" stroke-width="1" stroke-dasharray="4 3"/><text x="4.7" y="232" class="tb" style="font-size:12px;fill:#0f3f86">75°W</text>
+<line x1="83.7" y1="0" x2="83.7" y2="236" stroke="#1d6fd1" stroke-width="1" stroke-dasharray="4 3"/><text x="85.7" y="232" class="tb" style="font-size:12px;fill:#0f3f86">60°W</text>
+<line x1="164.7" y1="0" x2="164.7" y2="236" stroke="#1d6fd1" stroke-width="1" stroke-dasharray="4 3"/><text x="166.7" y="232" class="tb" style="font-size:12px;fill:#0f3f86">45°W</text>
+<line x1="245.7" y1="0" x2="245.7" y2="236" stroke="#1d6fd1" stroke-width="1" stroke-dasharray="4 3"/><text x="247.7" y="232" class="tb" style="font-size:12px;fill:#0f3f86">30°W</text>
+<circle cx="232.7" cy="55.9" r="5" fill="#c4b5fd" stroke="#4c1d95" stroke-width="2"/>
+<text x="230.7" y="46.9" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95">UTC−2</text><text x="230.7" y="74.9" text-anchor="middle" class="tb" style="font-size:11px;fill:#4c1d95">F. Noronha</text>
+<text x="21.6" y="70.7" text-anchor="middle" class="tb" style="font-size:16px;fill:#8a1c47">UTC−5</text><text x="21.6" y="84.7" text-anchor="middle" class="tb" style="font-size:12px;fill:#8a1c47">Acre</text>
+<text x="99.9" y="97.2" text-anchor="middle" class="tb" style="font-size:16px;fill:#16582a">UTC−4</text><text x="99.9" y="111.2" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">AM RR RO MT MS</text>
+<text x="162.0" y="99.9" text-anchor="middle" class="tb" style="font-size:16px;fill:#7a5a00">UTC−3</text><text x="162.0" y="113.9" text-anchor="middle" class="tb" style="font-size:12px;fill:#7a5a00">Brasília</text>
+<circle cx="149.0" cy="120.4" r="3.5" fill="#e0313b"/>
+<circle cx="83.7" cy="51.8" r="3" fill="#13294b"/><text x="88.7" y="47.8" class="t" style="font-size:11px">Manaus</text>
+<circle cx="41.6" cy="88.9" r="3" fill="#13294b"/><text x="37.6" y="101.9" text-anchor="middle" class="t" style="font-size:11px">Rio Branco</text>
+</svg></div>
+          <div class="f1">
+            <table class="tb" style="--c:var(--green)">
+              <tr><th>Fuso</th><th>Onde</th></tr>
+              <tr><td><b style="color:#4c1d95">UTC−2</b></td><td>Fernando de Noronha e ilhas oceânicas</td></tr>
+              <tr><td><b style="color:#7a5a00">UTC−3</b></td><td>Brasília: S, SE, NE, GO, DF, TO, PA, AP</td></tr>
+              <tr><td><b style="color:#16582a">UTC−4</b></td><td>AM (maior parte), RR, RO, MT, MS</td></tr>
+              <tr><td><b style="color:#8a1c47">UTC−5</b></td><td>Acre e sudoeste do AM</td></tr>
+            </table>
+            <div class="small" style="margin-top:1mm">Sem <b>horário de verão</b> desde 2019.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s5">
+      <div class="bh"><span class="n">3</span>UTC, “Z” e hora local</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>UTC</b> (Tempo Universal Coordenado): referência de Greenwich; escreve-se <b>Z</b> (“Zulu”): <span class="code">1530Z</span>.</li>
+          <li><b>Hora local</b>: hora legal do fuso. Formato <b>24 h</b>: 0905, 2130.</li>
+        </ul>
+        <div class="formula"><span class="fx" style="font-size:12pt">UTC = hora local − (fuso)</span><small>Brasília 10h00 − (−3) = 1300Z · Manaus 10h00 − (−4) = 1400Z</small></div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 1 — voo entre fusos</div>
+      <div class="bb">
+        <div>Decolagem de <b>Manaus</b> (UTC−4) às <b>10h00 local</b>; EET <b>3h30</b>. Que horas serão em <b>Brasília</b> (UTC−3) no pouso?</div>
+        <div class="ex"><span class="et">Solução</span><ol class="small">
+          <li>Tudo em UTC primeiro: 10h00 + 4 h = <b>1400Z</b>.</li>
+          <li>Somar o tempo de voo: 1400Z + 3h30 = <b>1730Z</b>.</li>
+          <li>Converter para Brasília: 1730Z − 3 h = <b>14h30 local</b>.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 2 — mudança de data</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="64" height="64" viewBox="0 0 60 60"><use href="#clock"/></svg>
+          <ol class="l small f1">
+            <li><b>Rio Branco</b> (UTC−5), <b>21h00 do dia 10</b> → 21 + 5 = 26h → <b>0200Z do dia 11</b>.</li>
+            <li><b>0130Z do dia 5</b> em Brasília → 01h30 − 3 h = −1h30 → +24 h = <b>22h30 do dia 4</b>.</li>
+          </ol>
+        </div>
+        <div class="trap small">Passou de 24 h → dia <b>seguinte</b>. Ficou negativo → dia <b>anterior</b>. Na prova, a data costuma ser a pegadinha.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">4</span>Linha internacional de data (LID)</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="190" height="104" viewBox="0 0 220 120">
+            <rect x="0" y="4" width="110" height="72" fill="#fde68a"/><rect x="110" y="4" width="110" height="72" fill="#bfdbfe"/>
+            <path d="M110 0 L110 24 L100 40 L116 60 L110 80" fill="none" stroke="#e0313b" stroke-width="4"/>
+            <text x="55" y="34" text-anchor="middle" class="tb" style="font-size:16px">DOMINGO</text><text x="55" y="54" text-anchor="middle" class="t" style="font-size:14px">Ásia / Oceania</text>
+            <text x="165" y="34" text-anchor="middle" class="tb" style="font-size:16px">SÁBADO</text><text x="165" y="54" text-anchor="middle" class="t" style="font-size:14px">Américas</text>
+            <path d="M200 92 H24" stroke="#8b46d6" stroke-width="3" marker-end="url(#arr-p)"/>            <text x="112" y="88" text-anchor="middle" class="tb" style="font-size:14px;fill:#4c1d95">rumo oeste: +1 dia</text>
+            <path d="M24 104 H200" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/>
+            <text x="112" y="119" text-anchor="middle" class="tb" style="font-size:14px;fill:#16582a">rumo leste: −1 dia</text>
+          </svg>
+          <div class="f1 small">Segue aproximadamente o <b>antimeridiano (180°)</b>, com desvios para não dividir países. Cruzando <b>para oeste</b>, <b>avança</b> um dia; <b>para leste</b>, <b>volta</b> um dia.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s6">
+      <div class="bh"><span class="n">★</span>Exemplo 3 — diferença de hora pela longitude</div>
+      <div class="bb">
+        <div>Qual a diferença de <b>hora solar</b> entre 030°W e 052°30'W?</div>
+        <div class="ex"><span class="et">Solução</span><ol class="small">
+          <li>Δlong = 52°30' − 30° = <b>22°30'</b> = 22,5°.</li>
+          <li>1° = 4 min → 22,5 × 4 = <b>90 min = 1h30</b>.</li>
+          <li>Quem está mais a <b>leste</b> (030°W) tem hora solar <b>adiantada</b>.</li></ol></div>
+      </div>
+    </div>
+    <div class="blk c-gray s12">
+      <div class="bh"><span class="n">5</span>O mesmo instante nos fusos brasileiros: 1200Z</div>
+      <div class="bb"><svg viewBox="0 0 900 76" width="100%">
+<circle cx="40" cy="36" r="30" fill="#fff" stroke="#13294b" stroke-width="5"/>
+<line x1="40.0" y1="12.0" x2="40.0" y2="8.0" stroke="#13294b" stroke-width="2"/>
+<line x1="52.0" y1="15.2" x2="54.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="60.8" y1="24.0" x2="64.2" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="64.0" y1="36.0" x2="68.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="60.8" y1="48.0" x2="64.2" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="52.0" y1="56.8" x2="54.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="40.0" y1="60.0" x2="40.0" y2="64.0" stroke="#13294b" stroke-width="2"/>
+<line x1="28.0" y1="56.8" x2="26.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="19.2" y1="48.0" x2="15.8" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="16.0" y1="36.0" x2="12.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="19.2" y1="24.0" x2="15.8" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="28.0" y1="15.2" x2="26.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="40" y1="36" x2="40.0" y2="19.0" stroke="#13294b" stroke-width="4.5" stroke-linecap="round"/><line x1="40" y1="36" x2="40" y2="11" stroke="#13294b" stroke-width="2.5" stroke-linecap="round"/><circle cx="40" cy="36" r="3" fill="#13294b"/>
+<text x="78" y="34" class="tb" style="font-size:22px;fill:#13294b">12:00</text>
+<text x="78" y="54" class="tb" style="font-size:16px">UTC</text>
+<circle cx="212" cy="36" r="30" fill="#fff" stroke="#8b46d6" stroke-width="5"/>
+<line x1="212.0" y1="12.0" x2="212.0" y2="8.0" stroke="#13294b" stroke-width="2"/>
+<line x1="224.0" y1="15.2" x2="226.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="232.8" y1="24.0" x2="236.2" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="236.0" y1="36.0" x2="240.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="232.8" y1="48.0" x2="236.2" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="224.0" y1="56.8" x2="226.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="212.0" y1="60.0" x2="212.0" y2="64.0" stroke="#13294b" stroke-width="2"/>
+<line x1="200.0" y1="56.8" x2="198.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="191.2" y1="48.0" x2="187.8" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="188.0" y1="36.0" x2="184.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="191.2" y1="24.0" x2="187.8" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="200.0" y1="15.2" x2="198.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="212" y1="36" x2="197.3" y2="27.5" stroke="#13294b" stroke-width="4.5" stroke-linecap="round"/><line x1="212" y1="36" x2="212" y2="11" stroke="#13294b" stroke-width="2.5" stroke-linecap="round"/><circle cx="212" cy="36" r="3" fill="#8b46d6"/>
+<text x="250" y="34" class="tb" style="font-size:22px;fill:#8b46d6">10:00</text>
+<text x="250" y="54" class="tb" style="font-size:16px">F. Noronha (−2)</text>
+<circle cx="384" cy="36" r="30" fill="#fff" stroke="#d9a400" stroke-width="5"/>
+<line x1="384.0" y1="12.0" x2="384.0" y2="8.0" stroke="#13294b" stroke-width="2"/>
+<line x1="396.0" y1="15.2" x2="398.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="404.8" y1="24.0" x2="408.2" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="408.0" y1="36.0" x2="412.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="404.8" y1="48.0" x2="408.2" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="396.0" y1="56.8" x2="398.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="384.0" y1="60.0" x2="384.0" y2="64.0" stroke="#13294b" stroke-width="2"/>
+<line x1="372.0" y1="56.8" x2="370.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="363.2" y1="48.0" x2="359.8" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="360.0" y1="36.0" x2="356.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="363.2" y1="24.0" x2="359.8" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="372.0" y1="15.2" x2="370.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="384" y1="36" x2="367.0" y2="36.0" stroke="#13294b" stroke-width="4.5" stroke-linecap="round"/><line x1="384" y1="36" x2="384" y2="11" stroke="#13294b" stroke-width="2.5" stroke-linecap="round"/><circle cx="384" cy="36" r="3" fill="#d9a400"/>
+<text x="422" y="34" class="tb" style="font-size:22px;fill:#d9a400">09:00</text>
+<text x="422" y="54" class="tb" style="font-size:16px">Brasília (−3)</text>
+<circle cx="556" cy="36" r="30" fill="#fff" stroke="#2e9b45" stroke-width="5"/>
+<line x1="556.0" y1="12.0" x2="556.0" y2="8.0" stroke="#13294b" stroke-width="2"/>
+<line x1="568.0" y1="15.2" x2="570.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="576.8" y1="24.0" x2="580.2" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="580.0" y1="36.0" x2="584.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="576.8" y1="48.0" x2="580.2" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="568.0" y1="56.8" x2="570.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="556.0" y1="60.0" x2="556.0" y2="64.0" stroke="#13294b" stroke-width="2"/>
+<line x1="544.0" y1="56.8" x2="542.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="535.2" y1="48.0" x2="531.8" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="532.0" y1="36.0" x2="528.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="535.2" y1="24.0" x2="531.8" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="544.0" y1="15.2" x2="542.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="556" y1="36" x2="541.3" y2="44.5" stroke="#13294b" stroke-width="4.5" stroke-linecap="round"/><line x1="556" y1="36" x2="556" y2="11" stroke="#13294b" stroke-width="2.5" stroke-linecap="round"/><circle cx="556" cy="36" r="3" fill="#2e9b45"/>
+<text x="594" y="34" class="tb" style="font-size:22px;fill:#2e9b45">08:00</text>
+<text x="594" y="54" class="tb" style="font-size:16px">Manaus (−4)</text>
+<circle cx="728" cy="36" r="30" fill="#fff" stroke="#e0457b" stroke-width="5"/>
+<line x1="728.0" y1="12.0" x2="728.0" y2="8.0" stroke="#13294b" stroke-width="2"/>
+<line x1="740.0" y1="15.2" x2="742.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="748.8" y1="24.0" x2="752.2" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="752.0" y1="36.0" x2="756.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="748.8" y1="48.0" x2="752.2" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="740.0" y1="56.8" x2="742.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="728.0" y1="60.0" x2="728.0" y2="64.0" stroke="#13294b" stroke-width="2"/>
+<line x1="716.0" y1="56.8" x2="714.0" y2="60.2" stroke="#13294b" stroke-width="2"/>
+<line x1="707.2" y1="48.0" x2="703.8" y2="50.0" stroke="#13294b" stroke-width="2"/>
+<line x1="704.0" y1="36.0" x2="700.0" y2="36.0" stroke="#13294b" stroke-width="2"/>
+<line x1="707.2" y1="24.0" x2="703.8" y2="22.0" stroke="#13294b" stroke-width="2"/>
+<line x1="716.0" y1="15.2" x2="714.0" y2="11.8" stroke="#13294b" stroke-width="2"/>
+<line x1="728" y1="36" x2="719.5" y2="50.7" stroke="#13294b" stroke-width="4.5" stroke-linecap="round"/><line x1="728" y1="36" x2="728" y2="11" stroke="#13294b" stroke-width="2.5" stroke-linecap="round"/><circle cx="728" cy="36" r="3" fill="#e0457b"/>
+<text x="766" y="34" class="tb" style="font-size:22px;fill:#e0457b">07:00</text>
+<text x="766" y="54" class="tb" style="font-size:16px">Rio Branco (−5)</text>
+</svg></div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>No Brasil, a hora UTC é sempre <b>maior</b> que a local (fusos negativos). Hora local = UTC − 3 em Brasília, não + 3.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>15° = 1 h · 1° = 4 min<br>15' de arco = 1 min de tempo</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Leste adianta</b>, <b>oeste atrasa</b>.” O Sol nasce a leste: lá já é mais tarde.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Pouso em Cuiabá (UTC−4) às 2330 local do dia 8. Qual a hora UTC?<div class="ans">23h30 + 4 h = 27h30 → <b>0330Z do dia 9</b>.</div></div>
+  </div>
+</section>

@@ -1,0 +1,115 @@
+<section class="page mod-nav" id="nav-triangulo" data-toc="Triângulo do vento e correção de deriva">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht">
+      <span class="kicker">Navegação · Vetores</span>
+      <div class="title sm">Triângulo do vento</div>
+      <div class="sub">Vento + TAS/proa = GS/trajetória</div>
+    </div>
+    <div class="def">Três vetores fecham um triângulo: <b>ar</b> (TAS na proa) + <b>vento</b> = <b>solo</b> (GS na trajetória). Conhecendo 4 dos 6 elementos, acham-se os outros 2.</div>
+    <div class="postit"><div class="pt">Ordem mental</div><ol><li>Desenhe o rumo</li><li>Vento: sopra PARA (dir. + 180°)</li><li>Arco = TAS até o rumo</li><li>Leia proa e GS</li></ol></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s7 r2">
+      <div class="bh"><span class="n">1</span>O triângulo desenhado em escala</div>
+      <div class="bb">
+        <svg viewBox="0 0 330 272" width="100%">
+<line x1="30" y1="70" x2="30" y2="20" stroke="#13294b" stroke-width="2.5" marker-end="url(#arr-k)"/><text x="30" y="86" text-anchor="middle" class="tb" style="font-size:15px">NV</text>
+<line x1="165" y1="226" x2="165" y2="4" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="6 4"/>
+<line x1="165" y1="226" x2="165.0" y2="23.1" stroke="#2e9b45" stroke-width="5" marker-end="url(#arr-g)"/>
+<line x1="165" y1="226" x2="143.0" y2="264.1" stroke="#e0313b" stroke-width="5" marker-end="url(#arr-r)"/>
+<line x1="143.0" y1="264.1" x2="165.0" y2="23.1" stroke="#1d6fd1" stroke-width="5" marker-end="url(#arr-b)"/>
+<path d="M165.0 93.1 A70 70 0 0 1 158.6 92.8" fill="none" stroke="#f08a12" stroke-width="3.5"/>
+<text x="151.0" y="107.1" text-anchor="end" class="tb" style="font-size:15px;fill:#9a4d00">WCA 5,2°</text>
+<line x1="165" y1="226" x2="220.0" y2="130.7" stroke="#e0313b" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="224.0" y="130.7" class="tb" style="font-size:14px;fill:#8f1219">vento de 030°</text>
+<path d="M165.0 176.0 A50 50 0 0 1 190.0 182.7" fill="none" stroke="#e0313b" stroke-width="2.5"/>
+<text x="182.5" y="168.0" class="tb" style="font-size:14px;fill:#8f1219">30°</text>
+<circle cx="165" cy="226" r="5" fill="#13294b"/><text x="177" y="244" class="tb" style="font-size:15px">O (partida)</text>
+<text x="175" y="83.1" class="tb" style="font-size:15px;fill:#16582a">GS 92 kt</text><text x="175" y="100.1" class="tb" style="font-size:14px;fill:#16582a">trajetória = rumo 360°</text>
+<text x="125" y="136" text-anchor="end" class="tb" style="font-size:15px;fill:#0f3f86">TAS 110 kt</text><text x="125" y="153" text-anchor="end" class="tb" style="font-size:14px;fill:#0f3f86">proa 005°</text>
+<text x="133.0" y="238.1" text-anchor="end" class="tb" style="font-size:14px;fill:#8f1219">vento 20 kt</text><text x="133.0" y="254.1" text-anchor="end" class="tb" style="font-size:13px;fill:#8f1219">(sopra p/ 210°)</text>
+<circle cx="165.0" cy="23.1" r="5" fill="#13294b"/><text x="175.0" y="28.1" class="tb" style="font-size:15px">P (após 1 h)</text>
+</svg>
+        <div class="row c small" style="gap:1.5mm">
+          <span class="chip" style="--c:var(--red)">vento</span><span>para onde sopra</span>
+          <span class="chip" style="--c:var(--blue)">TAS</span><span>na direção da proa</span>
+          <span class="chip" style="--c:var(--green)">GS</span><span>na trajetória</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s5">
+      <div class="bh"><span class="n">2</span>Os 6 elementos</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--purple)">
+          <tr><th>Vetor</th><th>Direção</th><th>Módulo</th></tr>
+          <tr><td><b>Ar</b></td><td>proa</td><td>TAS</td></tr>
+          <tr><td><b>Vento</b></td><td>de onde vem (+180°)</td><td>velocidade do vento</td></tr>
+          <tr><td><b>Solo</b></td><td>trajetória (rumo)</td><td>GS</td></tr>
+        </table>
+        <ul class="l small">
+          <li><b>Planejamento</b>: tenho rumo, TAS e vento → acho <b>proa</b> e <b>GS</b>.</li>
+          <li><b>Em voo</b>: tenho proa, TAS, trajetória e GS → acho o <b>vento real</b>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-green s5">
+      <div class="bh"><span class="n">3</span>Construção passo a passo</div>
+      <div class="bb">
+        <ol class="l small">
+          <li>Trace o <b>norte</b> e a linha do <b>rumo</b> saindo de O.</li>
+          <li>De O, trace o <b>vento</b> em escala, apontando <b>para onde sopra</b> (030° → 210°).</li>
+          <li>Da ponta do vento, abra o compasso com a <b>TAS</b> até tocar a linha do rumo (ponto P).</li>
+          <li>W→P = <b>proa</b>; O→P = <b>GS</b>; o ângulo em P = <b>correção de deriva</b>.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="blk c-orange s7">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido — proa, GS e proa magnética</div>
+      <div class="bb">
+        <div class="ex"><span class="et">RV 360° · TAS 110 kt · vento 030°/20 kt · DMG 21°W</span><ol class="small">
+          <li>Ângulo entre vento e rumo: 030 − 360 = <b>30°</b>, vindo da <b>direita</b>.</li>
+          <li>Través = 20 × sen 30° = 20 × 0,5 = <b>10 kt</b>; proa (vento) = 20 × cos 30° ≈ 20 × 0,9 = <b>17 kt</b>.</li>
+          <li>Correção ≈ 60 × través ÷ TAS = 60 × 10 ÷ 110 ≈ <b>5°</b> para a <b>direita</b> (exato: 5,2°).</li>
+          <li>Proa verdadeira = 360 + 5 = <b>005°</b> → proa magnética = 005 + 21 (W) = <b>026°</b>.</li>
+          <li>GS ≈ TAS − componente de proa = 110 − 17 ≈ <b>93 kt</b> (exato: 92 kt).</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-red s5">
+      <div class="bh"><span class="n">4</span>Fórmulas da correção</div>
+      <div class="bb">
+        <div class="formula"><span class="fx" style="font-size:12pt">WCA ≈ 60 × Vtravés ÷ TAS</span><small>exato: sen WCA = Vvento × sen(ângulo) ÷ TAS</small></div>
+        <div class="small"><b>Deriva máxima</b> (vento a 90°) ≈ 60 × Vvento ÷ TAS. Ex.: 20 kt com TAS 120 → <b>10°</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s5">
+      <div class="bh"><span class="n">★</span>Exemplo — correção de deriva em voo</div>
+      <div class="bb">
+        <div class="ex"><span class="et">Proa 090° · trajetória observada 096°</span><ol class="small">
+          <li>A trajetória está 6° à <b>direita</b> da proa → deriva <b>6° à direita</b> → vento vem da <b>esquerda</b> (norte).</li>
+          <li>Para manter o rumo 090°: proa = 090 − 6 = <b>084°</b> (para o lado do vento).</li>
+          <li>Se já se afastou do rumo, corrija <b>um pouco mais</b> para voltar (regra dos 60).</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-yellow s7">
+      <div class="bh"><span class="n">5</span>Sinais de proa, rumo e deriva</div>
+      <div class="bb">
+        <div class="formula" style="background:#7a5a00"><span class="fx" style="font-size:10.5pt">Proa = rumo ± correção<br>Trajetória = proa ± deriva</span><small>vento da direita: proa &gt; rumo (soma) · vento da esquerda: proa &lt; rumo (subtrai)</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>O vento é informado <b>de onde vem</b>. No desenho, a seta aponta <b>para onde vai</b>: direção + 180°.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>sen 30° = 0,5 · sen 45° ≈ 0,7<br>sen 60° ≈ 0,9 · sen 90° = 1</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Nariz no vento</b>”: a proa sempre se volta para o lado de onde o vento sopra.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Rumo 180°, TAS 120 kt, vento de 270°/20 kt. Correção aproximada e proa?<div class="ans">Vento 90° pela direita (lado oeste): 60 × 20 ÷ 120 = <b>10°</b> → proa <b>190°</b>.</div></div>
+  </div>
+</section>

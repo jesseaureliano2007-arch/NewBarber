@@ -1,0 +1,152 @@
+<section class="page mod-nav" id="nav-gms-distancias" data-toc="Graus, minutos e segundos · distâncias pela latitude e pela longitude">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht">
+      <span class="kicker">Navegação · Coordenadas na prática</span>
+      <div class="title sm">GMS e distâncias</div>
+      <div class="sub">1 minuto de latitude = 1 milha náutica</div>
+    </div>
+    <div class="def">Diferença de <b>latitude</b> em minutos = distância em <b>NM</b>. Na longitude, a distância <b>encolhe</b> com o cosseno da latitude.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">1</span>Graus, minutos e segundos</div>
+      <div class="bb">
+        <div class="tokrow"><span class="tok t-blue"><b>1° = 60'</b><small>1 grau = 60 minutos</small></span><span class="tok t-blue"><b>1' = 60"</b><small>1 minuto = 60 segundos</small></span><span class="tok t-teal"><b>1° = 3.600"</b><small>segundos de arco</small></span></div>
+        <div class="ex"><span class="et">Exemplo resolvido</span>
+          <ol class="small"><li><b>GMS → decimal</b>: 15°45'30" → 30" ÷ 60 = 0,5' → 45,5' ÷ 60 = 0,758° → <b>15,758°</b>.</li>
+            <li><b>Decimal → GMS</b>: 23,75° → 0,75 × 60 = <b>45'</b> → <b>23°45'</b>.</li>
+            <li><b>Soma</b>: 12°50' + 3°25' = 15°75' = <b>16°15'</b> (75' = 1°15').</li></ol></div>
+        <div class="trap small">23,5° <b>não</b> é 23°50', é <b>23°30'</b>. Minuto é base 60, não base 100.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">2</span>Por que 1' de latitude = 1 NM?</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="104" height="104" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="58" fill="#eaf7ec" stroke="#16582a" stroke-width="2.5"/>
+            <path d="M65 65 L123 65 A58 58 0 0 0 119.5 45.2 Z" fill="#2e9b45" opacity=".85"/>
+            <circle cx="65" cy="65" r="3" fill="#13294b"/>
+            <text x="88" y="61" class="tw" style="font-size:13px">1'</text>
+            <text x="65" y="98" text-anchor="middle" class="tb" style="font-size:14px">360° × 60'</text>
+            <text x="65" y="114" text-anchor="middle" class="tb" style="font-size:14px">= 21.600'</text>
+          </svg>
+          <div class="f1">
+            <div>Circunferência de um meridiano ≈ <b>40.000 km</b>.</div>
+            <div class="formula" style="margin-top:1mm"><span class="fx" style="font-size:11.5pt">40.000 km ÷ 21.600' ≈ 1,852 km</span><small>cada minuto de arco num círculo máximo mede 1 NM</small></div>
+          </div>
+        </div>
+        <div class="small">Vale em qualquer <b>círculo máximo</b>: meridianos e Equador. Nos <b>paralelos</b> (círculos menores) <b>não</b> vale.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">3</span>Distância pela latitude (mesmo meridiano)</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="112" height="104" viewBox="0 0 150 140">
+            <path d="M70 8 A62 62 0 0 1 70 132" fill="#fdecee" stroke="#8f1219" stroke-width="2"/>
+            <line x1="70" y1="70" x2="140" y2="70" stroke="#e0313b" stroke-width="2.5"/>
+            <text x="100" y="64" class="tb" style="font-size:13px;fill:#8f1219">Equador</text>
+            <line x1="70" y1="70" x2="128.3" y2="91.2" stroke="#13294b" stroke-width="1.5"/>
+            <line x1="70" y1="70" x2="117.5" y2="109.9" stroke="#13294b" stroke-width="1.5"/>
+            <path d="M128.3 91.2 A62 62 0 0 1 117.5 109.9" fill="none" stroke="#f08a12" stroke-width="6"/>
+            <circle cx="128.3" cy="91.2" r="4" fill="#1d6fd1"/><circle cx="117.5" cy="109.9" r="4" fill="#1d6fd1"/>
+            <text x="134" y="94" class="tb" style="font-size:14px">A</text><text x="120" y="124" class="tb" style="font-size:14px">B</text>
+            <text x="4" y="136" class="tb" style="font-size:13px;fill:#9a4d00">arco = Δlat</text>
+          </svg>
+          <div class="f1">
+            <div class="formula"><span class="fx" style="font-size:11.5pt">D (NM) = Δlat em minutos</span><small>Δlat em graus × 60</small></div>
+            <ul class="l small" style="margin-top:1mm"><li><b>Mesmo hemisfério</b>: <b>subtraia</b> as latitudes.</li><li><b>Hemisférios opostos</b>: <b>some</b> as latitudes.</li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">4</span>Distância pela longitude (mesmo paralelo)</div>
+      <div class="bb">
+        <div class="row c"><svg class="f2" viewBox="0 0 330 138" width="100%">
+          <path d="M5 128 A110 110 0 0 1 225 128 Z" fill="#f3ebfc" stroke="#4c1d95" stroke-width="2"/>
+          <g stroke-width="3.5">
+            <line x1="5" y1="128" x2="225" y2="128" stroke="#e0313b"/>
+            <line x1="19.7" y1="73" x2="210.3" y2="73" stroke="#8b46d6"/>
+            <line x1="37.2" y1="50.2" x2="192.8" y2="50.2" stroke="#8b46d6"/>
+            <line x1="60" y1="32.7" x2="170" y2="32.7" stroke="#8b46d6"/>
+          </g>
+          <circle cx="115" cy="18" r="4" fill="#13294b"/>
+          <g class="tb" style="font-size:16px">
+            <text x="232" y="132" style="fill:#8f1219">0° → 60 NM</text>
+            <text x="232" y="77">30° → 52 NM</text>
+            <text x="232" y="54">45° → 42 NM</text>
+            <text x="232" y="36">60° → 30 NM</text>
+            <text x="232" y="14">90° → 0</text>
+          </g>
+          <text x="115" y="118" text-anchor="middle" class="tb" style="font-size:15px;fill:#4c1d95">quanto vale 1° de longitude</text>
+        </svg>
+        <div class="formula f1" style="padding:1.2mm 1.5mm"><span class="fx" style="font-size:11pt">D = Δlong' × cos lat</span><small>1° long = 60 NM × cos lat</small></div></div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 1 — mesmo meridiano</div>
+      <div class="bb">
+        <div>A = <span class="code">10°15'S 045°00'W</span> · B = <span class="code">14°45'S 045°00'W</span>. Qual a distância?</div>
+        <div class="ex"><span class="et">Solução</span><ol class="small">
+          <li>Mesmo meridiano e mesmo hemisfério → subtrair: 14°45' − 10°15' = <b>4°30'</b>.</li>
+          <li>Em minutos: 4 × 60 + 30 = <b>270'</b>.</li>
+          <li>1' = 1 NM → <b>270 NM</b>.</li>
+          <li>Em km: 270 × 1,852 = <b>≈ 500 km</b>.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">★</span>Exemplo resolvido 2 — cruzando o Equador</div>
+      <div class="bb">
+        <div>A = <span class="code">02°30'N 050°W</span> · B = <span class="code">03°30'S 050°W</span>.</div>
+        <div class="ex"><span class="et">Solução</span><ol class="small">
+          <li>Hemisférios opostos → <b>somar</b>: 2°30' + 3°30' = <b>6°00'</b>.</li>
+          <li>6 × 60 = 360' → <b>360 NM</b> (≈ 667 km).</li></ol></div>
+        <div class="ex"><span class="et">E pela longitude?</span><ol class="small">
+          <li>No Equador, Δlong 3° = 3 × 60 = <b>180 NM</b>.</li>
+          <li>No paralelo 60°S, o mesmo Δlong 3° = 180 × cos 60° = 180 × 0,5 = <b>90 NM</b>.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">5</span>Diferença de longitude (Δlong) — as três situações</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="330" height="62" viewBox="0 0 520 98" style="font-size:18px">
+            <line x1="10" y1="40" x2="510" y2="40" stroke="#94a3b8" stroke-width="2"/>
+            <g class="tb" style="font-size:19px">
+              <line x1="260" y1="22" x2="260" y2="58" stroke="#d9a400" stroke-width="4"/><text x="260" y="16" text-anchor="middle" style="fill:#7a5a00">0° Greenwich</text>
+              <line x1="10" y1="22" x2="10" y2="58" stroke="#13294b" stroke-width="4"/><text x="12" y="16">180°</text>
+              <line x1="510" y1="22" x2="510" y2="58" stroke="#13294b" stroke-width="4"/><text x="508" y="16" text-anchor="end">180°</text>
+              <text x="130" y="72" text-anchor="middle">W (oeste)</text><text x="390" y="72" text-anchor="middle">E (leste)</text>
+            </g>
+            <circle cx="120" cy="40" r="6" fill="#1d6fd1"/><circle cx="190" cy="40" r="6" fill="#1d6fd1"/>
+            <path d="M120 88 H190" stroke="#1d6fd1" stroke-width="3" marker-start="url(#arr-b)" marker-end="url(#arr-b)"/><text x="155" y="98" text-anchor="middle" class="tb" style="font-size:18px;fill:#0f3f86">subtrai</text>
+            <circle cx="230" cy="40" r="6" fill="#e0313b"/><circle cx="320" cy="40" r="6" fill="#e0313b"/>
+            <path d="M230 88 H320" stroke="#e0313b" stroke-width="3" marker-start="url(#arr-r)" marker-end="url(#arr-r)"/><text x="275" y="98" text-anchor="middle" class="tb" style="font-size:18px;fill:#8f1219">soma</text>
+          </svg>
+          <div class="f1 small">
+            <ol class="l"><li>Mesmo lado de Greenwich (ambos W ou ambos E) → <b>subtraia</b>. 045°W e 060°W → Δ = <b>15°</b>.</li>
+              <li>Lados opostos → <b>some</b>. 010°W e 020°E → Δ = <b>30°</b>.</li>
+              <li>Se a soma passar de 180° → use <b>360° − soma</b> (caminho pelo antimeridiano). 170°E e 170°W → 340° → Δ = <b>20°</b>.</li></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>“1° de longitude = 60 NM” só vale no <b>Equador</b>. Em 60° de latitude vale só <b>30 NM</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1' lat = 1 NM = 1,852 km<br>1° lat = 60 NM ≈ 111 km</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Latitude: <b>mesmo</b> hemisfério <b>subtrai</b>; <b>opostos somam</b>. Longitude: igual, e se passar de 180°, <b>360 − soma</b>.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Dois pontos no meridiano 050°W: 05°10'S e 07°40'S. Distância?<div class="ans">Δlat = 2°30' = 150' = <b>150 NM</b> (≈ 278 km).</div></div>
+  </div>
+</section>

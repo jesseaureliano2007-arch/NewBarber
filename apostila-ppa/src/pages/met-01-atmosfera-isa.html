@@ -1,0 +1,121 @@
+<section class="page mod-met" id="met-atmosfera" data-toc="Atmosfera, camadas e atmosfera-padrão (ISA)">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Fundamentos</span>
+      <div class="title">Atmosfera e ISA</div>
+      <div class="sub">Camadas, temperatura, pressão e densidade — a régua de todos os cálculos</div>
+    </div>
+    <div class="def">Atmosfera: camada de gases presa à Terra pela gravidade. A <b>ISA</b> (atmosfera-padrão internacional) é um modelo de referência para calibrar instrumentos e comparar desempenho.</div>
+    <div class="postit"><div class="pt">ISA no nível do mar</div>
+      <ol><li><span class="pi"><b>15 °C</b></span></li><li><span class="pi"><b>1013,25 hPa</b> = 29,92 inHg</span></li><li><span class="pi"><b>1,225 kg/m³</b></span></li><li><span class="pi">−2 °C a cada 1.000 ft</span></li><li><span class="pi">Tropopausa: 36.089 ft, −56,5 °C</span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s5 r2">
+      <div class="bh"><span class="n">1</span>Camadas da atmosfera</div>
+      <div class="bb">
+        <svg viewBox="0 0 280 250" width="100%">
+          <rect x="0" y="0" width="200" height="40" fill="#1e1b4b"/><rect x="0" y="40" width="200" height="44" fill="#312e81"/>
+          <rect x="0" y="84" width="200" height="70" fill="#3b5ea8"/><rect x="0" y="154" width="200" height="6" fill="#f6c945"/>
+          <rect x="0" y="160" width="200" height="78" fill="url(#g-sky-blue)"/><rect x="0" y="236" width="200" height="14" fill="#2e9b45"/>
+          <text x="8" y="17" class="tw" style="font-size:13px">TERMOSFERA</text><text x="8" y="32" class="tw" style="font-size:11px;font-weight:600">acima de ~85 km</text>
+          <text x="8" y="58" class="tw" style="font-size:13px">MESOSFERA</text><text x="8" y="74" class="tw" style="font-size:11px;font-weight:600">~50 a 85 km · T cai</text>
+          <text x="8" y="102" class="tw" style="font-size:13px">ESTRATOSFERA</text><text x="8" y="118" class="tw" style="font-size:11px;font-weight:600">até ~50 km · ozônio</text><text x="8" y="133" class="tw" style="font-size:11px;font-weight:600">T sobe com a altura</text>
+          <text x="8" y="151" class="tb" style="font-size:11.5px;fill:#fff27a">TROPOPAUSA ~11 km (ISA)</text>
+          <text x="8" y="178" class="tb" style="font-size:13px;fill:#0f3f86">TROPOSFERA</text>
+          <text x="8" y="194" class="t" style="font-size:11px">quase todo o vapor d'água</text><text x="8" y="208" class="t" style="font-size:11px">e o "tempo" (nuvens, chuva)</text><text x="8" y="222" class="t" style="font-size:11px">T cai ≈ 2 °C/1.000 ft</text>
+          <use href="#cb" x="140" y="172" width="58" height="58"/><use href="#plane-side" x="120" y="122" width="50" height="20"/>
+          <polyline points="236,246 264,160 264,148 248,84 272,42 234,20 262,0" fill="none" stroke="#e0313b" stroke-width="3"/>
+          <text x="244" y="246" class="tb" style="font-size:11px;fill:#8f1219">+15</text><text x="279" y="176" text-anchor="end" class="tb" style="font-size:11px;fill:#8f1219">−56,5</text>
+          <text x="210" y="112" class="tb" style="font-size:12px;fill:#8f1219">T →</text>
+        </svg>
+        <div class="small">Tropopausa mais <b>alta no Equador</b> (~16–18 km), mais <b>baixa nos polos</b> (~8 km). Ar seco: <b>N₂ 78 %</b>, <b>O₂ 21 %</b>, 1 % outros; vapor d'água variável (0–4 %).</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s7">
+      <div class="bh"><span class="n">2</span>Tabela ISA — decore os marcos</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--orange)">
+          <tr><th>Altitude</th><th>Temperatura</th><th>Pressão</th><th>Observação</th></tr>
+          <tr><td>0 ft (MSL)</td><td><b>15 °C</b></td><td><b>1013,25 hPa</b></td><td>referência</td></tr>
+          <tr><td>5.000 ft</td><td>5 °C</td><td>≈ 843 hPa</td><td>perde ~17 % da pressão</td></tr>
+          <tr><td>10.000 ft</td><td>−5 °C</td><td>≈ 697 hPa</td><td>≈ 700 hPa</td></tr>
+          <tr><td>18.000 ft</td><td>−21 °C</td><td>≈ 506 hPa</td><td><b>metade</b> da pressão</td></tr>
+          <tr><td>36.089 ft</td><td><b>−56,5 °C</b></td><td>≈ 226 hPa</td><td>tropopausa; T constante acima</td></tr>
+        </table>
+        <div class="formula"><span class="fx">T<sub>ISA</sub> = 15 − 2 × (alt ÷ 1.000)</span><small>alt em ft · resultado em °C · vale até a tropopausa (0,65 °C/100 m)</small></div>
+      </div>
+    </div>
+
+    <div class="blk c-pink s7">
+      <div class="bh"><span class="n">3</span>Desvio da ISA (ISA ±)</div>
+      <div class="bb">
+        <div class="ex"><span class="et">Exemplo resolvido</span><ol><li>Voando no FL080 com temperatura externa (OAT) de <b>+7 °C</b>.</li><li>ISA no FL080: 15 − 2 × 8 = <b>−1 °C</b>.</li><li>Desvio: +7 − (−1) = <b>ISA +8</b> → ar mais quente e <b>menos denso</b> que o padrão.</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">4</span>Pressão atmosférica</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="104" height="104" viewBox="0 0 150 150">
+            <line x1="24" y1="134" x2="145" y2="134" stroke="#334155" stroke-width="2"/><line x1="24" y1="134" x2="24" y2="6" stroke="#334155" stroke-width="2"/>
+            <path d="M140 132 C80 110 50 80 32 8" stroke="#0e9fb3" stroke-width="4" fill="none"/>
+            <text x="144" y="122" text-anchor="end" class="tb" style="font-size:14px">1013</text><text x="40" y="16" class="tb" style="font-size:14px">baixa</text>
+            <text x="84" y="150" text-anchor="middle" class="t" style="font-size:14px">pressão →</text>
+            <text x="14" y="70" text-anchor="middle" class="t" style="font-size:14px" transform="rotate(-90 14 70)">altitude →</text>
+          </svg>
+          <div class="f1"><ul class="l"><li><b>Peso da coluna de ar</b> sobre a área; medida pelo <b>barômetro</b>.</li><li>Unidades: <b>hPa</b> (= mb), <b>inHg</b>.</li><li>Cai com a altitude, <b>não linearmente</b>: perto do solo ≈ <b>1 hPa/30 ft</b>; lá em cima, mais pés por hPa.</li><li>Mesma pressão = <b>isóbara</b>.</li></ul></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">5</span>Densidade — o que o avião “sente”</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">ρ = P ÷ (R · T)</span><small>ρ densidade · P pressão · T temperatura absoluta (K)</small></div>
+        <div class="cause" style="--c:var(--red)"><span>↑ T · ↑ altitude · ↑ umidade</span><i>→</i><span>↓ densidade</span><i>→</i><span>↓ sustentação, potência e tração</span></div>
+        <div class="small">Vapor d'água (massa molar 18) é <b>mais leve</b> que o ar seco (≈ 29): ar úmido é <b>menos</b> denso.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">6</span>Como o ar se aquece</div>
+      <div class="bb">
+        <svg viewBox="0 0 340 108" width="100%">
+          <rect x="0" y="84" width="340" height="24" fill="#8b6b3d"/><rect x="0" y="0" width="340" height="84" fill="#e8f2fd"/>
+          <use href="#sun" x="4" y="4" width="40" height="40"/>
+          <path d="M40 40 L78 80" stroke="#f08a12" stroke-width="3" marker-end="url(#arr-o)"/><text x="54" y="30" class="tb" style="font-size:12px;fill:#9a4d00">radiação</text>
+          <path d="M110 82 L110 60" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/><text x="116" y="74" class="tb" style="font-size:12px;fill:#8f1219">condução</text>
+          <path d="M190 80 C170 60 210 40 190 14" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><text x="200" y="40" class="tb" style="font-size:12px;fill:#8f1219">convecção (vertical)</text>
+          <path d="M250 64 L330 64" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="336" y="80" text-anchor="end" class="tb" style="font-size:12px;fill:#0f3f86">advecção (horizontal)</text>
+          <text x="170" y="100" text-anchor="middle" class="tw" style="font-size:12px">o Sol aquece o SOLO; o solo aquece o ar de baixo para cima</text>
+        </svg>
+        <div class="small">Por isso a troposfera esfria com a altura: a “fonte de calor” está embaixo.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">7</span>Como cai na prova</div>
+      <div class="bb">
+        <ul class="l small">
+          <li>“Qual a temperatura ISA a 6.000 ft?” → 15 − 12 = <b>3 °C</b>.</li>
+          <li>“Em que camada ocorre quase todo o tempo meteorológico?” → <b>troposfera</b>.</li>
+          <li>“Dia quente e aeródromo alto” → <b>densidade baixa</b>, corrida de decolagem maior.</li>
+          <li>“A tropopausa é mais alta…” → no <b>Equador</b>.</li>
+        </ul>
+        <div class="trap small">Na estratosfera a temperatura <b>aumenta</b> com a altura (absorção de UV pelo ozônio) — não continua caindo.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>A ISA é um <b>modelo</b>; o dia real quase nunca é padrão. Por isso existem os erros de altímetro e a altitude-densidade.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1013,25 hPa = 29,92 inHg = 760 mmHg<br>K = °C + 273 · 0,65 °C/100 m ≈ 2 °C/1.000 ft</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>15, 1013, 2</b>”: temperatura, pressão e gradiente. Tropopausa: <b>36 mil pés, −56,5</b>.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>A 12.000 ft a OAT é −4 °C. Qual o desvio da ISA?<div class="ans">ISA = 15 − 24 = −9 °C. Desvio = −4 − (−9) = <b>ISA +5</b> (mais quente que o padrão).</div></div>
+  </div>
+</section>

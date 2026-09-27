@@ -1,0 +1,125 @@
+<section class="page mod-met" id="met-altimetria2" data-toc="Altimetria (2/2) — TA/TL, erros de pressão e temperatura, altitude-densidade">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Altimetria</span>
+      <div class="title sm">Altimetria (2/2)</div>
+      <div class="sub">Transição, erros do altímetro e altitude-densidade</div>
+    </div>
+    <div class="postit" style="top:2mm"><div class="pt">Regra de ouro</div>
+      <div>De <b>ALTA</b> para <b>BAIXA</b> (pressão ou temperatura): o altímetro indica <b>MAIS</b> do que a altitude real — você está <b>mais baixo</b>.</div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s7">
+      <div class="bh"><span class="n">1</span>Altitude (TA) e nível de transição (TL)</div>
+      <div class="bb">
+        <svg viewBox="0 0 420 170" width="100%">
+          <rect x="0" y="0" width="420" height="170" fill="#e8f2fd"/>
+          <rect x="0" y="54" width="420" height="42" fill="#f6c945" opacity=".45"/>
+          <line x1="0" y1="96" x2="420" y2="96" stroke="#1d6fd1" stroke-width="3"/><text x="80" y="113" class="tb" style="font-size:13px;fill:#0f3f86">TA — altitude de transição (QNH)</text>
+          <line x1="0" y1="54" x2="420" y2="54" stroke="#e0457b" stroke-width="3" stroke-dasharray="9 5"/><text x="80" y="48" class="tb" style="font-size:13px;fill:#8a1c47">TL — nível de transição (1013,2)</text>
+          <text x="210" y="80" text-anchor="middle" class="tb" style="font-size:13px;fill:#7a5a00">CAMADA DE TRANSIÇÃO</text>
+          <rect x="0" y="158" width="420" height="12" fill="#2e9b45"/>
+          <path d="M20 156 L70 14" stroke="#2e9b45" stroke-width="3" fill="none" stroke-dasharray="6 4" marker-end="url(#arr-g)"/>
+          <circle cx="42" cy="96" r="7" fill="#2e9b45"/>
+          <text x="80" y="132" class="tb" style="font-size:12px;fill:#16582a">SUBINDO: ao cruzar a TA</text><text x="80" y="146" class="tb" style="font-size:12px;fill:#16582a">→ ajusta 1013,2</text>
+          <path d="M350 14 L400 156" stroke="#e0313b" stroke-width="3" fill="none" stroke-dasharray="6 4" marker-end="url(#arr-r)"/>
+          <circle cx="364" cy="54" r="7" fill="#e0313b"/>
+          <text x="340" y="16" text-anchor="end" class="tb" style="font-size:12px;fill:#8f1219">DESCENDO: ao cruzar o TL</text><text x="340" y="30" text-anchor="end" class="tb" style="font-size:12px;fill:#8f1219">→ ajusta QNH</text>
+          <text x="80" y="22" class="tb" style="font-size:12px">acima: <tspan fill="#8a1c47">NÍVEL (FL)</tspan></text>
+          <text x="340" y="146" text-anchor="end" class="tb" style="font-size:12px">abaixo: <tspan fill="#0f3f86">ALTITUDE (ft)</tspan></text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-pink s5">
+      <div class="bh"><span class="n">2</span>Regras da transição</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>TA</b>: na TA e abaixo, posição vertical em <b>altitude</b> (QNH).</li>
+          <li><b>TL</b>: <b>primeiro nível utilizável</b> acima da TA; dali para cima, <b>nível</b>.</li>
+          <li>Na <b>camada de transição</b>: subindo → informe em <b>nível</b>; descendo → em <b>altitude</b>.</li>
+          <li>TA/TL são <b>publicados</b> (cartas, AIP); o TL pode variar com o QNH.</li>
+        </ul>
+        <div class="mem small">Subindo, a primeira linha é a T<b>A</b>; descendo, é o T<b>L</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s12 solid">
+      <div class="bh"><span class="n">3</span>Erro de pressão — voando de ALTA para BAIXA sem reajustar</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="f2" viewBox="0 12 470 150" width="100%">
+            <defs><linearGradient id="gHL" x1="0" x2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#fde2e4"/></linearGradient></defs>
+            <rect width="470" height="170" fill="url(#gHL)"/>
+            <rect x="0" y="152" width="470" height="18" fill="#1d6fd1" opacity=".7"/>
+            <use href="#mountain" x="330" y="88" width="140" height="68"/>
+            <text x="12" y="30" class="th" style="fill:#0f3f86">A · QNH 1020</text><text x="458" y="30" text-anchor="end" class="th" style="fill:#8f1219">B · QNH 1005</text>
+            <line x1="40" y1="52" x2="460" y2="52" stroke="#2e9b45" stroke-width="2" stroke-dasharray="7 5"/>
+            <text x="230" y="46" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">altitude pretendida 3.000 ft</text>
+            <path d="M60 60 C200 62 300 90 420 104" stroke="#e0313b" stroke-width="3.5" fill="none" marker-end="url(#arr-r)"/>
+            <use href="#plane-side" x="30" y="44" width="50" height="20"/>
+            <text x="232" y="106" text-anchor="middle" class="tb" style="font-size:12px;fill:#8f1219">trajetória REAL (desce sem perceber)</text>
+            <line x1="440" y1="54" x2="440" y2="100" stroke="#8f1219" stroke-width="2" marker-start="url(#arr-r)" marker-end="url(#arr-r)"/>
+            <text x="434" y="80" text-anchor="end" class="tb" style="font-size:12px;fill:#8f1219">450 ft</text>
+            <text x="12" y="146" class="tb" style="font-size:11.5px">altímetro ainda com 1020 · indica 3.000 o tempo todo</text>
+          </svg>
+          <div class="f1">
+            <div class="ex" style="--c:var(--red)"><span class="et">Exemplo resolvido</span><ol class="small"><li>Janela em <b>1020</b>; QNH no destino <b>1005</b>.</li><li>Diferença: 15 hPa × 30 = <b>450 ft</b>.</li><li>Indica 3.000 ft → real ≈ <b>2.550 ft</b>: o altímetro indica <b>450 ft a mais</b>.</li><li>Ajustando 1005, os ponteiros <b>descem</b> 450 ft.</li></ol></div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">4</span>Erro de temperatura</div>
+      <div class="bb">
+        <svg viewBox="0 0 340 108" width="100%">
+          <rect x="0" y="106" width="340" height="12" fill="#8b6b3d"/>
+          <rect x="20" y="10" width="70" height="96" fill="#fde2e4" stroke="#e0313b" stroke-width="2"/>
+          <rect x="135" y="30" width="70" height="76" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+          <rect x="250" y="48" width="70" height="58" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2"/>
+          <g stroke-dasharray="4 3" stroke-width="1.5"><line x1="20" y1="10" x2="320" y2="48" stroke="#8b46d6"/></g>
+          <text x="170" y="22" text-anchor="middle" class="tb" style="font-size:11.5px;fill:#4c1d95">mesma pressão (ex.: 700 hPa)</text>
+          <text x="55" y="70" text-anchor="middle" class="tb" style="font-size:13px;fill:#8f1219">QUENTE</text><text x="55" y="86" text-anchor="middle" class="t" style="font-size:11.5px">coluna</text><text x="55" y="100" text-anchor="middle" class="t" style="font-size:11.5px">dilatada</text>
+          <text x="170" y="80" text-anchor="middle" class="tb" style="font-size:13px">ISA</text>
+          <text x="285" y="80" text-anchor="middle" class="tb" style="font-size:13px;fill:#0f3f86">FRIA</text><text x="285" y="96" text-anchor="middle" class="t" style="font-size:11.5px">comprimida</text>
+          <use href="#plane-side" x="250" y="30" width="44" height="18"/>
+        </svg>
+        <div class="small">Ar <b>frio</b> = coluna “curta”: mesma leitura, avião <b>mais baixo</b>. Erro ≈ <b>4 % da altura</b> sobre a estação por <b>10 °C</b> de desvio.</div>
+        <div class="small"><b>Ex.:</b> indica 6.000 ft (estação no nível do mar), ISA −15 → 6 % × 6.000 ≈ <b>360 ft</b> → real ≈ <b>5.640 ft</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">5</span>Altitude-densidade</div>
+      <div class="bb">
+        <div class="formula"><span class="fx" style="font-size:12.5pt">AD ≈ AP + 120 × (OAT − T<sub>ISA</sub>)</span><small>regra prática · ft e °C · T<sub>ISA</sub> na altitude-pressão</small></div>
+        <div class="ex"><span class="et">Exemplo resolvido</span><ol class="small"><li>Elev. 2.000 ft, QNH 1003 → AP = 2.000 + 300 = <b>2.300 ft</b>.</li><li>T<sub>ISA</sub> em 2.300 ft ≈ 15 − 4,6 ≈ <b>10 °C</b>; OAT = <b>30 °C</b> → ISA +20.</li><li>AD ≈ 2.300 + 120 × 20 = <b>4.700 ft</b> de desempenho.</li></ol></div>
+        <div class="cause" style="--c:var(--orange)"><span>AD alta</span><i>→</i><span>corrida maior</span><i>→</i><span>razão de subida menor</span></div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">6</span>Quadro-resumo dos erros</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--navy)">
+          <tr><th>Situação</th><th>Altímetro indica…</th><th>Altitude real</th><th>Risco</th></tr>
+          <tr><td>Alta → <b>baixa pressão</b> (sem reajustar)</td><td><b>mais</b> que a real</td><td>mais <b>baixa</b></td><td style="color:#8f1219"><b>perigo — colisão com o terreno</b></td></tr>
+          <tr><td>Ar <b>mais frio</b> que a ISA</td><td><b>mais</b> que a real</td><td>mais <b>baixa</b></td><td style="color:#8f1219"><b>perigo</b></td></tr>
+          <tr><td>Baixa → <b>alta pressão</b> · ar <b>mais quente</b> que a ISA</td><td><b>menos</b> que a real</td><td>mais <b>alta</b></td><td style="color:#16582a">lado seguro (mas afeta a separação)</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Altitude-<b>pressão</b> corrige só a pressão; altitude-<b>densidade</b> corrige pressão <b>e</b> temperatura. Em dia ISA, as duas são iguais.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>ΔP (hPa) × 30 = Δh (ft)<br>15 hPa → 450 ft · 10 °C → 4 %</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Do quente ao frio, do alto ao baixo, olhe para baixo</b>” — o chão está mais perto.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Acima da TA, você esqueceu o QNH 1008 na janela e mantém 7.000 ft indicados. Em que nível real está?<div class="ans">1008 → 1013,2 subiria o ponteiro 150 ft; logo a altitude-pressão real é <b>7.150 ft</b> — 150 ft acima do FL070.</div></div>
+  </div>
+</section>

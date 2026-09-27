@@ -1,0 +1,145 @@
+<section class="page mod-tv" id="tv-estol" data-toc="Estol, ângulo de ataque crítico e parafuso">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-storm"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Limites aerodinâmicos</span>
+      <div class="title sm">Estol e parafuso</div>
+      <div class="sub">α crítico · Vs · estol acelerado · autorrotação</div>
+    </div>
+    <div class="def" style="max-width:132mm"><b>Estol</b> = perda de sustentação quando o <b>ângulo de ataque ultrapassa o crítico</b> e o fluxo descola do extradorso. Depende do ângulo — não da velocidade.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">1</span>O que acontece no estol</div>
+      <div class="bb">
+        <svg viewBox="0 0 370 100" width="100%">
+          <g fill="none" stroke="#1d6fd1" stroke-width="1.6"><path d="M0 32 C30 28 60 30 100 36 S150 52 178 58"/><path d="M0 72 C60 72 120 68 178 64"/></g>
+          <path d="M159.6 60.5 L155.2 59.2 L142.5 55.8 L122.9 51.2 L98.6 46.5 L72.6 42.7 L47.9 41.1 L27.6 42.3 L14.4 45.6 L10.0 50.0 L14.6 54.2 L27.6 57.1 L47.3 59.0 L71.4 59.9 L97.4 60.4 L121.9 60.5 L141.9 60.5 L155.1 60.5 L159.6 60.5Z" fill="#e2e8f0" stroke="#334155" stroke-width="1.6"/>
+          <text x="84" y="94" text-anchor="middle" class="tb" style="font-size:13px;fill:#16582a">α normal: fluxo colado</text>
+          <g fill="none" stroke="#1d6fd1" stroke-width="1.6"><path d="M190 22 C205 18 225 16 250 18 L368 20"/><path d="M190 64 C230 62 300 82 368 90"/></g>
+          <g fill="none" stroke="#e0313b" stroke-width="1.8"><circle cx="268" cy="28" r="6"/><circle cx="300" cy="38" r="9"/><path d="M300 33 a5 5 0 1 1 -4 6"/><circle cx="334" cy="52" r="10"/><path d="M334 46 a6 6 0 1 1 -5 7"/><circle cx="360" cy="68" r="7"/></g>
+          <path d="M357.7 80.4 L353.7 78.1 L342.1 71.7 L324.2 62.5 L301.8 52.0 L277.5 42.1 L253.9 34.6 L233.9 30.8 L220.4 30.8 L215.0 34.0 L218.5 39.1 L230.4 45.2 L249.0 51.7 L272.2 58.5 L297.3 65.2 L321.0 71.3 L340.4 76.1 L353.2 79.3 L357.7 80.4Z" fill="#e2e8f0" stroke="#334155" stroke-width="1.6"/>
+          <text x="280" y="98" text-anchor="middle" class="tb" style="font-size:13px;fill:#8f1219">α &gt; crítico: fluxo descola</text>
+        </svg>
+        <ul class="l small">
+          <li>Com o fluxo turbulento sobre o extradorso, a sucção desaparece: <b>L cai</b> e o <b>arrasto sobe</b> muito.</li>
+          <li>O avião pode estolar <b>em qualquer velocidade, atitude ou potência</b> — basta exceder o α crítico.</li>
+          <li><b>Única cura:</b> <b>reduzir o ângulo de ataque</b> (aliviar/empurrar o manche).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">2</span>Gráfico <span style="text-transform:none">CL × α</span></div>
+      <div class="bb">
+        <svg viewBox="0 0 280 176" width="100%">
+          <path d="M40 4 V150 H276" fill="none" stroke="#0f172a" stroke-width="2"/>
+          <path d="M40.0 118.7 L59.2 107.8 L78.4 97.0 L97.6 86.1 L116.8 75.2 L136.0 64.3 L155.2 53.4 L169.6 45.3 L179.2 40.7 L188.8 38.0 L198.4 37.1 L203.2 39.2 L208.0 45.3 L212.8 55.5 L217.6 60.9 L232.0 63.0 L251.2 65.7" fill="none" stroke="#2e9b45" stroke-width="2.5" stroke-dasharray="6 3"/>
+          <path d="M40.0 147.3 L59.2 136.4 L78.4 125.5 L97.6 114.6 L116.8 103.8 L136.0 92.9 L155.2 82.0 L174.4 71.1 L184.0 65.7 L193.6 61.1 L203.2 58.4 L212.8 57.5 L217.6 59.6 L222.4 65.7 L227.2 75.9 L232.0 81.3 L251.2 84.0 L270.4 86.8" fill="none" stroke="#1d6fd1" stroke-width="3.5"/>
+          <line x1="212.8" y1="57.5" x2="212.8" y2="150" stroke="#e0313b" stroke-width="1.8" stroke-dasharray="4 3"/>
+          <line x1="40" y1="57.5" x2="212.8" y2="57.5" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <circle cx="212.8" cy="57.5" r="5" fill="#e0313b"/>
+          <g class="tb" style="font-size:12.5px">
+            <text x="4" y="61" style="fill:#0f3f86">CLmáx</text>
+            <text x="220" y="48" style="fill:#8f1219">ESTOL</text>
+            <text x="100" y="30" style="fill:#16582a">com flape: CLmáx maior</text>
+            <text x="92" y="128" style="fill:#0f3f86" transform="rotate(-29 92 128)">asa limpa</text>
+            <text x="212" y="166" text-anchor="middle" style="fill:#8f1219">α crítico</text>
+            <text x="120" y="174" text-anchor="middle" style="fill:#0f172a">ângulo de ataque (α) →</text>
+            <text x="16" y="110" transform="rotate(-90 16 110)" style="fill:#0f172a">CL →</text>
+          </g>
+        </svg>
+        <div class="small">CL cresce com α até o <b>CLmáx</b>, no α crítico (tipicamente ≈ 15°–18°, conforme o perfil). Depois despenca.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">3</span>Velocidade de estol (<span style="text-transform:none">Vs</span>)</div>
+      <div class="bb">
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:13.5pt">Vs = √( 2P ÷ (ρ · S · CLmáx) )</span></div>
+        <table class="tb" style="--c:var(--orange)">
+          <tr><th>Fator</th><th>Vs (IAS)</th></tr>
+          <tr><td>↑ peso</td><td><b>↑</b> (proporcional a √peso)</td></tr>
+          <tr><td>↑ fator de carga (curva)</td><td><b>↑</b> (Vs × √n)</td></tr>
+          <tr><td>CG dianteiro</td><td><b>↑</b> (mais carga na cauda)</td></tr>
+          <tr><td>flapes baixados</td><td><b>↓</b> (↑ CLmáx)</td></tr>
+          <tr><td>gelo, sujeira, asa danificada</td><td><b>↑</b> (↓ CLmáx)</td></tr>
+          <tr><td>altitude</td><td><b>igual em IAS</b> (a TAS de estol aumenta)</td></tr>
+        </table>
+        <div class="small"><b>Ex.:</b> Vs = 50 kt com 1.000 kg → com 800 kg: 50 × √0,8 ≈ <b>44,7 kt</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">4</span>Estol acelerado</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="110" height="92" viewBox="0 0 120 100">
+            <path d="M8 88 Q60 88 104 20" fill="none" stroke="#8b46d6" stroke-width="2.5" stroke-dasharray="6 4"/>
+            <g transform="translate(70 62) rotate(-40) translate(-30 -12)"><use href="#plane-side" width="60" height="24"/></g>
+            <line x1="68" y1="58" x2="46" y2="26" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/>
+            <text x="4" y="16" class="tb" style="font-size:13px;fill:#16582a">L = n × P</text>
+            <text x="4" y="100" class="tb" style="font-size:12px;fill:#4c1d95">puxada / curva</text>
+          </svg>
+          <div class="f1 small">Estol <b>acima da Vs normal</b>, quando o piloto exige mais sustentação (n &gt; 1): curva de grande inclinação, arremetida brusca, recuperação de mergulho. O α crítico é atingido antes.</div>
+        </div>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:13pt">Vs acelerado = Vs × √n</span></div>
+        <div class="ex small"><span class="et">Exemplo resolvido</span><ol><li>Vs = 50 kt; curva nivelada 60° → n = 2.</li><li>Vs = 50 × √2 = 50 × 1,414 ≈ <b>70,7 kt</b>.</li><li>Voando a 65 kt e puxando 2 g → <b>estola</b> (65 &lt; 70,7).</li></ol></div>
+      </div>
+    </div>
+
+    <div class="blk c-green s4">
+      <div class="bh"><span class="n">5</span>Avisos e recuperação</div>
+      <div class="bb">
+        <ul class="chk small"><li>Alarme (buzina/luz) de estol</li><li><b>Trepidação</b> (<i>buffeting</i>)</li><li>Comandos “moles”, pouca resposta</li><li>Nariz alto, velocidade caindo, afundamento</li></ul>
+        <div class="sub-t">Recuperação genérica</div>
+        <ol class="l small"><li><b>Reduzir α</b>: aliviar/empurrar o manche.</li><li><b>Potência máxima</b>.</li><li>Asas niveladas, coordenado.</li><li>Voltar ao nivelado sem novo estol.</li></ol>
+        <div class="warn small">conforme o <b>POH/AFM</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s3">
+      <div class="bh"><span class="n">6</span>Raiz antes</div>
+      <div class="bb">
+        <svg viewBox="0 0 170 84" width="100%">
+          <rect x="4" y="10" width="16" height="60" rx="6" fill="#cbd5e1" stroke="#334155"/>
+          <path d="M20 22 L162 26 L162 54 L20 58Z" fill="#fff" stroke="#334155" stroke-width="1.6"/>
+          <path d="M20 22 L78 23.6 L78 56.4 L20 58Z" fill="url(#p-hatch)"/>
+          <rect x="112" y="47" width="50" height="7" fill="#0e9fb3"/>
+          <path d="M30 22 l6 -8 l6 8Z" fill="#e0313b"/>
+          <text x="22" y="76" class="tb" style="font-size:12px;fill:#8f1219">estola 1º</text>
+          <text x="108" y="68" class="tb" style="font-size:12px;fill:#0b5c68">aileron</text>
+          <text x="44" y="12" class="tb" style="font-size:11px;fill:#8f1219">stall strip</text>
+        </svg>
+        <div class="small">Torção da asa (<b>washout</b>) e <i>stall strips</i> fazem a <b>raiz estolar antes da ponta</b>: os <b>ailerons continuam eficazes</b> e há aviso por trepidação na cauda.</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s5">
+      <div class="bh"><span class="n">7</span>Parafuso</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="none" width="92" height="120" viewBox="0 0 110 150">
+            <g fill="none" stroke="#94a3b8" stroke-width="1.8" stroke-dasharray="5 3"><ellipse cx="55" cy="18" rx="40" ry="9"/><ellipse cx="55" cy="54" rx="40" ry="9"/><ellipse cx="55" cy="90" rx="40" ry="9"/><ellipse cx="55" cy="126" rx="40" ry="9"/></g>
+            <path d="M96 30 Q100 70 96 120" fill="none" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
+            <g transform="translate(40 62) rotate(35) translate(-20 -20)"><use href="#plane-top" width="40" height="40"/></g>
+            <text x="2" y="148" class="tb" style="font-size:12px;fill:#13294b">autorrotação</text>
+          </svg>
+          <div class="f1 small">Estol <b>com guinada</b> (descoordenado): uma asa fica mais estolada que a outra, o avião <b>gira e desce</b> em espiral apertada, com velocidade baixa.
+            <div class="sub-t" style="margin-top:1mm">Recuperação genérica*</div>
+            <ol class="l"><li><b>P</b>otência reduzida (lenta)</li><li><b>A</b>ilerons neutros</li><li><b>L</b>eme todo <b>oposto</b> à rotação</li><li><b>P</b>rofundor à frente</li><li>Parou de girar: leme neutro e sair do mergulho suavemente</li></ol>
+          </div>
+        </div>
+        <div class="small">* Procedimento real: <b>sempre conforme o POH</b> — muitos aviões não são homologados para parafuso intencional.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div><b>Parafuso ≠ espiral</b>: no parafuso a asa está <b>estolada</b> e a velocidade baixa; na espiral picada nada estola e a velocidade <b>aumenta</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Vs em curva</div>Vs × √n: 30° ×1,07 · 45° ×1,19 · 60° ×1,41</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Parafuso = “<b>PALP</b>”: Potência, Ailerons, Leme, Profundor.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Vs = 48 kt. Qual a velocidade de estol numa curva nivelada de 60°?<div class="ans">n = 2 → 48 × 1,414 ≈ <b>68 kt</b>.</div></div>
+  </div>
+</section>

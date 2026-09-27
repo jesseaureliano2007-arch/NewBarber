@@ -1,0 +1,135 @@
+<section class="page mod-gen" id="form-tdv" data-toc-level="1" data-toc="FORMULÁRIO E CÁLCULOS">
+  <div class="hero short" style="height:33mm">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht">
+      <span class="kicker">Formulário (1/6) · tempo, distância e combustível</span>
+      <div class="title sm">Formulário e cálculos</div>
+      <div class="sub">Tempo, distância, velocidade · horas · consumo · autonomia</div>
+    </div>
+    <div class="postit"><div class="pt">Toda conta, 4 passos</div>
+      <ol><li><span>Dados <b>com unidade</b></span></li><li><span>Converta: <b>h decimal, NM, kt</b></span></li><li><span>Fórmula e conta</span></li><li><span>O resultado faz sentido?</span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s12">
+      <div class="bh"><span class="n">1</span>Tempo · distância · velocidade</div>
+      <div class="bb">
+        <div class="row">
+          <div class="none" style="width:52mm;display:flex;flex-direction:column;gap:1.2mm;">
+            <div class="formula"><span class="fx">D = V × T</span><small>T = D ÷ V · V = D ÷ T</small></div>
+            <svg width="150" height="92" viewBox="0 0 196 118" style="margin:0 auto">
+              <path d="M98 6 L188 112 L8 112 Z" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="3"/>
+              <path d="M45 68 H151 M98 68 V112" stroke="#1d6fd1" stroke-width="2.5"/>
+              <text x="98" y="56" text-anchor="middle" style="font:700 26px Oswald;fill:#0f3f86">D</text>
+              <text x="68" y="102" text-anchor="middle" style="font:700 24px Oswald;fill:#e0313b">V</text>
+              <text x="98" y="97" text-anchor="middle" style="font:700 17px Oswald;fill:#475569">×</text>
+              <text x="128" y="102" text-anchor="middle" style="font:700 24px Oswald;fill:#2e9b45">T</text>
+            </svg>
+            <div class="small">Cubra com o dedo o que você procura: o que sobra é a conta. <b>D</b> em NM · <b>V</b> = GS em kt (NM por hora) · <b>T</b> em horas decimais.</div>
+          </div>
+          <div class="f1" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.6mm;">
+            <div class="ex" style="--c:var(--green)"><span class="et">Tempo · T = D ÷ V</span>
+              <ol class="small"><li>150 NM com GS 100 kt.</li><li>T = 150 ÷ 100 = <b>1,5 h</b></li><li>0,5 × 60 = 30 → <b>1 h 30 min</b></li></ol>
+              <hr style="border:0;border-top:1px dashed #94a3b8;margin:1mm 0">
+              <ol class="small"><li>84 NM com GS 120 kt.</li><li>T = 84 ÷ 120 = <b>0,7 h</b></li><li>0,7 × 60 = <b>42 min</b></li></ol>
+            </div>
+            <div class="ex" style="--c:var(--blue)"><span class="et">Distância · D = V × T</span>
+              <ol class="small"><li>GS 110 kt por 1 h 12 min.</li><li>12 ÷ 60 = 0,2 → T = <b>1,2 h</b></li><li>D = 110 × 1,2 = <b>132 NM</b></li></ol>
+              <hr style="border:0;border-top:1px dashed #94a3b8;margin:1mm 0">
+              <ol class="small"><li>GS 95 kt por 24 min.</li><li>24 ÷ 60 = <b>0,4 h</b></li><li>D = 95 × 0,4 = <b>38 NM</b></li></ol>
+            </div>
+            <div class="ex" style="--c:var(--red)"><span class="et">Velocidade · V = D ÷ T</span>
+              <ol class="small"><li>90 NM em 45 min.</li><li>45 ÷ 60 = <b>0,75 h</b></li><li>V = 90 ÷ 0,75 = <b>120 kt</b></li></ol>
+              <hr style="border:0;border-top:1px dashed #94a3b8;margin:1mm 0">
+              <ol class="small"><li>35 NM em 20 min.</li><li>35 ÷ 20 = 1,75 NM/min</li><li>× 60 = <b>105 kt</b></li></ol>
+            </div>
+            <div class="trap small" style="grid-column:span 3">use a <b>GS</b> (velocidade no solo), não a IAS nem a TAS; e <b>45 min = 0,75 h</b>, não 0,45 h. Atalho: GS ÷ 60 = NM por minuto (120 kt = 2 NM/min).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">2</span>Horas: decimal ↔ h e min</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="96" height="96" viewBox="0 0 96 96">
+            <circle cx="48" cy="48" r="42" fill="#fff" stroke="#13294b" stroke-width="3"/>
+            <path d="M48 48 L48 6 A42 42 0 0 1 87.9 61 Z" fill="#f08a12" opacity=".85"/>
+            <g stroke="#13294b" stroke-width="2"><path d="M48 6 V13 M90 48 H83 M48 90 V83 M6 48 H13"/></g>
+            <text x="69" y="33" text-anchor="middle" class="tw" style="font-size:12px">18 min</text>
+            <text x="44" y="70" text-anchor="middle" class="tb" style="font-size:13px">0,3 h</text>
+          </svg>
+          <div class="f1">
+            <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:12.5pt">min = decimal × 60</span><small>h decimal = min ÷ 60</small></div>
+            <table class="tb" style="margin-top:1mm"><tr><th>min</th><th>6</th><th>12</th><th>15</th><th>20</th><th>30</th><th>45</th></tr><tr><td><b>h</b></td><td>0,1</td><td>0,2</td><td>0,25</td><td>0,33</td><td>0,5</td><td>0,75</td></tr></table>
+          </div>
+        </div>
+        <div class="ex"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>1,3 h → 0,3 × 60 = 18 → <b>1 h 18 min</b>.</li><li>2,75 h → 0,75 × 60 = 45 → <b>2 h 45 min</b>.</li><li>1 h 42 min → 42 ÷ 60 = 0,7 → <b>1,7 h</b>.</li><li>50 min → 50 ÷ 60 = <b>0,83 h</b>.</li></ol>
+        </div>
+        <div class="trap small"><b>1,3 h ≠ 1 h 30 min</b> (é 1 h 18 min).</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">3</span>Consumo de combustível</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="100" height="70" viewBox="0 0 100 70">
+            <use href="#clock" x="0" y="8" width="34" height="34"/>
+            <text x="41" y="31" text-anchor="middle" class="tb" style="font-size:16px">×</text>
+            <use href="#fuel-pump" x="50" y="2" width="36" height="44"/>
+            <use href="#drop" x="80" y="36" width="18" height="24"/>
+            <text x="20" y="58" text-anchor="middle" class="tb" style="font-size:12px">tempo</text>
+            <text x="66" y="66" text-anchor="middle" class="tb" style="font-size:12px">L/h · gal/h</text>
+          </svg>
+          <div class="f1"><div class="formula"><span class="fx">C = c × T</span><small>C total · c consumo horário (L/h, US gal/h, kg/h) · T em h</small></div></div>
+        </div>
+        <div class="ex" style="--c:var(--teal)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>32 L/h por 2 h 15 min → 15 ÷ 60 = 0,25 → T = 2,25 h → C = 32 × 2,25 = <b>72 L</b>.</li><li>8,5 gal/h por 1 h 40 min → 40 ÷ 60 = 0,67 → T = 1,67 h → C = 8,5 × 1,67 ≈ <b>14,2 US gal</b> → × 3,785 ≈ <b>53,6 L</b> → × 0,72 ≈ <b>38,6 kg</b>.</li></ol>
+        </div>
+        <div class="trap small">consumo em gal/h e tanque em litros? Converta antes (1 US gal = 3,785 L). Peso do Avgas ≈ 0,72 kg/L (≈ 6 lb/gal).</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s12">
+      <div class="bh"><span class="n">4</span>Autonomia e combustível necessário</div>
+      <div class="bb">
+        <div class="row">
+          <div class="none" style="width:62mm;display:flex;flex-direction:column;gap:1.2mm;">
+            <div class="formula"><span class="fx">A = Q ÷ c</span><small>A autonomia (h) · Q combustível <b>utilizável</b> · c consumo horário</small></div>
+            <svg width="234" height="52" viewBox="0 0 234 52">
+              <rect x="2" y="4" width="230" height="28" rx="6" fill="#fff" stroke="#16582a" stroke-width="2.5"/>
+              <rect x="5" y="7" width="160" height="22" rx="3" fill="#2e9b45"/>
+              <rect x="165" y="7" width="64" height="22" fill="#f08a12"/>
+              <text x="85" y="23" text-anchor="middle" class="tw" style="font-size:13px">voo até o destino</text>
+              <text x="197" y="23" text-anchor="middle" class="tw" style="font-size:13px">reserva</text>
+              <text x="6" y="47" class="tb" style="font-size:12px">tempo de voo × consumo</text>
+              <text x="230" y="47" text-anchor="end" class="tb" style="font-size:12px">dia +30 / noite +45</text>
+            </svg>
+            <div class="trap small">use o combustível <b>utilizável</b> (não o total) e arredonde a autonomia <b>para baixo</b>.</div>
+          </div>
+          <div class="f1" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.6mm;">
+            <div class="ex" style="--c:var(--green)"><span class="et">Ex. 1 · autonomia</span>
+              <ol class="small"><li>150 L utilizáveis, 30 L/h.</li><li>A = 150 ÷ 30 = <b>5 h</b>.</li><li>Plano de voo (HHMM): <b>0500</b>.</li></ol></div>
+            <div class="ex" style="--c:var(--green)"><span class="et">Ex. 2 · com reserva</span>
+              <ol class="small"><li>40 US gal, 9 gal/h → A = 4,44 h.</li><li>0,44 × 60 = 26,7 → <b>4 h 26 min</b> → <b>0426</b>.</li><li>− 30 min de reserva diurna = <b>3 h 56 min</b> de voo planejável.</li></ol></div>
+            <div class="ex" style="--c:var(--blue)"><span class="et">Ex. 3 · necessário</span>
+              <ol class="small"><li>Voo diurno de 1 h 50 min, 30 L/h.</li><li>1 h 50 + 30 min = 2 h 20 min = <b>2,33 h</b>.</li><li>30 × 2,33 = <b>70 L</b> no mínimo.</li></ol></div>
+            <div class="warn small" style="grid-column:span 3">reservas do RBAC 91 vigente e consumo real no POH/AFM (táxi, subida e mistura mudam o consumo).</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="resumo"><span class="rt">Resumo</span><div class="ri"><span>T = D ÷ V</span><span>D = V × T</span><span>V = D ÷ T</span><span>min = decimal × 60</span><span>C = c × T</span><span>A = Q utilizável ÷ c</span><span>reserva VFR: dia +30 min · noite +45 min</span></div></div>
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Minutos em decimal: <b>20 min = 0,33 h</b> (não 0,2 h). Sempre divida por 60.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>6 min = 0,1 h · 1 US gal = 3,785 L · Avgas ≈ 0,72 kg/L</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Triângulo: <b>D em cima</b>, V × T embaixo.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>120 NM, GS 96 kt, consumo 28 L/h, voo diurno. Tempo e combustível mínimo?<div class="ans">T = 120 ÷ 96 = 1,25 h = <b>1 h 15 min</b>; 28 × 1,25 = 35 L + 14 L (30 min) = <b>49 L</b>.</div></div>
+  </div>
+</section>

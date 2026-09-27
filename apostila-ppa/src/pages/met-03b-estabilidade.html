@@ -1,0 +1,135 @@
+<section class="page mod-met" id="met-estabilidade" data-toc="Estabilidade, gradientes adiabáticos e inversão térmica">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Movimento vertical do ar</span>
+      <div class="title sm">Estabilidade e inversão</div>
+      <div class="sub">A bolha de ar que sobe: continua subindo ou volta?</div>
+    </div>
+    <div class="def"><b>Estável</b>: o ar deslocado para cima tende a <b>voltar</b>. <b>Instável</b>: tende a <b>continuar subindo</b> sozinho — gera cumulus, turbulência e trovoadas.</div>
+    <div class="postit"><div class="pt">Gradientes (por 1.000 ft)</div>
+      <ol><li><span class="pi">Adiabático <b>seco</b>: 3 °C</span></li><li><span class="pi">Adiabático <b>saturado</b>: ≈ 1,5 °C</span></li><li><span class="pi">Ponto de orvalho: 0,5 °C</span></li><li><span class="pi">Ambiente (ISA): 2 °C — varia!</span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">1</span>Adiabático × ambiente</div>
+      <div class="bb">
+        <ul class="l small">
+          <li><b>Adiabático</b>: a bolha muda de temperatura só por <b>expansão</b> (sobe → esfria) ou <b>compressão</b> (desce → aquece), sem trocar calor com o ambiente.</li>
+          <li><b>Seco</b> (não saturado): <b>3 °C/1.000 ft</b>.</li>
+          <li><b>Saturado</b>: ≈ <b>1,5 °C/1.000 ft</b> — menor porque a condensação <b>libera calor latente</b> (varia com a temperatura).</li>
+          <li><b>Gradiente ambiente</b> (real, medido por radiossonda): muda a cada dia e lugar. É ele que decide a estabilidade.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="blk c-red s7">
+      <div class="bh"><span class="n">2</span>O teste da bolha (parcela)</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="f1" viewBox="0 0 250 170" width="100%">
+            <line x1="26" y1="150" x2="245" y2="150" stroke="#334155" stroke-width="1.5"/><line x1="26" y1="150" x2="26" y2="6" stroke="#334155" stroke-width="1.5"/>
+            <text x="135" y="166" text-anchor="middle" class="t" style="font-size:13px">temperatura →</text><text x="12" y="80" text-anchor="middle" class="t" style="font-size:13px" transform="rotate(-90 12 80)">altitude →</text>
+            <line x1="200" y1="150" x2="80" y2="14" stroke="#e0313b" stroke-width="3.5"/><text x="80" y="12" class="tb" style="font-size:13px;fill:#8f1219" text-anchor="middle">bolha 3°</text>
+            <line x1="200" y1="150" x2="40" y2="30" stroke="#1d6fd1" stroke-width="3" stroke-dasharray="7 4"/><text x="32" y="44" class="tb" style="font-size:13px;fill:#0f3f86">amb. 4°</text>
+            <line x1="200" y1="150" x2="170" y2="14" stroke="#2e9b45" stroke-width="3" stroke-dasharray="7 4"/><text x="178" y="16" class="tb" style="font-size:13px;fill:#16582a">amb. 1°</text>
+            <circle cx="133" cy="74" r="8" fill="#e0313b"/>
+            <text x="30" y="118" class="tb" style="font-size:12.5px;fill:#0f3f86">4°: bolha mais</text><text x="30" y="132" class="tb" style="font-size:12.5px;fill:#0f3f86">quente → SOBE</text>
+            <text x="244" y="84" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">1°: bolha</text><text x="244" y="98" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">mais fria</text><text x="244" y="112" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">→ VOLTA</text>
+          </svg>
+          <div class="f1 small">Empurre uma bolha seca para cima: ela esfria 3 °C/1.000 ft.<br>• Se o <b>ambiente esfria mais</b> (ex.: 4 °C), a bolha fica <b>mais quente</b> e leve que o ar ao redor → <b>continua subindo</b> = <b style="color:#8f1219">INSTÁVEL</b>.<br>• Se o <b>ambiente esfria menos</b> (ex.: 1 °C), a bolha fica <b>mais fria</b> e pesada → <b>volta</b> = <b style="color:#16582a">ESTÁVEL</b>.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">3</span>Classificação pelo gradiente ambiente</div>
+      <div class="bb">
+        <svg viewBox="0 0 340 72" width="100%">
+          <rect x="0" y="16" width="112" height="30" fill="#2e9b45"/><rect x="112" y="16" width="116" height="30" fill="#f6c945"/><rect x="228" y="16" width="112" height="30" fill="#e0313b"/>
+          <text x="112" y="12" text-anchor="middle" class="tb" style="font-size:12px">1,5 °C</text><text x="228" y="12" text-anchor="middle" class="tb" style="font-size:12px">3 °C</text>
+          <text x="56" y="36" text-anchor="middle" class="tw" style="font-size:12.5px">ABS. ESTÁVEL</text><text x="170" y="36" text-anchor="middle" class="tb" style="font-size:12.5px">CONDICIONAL</text><text x="284" y="36" text-anchor="middle" class="tw" style="font-size:12.5px">ABS. INSTÁVEL</text>
+          <text x="56" y="62" text-anchor="middle" class="t" style="font-size:11.5px">&lt; 1,5 °C/1.000 ft</text><text x="170" y="62" text-anchor="middle" class="t" style="font-size:11.5px">instável só se saturado</text><text x="284" y="62" text-anchor="middle" class="t" style="font-size:11.5px">&gt; 3 °C/1.000 ft</text>
+        </svg>
+        <div class="small"><b>Condicionalmente instável</b> (entre 1,5 e 3): estável para ar seco, instável para ar saturado — o caso mais comum nos trópicos; basta levantar o ar úmido até a saturação.</div>
+        <div class="rel small">Ar aquecido por baixo (solo quente, ar frio sobre mar quente) → mais <b>instável</b>. Ar resfriado por baixo (noite, ar quente sobre superfície fria) → mais <b>estável</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">4</span>Ar estável × ar instável</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--teal)">
+          <tr><th></th><th>Estável</th><th>Instável</th></tr>
+          <tr><td><b>Nuvens</b></td><td>estratiformes (St, As, Ns)</td><td>cumuliformes (Cu, TCU, CB)</td></tr>
+          <tr><td><b>Precipitação</b></td><td>contínua, chuvisco</td><td>pancadas (SH), trovoadas</td></tr>
+          <tr><td><b>Turbulência</b></td><td>voo liso</td><td>turbulência convectiva</td></tr>
+          <tr><td><b>Visibilidade</b></td><td>ruim (névoa, fumaça, FG)</td><td>boa (fora das pancadas)</td></tr>
+          <tr><td><b>Vento</b></td><td>constante</td><td>com rajadas</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-orange s7">
+      <div class="bh"><span class="n">5</span>Inversão térmica — perfil de temperatura</div>
+      <div class="bb">
+        <div class="row">
+          <svg class="f1" viewBox="0 0 230 180" width="100%">
+            <rect x="26" y="98" width="204" height="62" fill="#f6c945" opacity=".35"/>
+            <line x1="26" y1="160" x2="228" y2="160" stroke="#334155" stroke-width="1.5"/><line x1="26" y1="160" x2="26" y2="6" stroke="#334155" stroke-width="1.5"/>
+            <text x="128" y="176" text-anchor="middle" class="t" style="font-size:12px">temperatura →</text><text x="12" y="84" text-anchor="middle" class="t" style="font-size:12px" transform="rotate(-90 12 84)">altitude →</text>
+            <polyline points="70,160 160,98 100,10" fill="none" stroke="#e0313b" stroke-width="3.5"/>
+            <text x="222" y="116" class="tb" style="font-size:12.5px;fill:#9a4d00" text-anchor="end">INVERSÃO</text><text x="222" y="130" class="t" style="font-size:12px" text-anchor="end">T sobe com</text><text x="222" y="143" class="t" style="font-size:12px" text-anchor="end">a altura</text>
+            <text x="150" y="40" class="t" style="font-size:12px">acima: T cai</text><text x="150" y="54" class="t" style="font-size:12px">normalmente</text>
+            <use href="#fog" x="30" y="128" width="46" height="24"/>
+            <text x="30" y="122" class="tb" style="font-size:11.5px;fill:#475569">névoa presa</text>
+            <text x="30" y="92" class="tb" style="font-size:11.5px;fill:#9a4d00">topo: windshear</text>
+          </svg>
+          <div class="f1 small">
+            Camada em que a temperatura <b>aumenta</b> com a altitude: <b>muito estável</b>, uma “tampa”.
+            <ul class="l">
+              <li><b>De radiação</b>: noites claras e calmas, junto ao solo.</li>
+              <li><b>De subsidência</b>: ar descendo em anticiclone (alta pressão).</li>
+              <li><b>Frontal</b>: ar quente sobre ar frio.</li>
+            </ul>
+            <b>Efeitos</b>: visibilidade ruim abaixo; ar liso; <b>windshear</b> no topo; chuva congelante (FZRA) em frentes.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-green s5">
+      <div class="bh"><span class="n">6</span>O que faz o ar subir</div>
+      <div class="bb">
+        <svg viewBox="0 0 280 92" width="100%" style="max-height:21mm">
+          <rect x="0" y="78" width="280" height="14" fill="#8b6b3d"/>
+          <path d="M30 76 C20 60 40 44 30 24" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><use href="#sun" x="4" y="0" width="22" height="22"/>
+          <path d="M80 78 L120 30 L160 78Z" fill="#6b7f5e"/><path d="M70 72 L112 36" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/>
+          <path d="M180 78 L270 44 L270 78Z" fill="#93c5fd"/><path d="M180 70 L262 30" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
+          <text x="30" y="90" text-anchor="middle" class="tw" style="font-size:11px">convecção</text><text x="120" y="90" text-anchor="middle" class="tw" style="font-size:11px">orográfico</text><text x="226" y="90" text-anchor="middle" class="tw" style="font-size:11px">frontal</text>
+          <text x="226" y="70" text-anchor="middle" class="tb" style="font-size:11px;fill:#0f3f86">ar frio</text>
+        </svg>
+        <div class="small">+ <b>convergência</b> (ex.: ZCIT). Levantamento + umidade + instabilidade = <b>trovoada</b>.</div>
+        <div class="ex small"><span class="et">Exemplo</span> Sondagem: 30 °C na superfície e 18 °C a 3.000 ft → 4 °C/1.000 ft → <b>absolutamente instável</b>: Cu e turbulência.</div>
+      </div>
+    </div>
+    <div class="blk c-pink s12">
+      <div class="bh"><span class="n">7</span>Como cai na prova · erros frequentes</div>
+      <div class="bb">
+        <div class="row">
+          <ul class="l small f1"><li>“Gradiente de 2,5 °C/1.000 ft” → <b>condicionalmente instável</b>.</li><li>“Saturado &lt; seco por quê?” → <b>calor latente</b> da condensação.</li></ul>
+          <ul class="chk x small f1"><li>“Estável = tempo bom”: pode ter <b>FG, St e chuvisco</b> por horas.</li><li>Isotermia (T constante) também é <b>estável</b>, como a inversão.</li></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>O gradiente adiabático <b>não</b> define a estabilidade sozinho: compare-o com o gradiente <b>ambiente</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>3 °C/1.000 ft ≈ 1 °C/100 m<br>1,5 °C/1.000 ft ≈ 0,5 °C/100 m</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>“<b>Estável é estrato, instável é cúmulo.</b>” Inversão = tampa: embaixo fica a sujeira.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Manhã de névoa seca, ar liso e estratos baixos, clareando à tarde com cumulus e turbulência. O que mudou?<div class="ans">O aquecimento do solo <b>destruiu a inversão</b> noturna: o ar passou de estável a instável.</div></div>
+  </div>
+</section>

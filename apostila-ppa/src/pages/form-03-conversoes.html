@@ -1,0 +1,109 @@
+<section class="page mod-gen" id="form-conversoes" data-toc="Formulário: conversões NM/km, pés/metros, nós/km/h, hPa/inHg">
+  <div class="hero mini">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht"><span class="kicker">Formulário (3/6) · unidades</span><div class="title sm">Conversões de unidades</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">8</span>NM ↔ km ↔ m</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">km = NM × 1,852</span><small>NM = km ÷ 1,852 · 1 NM = 1.852 m · 1 SM = 1.609 m</small></div>
+        <svg viewBox="0 0 340 92" width="100%">
+          <g class="tb" style="font-size:13px">
+            <rect x="80" y="6" width="240" height="20" rx="3" fill="#2e9b45"/><text x="4" y="21">1 NM</text><text x="200" y="21" text-anchor="middle" class="tw" style="font-size:13px">1.852 m · náutica</text>
+            <rect x="80" y="34" width="208.5" height="20" rx="3" fill="#94a3b8"/><text x="4" y="49">1 SM</text><text x="184" y="49" text-anchor="middle" class="tw" style="font-size:13px">1.609 m · terrestre</text>
+            <rect x="80" y="62" width="129.6" height="20" rx="3" fill="#1d6fd1"/><text x="4" y="77">1 km</text><text x="145" y="77" text-anchor="middle" class="tw" style="font-size:13px">1.000 m</text>
+          </g>
+        </svg>
+        <div class="ex" style="--c:var(--green)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>120 NM → 120 × 1,852 = <b>222,2 km</b>.</li><li>300 km → 300 ÷ 1,852 = <b>162 NM</b>.</li><li>5 NM → 5 × 1.852 = <b>9.260 m</b>.</li></ol></div>
+        <div class="trap small">a milha <b>náutica</b> (1.852 m) é maior que a <b>terrestre</b> (1.609 m). Em aviação, “milha” = NM, salvo aviso.</div>
+      </div>
+    </div>
+
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">9</span>Pés ↔ metros</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">m = ft × 0,3048</span><small>ft = m ÷ 0,3048 ≈ m × 3,28</small></div>
+        <div class="row c">
+          <svg class="none" width="108" height="106" viewBox="0 0 120 118">
+            <line x1="40" y1="8" x2="40" y2="110" stroke="#1d6fd1" stroke-width="4"/>
+            <line x1="80" y1="8" x2="80" y2="110" stroke="#e0313b" stroke-width="4"/>
+            <g stroke="#334155" stroke-width="2"><path d="M34 110 H46 M34 76 H46 M34 42 H46 M34 8 H46"/><path d="M74 110 H86 M74 76 H86 M74 42 H86 M74 8 H86"/></g>
+            <g class="tb" style="font-size:12px" text-anchor="end"><text x="31" y="114">0</text><text x="31" y="80">1.000</text><text x="31" y="46">2.000</text><text x="31" y="12">3.000</text></g>
+            <g class="tb" style="font-size:12px"><text x="89" y="114">0</text><text x="89" y="80">305</text><text x="89" y="46">610</text><text x="89" y="12">914</text></g>
+          </svg>
+          <div class="f1 small"><b style="color:#1d6fd1">ft</b> à esquerda · <b style="color:#e0313b">m</b> à direita.<br>1.000 ft ≈ <b>300 m</b> (305).<br>300 m de separação vertical de nuvens = <b>1.000 ft</b>.</div>
+        </div>
+        <div class="ex" style="--c:var(--blue)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>1.500 ft → 1.500 × 0,3048 = <b>457 m</b>.</li><li>3.000 m → 3.000 ÷ 0,3048 = <b>9.843 ft</b>.</li><li>De cabeça: 300 m × 3,28 ≈ <b>984 ft</b> ≈ 1.000 ft.</li></ol></div>
+        <div class="trap small">altitude e teto em <b>pés</b>; visibilidade em <b>metros/km</b>. Não misture ao comparar com mínimos.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">10</span>Nós ↔ km/h</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">km/h = kt × 1,852</span><small>kt = km/h ÷ 1,852 · 1 kt = 1 NM por hora</small></div>
+        <div class="row c">
+          <svg class="none" width="106" height="106" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="56" fill="#1f2937"/><circle cx="60" cy="60" r="48" fill="none" stroke="#e0313b" stroke-width="7" stroke-dasharray="120 400" transform="rotate(150 60 60)"/>
+            <path d="M60 60 L92 32" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/><circle cx="60" cy="60" r="5" fill="#fff"/>
+            <text x="60" y="84" text-anchor="middle" class="tw" style="font-size:15px">100 kt</text>
+            <text x="60" y="101" text-anchor="middle" style="font:700 13px 'Barlow Condensed';fill:#ffe46b">185 km/h</text>
+          </svg>
+          <div class="f1 small">A mesma velocidade, duas escalas. O número em km/h é <b>quase o dobro</b> do número em nós (× 1,852).<br>1 kt ≈ 1,15 mph.</div>
+        </div>
+        <div class="ex" style="--c:var(--red)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>100 kt → 100 × 1,852 = <b>185,2 km/h</b>.</li><li>250 km/h → 250 ÷ 1,852 = <b>135 kt</b>.</li></ol></div>
+        <div class="trap small">“nó por hora” não existe: <b>nó já é velocidade</b> (NM/h). E nó ≠ mph.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s6">
+      <div class="bh"><span class="n">11</span>hPa ↔ inHg</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">hPa = inHg × 33,86</span><small>inHg = hPa × 0,02953 · 1013,25 hPa = 29,92 inHg · hPa = mb</small></div>
+        <div class="row c">
+          <svg class="none" width="106" height="106" viewBox="0 0 100 100"><use href="#alt-face"/>
+            <rect x="58" y="44" width="28" height="13" rx="2" fill="#fff" stroke="#0e9fb3" stroke-width="1.5"/><text x="72" y="54" text-anchor="middle" style="font:700 10px 'Barlow Condensed';fill:#0b5c68">29.92</text>
+            <rect x="14" y="44" width="28" height="13" rx="2" fill="#fff" stroke="#0e9fb3" stroke-width="1.5"/><text x="28" y="54" text-anchor="middle" style="font:700 10px 'Barlow Condensed';fill:#0b5c68">1013</text>
+          </svg>
+          <div class="f1 small">Janela de ajuste (Kollsman): alguns altímetros mostram <b>hPa</b> e <b>inHg</b>.<br>1 inHg ≈ 34 hPa ≈ <b>1.000 ft</b>.<br>0,01 inHg ≈ 10 ft.</div>
+        </div>
+        <div class="ex" style="--c:var(--teal)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>30,12 inHg → 30,12 × 33,86 = <b>1.020 hPa</b>.</li><li>1005 hPa → 1005 × 0,02953 = <b>29,68 inHg</b>.</li></ol></div>
+        <div class="trap small">no Brasil o QNH vem em <b>hPa</b> (METAR: Q1013); inHg aparece em aeronaves e publicações dos EUA (A2992).</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">★</span>Qual fator usar? · multiplique ou divida</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="330" height="62" viewBox="0 0 330 62">
+            <rect x="4" y="16" width="100" height="32" rx="6" fill="#13294b"/><text x="54" y="37" text-anchor="middle" class="tw" style="font-size:14px">unidade maior</text>
+            <rect x="226" y="16" width="100" height="32" rx="6" fill="#1d6fd1"/><text x="276" y="37" text-anchor="middle" class="tw" style="font-size:14px">unidade menor</text>
+            <path d="M108 24 H220" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/><text x="164" y="18" text-anchor="middle" class="tb" style="font-size:13px;fill:#16582a">× fator (número cresce)</text>
+            <path d="M220 42 H108" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/><text x="164" y="60" text-anchor="middle" class="tb" style="font-size:13px;fill:#8f1219">÷ fator (número diminui)</text>
+          </svg>
+          <div class="f1 small">NM → km: km é menor, o número <b>cresce</b> (× 1,852). ft → m: o metro é maior, o número <b>diminui</b> (÷ 3,28, que é o mesmo que × 0,3048). Confira sempre se o resultado ficou maior ou menor do que deveria.</div>
+        </div>
+        <div class="tokrow">
+          <span class="tok t-blue"><b>1 m/s ≈ 1,94 kt</b><small>vento em m/s → kt</small></span>
+          <span class="tok t-green"><b>500 ft/min ≈ 2,5 m/s</b><small>razão de subida</small></span>
+          <span class="tok t-orange"><b>1 US gal = 3,785 L</b><small>combustível</small></span>
+          <span class="tok t-purple"><b>1 kg = 2,205 lb</b><small>peso</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Usar 1,609 (milha terrestre) no lugar de <b>1,852</b> (milha náutica).</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 NM = 1,852 km · 1 ft = 0,3048 m · 1 kt = 1,852 km/h · 29,92 inHg = 1013,25 hPa</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div><b>1.852</b> vale para NM→m e kt→km/h (× 1,852).</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Uma pista tem 1.200 m. Quanto é em pés?<div class="ans">1.200 ÷ 0,3048 ≈ <b>3.937 ft</b> (≈ 1.200 × 3,28).</div></div>
+  </div>
+</section>

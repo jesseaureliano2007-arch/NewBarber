@@ -1,0 +1,129 @@
+<section class="page mod-gen" id="form-navegacao" data-toc="Formulário: latitude/distância, UTC, regra dos 60 e componentes do vento">
+  <div class="hero mini">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht"><span class="kicker">Formulário (4/6) · navegação</span><div class="title sm">Distância, hora, rumo e vento</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">12</span>Latitude, longitude e distância</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">1' de latitude = 1 NM</span><small>1° lat = 60 NM ≈ 111 km · 1° long = 60 × cos(lat) NM</small></div>
+        <div class="row c">
+          <svg class="none" width="124" height="120" viewBox="0 0 124 120">
+            <circle cx="62" cy="60" r="54" fill="#dbeafe" stroke="#16582a" stroke-width="2.5"/>
+            <ellipse cx="62" cy="60" rx="22" ry="54" fill="none" stroke="#2e9b45" stroke-width="1.5"/>
+            <line x1="62" y1="6" x2="62" y2="114" stroke="#2e9b45" stroke-width="1.5"/>
+            <line x1="8" y1="60" x2="116" y2="60" stroke="#e0313b" stroke-width="3"/>
+            <line x1="12.3" y1="81" x2="111.7" y2="81" stroke="#1d6fd1" stroke-width="2.5"/>
+            <line x1="35" y1="106.8" x2="89" y2="106.8" stroke="#8b46d6" stroke-width="2.5"/>
+            <text x="62" y="56" text-anchor="middle" class="tb" style="paint-order:stroke;stroke:#fff;stroke-width:3px;font-size:12px;fill:#8f1219">Equador · 1° = 60 NM</text>
+            <text x="62" y="77" text-anchor="middle" class="tb" style="paint-order:stroke;stroke:#fff;stroke-width:3px;font-size:12px;fill:#0f3f86">23°S · 55 NM</text>
+            <text x="62" y="102" text-anchor="middle" class="tb" style="paint-order:stroke;stroke:#fff;stroke-width:3px;font-size:12px;fill:#4c1d95">60°S · 30 NM</text>
+          </svg>
+          <div class="f1 small">Os <b>meridianos convergem</b> para os polos: um grau de longitude “encolhe” com o cosseno da latitude. A latitude não muda: 1° = 60 NM em qualquer lugar.</div>
+        </div>
+        <div class="ex" style="--c:var(--green)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>Mesmo meridiano, de 20°00'S a 23°30'S: Δ = 3°30' = 210' = <b>210 NM</b> (≈ 389 km).</li><li>Sobre o paralelo 23°S, Δlong = 2° = 120' → 120 × cos 23° (0,92) = <b>110,5 NM</b>.</li><li>A 60° de latitude: 1° de longitude = 60 × 0,5 = <b>30 NM</b>.</li></ol></div>
+        <div class="trap small">1' de <b>longitude</b> só vale 1 NM no <b>Equador</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">13</span>UTC ↔ hora local</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:13pt">Local = UTC + fuso</span><small>UTC = Local − fuso · Brasília: fuso −3 → UTC = local + 3 h</small></div>
+        <svg viewBox="0 0 340 78" width="100%">
+          <g class="tw" style="font-size:13px" text-anchor="middle">
+            <rect x="2" y="4" width="80" height="44" rx="5" fill="#8b46d6"/><text x="42" y="22">UTC−5</text><text x="42" y="40" style="font-size:12px">Acre</text>
+            <rect x="86" y="4" width="80" height="44" rx="5" fill="#2e9b45"/><text x="126" y="22">UTC−4</text><text x="126" y="40" style="font-size:12px">AM, MT, MS…</text>
+            <rect x="170" y="4" width="80" height="44" rx="5" fill="#1d6fd1"/><text x="210" y="22">UTC−3</text><text x="210" y="40" style="font-size:12px">Brasília</text>
+            <rect x="254" y="4" width="84" height="44" rx="5" fill="#0e9fb3"/><text x="296" y="22">UTC−2</text><text x="296" y="40" style="font-size:12px">F. de Noronha</text>
+          </g>
+          <g class="tb" style="font-size:13px" text-anchor="middle"><text x="42" y="68">10:00</text><text x="126" y="68">11:00</text><text x="210" y="68">12:00</text><text x="296" y="68">13:00</text></g>
+          <text x="170" y="77" text-anchor="middle" class="t" style="font-size:11px">hora local quando são 15:00 UTC (15:00Z)</text>
+        </svg>
+        <div class="ex" style="--c:var(--orange)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>15:00Z em Brasília (UTC−3): 15 − 3 = <b>12:00</b> local.</li><li>Manaus (UTC−4), 21:30 local do dia 10: 21:30 + 4 h = 25:30 → <b>01:30Z do dia 11</b>.</li><li>Rio Branco (UTC−5), 03:00Z do dia 5: 03 − 5 = −2 → <b>22:00 do dia 4</b>.</li></ol></div>
+        <div class="trap small">passou de 24 h ou ficou negativo? <b>Mude a data</b>. Sem horário de verão desde 2019.</div>
+        <div class="small">Longitude ↔ tempo: <b>15° = 1 h</b> · <b>1° = 4 min</b> (45° W = 3 h).</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">14</span>Regra dos 60</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:12.5pt">erro° = 60 × desvio ÷ dist.</span><small>desvio (NM) = erro° × distância ÷ 60 · 1° ≈ 1 NM a cada 60 NM</small></div>
+        <svg viewBox="0 0 340 104" width="100%">
+          <line x1="20" y1="30" x2="318" y2="30" stroke="#2e9b45" stroke-width="3" stroke-dasharray="8 5"/>
+          <line x1="20" y1="30" x2="118" y2="72" stroke="#e0313b" stroke-width="3.5" marker-end="url(#arr-r)"/>
+          <line x1="118" y1="72" x2="316" y2="32" stroke="#8b46d6" stroke-width="3" marker-end="url(#arr-p)"/>
+          <line x1="118" y1="30" x2="118" y2="72" stroke="#334155" stroke-width="1.5"/>
+          <circle cx="20" cy="30" r="6" fill="#13294b"/><circle cx="318" cy="30" r="6" fill="#13294b"/>
+          <g class="tb" style="font-size:13px">
+            <text x="10" y="18">A</text><text x="312" y="18">B</text>
+            <text x="68" y="24" text-anchor="middle" style="fill:#16582a">30 NM</text>
+            <text x="220" y="24" text-anchor="middle" style="fill:#16582a">faltam 60 NM</text>
+            <text x="124" y="56" style="fill:#334155">3 NM</text>
+            <text x="40" y="66" style="fill:#8f1219">6° (erro)</text>
+            <text x="200" y="76" style="fill:#4c1d95">+3° convergir</text>
+            <text x="170" y="98" text-anchor="middle" style="fill:#4c1d95">correção total: 9° à esquerda</text>
+          </g>
+        </svg>
+        <div class="ex" style="--c:var(--purple)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>Após 30 NM, está 3 NM à direita: erro = 60 × 3 ÷ 30 = <b>6°</b>. Faltam 60 NM: convergir = 60 × 3 ÷ 60 = 3° → corrija <b>9° à esquerda</b>.</li><li>Erro de 5° mantido por 90 NM: desvio = 5 × 90 ÷ 60 = <b>7,5 NM</b>.</li></ol></div>
+        <div class="trap small">corrigir só os 6° deixa o avião voando <b>paralelo</b> à rota. Vale bem para ângulos pequenos (até ≈ 20°).</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">15</span>Componentes do vento na pista</div>
+      <div class="bb">
+        <div class="formula" style="font-size:10.5pt"><span class="fx" style="font-size:11.5pt">través = V×sen θ · proa = V×cos θ</span><small>θ = ângulo entre o vento e a pista · V em kt</small></div>
+        <div class="row c">
+          <svg class="none" width="124" height="126" viewBox="0 0 124 126">
+            <rect x="92" y="6" width="24" height="116" fill="#3a3f47"/><path d="M104 14 V114" stroke="#fff" stroke-width="2" stroke-dasharray="8 6"/>
+            <text x="104" y="120" text-anchor="middle" class="tw" style="font-size:11px">36</text>
+            <line x1="35" y1="26" x2="104" y2="66" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
+            <line x1="104" y1="26" x2="104" y2="64" stroke="#1d6fd1" stroke-width="3.5" marker-end="url(#arr-b)"/>
+            <line x1="35" y1="66" x2="102" y2="66" stroke="#f08a12" stroke-width="3.5" marker-end="url(#arr-o)"/>
+            <text x="4" y="20" class="tb" style="font-size:12px;fill:#8f1219">300°/16 kt</text>
+            <text x="4" y="84" class="tb" style="font-size:12px;fill:#9a4d00">través 13,9</text>
+            <text x="4" y="100" class="tb" style="font-size:12px;fill:#0f3f86">proa 8</text>
+            <text x="64" y="38" class="tb" style="font-size:12px;fill:#8f1219">60°</text>
+          </svg>
+          <table class="tb f1" style="--c:var(--red)"><tr><th>θ</th><th>sen (través)</th><th>cos (proa)</th></tr><tr><td>30°</td><td><b>0,5</b></td><td>0,87</td></tr><tr><td>45°</td><td><b>0,71</b></td><td>0,71</td></tr><tr><td>60°</td><td><b>0,87</b></td><td>0,5</td></tr><tr><td>90°</td><td>1</td><td>0</td></tr></table>
+        </div>
+        <div class="ex" style="--c:var(--red)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>Pista 09, vento 120°/20 kt → θ = 30° → través 20 × 0,5 = <b>10 kt</b>; proa 20 × 0,87 = <b>17 kt</b>.</li><li>Pista 36, vento 300°/16 kt → θ = 60° → través 16 × 0,87 = <b>13,9 kt</b> (da esquerda); proa 16 × 0,5 = <b>8 kt</b>.</li></ol></div>
+        <div class="trap small">θ acima de 90° = vento de <b>cauda</b>. Com rajada, calcule com o valor da rajada.</div>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">★</span>Aplicação em rota · deriva e GS de cabeça</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="170" height="80" viewBox="0 0 170 80">
+            <line x1="10" y1="70" x2="150" y2="14" stroke="#1d6fd1" stroke-width="3.5" marker-end="url(#arr-b)"/>
+            <line x1="150" y1="14" x2="160" y2="44" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
+            <line x1="10" y1="70" x2="158" y2="46" stroke="#2e9b45" stroke-width="3.5" marker-end="url(#arr-g)"/>
+            <text x="46" y="36" class="tb" style="font-size:12px;fill:#0f3f86">proa + TAS</text>
+            <text x="165" y="76" text-anchor="end" class="tb" style="font-size:12px;fill:#16582a">trajetória + GS</text>
+            <text x="138" y="10" class="tb" style="font-size:12px;fill:#8f1219">vento</text>
+          </svg>
+          <div class="f1">
+            <div class="formula" style="font-size:10.5pt;padding:1mm 2mm"><span class="fx" style="font-size:12pt">deriva° ≈ 60 × través ÷ TAS</span> &nbsp;<span style="color:#c9d6ea">|</span>&nbsp; <span class="fx" style="font-size:12pt">GS ≈ TAS − proa</span></div>
+            <div class="small" style="margin-top:1mm"><b>Ex. 1:</b> TAS 100 kt, través 10 kt, proa 17 kt → deriva ≈ 60 × 10 ÷ 100 = <b>6°</b> · GS ≈ 100 − 17 = <b>83 kt</b>. &nbsp; <b>Ex. 2:</b> TAS 120 kt, través 15 kt → deriva ≈ 60 × 15 ÷ 120 = <b>7,5°</b>; corrija a proa <b>para o lado de onde vem o vento</b>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Vento do METAR/TAF é <b>verdadeiro</b>; o da TWR/ATIS e a pista, <b>magnéticos</b>.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>15° de longitude = 1 h · 1° = 4 min · 1° lat = 60 NM</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Relógio do través: 15° = ¼ · 30° = ½ · 45° = ¾ · 60° ou mais = tudo.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Pista 27, vento 240°/20 kt. Componente de través?<div class="ans">θ = 30° → 20 × 0,5 = <b>10 kt</b> (da esquerda); proa ≈ 17 kt.</div></div>
+  </div>
+</section>

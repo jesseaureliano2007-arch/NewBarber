@@ -1,0 +1,123 @@
+<section class="page mod-gen" id="form-cg-carga" data-toc="Formulário: momento, CG, fator de carga e Vs em curva">
+  <div class="hero mini">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-flight"/></svg>
+    <div class="ht"><span class="kicker">Formulário (2/6) · peso, balanceamento e curvas</span><div class="title sm">CG e fator de carga</div></div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-orange s12">
+      <div class="bh"><span class="n">5</span>Momento e centro de gravidade (CG)</div>
+      <div class="bb">
+        <div class="row">
+          <div class="none" style="width:84mm;display:flex;flex-direction:column;gap:1.2mm;">
+            <div style="display:flex;gap:1.5mm;">
+              <div class="formula" style="flex:1"><span class="fx" style="font-size:13pt">M = P × b</span><small>momento = peso × braço</small></div>
+              <div class="formula" style="flex:1.3"><span class="fx" style="font-size:13pt">CG = ΣM ÷ ΣP</span><small>soma dos momentos ÷ peso total</small></div>
+            </div>
+            <svg width="317" height="150" viewBox="0 0 317 150">
+              <g transform="translate(300 0) scale(-1 1)"><use href="#plane-side" x="0" y="8" width="290" height="116"/></g>
+              <line x1="27" y1="6" x2="27" y2="138" stroke="#13294b" stroke-width="2" stroke-dasharray="5 3"/>
+              <text x="30" y="12" class="tb" style="font-size:12px">DATUM</text>
+              <line x1="27" y1="132" x2="287" y2="132" stroke="#13294b" stroke-width="1.5" marker-end="url(#arr-k)"/>
+              <g class="tb" style="font-size:12px" text-anchor="middle">
+                <text x="127" y="146">1,0 m</text><text x="227" y="146">2,0 m</text>
+              </g>
+              <path d="M127 128 V136 M227 128 V136" stroke="#13294b" stroke-width="1.5"/>
+              <g stroke-width="3">
+                <line x1="122" y1="30" x2="122" y2="62" stroke="#e0313b" marker-end="url(#arr-r)"/>
+                <line x1="212" y1="30" x2="212" y2="62" stroke="#1d6fd1" marker-end="url(#arr-b)"/>
+                <line x1="267" y1="30" x2="267" y2="62" stroke="#8b46d6" marker-end="url(#arr-p)"/>
+                <line x1="147" y1="96" x2="147" y2="118" stroke="#2e9b45" marker-end="url(#arr-g)"/>
+              </g>
+              <g class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.5px" text-anchor="middle">
+                <text x="122" y="26" style="fill:#8f1219">piloto 0,95</text>
+                <text x="212" y="26" style="fill:#0f3f86">pax 1,85</text>
+                <text x="276" y="26" style="fill:#4c1d95">bag. 2,40</text>
+                <text x="178" y="112" style="fill:#16582a">comb. 1,20</text>
+              </g>
+              <path d="M136 124 L130 132 L142 132 Z" fill="#f08a12" stroke="#9a4d00"/>
+              <text x="90" y="122" class="tb" style="font-size:12px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3.5px">CG 1,095 m</text>
+            </svg>
+            <div class="small"><b>P</b> em kg ou lb · <b>b</b> (braço) = distância ao <b>datum</b>, em m ou in · <b>M</b> em kg·m ou lb·in (no POH, muitas vezes ÷ 1.000). Braço à frente do datum = <b>negativo</b>.</div>
+          </div>
+          <div class="f1" style="display:flex;flex-direction:column;gap:1.3mm;">
+            <div class="ex" style="--c:var(--orange)"><span class="et">Momento · 2 exemplos</span>
+              <div class="small">Piloto 80 kg a 0,95 m → M = 80 × 0,95 = <b>76 kg·m</b> · Bagagem 20 kg a 2,40 m → M = 20 × 2,40 = <b>48 kg·m</b></div></div>
+            <div class="ex" style="--c:var(--orange)"><span class="et">CG · Ex. 1 · carregamento completo</span>
+              <table class="tb" style="--c:var(--orange)"><tr><th>Item</th><th class="c">Peso (kg)</th><th class="c">Braço (m)</th><th class="c">Momento (kg·m)</th></tr>
+                <tr><td>Avião vazio</td><td class="c">700</td><td class="c">1,00</td><td class="c">700,0</td></tr>
+                <tr><td>Piloto + passageiro dianteiro</td><td class="c">160</td><td class="c">0,95</td><td class="c">152,0</td></tr>
+                <tr><td>Passageiro traseiro</td><td class="c">70</td><td class="c">1,85</td><td class="c">129,5</td></tr>
+                <tr><td>Combustível</td><td class="c">100</td><td class="c">1,20</td><td class="c">120,0</td></tr>
+                <tr><td>Bagagem</td><td class="c">20</td><td class="c">2,40</td><td class="c">48,0</td></tr>
+                <tr><td><b>Total</b></td><td class="c"><b>1.050</b></td><td class="c"><b>?</b></td><td class="c"><b>1.149,5</b></td></tr></table>
+              <div class="small">CG = 1.149,5 ÷ 1.050 = <b>1,095 m</b> do datum → confira se está <b>dentro dos limites</b> do envelope e se 1.050 kg ≤ peso máximo.</div></div>
+            <div class="ex" style="--c:var(--orange)"><span class="et">CG · Ex. 2 · depois de queimar 60 kg de combustível</span>
+              <ol class="small"><li>Peso: 1.050 − 60 = <b>990 kg</b> · Momento: 1.149,5 − (60 × 1,20 = 72) = <b>1.077,5 kg·m</b></li><li>CG = 1.077,5 ÷ 990 = <b>1,088 m</b> → o CG foi <b>para a frente</b> (o combustível estava atrás do CG).</li></ol></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="trap small f1">somar os <b>braços</b> em vez dos momentos, ou esquecer de conferir o CG <b>no pouso</b> (após consumir combustível). Peso dentro do limite <b>não</b> garante CG dentro do limite.</div>
+          <div class="warn small f1">exemplo didático — não são dados do PT-WVR. Use pesos, braços e envelope do POH/AFM e da pesagem da aeronave.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">6</span>Fator de carga em curva</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">n = 1 ÷ cos φ</span><small>n em g · φ = inclinação (bank) em curva nivelada coordenada</small></div>
+        <div class="row">
+          <svg class="none" width="236" height="151" viewBox="0 0 250 160">
+            <rect x="34" y="10" width="200" height="120" fill="#fdecee" opacity=".5"/>
+            <g stroke="#cbd5e1" stroke-width="1"><path d="M34 100 H234 M34 70 H234 M34 40 H234 M34 10 H234"/><path d="M109 10 V130 M146.5 10 V130 M184 10 V130 M221.5 10 V130"/></g>
+            <line x1="34" y1="46" x2="234" y2="46" stroke="#8b46d6" stroke-width="2" stroke-dasharray="6 4"/>
+            <text x="38" y="42" class="tb" style="font-size:12px;fill:#4c1d95">3,8 g (normal)</text>
+            <path d="M34.0 130.0 L44.0 129.9 L54.0 129.7 L64.0 129.3 L74.0 128.8 L84.0 128.1 L94.0 127.2 L104.0 126.0 L114.0 124.6 L124.0 122.9 L134.0 120.8 L144.0 118.3 L154.0 115.2 L164.0 111.3 L174.0 106.4 L184.0 100.0 L194.0 91.6 L204.0 79.9 L209.0 72.3 L214.0 62.9 L219.0 51.2 L224.0 36.0 L229.0 15.7" fill="none" stroke="#e0313b" stroke-width="3.5"/>
+            <g fill="#8f1219"><circle cx="109" cy="125.4" r="4"/><circle cx="146.5" cy="117.6" r="4"/><circle cx="184" cy="100" r="4"/><circle cx="220.9" cy="46" r="4"/></g>
+            <g class="tb" style="font-size:12px;fill:#8f1219"><text x="96" y="116">1,15</text><text x="132" y="108">1,41</text><text x="160" y="94">2,0</text><text x="196" y="62">≈ 75°</text></g>
+            <line x1="34" y1="130" x2="240" y2="130" stroke="#334155" stroke-width="1.5"/><line x1="34" y1="130" x2="34" y2="6" stroke="#334155" stroke-width="1.5"/>
+            <g class="t" style="font-size:12px" text-anchor="middle"><text x="34" y="144">0°</text><text x="109" y="144">30°</text><text x="146.5" y="144">45°</text><text x="184" y="144">60°</text><text x="221.5" y="144">75°</text></g>
+            <g class="t" style="font-size:12px" text-anchor="end"><text x="30" y="134">1</text><text x="30" y="104">2</text><text x="30" y="74">3</text><text x="30" y="44">4</text></g>
+            <text x="140" y="158" text-anchor="middle" class="tb" style="font-size:12px">inclinação φ</text>
+          </svg>
+          <div class="f1">
+            <table class="tb" style="--c:var(--red)"><tr><th>φ</th><th>n</th></tr><tr><td>30°</td><td><b>1,15</b></td></tr><tr><td>45°</td><td><b>1,41</b></td></tr><tr><td>60°</td><td><b>2,0</b></td></tr><tr><td>75°</td><td>3,86</td></tr></table>
+          </div>
+        </div>
+        <div class="ex" style="--c:var(--red)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>φ = 45° → n = 1 ÷ 0,707 = <b>1,41 g</b> → um avião de 1.000 kg “pesa” 1.414 kg nas asas.</li><li>Inclinação máxima sem passar de 3,8 g: cos φ = 1 ÷ 3,8 = 0,263 → φ ≈ <b>75°</b>.</li></ol></div>
+        <div class="trap small">em curva nivelada, <b>n depende só da inclinação</b> — não do peso nem da velocidade.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">7</span>Velocidade de estol em curva</div>
+      <div class="bb">
+        <div class="formula"><span class="fx">Vs curva = Vs × √n</span><small>Vs em kt (IAS) · n = fator de carga</small></div>
+        <div class="row c">
+          <svg class="none" width="170" height="130" viewBox="0 0 170 130">
+            <line x1="20" y1="110" x2="166" y2="110" stroke="#334155" stroke-width="1.5"/>
+            <g>
+              <rect x="26" y="50" width="28" height="60" fill="#c4b5fd"/><rect x="62" y="45.5" width="28" height="64.5" fill="#a78bfa"/><rect x="98" y="38.6" width="28" height="71.4" fill="#8b46d6"/><rect x="134" y="25.1" width="28" height="84.9" fill="#4c1d95"/>
+            </g>
+            <g class="tb" style="font-size:12px" text-anchor="middle"><text x="40" y="44">Vs</text><text x="76" y="40">+7 %</text><text x="112" y="33">+19 %</text><text x="148" y="19">+41 %</text></g>
+            <g class="t" style="font-size:12px" text-anchor="middle"><text x="40" y="124">0°</text><text x="76" y="124">30°</text><text x="112" y="124">45°</text><text x="148" y="124">60°</text></g>
+          </svg>
+          <div class="f1"><table class="tb" style="--c:var(--purple)"><tr><th>φ</th><th>√n</th></tr><tr><td>30°</td><td>1,07</td></tr><tr><td>45°</td><td>1,19</td></tr><tr><td>60°</td><td><b>1,41</b></td></tr></table></div>
+        </div>
+        <div class="ex" style="--c:var(--purple)"><span class="et">Exemplos resolvidos</span>
+          <ol class="small"><li>Vs = 50 kt, φ = 60° → n = 2 → √2 = 1,414 → 50 × 1,414 ≈ <b>70,7 kt</b>.</li><li>Vs = 48 kt, φ = 45° → n = 1,414 → √1,414 = 1,189 → 48 × 1,189 ≈ <b>57,1 kt</b>.</li></ol></div>
+        <div class="trap small">a 60°, <b>n dobra</b> mas Vs sobe só <b>41 %</b> (raiz quadrada). O ângulo de ataque de estol continua o mesmo.</div>
+        <div class="warn small">Vs dos exemplos é didática; Vs do C172R: POH/AFM.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>CG <b>traseiro</b>: menos estável, Vs menor, recuperação de estol/parafuso mais difícil.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 kg = 2,205 lb · 1 lb = 0,4536 kg · 1 in = 2,54 cm</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>30° · 45° · 60° → <b>1,15 · 1,41 · 2</b> g.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Vs = 48 kt. Qual a Vs numa curva nivelada de 60°?<div class="ans">n = 2 → 48 × 1,414 ≈ <b>68 kt</b> (+41 %).</div></div>
+  </div>
+</section>

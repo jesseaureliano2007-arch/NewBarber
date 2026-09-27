@@ -1,0 +1,140 @@
+<section class="page mod-tv" id="tv-eixos" data-toc="Eixos, comandos, compensadores e guinada adversa">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-cockpit"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Controle da aeronave</span>
+      <div class="title sm">Eixos e comandos</div>
+      <div class="sub">Rolagem · arfagem · guinada · compensadores</div>
+    </div>
+    <div class="def" style="max-width:132mm">Os três eixos passam pelo <b>CG</b>. Cada superfície de comando gira o avião em torno de um eixo, mudando a sustentação de uma parte dele.</div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-red s12">
+      <div class="bh"><span class="n">1</span>Os 3 eixos e os 3 comandos primários</div>
+      <div class="bb">
+        <svg viewBox="0 0 720 176" width="100%">
+          <g>
+            <rect x="2" y="2" width="232" height="172" rx="8" fill="#fdecee" stroke="#e0313b" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#8f1219">ROLAGEM · ailerons</text>
+            <text x="12" y="36" class="t" style="font-size:12.5px">eixo <tspan font-weight="700">longitudinal</tspan> (nariz → cauda)</text>
+            <g transform="translate(118 92) rotate(-12) translate(-90 -45)"><use href="#plane-front" width="180" height="90"/>
+              <rect x="8" y="15" width="30" height="5" fill="#f08a12" transform="rotate(-14 38 20)"/><rect x="142" y="25" width="30" height="5" fill="#f08a12" transform="rotate(14 142 25)"/></g>
+            <circle cx="118" cy="92" r="6" fill="#fff" stroke="#e0313b" stroke-width="2.5"/><circle cx="118" cy="92" r="2" fill="#e0313b"/>
+            <path d="M76 124 A46 20 0 0 0 160 124" fill="none" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
+            <text x="12" y="158" class="tb" style="font-size:12px;fill:#8f1219">manche à esquerda: aileron esq. sobe,</text>
+            <text x="12" y="170" class="tb" style="font-size:12px;fill:#8f1219">dir. desce → rola à esquerda (vista de trás)</text>
+          </g>
+          <g transform="translate(244 0)">
+            <rect x="2" y="2" width="232" height="172" rx="8" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#0f3f86">ARFAGEM · profundor</text>
+            <text x="12" y="36" class="t" style="font-size:12.5px">eixo <tspan font-weight="700">lateral</tspan> (ponta a ponta de asa)</text>
+            <g transform="translate(118 96) rotate(-10) translate(-95 -38)"><use href="#plane-side" width="190" height="76"/><rect x="0" y="38" width="16" height="5" fill="#f08a12" transform="rotate(-22 16 40)"/></g>
+            <circle cx="118" cy="96" r="6" fill="#fff" stroke="#1d6fd1" stroke-width="2.5"/><circle cx="118" cy="96" r="2" fill="#1d6fd1"/>
+            <path d="M190 128 A70 50 0 0 0 200 64" fill="none" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/>
+            <text x="12" y="158" class="tb" style="font-size:12px;fill:#0f3f86">puxar: profundor sobe → cauda desce</text>
+            <text x="12" y="170" class="tb" style="font-size:12px;fill:#0f3f86">→ nariz sobe (cabra) · empurrar: pica</text>
+          </g>
+          <g transform="translate(488 0)">
+            <rect x="2" y="2" width="230" height="172" rx="8" fill="#eaf7ec" stroke="#2e9b45" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#16582a">GUINADA · leme</text>
+            <text x="12" y="36" class="t" style="font-size:12.5px">eixo <tspan font-weight="700">vertical</tspan> (de cima para baixo)</text>
+            <g transform="translate(116 96) rotate(14) translate(-55 -55)"><use href="#plane-top" width="110" height="110"/><rect x="53.5" y="97" width="3" height="10" fill="#f08a12" transform="rotate(25 55 97)"/></g>
+            <circle cx="116" cy="92" r="6" fill="#fff" stroke="#2e9b45" stroke-width="2.5"/><circle cx="116" cy="92" r="2" fill="#2e9b45"/>
+            <path d="M90 44 A50 40 0 0 1 160 52" fill="none" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/>
+            <text x="12" y="158" class="tb" style="font-size:12px;fill:#16582a">pedal direito: leme à direita</text>
+            <text x="12" y="170" class="tb" style="font-size:12px;fill:#16582a">→ nariz vai para a direita</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">2</span>Tabela para decorar</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--blue)">
+          <tr><th>Comando na cabine</th><th>Superfície</th><th>Eixo</th><th>Movimento</th></tr>
+          <tr><td>manche girado (lados)</td><td><b>ailerons</b></td><td>longitudinal</td><td><b>rolagem</b> (inclinação)</td></tr>
+          <tr><td>manche frente/trás</td><td><b>profundor</b></td><td>lateral</td><td><b>arfagem</b> (tangagem)</td></tr>
+          <tr><td>pedais</td><td><b>leme</b> de direção</td><td>vertical</td><td><b>guinada</b></td></tr>
+        </table>
+        <div class="small">Ailerons trabalham <b>em sentidos opostos</b>. Superfícies <b>secundárias</b>: flapes, compensadores, slats, spoilers.</div>
+        <div class="mem small">“<b>LoLa</b>, <b>LaPa</b>, <b>VeGa</b>”: Longitudinal-roLagem · Lateral-arfagem (Profundor) · Vertical-Guinada.</div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s7">
+      <div class="bh"><span class="n">3</span>Como uma superfície de comando funciona</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="290" height="102" viewBox="0 0 280 98">
+            <g><path d="M8 34 C8 26 30 24 70 28 L70 40 C30 44 8 42 8 34Z" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/><path d="M70 28 L104 34 L70 40Z" fill="#f08a12" stroke="#334155" transform="rotate(20 70 34)"/>
+              <line x1="50" y1="26" x2="50" y2="2" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="56" y="12" class="tb" style="font-size:12px;fill:#16582a">↑ L</text>
+              <text x="4" y="66" class="tb" style="font-size:12px">desce → ↑ cambra</text><text x="4" y="80" class="tb" style="font-size:12px">→ ↑ sustentação</text></g>
+            <g transform="translate(144 0)"><path d="M8 34 C8 26 30 24 70 28 L70 40 C30 44 8 42 8 34Z" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/><path d="M70 28 L104 34 L70 40Z" fill="#f08a12" stroke="#334155" transform="rotate(-20 70 34)"/>
+              <line x1="50" y1="26" x2="50" y2="14" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="56" y="16" class="tb" style="font-size:12px;fill:#16582a">↓ L</text>
+              <text x="4" y="66" class="tb" style="font-size:12px">sobe → ↓ cambra</text><text x="4" y="80" class="tb" style="font-size:12px">→ ↓ sustentação</text></g>
+            <text x="4" y="96" class="t" style="font-size:11.5px">(no profundor, “L” para baixo = cauda desce)</text>
+          </svg>
+          <div class="f1 small">Defletir uma superfície <b>muda a cambra</b> daquela parte da asa ou da empenagem. Aileron que <b>desce</b> aumenta a sustentação daquela asa (ela sobe); o que <b>sobe</b> diminui (ela desce). A eficácia cai com <b>baixa velocidade</b> (menos pressão dinâmica).</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">4</span>Guinada adversa</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="150" height="100" viewBox="0 0 220 146">
+            <use href="#plane-top" x="50" y="18" width="120" height="120"/>
+            <line x1="62" y1="70" x2="62" y2="136" stroke="#f08a12" stroke-width="5" marker-end="url(#arr-o)"/>
+            <line x1="158" y1="70" x2="158" y2="92" stroke="#f08a12" stroke-width="3" marker-end="url(#arr-o)"/>
+            <path d="M136 20 Q112 0 88 20" fill="none" stroke="#8b46d6" stroke-width="3.5" marker-end="url(#arr-p)"/>
+            <text x="2" y="14" class="tb" style="font-size:15px;fill:#4c1d95">nariz guina ←</text>
+            <text x="150" y="14" class="tb" style="font-size:15px;fill:#16582a">curva →</text>
+            <text x="74" y="144" class="tb" style="font-size:15px;fill:#9a4d00">+ arrasto</text>
+          </svg>
+          <div class="f1 small">Iniciando curva à <b>direita</b>: aileron esquerdo <b>desce</b> → asa esquerda com mais sustentação <b>e mais arrasto induzido</b> → o nariz guina para a <b>esquerda</b>, contra a curva.</div>
+        </div>
+        <div class="small"><b>Correção:</b> leme <b>no sentido da curva</b> (coordenação). Projeto: ailerons <b>diferenciais</b> (o que sobe deflete mais) e ailerons tipo <b>Frise</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">5</span>Compensadores (trim tabs)</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="150" height="64" viewBox="0 0 170 72">
+            <path d="M6 34 C6 28 18 26 60 29 L60 39 C18 42 6 40 6 34Z" fill="#e2e8f0" stroke="#334155" stroke-width="1.5"/>
+            <g transform="rotate(-15 60 34)"><path d="M60 29 L118 33 L118 35 L60 39Z" fill="#1d6fd1" stroke="#334155"/><g transform="rotate(35 118 34)"><path d="M118 32 L140 34 L118 36Z" fill="#f08a12" stroke="#334155"/></g></g>
+            <line x1="132" y1="46" x2="126" y2="30" stroke="#e0313b" stroke-width="2.5" marker-end="url(#arr-r)"/>
+            <text x="4" y="64" class="tb" style="font-size:12px;fill:#0f3f86">profundor</text><text x="120" y="66" class="tb" style="font-size:12px;fill:#9a4d00">tab</text>
+            <text x="68" y="14" class="tb" style="font-size:12px;fill:#0f3f86">sobe</text>
+          </svg>
+          <div class="f1 small">Pequena superfície no bordo de fuga que se move <b>ao contrário</b> da superfície principal: tab <b>desce</b> → o ar o empurra para cima → <b>profundor sobe</b> e fica ali sozinho.</div>
+        </div>
+        <div class="small">Serve para <b>aliviar a força no manche</b> (compensar) após mudar velocidade, potência ou CG — não para manobrar. Tipos: fixo (ajustado no solo), comandável da cabine, servo e antisservo.</div>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">6</span>Coordenação na curva: “pise na bola”</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="390" height="70" viewBox="0 0 390 70">
+            <g><path d="M10 12 Q60 50 110 12" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><path d="M10 12 Q60 50 110 12" fill="none" stroke="#e4f7fa" stroke-width="12" stroke-linecap="round"/><path d="M52 18 V38 M68 18 V38" stroke="#0f172a" stroke-width="1.5"/><circle cx="60" cy="31" r="6" fill="#0f172a"/><text x="60" y="66" text-anchor="middle" class="tb" style="font-size:13px;fill:#16582a">coordenada</text></g>
+            <g transform="translate(135 0)"><path d="M10 12 Q60 50 110 12" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><path d="M10 12 Q60 50 110 12" fill="none" stroke="#e4f7fa" stroke-width="12" stroke-linecap="round"/><path d="M52 18 V38 M68 18 V38" stroke="#0f172a" stroke-width="1.5"/><circle cx="84" cy="27" r="6" fill="#e0313b"/><text x="60" y="66" text-anchor="middle" class="tb" style="font-size:13px;fill:#8f1219">glissada (bola p/ dentro)</text></g>
+            <g transform="translate(270 0)"><path d="M10 12 Q60 50 110 12" fill="none" stroke="#0f172a" stroke-width="16" stroke-linecap="round"/><path d="M10 12 Q60 50 110 12" fill="none" stroke="#e4f7fa" stroke-width="12" stroke-linecap="round"/><path d="M52 18 V38 M68 18 V38" stroke="#0f172a" stroke-width="1.5"/><circle cx="36" cy="27" r="6" fill="#8b46d6"/><text x="60" y="66" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95">derrapagem (p/ fora)</text></g>
+          </svg>
+          <div class="f1 small">Exemplo: curva à <b>direita</b>. <b>Glissada</b> = pouco leme para a inclinação: o avião “escorrega” para dentro, bola à direita. <b>Derrapagem</b> = leme demais: a cauda “escorrega” para fora, bola à esquerda. Correção: <b>pise no pedal do lado da bola</b>. Derrapagem perto do estol é o caminho clássico para o <b>parafuso</b>.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>Arfagem é em torno do eixo <b>lateral</b>; rolagem, do <b>longitudinal</b>. O nome do eixo não é o nome do movimento!</div>
+    <div class="f-conv"><div class="fh">⇄ Sinônimos</div>arfagem = tangagem (<i>pitch</i>) · rolagem = rolamento (<i>roll</i>) · guinada (<i>yaw</i>)</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Compensador = “<b>do contra</b>”: move-se ao contrário da superfície.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Para manter o nariz alto sem força no manche, para onde vai o compensador do profundor?<div class="ans">Para <b>baixo</b>: ele empurra o profundor para cima.</div></div>
+  </div>
+</section>

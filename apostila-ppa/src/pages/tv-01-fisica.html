@@ -1,0 +1,166 @@
+<section class="page mod-tv" id="tv-fisica" data-toc="Física básica — vetores, Newton, trabalho e potência">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-airport"/></svg>
+    <div class="ht">
+      <span class="kicker">Teoria de Voo · Fundamentos</span>
+      <div class="title sm">Física básica do voo</div>
+      <div class="sub">Vetores · força · trabalho · potência · Newton</div>
+    </div>
+    <div class="def">Teoria de voo = estudo de <b>forças (vetores)</b> sobre uma massa que se move no ar. Soma das forças zero → a velocidade não muda.</div>
+    <div class="postit"><div class="pt">Unidades SI</div>
+      <ol><li>Força e peso: N · massa: kg</li><li>Velocidade: m/s (kt)</li><li>Aceleração: m/s²</li><li>Energia: J · potência: W</li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s6">
+      <div class="bh"><span class="n">1</span>Escalar × vetor</div>
+      <div class="bb">
+        <div><b>Escalar</b> = só valor (massa, temperatura). <b>Vetor</b> = <b>módulo</b> + <b>direção</b> + <b>sentido</b> (velocidade, força, vento, peso). Somar vetores = ponta com cauda: proa + vento = trajetória.</div>
+        <svg viewBox="0 0 340 100" width="100%">
+          <line x1="14" y1="76" x2="140" y2="20" stroke="#1d6fd1" stroke-width="5" marker-end="url(#arr-b)"/>
+          <text x="44" y="38" class="tb" style="font-size:12px;fill:#0f3f86" transform="rotate(-24 44 38)">módulo = 100 kt</text>
+          <line x1="14" y1="76" x2="150" y2="76" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <path d="M66 76 A52 52 0 0 0 61 55" fill="none" stroke="#f08a12" stroke-width="2"/>
+          <text x="72" y="70" class="tb" style="font-size:12px;fill:#9a4d00">direção</text>
+          <text x="16" y="96" class="tb" style="font-size:12px;fill:#0f3f86">sentido = ponta da seta</text>
+          <!-- soma: proa + vento = trajetória -->
+          <line x1="190" y1="90" x2="300" y2="14" stroke="#1d6fd1" stroke-width="4" marker-end="url(#arr-b)"/>
+          <line x1="300" y1="14" x2="324" y2="58" stroke="#f08a12" stroke-width="4" marker-end="url(#arr-o)"/>
+          <line x1="190" y1="90" x2="322" y2="60" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/>
+          <text x="206" y="44" class="tb" style="font-size:12px;fill:#0f3f86">proa/TAS</text>
+          <text x="312" y="34" class="tb" style="font-size:12px;fill:#9a4d00">vento</text>
+          <text x="246" y="94" class="tb" style="font-size:12px;fill:#16582a">trajetória/GS</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">2</span>Decompor um vetor</div>
+      <div class="bb">
+        <svg viewBox="0 0 340 126" width="100%">
+          <rect x="10" y="94" width="320" height="30" rx="3" fill="#475569"/>
+          <path d="M40 109 H300" stroke="#fff" stroke-width="2" stroke-dasharray="12 8"/>
+          <text x="22" y="114" class="tw" style="font-size:13px">09</text><text x="306" y="114" class="tw" style="font-size:13px">27</text>
+          <g transform="translate(78 109) rotate(90) translate(-17 -17)"><use href="#plane-top" width="34" height="34"/></g>
+          <line x1="300" y1="8" x2="213.4" y2="58" stroke="#e0313b" stroke-width="5" marker-end="url(#arr-r)"/>
+          <line x1="300" y1="8" x2="215" y2="8" stroke="#1d6fd1" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arr-b)"/>
+          <line x1="213.4" y1="10" x2="213.4" y2="58" stroke="#2e9b45" stroke-width="3" stroke-dasharray="6 3" marker-end="url(#arr-g)"/>
+          <path d="M270 8 A30 30 0 0 0 274 23" fill="none" stroke="#e0313b" stroke-width="2"/>
+          <text x="278" y="26" class="tb" style="font-size:12px;fill:#8f1219">30°</text>
+          <text x="262" y="54" class="tb" style="font-size:13px;fill:#8f1219">vento 20 kt</text>
+          <text x="150" y="20" class="tb" style="font-size:12px;fill:#0f3f86">de proa 17 kt</text>
+          <text x="118" y="46" class="tb" style="font-size:12px;fill:#16582a">de través 10 kt</text>
+          <text x="10" y="86" class="t" style="font-size:12px">decolando na 09 (proa 090°), vento de 060°</text>
+        </svg>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:12pt">través = V·sen θ · proa = V·cos θ</span><small>θ = ângulo vento–pista · sen 30° = 0,5 · cos 30° ≈ 0,87</small></div>
+      </div>
+    </div>
+
+    <div class="blk c-green s4">
+      <div class="bh"><span class="n">3</span>Movimento e aceleração</div>
+      <div class="bb">
+        <svg viewBox="0 0 220 74" width="100%">
+          <text x="0" y="12" class="tb" style="font-size:12px;fill:#16582a">MRU (v constante)</text>
+          <g fill="#2e9b45"><circle cx="10" cy="24" r="5"/><circle cx="60" cy="24" r="5"/><circle cx="110" cy="24" r="5"/><circle cx="160" cy="24" r="5"/><circle cx="210" cy="24" r="5"/></g>
+          <text x="0" y="50" class="tb" style="font-size:12px;fill:#8f1219">MRUV (acelerando)</text>
+          <g fill="#e0313b"><circle cx="10" cy="62" r="5"/><circle cx="26" cy="62" r="5"/><circle cx="58" cy="62" r="5"/><circle cx="106" cy="62" r="5"/><circle cx="170" cy="62" r="5"/></g>
+        </svg>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx">a = Δv ÷ Δt</span><small>m/s² · pontos = posição a cada 1 s</small></div>
+        <div class="small"><b>Ex.:</b> de 0 a 30 m/s (≈ 58 kt) em 15 s → a = <b>2 m/s²</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s4">
+      <div class="bh"><span class="n">4</span>Força, massa e peso</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="70" height="86" viewBox="0 0 70 92">
+            <rect x="12" y="6" width="46" height="36" rx="4" fill="#f3ebfc" stroke="#8b46d6" stroke-width="2.5"/>
+            <text x="35" y="29" text-anchor="middle" class="tb" style="font-size:14px;fill:#4c1d95">m</text>
+            <line x1="35" y1="42" x2="35" y2="84" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
+            <text x="44" y="72" class="tb" style="font-size:13px;fill:#8f1219">P</text>
+          </svg>
+          <div class="f1"><b>Massa</b> (kg) = quantidade de matéria, igual em qualquer lugar. <b>Peso</b> (N) = força da gravidade sobre a massa.</div>
+        </div>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx">P = m · g</span><small>g ≈ 9,81 m/s² · 1 kgf ≈ 9,81 N</small></div>
+        <div class="small">1.000 kg → peso ≈ <b>9.810 N</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-teal s4">
+      <div class="bh"><span class="n">5</span>Trabalho e energia</div>
+      <div class="bb">
+        <svg viewBox="0 0 220 64" width="100%">
+          <path d="M10 60 H212" stroke="#2e9b45" stroke-width="3"/>
+          <path d="M26 16 Q110 24 196 52" fill="none" stroke="#0e9fb3" stroke-width="2" stroke-dasharray="5 4"/>
+          <use href="#plane-side" x="8" y="2" width="44" height="18"/>
+          <use href="#plane-side" x="164" y="34" width="44" height="18" transform="rotate(10 186 43)"/>
+          <text x="6" y="36" class="tb" style="font-size:12px;fill:#0b5c68">altura (Ep)</text>
+          <text x="104" y="30" class="tb" style="font-size:12px;fill:#8f1219">→ velocidade (Ec)</text>
+        </svg>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:12pt">τ = F·d · Ec = ½mv² · Ep = mgh</span><small>joule (J = N·m)</small></div>
+        <div class="small">Planeio: <b>troca altura por velocidade</b>.</div>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12">
+      <div class="bh"><span class="n">6</span>As três leis de Newton no avião</div>
+      <div class="bb">
+        <svg viewBox="0 0 720 140" width="100%" style="max-height:30mm">
+          <g>
+            <rect x="2" y="2" width="232" height="136" rx="8" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#0f3f86">1ª · INÉRCIA</text>
+            <use href="#plane-side" x="62" y="50" width="110" height="44"/>
+            <line x1="120" y1="64" x2="120" y2="30" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="126" y="36" class="tb" style="font-size:12px;fill:#16582a">L</text>
+            <line x1="120" y1="80" x2="120" y2="114" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="126" y="112" class="tb" style="font-size:12px;fill:#8f1219">P</text>
+            <line x1="172" y1="72" x2="210" y2="72" stroke="#1d6fd1" stroke-width="4" marker-end="url(#arr-b)"/><text x="200" y="64" class="tb" style="font-size:12px;fill:#0f3f86">T</text>
+            <line x1="62" y1="72" x2="24" y2="72" stroke="#f08a12" stroke-width="4" marker-end="url(#arr-o)"/><text x="24" y="64" class="tb" style="font-size:12px;fill:#9a4d00">D</text>
+            <text x="12" y="132" class="t" style="font-size:12px">L = P e T = D → velocidade constante</text>
+          </g>
+          <g transform="translate(244 0)">
+            <rect x="2" y="2" width="232" height="136" rx="8" fill="#eaf7ec" stroke="#2e9b45" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#16582a">2ª · F = m · a</text>
+            <use href="#plane-side" x="52" y="50" width="110" height="44"/>
+            <line x1="162" y1="72" x2="226" y2="72" stroke="#1d6fd1" stroke-width="5" marker-end="url(#arr-b)"/><text x="196" y="64" class="tb" style="font-size:12px;fill:#0f3f86">T</text>
+            <line x1="52" y1="72" x2="30" y2="72" stroke="#f08a12" stroke-width="4" marker-end="url(#arr-o)"/><text x="22" y="64" class="tb" style="font-size:12px;fill:#9a4d00">D</text>
+            <line x1="80" y1="112" x2="170" y2="112" stroke="#16582a" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#arr-g)"/><text x="176" y="116" class="tb" style="font-size:12px;fill:#16582a">a</text>
+            <text x="12" y="132" class="t" style="font-size:12px">T &gt; D → sobra força → acelera</text>
+          </g>
+          <g transform="translate(488 0)">
+            <rect x="2" y="2" width="230" height="136" rx="8" fill="#fff4e3" stroke="#f08a12" stroke-width="1.5"/>
+            <text x="12" y="20" class="th" style="fill:#9a4d00">3ª · AÇÃO E REAÇÃO</text>
+            <use href="#plane-side" x="100" y="50" width="110" height="44"/>
+            <g stroke="#1d6fd1" stroke-width="2.5" marker-end="url(#arr-b)"><line x1="100" y1="58" x2="40" y2="58"/><line x1="100" y1="72" x2="30" y2="72"/><line x1="100" y1="86" x2="40" y2="86"/></g>
+            <text x="12" y="48" class="tb" style="font-size:12px;fill:#0f3f86">ar empurrado p/ trás</text>
+            <line x1="176" y1="112" x2="222" y2="112" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="80" y="116" class="tb" style="font-size:12px;fill:#8f1219">avião p/ frente</text>
+            <text x="12" y="132" class="t" style="font-size:12px">hélice e asa jogam ar → reação</text>
+          </g>
+        </svg>
+        <div class="row">
+          <div class="trap small f1">“Em cruzeiro constante nenhuma força atua” — falso: as 4 forças <b>se anulam</b>. E T &gt; D não mantém a velocidade: <b>acelera</b>.</div>
+          <div class="ex small f1"><span class="et">2ª lei</span> m = 1.000 kg, T = 3.000 N, D = 2.000 N → a = (3.000 − 2.000) ÷ 1.000 = <b>1 m/s²</b>.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-red s12">
+      <div class="bh"><span class="n">7</span>Potência = trabalho por tempo</div>
+      <div class="bb">
+        <div class="row c">
+          <div class="formula none" style="width:62mm"><span class="fx" style="font-size:13pt">Pot = τ ÷ t = F · v</span><small>watt (W = J/s) · 1 hp ≈ 746 W</small></div>
+          <div class="f1 small"><b>Potência</b> = rapidez em realizar trabalho. A potência necessária para voar nivelado = <b>arrasto × velocidade</b> (por isso voar rápido custa caro).</div>
+          <div class="ex small f1"><span class="et">Exemplo resolvido</span><br>Tração 2.000 N a 50 m/s (≈ 97 kt) → Pot = 2.000 × 50 = <b>100 kW</b> ÷ 746 ≈ <b>134 hp</b>.</div>
+          <svg class="none" width="34" height="62" viewBox="0 0 60 120"><use href="#propeller"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div><b>Massa não muda</b> em curva nem com altitude; o que muda é a força que a asa precisa fazer (fator de carga).</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>1 kt = 0,514 m/s · 1 m/s ≈ 1,94 kt<br>1 hp ≈ 746 W · 1 kgf ≈ 9,81 N</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Newton = “<b>I-F-A</b>”: <b>I</b>nércia, <b>F</b> = m·a, <b>A</b>ção e reação.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Vento de 20 kt a 30° da pista. Componente de través?<div class="ans">20 × sen 30° = 20 × 0,5 = <b>10 kt</b> (de proa ≈ 17 kt).</div></div>
+  </div>
+</section>
