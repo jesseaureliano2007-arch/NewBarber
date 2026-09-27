@@ -18,7 +18,7 @@
       <div class="bb">
         <div class="row c">
           <div class="f1"><ul class="l"><li><b>METAR</b> ou <b>SPECI</b>.</li><li>Código <b>ICAO</b> de 4 letras. Brasil começa com <b>S</b> (SB, SD, SN, SW…).</li></ul></div>
-          <svg class="none" width="58" height="66" viewBox="0 0 58 66"><use href="#tower" x="0" y="4" width="30" height="62"/><rect x="22" y="8" width="36" height="16" rx="3" fill="#13294b"/><text x="40" y="20" text-anchor="middle" class="tw" style="font-size:11px">SBGR</text></svg>
+          <svg class="none" width="58" height="66" viewBox="0 0 58 66"><g filter="url(#f-shadow)"><use href="#tower" x="0" y="4" width="30" height="62"/></g><rect x="22" y="8" width="36" height="16" rx="3" fill="url(#g-panel)" filter="url(#f-shadow)"/><text x="40" y="20" text-anchor="middle" class="tw" style="font-size:11px">SBGR</text></svg>
         </div>
         <div class="small"><b>SBGR</b> Guarulhos · <b>SBSP</b> Congonhas · <b>SBRF</b> Recife · <b>SBBR</b> Brasília.</div>
       </div>
@@ -27,7 +27,7 @@
       <div class="bh"><span class="n">2</span>Dia e hora (UTC)</div>
       <div class="bb">
         <div class="row c">
-          <svg class="none" width="48" height="48" viewBox="0 0 60 60"><use href="#clock"/></svg>
+          <svg class="none" width="48" height="48" viewBox="0 0 60 60" filter="url(#f-shadow)"><use href="#clock"/></svg>
           <div class="f1"><span class="code">DDHHMMZ</span><br><b>271500Z</b> = dia 27, 15h00 <b>UTC</b> (Z = Zulu).</div>
         </div>
         <div class="ex"><span class="et">Converta</span><br>15h00 UTC − 3 h = <b>12h00</b> em Brasília (UTC−3).</div>
@@ -52,10 +52,10 @@
               <li><b>G</b> = rajada — informada quando supera a média em <b>10 kt</b> ou mais.</li>
               <li><b>VRB</b> = variável · <b>00000KT</b> = calmo · <b>dddVddd</b> = direção variando 60° ou mais.</li></ul></div>
           <svg class="none" width="118" height="118" viewBox="0 0 150 150">
-            <use href="#compass-rose" x="10" y="0" width="110" height="110"/>
-            <line x1="120" y1="92" x2="80" y2="63" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
+            <g filter="url(#f-shadow)"><use href="#compass-rose" x="10" y="0" width="110" height="110"/></g>
+            <line x1="120" y1="92" x2="80" y2="63" stroke="#fff" stroke-width="7" opacity=".8"/><line x1="120" y1="92" x2="80" y2="63" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
             <text x="128" y="108" text-anchor="middle" class="tb" style="fill:#8f1219;font-size:15px">120°</text>
-            <g transform="translate(60 55) rotate(300) translate(-14 -14)"><use href="#plane-top" width="28" height="28"/></g>
+            <g transform="translate(60 55) rotate(300) translate(-14 -14)" filter="url(#f-shadow)"><use href="#plane-top" width="28" height="28"/></g>
             <use href="#windsock" x="4" y="104" width="44" height="44" transform="rotate(210 26 126)"/>
             <text x="102" y="130" text-anchor="middle" class="tb" style="font-size:13px">biruta aponta</text><text x="102" y="145" text-anchor="middle" class="tb" style="font-size:13px">p/ 300° (onde vai)</text>
           </svg>
@@ -68,7 +68,7 @@
     <div class="blk c-purple s5">
       <div class="bh"><span class="n">5</span>Tempo presente</div>
       <div class="bb">
-        <div class="row c"><svg class="none" width="54" height="62" viewBox="0 0 60 70"><use href="#cloud-dark" x="0" y="0" width="60" height="36"/><use href="#rain" x="10" y="34" width="40" height="26"/><use href="#bolt" x="36" y="30" width="16" height="30"/></svg>
+        <div class="row c"><svg class="none" width="54" height="62" viewBox="0 0 60 70"><path d="M10 30 L50 30 L46 62 L12 62Z" fill="url(#g-rainshaft)" filter="url(#f-blur1)"/><use href="#cloud-dark" x="0" y="0" width="60" height="36"/><use href="#rain" x="10" y="34" width="40" height="26"/><circle cx="44" cy="44" r="12" fill="url(#rg-bolt)"/><use href="#bolt" x="36" y="30" width="16" height="30"/></svg>
           <div class="f1"><b>Intensidade / proximidade</b><br><span class="code">−</span> fraca · <i>sem sinal</i> moderada<br><span class="code">+</span> forte · <span class="code">VC</span> vizinhança (8 a 16 km)</div></div>
         <div>Ordem: <b>intensidade + descritor + fenômeno</b> → <span class="code">+SHRA</span> = pancada de chuva forte.</div>
         <div class="small"><span class="code">−RA</span> chuva fraca · <span class="code">+TSRA</span> trovoada c/ chuva forte · <span class="code">VCSH</span> pancadas na vizinhança · <span class="code">BCFG</span> bancos de nevoeiro.</div>
@@ -79,12 +79,12 @@
       <div class="bh"><span class="n">6</span>Nuvens · quantidade + altura</div>
       <div class="bb">
         <div><span class="code">SCT020</span> = esparsas com base a <b>2.000 ft</b> de <b>altura</b> sobre o aeródromo (altura em centenas de pés).</div>
-        <svg viewBox="0 0 400 66" width="100%">
+        <svg viewBox="0 0 400 66" width="100%"><defs><radialGradient id="m11-oc" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#7fe0ec"/><stop offset=".6" stop-color="#0e9fb3"/><stop offset="1" stop-color="#075e6b"/></radialGradient><radialGradient id="m11-ow" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#dbe7f0"/></radialGradient></defs>
           <g font-family="Oswald" font-weight="700" font-size="13" text-anchor="middle">
-            <g transform="translate(10 0)"><circle cx="40" cy="22" r="18" fill="#fff" stroke="#0e9fb3" stroke-width="2.5"/><path d="M40 22 L40 4 A18 18 0 0 1 58 22Z" fill="#0e9fb3"/><text x="40" y="53" fill="#0b5c68">FEW</text><text x="40" y="64" class="t" style="font-size:11px">1–2/8 · poucas</text></g>
-            <g transform="translate(105 0)"><circle cx="40" cy="22" r="18" fill="#fff" stroke="#0e9fb3" stroke-width="2.5"/><path d="M40 22 L40 4 A18 18 0 0 1 40 40Z" fill="#0e9fb3"/><text x="40" y="53" fill="#0b5c68">SCT</text><text x="40" y="64" class="t" style="font-size:11px">3–4/8 · esparsas</text></g>
-            <g transform="translate(200 0)"><circle cx="40" cy="22" r="18" fill="#fff" stroke="#0e9fb3" stroke-width="2.5"/><path d="M40 22 L40 4 A18 18 0 1 1 22 22Z" fill="#0e9fb3"/><text x="40" y="53" fill="#0b5c68">BKN</text><text x="40" y="64" class="t" style="font-size:11px">5–7/8 · nublado</text></g>
-            <g transform="translate(295 0)"><circle cx="40" cy="22" r="18" fill="#0e9fb3" stroke="#0e9fb3" stroke-width="2.5"/><text x="40" y="53" fill="#0b5c68">OVC</text><text x="40" y="64" class="t" style="font-size:11px">8/8 · encoberto</text></g>
+            <g transform="translate(10 0)"><circle cx="40" cy="22" r="18" fill="url(#m11-ow)" stroke="#0e9fb3" stroke-width="2.5" filter="url(#f-shadow)"/><path d="M40 22 L40 4 A18 18 0 0 1 58 22Z" fill="url(#m11-oc)"/><text x="40" y="53" fill="#0b5c68">FEW</text><text x="40" y="64" class="t" style="font-size:11px">1–2/8 · poucas</text></g>
+            <g transform="translate(105 0)"><circle cx="40" cy="22" r="18" fill="url(#m11-ow)" stroke="#0e9fb3" stroke-width="2.5" filter="url(#f-shadow)"/><path d="M40 22 L40 4 A18 18 0 0 1 40 40Z" fill="url(#m11-oc)"/><text x="40" y="53" fill="#0b5c68">SCT</text><text x="40" y="64" class="t" style="font-size:11px">3–4/8 · esparsas</text></g>
+            <g transform="translate(200 0)"><circle cx="40" cy="22" r="18" fill="url(#m11-ow)" stroke="#0e9fb3" stroke-width="2.5" filter="url(#f-shadow)"/><path d="M40 22 L40 4 A18 18 0 1 1 22 22Z" fill="url(#m11-oc)"/><text x="40" y="53" fill="#0b5c68">BKN</text><text x="40" y="64" class="t" style="font-size:11px">5–7/8 · nublado</text></g>
+            <g transform="translate(295 0)"><circle cx="40" cy="22" r="18" fill="url(#m11-oc)" stroke="#0e9fb3" stroke-width="2.5" filter="url(#f-shadow)"/><text x="40" y="53" fill="#0b5c68">OVC</text><text x="40" y="64" class="t" style="font-size:11px">8/8 · encoberto</text></g>
           </g>
         </svg>
         <div class="row c">
@@ -97,7 +97,7 @@
     <div class="blk c-orange s5">
       <div class="bh"><span class="n">7</span>Temperatura / Ponto de orvalho</div>
       <div class="bb">
-        <div class="row c"><svg class="none" width="40" height="64" viewBox="0 0 60 100"><use href="#thermo" x="0" y="0" width="30" height="100"/><use href="#thermo-blue" x="30" y="0" width="30" height="100"/></svg>
+        <div class="row c"><svg class="none" width="40" height="64" viewBox="0 0 60 100" filter="url(#f-shadow)"><use href="#thermo" x="0" y="0" width="30" height="100"/><use href="#thermo-blue" x="30" y="0" width="30" height="100"/></svg>
           <div class="f1"><span class="code">TT/DD</span> em °C inteiros.<br><b>M</b> = negativo (“minus”).<br><b>26/23</b> = 26 °C e 23 °C.<br><b>M02/M05</b> = −2 °C e −5 °C.</div></div>
         <div class="rel">T − Td pequeno (≤ 2 °C) ⇒ ar quase saturado ⇒ risco de <b>nevoeiro</b> e nuvens baixas.</div>
       </div>
@@ -106,7 +106,7 @@
     <div class="blk c-pink s5">
       <div class="bh"><span class="n">8</span>Pressão · QNH</div>
       <div class="bb">
-        <div class="row c"><svg class="none" width="62" height="62" viewBox="0 0 100 100"><use href="#bezel"/><text x="50" y="46" text-anchor="middle" class="tw" style="font-size:15px">QNH</text><text x="50" y="67" text-anchor="middle" class="tw" style="font-size:19px">1013</text></svg>
+        <div class="row c"><svg class="none" width="62" height="62" viewBox="0 0 100 100" filter="url(#f-shadow)"><use href="#bezel"/><text x="50" y="46" text-anchor="middle" class="tw" style="font-size:15px">QNH</text><text x="50" y="67" text-anchor="middle" class="tw" style="font-size:19px">1013</text><use href="#glass"/></svg>
           <div class="f1"><span class="code">Q1013</span> = QNH 1013 hPa (valor inteiro, <b>truncado</b>).<br>Ajustado no altímetro, na pista ele indica a <b>elevação</b> do aeródromo.</div></div>
       </div>
     </div>
@@ -138,7 +138,7 @@
             <tr><td><b>GS</b></td><td>granizo pequeno</td><td><b>VA</b> · <b>FU</b></td><td>cinzas vulcânicas · fumaça</td></tr>
                         <tr><td><b>UP</b></td><td>precip. desconhecida</td><td><b>FC</b></td><td>nuvem funil (tornado)</td></tr>
           </table>
-          <svg class="none" width="50" height="84" viewBox="0 0 72 120"><use href="#cb" x="0" y="0" width="72" height="72"/><use href="#bolt" x="28" y="62" width="16" height="30"/><use href="#hail" x="4" y="72" width="22" height="22"/><use href="#fog" x="10" y="98" width="46" height="22"/></svg>
+          <svg class="none" width="50" height="84" viewBox="0 0 72 120"><use href="#cb" x="0" y="0" width="72" height="72"/><circle cx="36" cy="76" r="14" fill="url(#rg-bolt)"/><use href="#bolt" x="28" y="62" width="16" height="30"/><use href="#hail" x="4" y="72" width="22" height="22"/><use href="#fog" x="10" y="98" width="46" height="22"/></svg>
         </div>
       </div>
     </div>
@@ -146,7 +146,7 @@
     <div class="blk c-green s5">
       <div class="bh"><span class="n">10</span>CAVOK · NSC · NCD · ///</div>
       <div class="bb">
-        <div class="row c"><svg class="none" width="34" height="34" viewBox="0 0 60 60"><use href="#sun"/></svg><div class="f1"><b>CAVOK</b> (“Ceiling And Visibility OK”) substitui vis., tempo e nuvens quando, <b>ao mesmo tempo</b>:</div></div>
+        <div class="row c"><svg class="none" width="34" height="34" viewBox="0 0 60 60"><circle cx="30" cy="30" r="30" fill="url(#rg-sunglow)"/><use href="#sun"/></svg><div class="f1"><b>CAVOK</b> (“Ceiling And Visibility OK”) substitui vis., tempo e nuvens quando, <b>ao mesmo tempo</b>:</div></div>
         <div class="small">① vis. ≥ 10 km ② nenhuma nuvem abaixo de 5.000 ft ou da maior altitude mínima de setor (o maior) ③ nenhum CB/TCU ④ nenhum tempo significativo.</div>
         <div class="small"><b>NSC</b> = sem nuvens significativas (quando CAVOK não cabe, ex.: vis. 6000).<br><b>NCD</b> = nenhuma nuvem detectada (estação automática).<br><span class="code">//////</span> = dado não disponível.</div>
       </div>

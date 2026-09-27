@@ -172,7 +172,11 @@ async function main() {
     await page.pdf({ path: raw, preferCSSPageSize: true, printBackground: true, tagged: true, outline: false });
     await browser.close();
     const out = path.join(DIST, 'Apostila-PPA-ANAC-2026.pdf');
-    execFileSync('python3', [path.join(ROOT, 'tools', 'bookmarks.py'), raw, path.join(BUILD, 'toc.json'), out], { stdio: 'inherit' });
+    const PY = process.env.PDF_PY || 'python3';
+    const marked = path.join(BUILD, 'marked.pdf');
+    execFileSync(PY, [path.join(ROOT, 'tools', 'bookmarks.py'), raw, path.join(BUILD, 'toc.json'), marked], { stdio: 'inherit' });
+    // recompressão das imagens rasterizadas (300 dpi, JPEG q88) — requer pymupdf
+    execFileSync(PY, [path.join(ROOT, 'tools', 'optimize.py'), marked, out, '300', '88'], { stdio: 'inherit' });
     // versão HTML autônoma (fontes embutidas) — versão editável
     let solo = fs.readFileSync(htmlPath, 'utf8').replace(/url\(\.\.\/assets\/fonts\/([^)]+)\)/g, (m, f) =>
       `url(data:font/woff2;base64,${fs.readFileSync(path.join(ROOT, 'assets', 'fonts', f)).toString('base64')})`);

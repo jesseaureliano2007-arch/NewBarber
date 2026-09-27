@@ -31,10 +31,10 @@
       <div class="bb">
         <div class="row">
           <svg class="none" width="150" height="74" viewBox="0 0 200 100">
-            <path d="M20 60 C20 40 60 30 110 34 C150 38 185 50 195 58 C160 62 100 70 50 72 C30 72 20 68 20 60Z" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
-            <path d="M22 52 C14 50 6 56 8 64 C12 72 22 72 26 68" fill="#e0f2fe" stroke="#0e9fb3" stroke-width="2.5"/><path d="M8 56 l-6 -4 M8 64 l-7 2 M14 72 l-4 6" stroke="#0e9fb3" stroke-width="2.5"/>
-            <path d="M110 20 L110 2" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="116" y="16" class="tb" style="font-size:14px;fill:#16582a">↓ sustentação</text>
-            <path d="M160 70 L196 84" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="120" y="96" class="tb" style="font-size:14px;fill:#8f1219">↑ arrasto</text>
+            <path d="M20 60 C20 40 60 30 110 34 C150 38 185 50 195 58 C160 62 100 70 50 72 C30 72 20 68 20 60Z" fill="url(#m9-wing)" stroke="#475569" stroke-width="1.5" filter="url(#f-shadow)"/>
+            <path d="M22 52 C14 50 6 56 8 64 C12 72 22 72 26 68" fill="url(#m9-clear)" stroke="#0e9fb3" stroke-width="2"/><path d="M8 56 l-6 -4 M8 64 l-7 2 M14 72 l-4 6" stroke="#0e9fb3" stroke-width="2.5"/>
+            <path d="M110 20 L110 2" stroke="#2e9b45" stroke-width="4" marker-end="url(#arr-g)"/><text x="116" y="16" class="tb" style="font-size:14px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">↓ sustentação</text>
+            <path d="M160 70 L196 84" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/><text x="120" y="96" class="tb" style="font-size:14px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">↑ arrasto</text>
           </svg>
           <div class="f1">
             <div class="cause" style="--c:var(--red)"><span>gelo</span><i>→</i><span>↑ peso · ↑ arrasto</span><i>→</i><span>↓ sustentação e tração</span><i>→</i><span><b>↑ Vs</b></span></div>
@@ -52,29 +52,31 @@
       <div class="bh"><span class="n">3</span>Tipos de gelo estrutural</div>
       <div class="bb">
         <svg viewBox="0 0 720 96" width="100%">
+          <defs><linearGradient id="m9-wing" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".45" stop-color="#dfe6ee"/><stop offset="1" stop-color="#8a97a8"/></linearGradient><linearGradient id="m9-rime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d7dee8"/></linearGradient><linearGradient id="m9-clear" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0fbff" stop-opacity=".95"/><stop offset=".5" stop-color="#7dd3fc" stop-opacity=".6"/><stop offset="1" stop-color="#0e9fb3" stop-opacity=".8"/></linearGradient></defs>
+          <rect width="720" height="72" rx="6" fill="url(#g-sky-clear)" opacity=".3"/>
           <g>
-            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="#cbd5e1" stroke="#334155" stroke-width="1.8"/>
-            <path d="M42 46 C30 42 22 50 24 58 C26 66 36 66 42 62" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" stroke-dasharray="2 2"/><path d="M26 48 l-8 -6 M22 56 l-10 0 M26 64 l-8 6" stroke="#94a3b8" stroke-width="3"/>
-            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px">ESCARCHA (rime)</text>
+            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="url(#m9-wing)" stroke="#475569" stroke-width="1.4" filter="url(#f-shadow)"/>
+            <path d="M42 46 C30 42 22 50 24 58 C26 66 36 66 42 62" fill="url(#m9-rime)" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="2 2" filter="url(#f-shadow)"/><path d="M26 48 l-8 -6 M22 56 l-10 0 M26 64 l-8 6" stroke="#94a3b8" stroke-width="3"/>
+            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">ESCARCHA (rime)</text>
           </g>
           <g transform="translate(180 0)">
-            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="#cbd5e1" stroke="#334155" stroke-width="1.8"/>
-            <path d="M44 40 C24 30 14 48 20 60 C26 72 50 72 70 64 L70 60 C50 64 44 60 44 54 C44 46 60 40 80 38Z" fill="#a5f3fc" opacity=".75" stroke="#0e9fb3" stroke-width="2"/>
+            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="url(#m9-wing)" stroke="#475569" stroke-width="1.4" filter="url(#f-shadow)"/>
+            <path d="M44 40 C24 30 14 48 20 60 C26 72 50 72 70 64 L70 60 C50 64 44 60 44 54 C44 46 60 40 80 38Z" fill="url(#m9-clear)" stroke="#0e9fb3" stroke-width="1.5"/><path d="M26 40 C22 44 20 52 24 58" stroke="#fff" stroke-width="2" fill="none" opacity=".9"/>
             <path d="M28 36 C18 30 14 40 18 44 M24 70 C16 76 14 66 20 64" stroke="#0e9fb3" stroke-width="3" fill="none"/>
-            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px">CLARO / CRISTAL (clear)</text>
+            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">CLARO / CRISTAL (clear)</text>
           </g>
           <g transform="translate(360 0)">
-            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="#cbd5e1" stroke="#334155" stroke-width="1.8"/>
-            <path d="M44 42 C26 36 18 50 22 60 C26 70 44 70 56 64 L50 58 C44 60 42 56 42 52Z" fill="#a5f3fc" opacity=".6" stroke="#0e9fb3" stroke-width="2"/>
+            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="url(#m9-wing)" stroke="#475569" stroke-width="1.4" filter="url(#f-shadow)"/>
+            <path d="M44 42 C26 36 18 50 22 60 C26 70 44 70 56 64 L50 58 C44 60 42 56 42 52Z" fill="url(#m9-clear)" stroke="#0e9fb3" stroke-width="1.5"/>
             <path d="M24 46 l-8 -6 M20 58 l-10 0" stroke="#94a3b8" stroke-width="3"/>
-            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px">MISTO</text>
+            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">MISTO</text>
           </g>
           <g transform="translate(540 0)">
-            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="#cbd5e1" stroke="#334155" stroke-width="1.8"/>
+            <path d="M40 54 C40 40 70 34 110 36 C140 38 162 46 170 52 C140 56 100 62 70 62 C50 62 40 60 40 54Z" fill="url(#m9-wing)" stroke="#475569" stroke-width="1.4" filter="url(#f-shadow)"/>
             <path d="M44 42 C70 34 110 34 140 40" stroke="#fff" stroke-width="5" stroke-dasharray="2 3" fill="none"/>
             <g fill="#fff" stroke="#94a3b8"><circle cx="60" cy="40" r="2.5"/><circle cx="84" cy="36" r="2.5"/><circle cx="110" cy="36" r="2.5"/><circle cx="134" cy="40" r="2.5"/></g>
             <use href="#snow" x="140" y="4" width="26" height="26"/>
-            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px">GEADA (frost)</text>
+            <text x="96" y="86" text-anchor="middle" class="th" style="font-size:14px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">GEADA (frost)</text>
           </g>
         </svg>
         <table class="tb" style="--c:var(--teal)">
@@ -91,11 +93,11 @@
       <div class="bh"><span class="n">4</span>Chuva congelante (FZRA)</div>
       <div class="bb">
         <svg viewBox="0 0 280 96" width="100%">
-          <rect width="280" height="40" fill="#fde2e4"/><rect y="40" width="280" height="44" fill="#bfdbfe"/><rect y="84" width="280" height="12" fill="#94a3b8"/>
-          <text x="6" y="16" class="tb" style="font-size:12px;fill:#8f1219">camada QUENTE &gt; 0 °C (inversão)</text><text x="6" y="56" class="tb" style="font-size:12px;fill:#0f3f86">camada fria &lt; 0 °C</text>
+          <defs><linearGradient id="m9-fz" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3a6a6"/><stop offset=".4" stop-color="#fde2e4"/><stop offset=".45" stop-color="#bfdbfe"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs><rect width="280" height="96" rx="6" fill="url(#m9-fz)"/><use href="#stratus" x="100" y="-6" width="180" height="22"/><path d="M0 86 Q140 80 280 86 L280 96 L0 96Z" fill="#e2e8f0"/><path d="M0 86 Q140 80 280 86" stroke="#fff" stroke-width="2"/>
+          <text x="6" y="16" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">camada QUENTE &gt; 0 °C (inversão)</text><text x="6" y="56" class="tb" style="font-size:12px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">camada fria &lt; 0 °C</text>
           <use href="#rain" x="160" y="14" width="50" height="30"/><use href="#rain" x="160" y="46" width="50" height="30"/>
-          <use href="#plane-side" x="190" y="54" width="70" height="28"/>
-          <text x="6" y="76" class="t" style="font-size:11.5px">gotas super-resfriadas → gelo claro</text>
+          <g filter="url(#f-shadow)"><use href="#plane-side" x="190" y="54" width="70" height="28"/></g><path d="M254 62 l4 -2 M252 66 l5 0" stroke="#e0fbff" stroke-width="2.5"/>
+          <text x="6" y="76" class="t" style="font-size:11.5px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">gotas super-resfriadas → gelo claro</text>
         </svg>
         <div class="small">Chuva que se formou no ar quente cai numa camada abaixo de 0 °C e continua líquida até <b>tocar o avião</b>. Típica à frente de <b>frentes quentes</b>. Saia da área imediatamente.</div>
         <div class="tip small">Encontrou gelo: <b>saia</b> da nuvem/chuva (curva de 180° ou nível com ar acima de 0 °C), ligue o aquecimento do pitot, evite manobras bruscas e mantenha velocidade maior na aproximação; informe (PIREP).</div>
@@ -106,17 +108,17 @@
       <div class="bh"><span class="n">5</span>Gelo no carburador</div>
       <div class="bb">
         <div class="row">
-          <svg class="none" width="170" height="124" viewBox="0 0 200 146">
-            <path d="M20 0 L60 0 L60 40 C60 56 70 60 70 74 C70 88 60 92 60 108 L60 146 L20 146 L20 108 C20 92 10 88 10 74 C10 60 20 56 20 40Z" fill="#e2e8f0" stroke="#334155" stroke-width="2.5"/>
-            <path d="M40 4 L40 30" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="66" y="14" class="tb" style="font-size:13px;fill:#0f3f86">ar</text>
-            <path d="M70 74 L104 74" stroke="#d9a400" stroke-width="4"/><path d="M68 74 L46 74" stroke="#d9a400" stroke-width="3"/>
-            <text x="108" y="70" class="tb" style="font-size:13px;fill:#7a5a00">combustível</text>
-            <text x="108" y="86" class="tb" style="font-size:13px;fill:#0f3f86">venturi: P ↓ e T ↓</text>
-            <path d="M14 66 C12 72 12 78 14 84 M66 66 C68 72 68 78 66 84" stroke="#0e9fb3" stroke-width="5" fill="none"/>
-            <line x1="26" y1="118" x2="54" y2="104" stroke="#334155" stroke-width="4"/><circle cx="40" cy="111" r="3" fill="#334155"/>
-            <path d="M24 112 l-3 6 M56 104 l3 -6" stroke="#0e9fb3" stroke-width="5"/>
-            <text x="108" y="114" class="tb" style="font-size:13px">borboleta</text><text x="108" y="128" class="tb" style="font-size:13px">(acelerador)</text>
-            <text x="108" y="146" class="tb" style="font-size:13px;fill:#0b5c68">gelo = azul</text>
+          <svg class="none" width="170" height="124" viewBox="0 0 200 146"><defs><linearGradient id="m9-carb" x1="0" x2="1"><stop offset="0" stop-color="#6b7684"/><stop offset=".3" stop-color="#e8edf3"/><stop offset=".55" stop-color="#b4bec9"/><stop offset="1" stop-color="#5a6572"/></linearGradient><linearGradient id="m9-icec" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e0fbff"/><stop offset="1" stop-color="#0e9fb3"/></linearGradient></defs>
+            <path d="M20 0 L60 0 L60 40 C60 56 70 60 70 74 C70 88 60 92 60 108 L60 146 L20 146 L20 108 C20 92 10 88 10 74 C10 60 20 56 20 40Z" fill="url(#m9-carb)" stroke="#334155" stroke-width="2" filter="url(#f-shadow)"/>
+            <path d="M40 4 L40 30" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="66" y="14" class="tb" style="font-size:13px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">ar</text>
+            <path d="M70 74 L104 74" stroke="url(#g-cyl)" stroke-width="6"/><path d="M70 74 L104 74" stroke="#d9a400" stroke-width="2.5"/><path d="M68 74 L46 74" stroke="#d9a400" stroke-width="3"/>
+            <text x="108" y="70" class="tb" style="font-size:13px;fill:#7a5a00;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">combustível</text>
+            <text x="108" y="86" class="tb" style="font-size:13px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">venturi: P ↓ e T ↓</text>
+            <path d="M14 64 C11 72 11 78 14 86 M66 64 C69 72 69 78 66 86" stroke="url(#m9-icec)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <line x1="26" y1="118" x2="54" y2="104" stroke="url(#g-cyl)" stroke-width="5"/><circle cx="40" cy="111" r="3.5" fill="url(#rg-ring)" stroke="#334155"/>
+            <path d="M24 112 l-3 6 M56 104 l3 -6" stroke="url(#m9-icec)" stroke-width="6" stroke-linecap="round"/>
+            <text x="108" y="114" class="tb" style="font-size:13px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">borboleta</text><text x="108" y="128" class="tb" style="font-size:13px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">(acelerador)</text>
+            <text x="108" y="146" class="tb" style="font-size:13px;fill:#0b5c68;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">gelo = azul</text>
           </svg>
           <div class="f1 small"><b>Expansão no venturi</b> + <b>vaporização do combustível</b> esfriam a mistura (queda de até 20–30 °C ou mais). Com umidade, forma-se gelo no venturi e na <b>borboleta</b> — mesmo em dia quente e céu limpo.
             <ul class="l"><li>Risco alto entre ≈ <b>−7 °C e +21 °C</b> com umidade alta (possível até ≈ 38 °C).</li><li>Pior com <b>potência reduzida</b> (borboleta quase fechada), p. ex. na descida.</li><li>Sintoma (passo fixo): <b>queda de RPM</b> e funcionamento irregular.</li><li><b>Ar quente</b>: RPM cai mais (ar quente é menos denso) e depois <b>sobe</b> se havia gelo.</li></ul></div>

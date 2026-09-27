@@ -17,30 +17,35 @@
       <div class="bh"><span class="n">1</span>As três fases do cumulonimbus</div>
       <div class="bb">
         <svg viewBox="0 0 720 236" width="100%">
-          <rect width="720" height="236" fill="#e8f2fd"/><rect y="214" width="720" height="22" fill="#65a30d"/>
+          <defs><linearGradient id="m10-sky" x1="0" x2="1"><stop offset="0" stop-color="#4f9de6"/><stop offset=".33" stop-color="#4f9de6"/><stop offset=".45" stop-color="#2b4658"/><stop offset=".6" stop-color="#2b4658"/><stop offset=".72" stop-color="#6d8fb0"/><stop offset="1" stop-color="#9cc3e6"/></linearGradient><linearGradient id="m10-v" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b1a33" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity=".25"/></linearGradient></defs>
+          <rect width="720" height="236" rx="6" fill="url(#m10-sky)"/><rect width="720" height="236" rx="6" fill="url(#m10-v)"/>
+          <circle cx="40" cy="30" r="28" fill="url(#rg-sunglow)"/>
+          <path d="M366 150 L436 150 L460 214 L346 214Z" fill="url(#g-rainshaft)" filter="url(#f-blur3)"/>
+          <path d="M560 130 L650 130 L660 214 L550 214Z" fill="url(#g-rainshaft)" opacity=".5" filter="url(#f-blur3)"/>
+          <path d="M0 216 Q180 208 360 216 T720 214 L720 236 L0 236Z" fill="url(#g-grass)"/>
           <line x1="240" y1="0" x2="240" y2="214" stroke="#94a3b8" stroke-dasharray="4 4"/><line x1="480" y1="0" x2="480" y2="214" stroke="#94a3b8" stroke-dasharray="4 4"/>
-          <line x1="0" y1="96" x2="720" y2="96" stroke="#1d6fd1" stroke-width="1.5" stroke-dasharray="8 5"/><text x="714" y="90" text-anchor="end" class="tb" style="font-size:12px;fill:#0f3f86">isoterma 0 °C</text>
+          <line x1="0" y1="96" x2="720" y2="96" stroke="#fff" stroke-width="1.8" stroke-dasharray="8 5" opacity=".85"/><text x="714" y="90" text-anchor="end" class="tw" style="font-size:12px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">isoterma 0 °C</text>
           <!-- 1 cumulus -->
           <use href="#tcu" x="60" y="54" width="120" height="150"/>
           <g stroke="#e0313b" stroke-width="4" fill="none"><path d="M100 200 L100 90" marker-end="url(#arr-r)"/><path d="M130 200 L130 76" marker-end="url(#arr-r)"/><path d="M160 200 L160 100" marker-end="url(#arr-r)"/></g>
-          <text x="120" y="24" text-anchor="middle" class="th" style="font-size:15px">1 · CUMULUS</text><text x="120" y="42" text-anchor="middle" class="tb" style="font-size:12px">só correntes ASCENDENTES</text>
-          <text x="120" y="232" text-anchor="middle" class="tw" style="font-size:12px">sem chuva no solo</text>
+          <text x="120" y="24" text-anchor="middle" class="th" style="font-size:15px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">1 · CUMULUS</text><text x="120" y="42" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">só correntes ASCENDENTES</text>
+          <text x="120" y="232" text-anchor="middle" class="tw" style="font-size:12px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">sem chuva no solo</text>
           <!-- 2 maturidade -->
           <use href="#cb" x="270" y="8" width="180" height="200"/>
           <g stroke="#e0313b" stroke-width="4" fill="none"><path d="M330 196 L330 60" marker-end="url(#arr-r)"/><path d="M350 196 L350 50" marker-end="url(#arr-r)"/></g>
-          <g stroke="#1d6fd1" stroke-width="4" fill="none"><path d="M390 70 L390 196" marker-end="url(#arr-b)"/><path d="M410 90 L410 196" marker-end="url(#arr-b)"/></g>
+          <g stroke="#60a5fa" stroke-width="4.5" fill="none"><path d="M390 70 L390 196" marker-end="url(#arr-b)"/><path d="M410 90 L410 196" marker-end="url(#arr-b)"/></g>
           <path d="M410 204 C440 208 460 208 478 204" stroke="#1d6fd1" stroke-width="3" fill="none" marker-end="url(#arr-b)"/>
-          <use href="#rain" x="376" y="176" width="50" height="34"/><use href="#hail" x="296" y="160" width="22" height="22"/><use href="#bolt" x="420" y="120" width="22" height="40"/>
-          <text x="360" y="232" text-anchor="middle" class="tw" style="font-size:12px">chuva forte · granizo · raios · rajadas</text>
-          <text x="258" y="120" class="tb" style="font-size:12px;fill:#8f1219">sobe</text><text x="424" y="176" class="tb" style="font-size:12px;fill:#0f3f86">desce</text>
-          <text x="600" y="24" text-anchor="middle" class="th" style="font-size:15px">3 · DISSIPAÇÃO</text><text x="600" y="42" text-anchor="middle" class="tb" style="font-size:12px">predominam DESCENDENTES</text>
-          <rect x="286" y="4" width="148" height="40" rx="6" fill="#fff" opacity=".85"/><text x="360" y="20" text-anchor="middle" class="th" style="font-size:15px">2 · MATURIDADE</text><text x="360" y="38" text-anchor="middle" class="tb" style="font-size:12px;fill:#8f1219">ascendentes + descendentes</text>
+          <use href="#rain" x="376" y="176" width="50" height="34"/><use href="#hail" x="296" y="160" width="22" height="22"/><circle cx="432" cy="142" r="30" fill="url(#rg-bolt)"/><use href="#bolt" x="420" y="120" width="24" height="44"/>
+          <text x="360" y="232" text-anchor="middle" class="tw" style="font-size:12px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">chuva forte · granizo · raios · rajadas</text>
+          <text x="258" y="120" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">sobe</text><text x="424" y="176" class="tb" style="font-size:12px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">desce</text>
+          <text x="600" y="24" text-anchor="middle" class="th" style="font-size:15px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">3 · DISSIPAÇÃO</text><text x="600" y="42" text-anchor="middle" class="tb" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">predominam DESCENDENTES</text>
+          <rect x="286" y="4" width="148" height="40" rx="6" fill="#fff" opacity=".85"/><text x="360" y="20" text-anchor="middle" class="th" style="font-size:15px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">2 · MATURIDADE</text><text x="360" y="38" text-anchor="middle" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">ascendentes + descendentes</text>
           <!-- 3 dissipação -->
-          <path d="M510 60 Q560 50 600 54 Q650 48 700 60 Q660 68 630 66 L620 90 L590 90 L580 66 Q540 68 510 60Z" fill="#e2e8f0" stroke="#94a3b8"/>
-          <use href="#stratus" x="540" y="110" width="120" height="30"/>
-          <g stroke="#1d6fd1" stroke-width="3.5" fill="none"><path d="M570 120 L570 196" marker-end="url(#arr-b)"/><path d="M600 110 L600 196" marker-end="url(#arr-b)"/><path d="M630 120 L630 196" marker-end="url(#arr-b)"/></g>
+          <defs><linearGradient id="m10-anv" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#aab6c6"/></linearGradient></defs><path d="M510 60 Q560 50 600 54 Q650 48 700 60 Q660 68 630 66 L620 90 L590 90 L580 66 Q540 68 510 60Z" fill="url(#m10-anv)" opacity=".85" filter="url(#f-blur1)"/>
+          <use href="#cloud-dark" x="536" y="92" width="130" height="50" opacity=".85"/>
+          <g stroke="#60a5fa" stroke-width="4" fill="none"><path d="M570 120 L570 196" marker-end="url(#arr-b)"/><path d="M600 110 L600 196" marker-end="url(#arr-b)"/><path d="M630 120 L630 196" marker-end="url(#arr-b)"/></g>
           <use href="#rain" x="560" y="150" width="60" height="30" opacity=".6"/>
-          <text x="600" y="232" text-anchor="middle" class="tw" style="font-size:12px">chuva fraca · bigorna isolada</text>
+          <text x="600" y="232" text-anchor="middle" class="tw" style="font-size:12px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">chuva fraca · bigorna isolada</text>
         </svg>
         <div class="row small">
           <div class="f1">A <b>maturidade</b> começa quando a precipitação <b>chega ao solo</b>: a chuva arrasta ar frio para baixo e nascem as descendentes ao lado das ascendentes → cisalhamento e turbulência máximos.</div>

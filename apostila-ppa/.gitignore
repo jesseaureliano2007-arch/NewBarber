@@ -1,3 +1,4 @@
 build/
 dist/preview-*.html
 node_modules/
+dist/apostila-ppa.html
