@@ -27,6 +27,7 @@
       <div class="bh"><span class="n">2</span>Forças na subida estabilizada</div>
       <div class="bb">
         <svg viewBox="0 0 400 168" width="100%" style="max-height:35mm">
+          <rect x="0" y="0" width="400" height="168" rx="6" fill="url(#g-sky-clear)" opacity="0.3"/>
           <line x1="16.5" y1="139.2" x2="393.2" y2="38.2" stroke="#94a3b8" stroke-width="2" stroke-dasharray="7 5"/>
           <line x1="16" y1="139" x2="130" y2="139" stroke="#94a3b8" stroke-width="1.5"/>
           <path d="M80 139 A64 64 0 0 0 78 122" fill="none" stroke="#f08a12" stroke-width="2.5"/><text x="86" y="134" class="tb" style="font-size:13px;fill:#9a4d00">γ</text>
@@ -51,10 +52,11 @@
     </div>
 
     <div class="blk c-green s7">
-      <div class="bh"><span class="n">3</span><span style="text-transform:none">Vx × Vy</span>: trajetórias</div>
+      <div class="bh"><span class="n">3</span><span style="text-transform:none">Vx × Vy</span> — trajetórias</div>
       <div class="bb">
         <svg viewBox="0 0 400 150" width="100%" style="max-height:30mm">
-          <rect x="0" y="135" width="400" height="15" fill="#94a3b8"/><rect x="0" y="135" width="120" height="6" fill="#475569"/>
+          <rect x="0" y="0" width="400" height="135" rx="6" fill="url(#g-sky-clear)" opacity="0.35"/>
+          <rect x="0" y="135" width="400" height="15" fill="url(#g-grass)"/><rect x="0" y="135" width="120" height="6" fill="url(#g-asphalt)"/>
           <path d="M104 135 L110 95 L116 135Z" fill="#e0313b"/><line x1="110" y1="95" x2="110" y2="88" stroke="#e0313b" stroke-width="2"/>
           <line x1="20" y1="135" x2="160" y2="59.6" stroke="#2e9b45" stroke-width="3.5" marker-end="url(#arr-g)"/>
           <line x1="20" y1="135" x2="330" y2="35" stroke="#1d6fd1" stroke-width="3.5" marker-end="url(#arr-b)"/>
@@ -128,7 +130,7 @@
       <div class="bh"><span class="n">7</span>Exemplo resolvido: razão × gradiente e o vento</div>
       <div class="bb">
         <div class="row">
-          <div class="formula none" style="width:62mm;padding:1mm 2mm"><span class="fx" style="font-size:12pt">gradiente (ft/NM) = razão (ft/min) ÷ GS (NM/min)</span><small>GS em NM/min = GS (kt) ÷ 60</small></div>
+          <div class="formula none" style="width:58mm;padding:1mm 2mm"><span class="fx" style="font-size:13pt">gradiente = razão ÷ GS</span><small>ft/NM = (ft/min) ÷ (NM/min) · GS em NM/min = kt ÷ 60</small></div>
           <div class="ex small f1"><span class="et">Razão de subida 700 ft/min</span><br>Sem vento, GS 70 kt (1,17 NM/min) → 700 ÷ 1,17 ≈ <b>600 ft/NM</b>.<br>Vento de proa 20 kt → GS 50 kt (0,83 NM/min) → ≈ <b>840 ft/NM</b>.<br>Vento de cauda 20 kt → GS 90 kt (1,5 NM/min) → ≈ <b>467 ft/NM</b>.</div>
           <div class="rel small f1">O vento <b>não muda a razão</b> de subida (ft/min), só o <b>ângulo em relação ao solo</b>: vento de proa melhora a passagem sobre obstáculos; vento de cauda piora.</div>
         </div>

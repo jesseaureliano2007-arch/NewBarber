@@ -13,7 +13,7 @@
     <div class="blk c-navy s7">
       <div class="bh"><span class="n">1</span>Arcos do velocímetro</div>
       <div class="bb">
-        <svg viewBox="0 0 350 232" width="100%" style="max-height:62mm">
+        <svg viewBox="0 0 350 232" width="100%" style="max-height:50mm">
           <g transform="translate(60 5)">
             <circle cx="110" cy="110" r="104" fill="url(#rg-ring)" filter="url(#f-shadow)"/><circle cx="110" cy="110" r="96" fill="#0b0f16" stroke="#6b7280"/>
             <path d="M65.0 163.6 A70 70 0 0 1 55.3 66.3" fill="none" stroke="#ffffff" stroke-width="7"/>
@@ -67,12 +67,11 @@
       <div class="bb">
         <table class="tb" style="--c:var(--blue)">
           <tr><th>Marca</th><th>Significado</th></tr>
-          <tr><td><span class="chip" style="--c:#94a3b8">branco</span></td><td>faixa de uso dos <b>flapes</b>: de <b>Vs0</b> (estol com flape total, trem baixado) até <b>Vfe</b></td></tr>
+          <tr><td><span class="chip" style="--c:#94a3b8">branco</span></td><td>uso dos <b>flapes</b>: de <b>Vs0</b> (estol em configuração de pouso) a <b>Vfe</b></td></tr>
           <tr><td><span class="chip" style="--c:var(--green)">verde</span></td><td>operação normal: de <b>Vs1</b> (estol limpo) até <b>Vno</b></td></tr>
           <tr><td><span class="chip" style="--c:#c79300">amarelo</span></td><td>cuidado: de <b>Vno</b> a <b>Vne</b>, <b>só em ar calmo</b></td></tr>
-          <tr><td><span class="chip" style="--c:var(--red)">vermelho</span></td><td><b>Vne</b>: nunca exceder (risco estrutural, <i>flutter</i>)</td></tr>
+          <tr><td><span class="chip" style="--c:var(--red)">vermelho</span></td><td><b>Vne</b>: nunca exceder (dano estrutural, <i>flutter</i>)</td></tr>
         </table>
-        <div class="mem small">Início do branco = Vs0 · início do verde = Vs1 · fim do verde = Vno · fim do branco = Vfe.</div>
         <div class="trap small"><b>Va não é marcada</b> no velocímetro e <b>diminui</b> quando o peso diminui.</div>
       </div>
     </div>
@@ -80,13 +79,13 @@
     <div class="blk c-green s12">
       <div class="bh"><span class="n">3</span>Dicionário das velocidades</div>
       <div class="bb">
-        <table class="tb" style="--c:var(--green)">
+        <table class="tb" style="--c:var(--green);font-size:8.4pt">
           <tr><th>Sigla</th><th>Nome</th><th>O que é</th><th>Sigla</th><th>Nome</th><th>O que é</th></tr>
-          <tr><td><b>Vs</b></td><td>estol</td><td>velocidade mínima de voo estabilizado (numa configuração)</td><td><b>Va</b></td><td>manobra</td><td>acima dela, comando brusco total pode danificar; abaixo, estola antes</td></tr>
+          <tr><td><b>Vs</b></td><td>estol</td><td>mínima de voo estabilizado numa configuração</td><td><b>Va</b></td><td>manobra</td><td>acima dela, comando brusco pode danificar; abaixo, estola antes</td></tr>
           <tr><td><b>Vs0</b></td><td>estol em pouso</td><td>flape total (configuração de pouso)</td><td><b>Vfe</b></td><td>flape estendido</td><td>máxima com flape baixado</td></tr>
-          <tr><td><b>Vs1</b></td><td>estol limpo</td><td>configuração especificada (normalmente limpa)</td><td><b>Vno</b></td><td>cruzeiro estrutural</td><td>máxima em ar turbulento</td></tr>
+          <tr><td><b>Vs1</b></td><td>estol limpo</td><td>configuração especificada (em geral, limpa)</td><td><b>Vno</b></td><td>cruzeiro estrutural</td><td>máxima em ar turbulento</td></tr>
           <tr><td><b>Vx</b></td><td>melhor ângulo</td><td>mais altura por distância</td><td><b>Vne</b></td><td>nunca exceder</td><td>limite absoluto (linha vermelha)</td></tr>
-          <tr><td><b>Vy</b></td><td>melhor razão</td><td>mais altura por tempo</td><td><b>Vr / Vref</b></td><td>rotação / referência</td><td>conforme POH</td></tr>
+          <tr><td><b>Vy</b></td><td>melhor razão</td><td>mais altura por tempo</td><td><b>Vs×√n</b></td><td>estol em curva</td><td>Vs aumenta com o fator de carga</td></tr>
         </table>
       </div>
     </div>
@@ -102,16 +101,25 @@
           <tr><td><b>Vfe</b> &gt;10°</td><td class="c">85</td><td class="c">____</td><td><b>Vs0</b></td><td class="c">preencha do POH</td><td class="c">____</td></tr>
           <tr><td><b>Va</b> (2.450 lb)</td><td class="c">105</td><td class="c">____</td><td><b>Vs1</b></td><td class="c">preencha do POH</td><td class="c">____</td></tr>
         </table>
-        <div class="warn small">Referência do modelo Cessna 172R (POH). Confirme no POH/AFM, suplementos e checklist do PT-WVR.</div>
+        <div class="warn small">Referência do modelo C172R (POH) — confira no POH/AFM e checklist do PT-WVR.</div>
       </div>
     </div>
 
     <div class="blk c-purple s5">
       <div class="bh"><span class="n">5</span><span style="text-transform:none">Va</span> muda com o peso</div>
       <div class="bb">
-        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:11pt">Va nova = Va × √(P atual ÷ P máx)</span></div>
+        <div class="formula" style="padding:1mm 2mm"><span class="fx" style="font-size:12pt">Va₂ = Va × √(P₂ ÷ P<sub>máx</sub>)</span><small>P₂ = peso atual</small></div>
         <div class="ex small"><span class="et">Exemplo genérico</span><br>Va = 100 kt com 1.000 kg. Com 800 kg: 100 × √0,8 ≈ <b>89 kt</b>.</div>
-        <div class="small">Mais leve → estola numa velocidade menor → a “proteção” do estol só existe abaixo de uma Va menor. Em turbulência forte, voe na (ou abaixo da) Va do seu peso.</div>
+        <div class="small">Mais leve → estola mais cedo em velocidade → a “proteção” do estol só vale abaixo de uma Va <b>menor</b>.</div>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">6</span>Entrou em turbulência: qual velocidade?</div>
+      <div class="bb">
+        <div class="row c">
+          <div class="cause small f2" style="--c:var(--teal)"><span>turbulência</span><i>→</i><span>reduzir para a Va do peso atual (ou a velocidade de penetração do POH)</span><i>→</i><span>sair do arco amarelo</span><i>→</i><span>manter a atitude, sem “perseguir” a altitude</span></div>
+          <div class="tip small f1">Rajada + velocidade alta = fator de carga alto. Abaixo da Va, a rajada faz a asa <b>estolar</b> antes de sobrecarregar a estrutura.</div>
+        </div>
       </div>
     </div>
   </div>

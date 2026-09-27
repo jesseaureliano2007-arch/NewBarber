@@ -17,19 +17,25 @@
       <div class="bh"><span class="n">1</span>Camadas da atmosfera</div>
       <div class="bb">
         <svg viewBox="0 0 280 250" width="100%">
-          <rect x="0" y="0" width="200" height="40" fill="#1e1b4b"/><rect x="0" y="40" width="200" height="44" fill="#312e81"/>
-          <rect x="0" y="84" width="200" height="70" fill="#3b5ea8"/><rect x="0" y="154" width="200" height="6" fill="#f6c945"/>
-          <rect x="0" y="160" width="200" height="78" fill="url(#g-sky-blue)"/><rect x="0" y="236" width="200" height="14" fill="#2e9b45"/>
-          <text x="8" y="17" class="tw" style="font-size:13px">TERMOSFERA</text><text x="8" y="32" class="tw" style="font-size:11px;font-weight:600">acima de ~85 km</text>
-          <text x="8" y="58" class="tw" style="font-size:13px">MESOSFERA</text><text x="8" y="74" class="tw" style="font-size:11px;font-weight:600">~50 a 85 km · T cai</text>
-          <text x="8" y="102" class="tw" style="font-size:13px">ESTRATOSFERA</text><text x="8" y="118" class="tw" style="font-size:11px;font-weight:600">até ~50 km · ozônio</text><text x="8" y="133" class="tw" style="font-size:11px;font-weight:600">T sobe com a altura</text>
-          <text x="8" y="151" class="tb" style="font-size:11.5px;fill:#fff27a">TROPOPAUSA ~11 km (ISA)</text>
-          <text x="8" y="178" class="tb" style="font-size:13px;fill:#0f3f86">TROPOSFERA</text>
-          <text x="8" y="194" class="t" style="font-size:11px">quase todo o vapor d'água</text><text x="8" y="208" class="t" style="font-size:11px">e o "tempo" (nuvens, chuva)</text><text x="8" y="222" class="t" style="font-size:11px">T cai ≈ 2 °C/1.000 ft</text>
-          <use href="#cb" x="140" y="172" width="58" height="58"/><use href="#plane-side" x="120" y="122" width="50" height="20"/>
-          <polyline points="236,246 264,160 264,148 248,84 272,42 234,20 262,0" fill="none" stroke="#e0313b" stroke-width="3"/>
-          <text x="244" y="246" class="tb" style="font-size:11px;fill:#8f1219">+15</text><text x="279" y="176" text-anchor="end" class="tb" style="font-size:11px;fill:#8f1219">−56,5</text>
-          <text x="210" y="112" class="tb" style="font-size:12px;fill:#8f1219">T →</text>
+          <defs><linearGradient id="m1-atm" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#05071a"/><stop offset=".16" stop-color="#15123f"/><stop offset=".34" stop-color="#2a2a78"/><stop offset=".6" stop-color="#2f5fb0"/><stop offset=".64" stop-color="#3f7fd0"/><stop offset=".9" stop-color="#8cc4f0"/><stop offset="1" stop-color="#cfe8fb"/></linearGradient>
+            <linearGradient id="m1-tp" x1="0" x2="1"><stop offset="0" stop-color="#f6c945" stop-opacity=".2"/><stop offset=".5" stop-color="#ffe07a"/><stop offset="1" stop-color="#f6c945" stop-opacity=".2"/></linearGradient></defs>
+          <rect x="0" y="0" width="200" height="250" rx="6" fill="url(#m1-atm)"/>
+          <g fill="#fff" opacity=".8"><circle cx="150" cy="10" r="1.2"/><circle cx="176" cy="26" r="1"/><circle cx="120" cy="30" r="1"/><circle cx="188" cy="6" r="1.3"/></g>
+          <path d="M0 64 Q100 56 200 66" stroke="#9ae6b4" stroke-width="3" fill="none" opacity=".35" filter="url(#f-blur1)"/>
+          <rect x="0" y="100" width="200" height="16" fill="#7dd3fc" opacity=".12"/>
+          <line x1="0" y1="40" x2="200" y2="40" stroke="#fff" stroke-opacity=".35" stroke-dasharray="4 4"/><line x1="0" y1="84" x2="200" y2="84" stroke="#fff" stroke-opacity=".35" stroke-dasharray="4 4"/>
+          <rect x="0" y="153" width="200" height="8" fill="url(#m1-tp)"/>
+          <path d="M0 238 Q40 230 80 236 T160 234 T200 236 L200 250 L0 250Z" fill="url(#g-grass)"/>
+          <text x="8" y="17" class="tw" style="font-size:13px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">TERMOSFERA</text><text x="8" y="32" class="tw" style="font-size:11px;font-weight:600;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">acima de ~85 km</text>
+          <text x="8" y="58" class="tw" style="font-size:13px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">MESOSFERA</text><text x="8" y="74" class="tw" style="font-size:11px;font-weight:600;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">~50 a 85 km · T cai</text>
+          <text x="8" y="102" class="tw" style="font-size:13px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">ESTRATOSFERA</text><text x="8" y="118" class="tw" style="font-size:11px;font-weight:600;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">até ~50 km · ozônio</text><text x="8" y="133" class="tw" style="font-size:11px;font-weight:600;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">T sobe com a altura</text>
+          <text x="8" y="151" class="tb" style="font-size:11.5px;fill:#fff27a;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">TROPOPAUSA ~11 km (ISA)</text>
+          <text x="8" y="178" class="tw" style="font-size:13px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">TROPOSFERA</text>
+          <text x="8" y="194" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">quase todo o vapor d'água</text><text x="8" y="208" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">e o "tempo" (nuvens, chuva)</text><text x="8" y="222" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">T cai ≈ 2 °C/1.000 ft</text>
+          <use href="#cb" x="132" y="160" width="72" height="80"/><g filter="url(#f-shadow)"><use href="#plane-side" x="118" y="120" width="54" height="22"/></g>
+          <polyline points="236,246 264,160 264,148 248,84 272,42 234,20 262,0" fill="none" stroke="#e0313b" stroke-width="5" stroke-opacity=".25" filter="url(#f-blur1)"/><polyline points="236,246 264,160 264,148 248,84 272,42 234,20 262,0" fill="none" stroke="#e0313b" stroke-width="3"/>
+          <text x="244" y="246" class="tb" style="font-size:11px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">+15</text><text x="279" y="176" text-anchor="end" class="tb" style="font-size:11px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">−56,5</text>
+          <text x="210" y="112" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">T →</text>
         </svg>
         <div class="small">Tropopausa mais <b>alta no Equador</b> (~16–18 km), mais <b>baixa nos polos</b> (~8 km). Ar seco: <b>N₂ 78 %</b>, <b>O₂ 21 %</b>, 1 % outros; vapor d'água variável (0–4 %).</div>
       </div>
@@ -62,7 +68,7 @@
       <div class="bb">
         <div class="row">
           <svg class="none" width="104" height="104" viewBox="0 0 150 150">
-            <line x1="24" y1="134" x2="145" y2="134" stroke="#334155" stroke-width="2"/><line x1="24" y1="134" x2="24" y2="6" stroke="#334155" stroke-width="2"/>
+            <defs><linearGradient id="m1-pr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e3a8a" stop-opacity=".25"/><stop offset="1" stop-color="#bfe2fb" stop-opacity=".25"/></linearGradient></defs><rect x="24" y="4" width="122" height="130" fill="url(#m1-pr)"/><path d="M140 132 C80 110 50 80 32 8 L24 8 L24 134Z" fill="#0e9fb3" opacity=".15"/><line x1="24" y1="134" x2="145" y2="134" stroke="#334155" stroke-width="2"/><line x1="24" y1="134" x2="24" y2="6" stroke="#334155" stroke-width="2"/>
             <path d="M140 132 C80 110 50 80 32 8" stroke="#0e9fb3" stroke-width="4" fill="none"/>
             <text x="144" y="122" text-anchor="end" class="tb" style="font-size:14px">1013</text><text x="40" y="16" class="tb" style="font-size:14px">baixa</text>
             <text x="84" y="150" text-anchor="middle" class="t" style="font-size:14px">pressão →</text>
@@ -86,13 +92,16 @@
       <div class="bh"><span class="n">6</span>Como o ar se aquece</div>
       <div class="bb">
         <svg viewBox="0 0 340 108" width="100%">
-          <rect x="0" y="84" width="340" height="24" fill="#8b6b3d"/><rect x="0" y="0" width="340" height="84" fill="#e8f2fd"/>
-          <use href="#sun" x="4" y="4" width="40" height="40"/>
-          <path d="M40 40 L78 80" stroke="#f08a12" stroke-width="3" marker-end="url(#arr-o)"/><text x="54" y="30" class="tb" style="font-size:12px;fill:#9a4d00">radiação</text>
-          <path d="M110 82 L110 60" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/><text x="116" y="74" class="tb" style="font-size:12px;fill:#8f1219">condução</text>
-          <path d="M190 80 C170 60 210 40 190 14" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><text x="200" y="40" class="tb" style="font-size:12px;fill:#8f1219">convecção (vertical)</text>
-          <path d="M250 64 L330 64" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="336" y="80" text-anchor="end" class="tb" style="font-size:12px;fill:#0f3f86">advecção (horizontal)</text>
-          <text x="170" y="100" text-anchor="middle" class="tw" style="font-size:12px">o Sol aquece o SOLO; o solo aquece o ar de baixo para cima</text>
+          <rect x="0" y="0" width="340" height="90" rx="6" fill="url(#g-sky-clear)"/>
+          <circle cx="24" cy="24" r="30" fill="url(#rg-sunglow)"/><use href="#sun" x="4" y="4" width="40" height="40"/>
+          <use href="#cloud" x="210" y="4" width="60" height="34"/>
+          <path d="M0 84 Q60 78 120 84 T240 82 T340 84 L340 108 L0 108Z" fill="url(#g-earth)"/><path d="M0 84 Q60 78 120 84 T240 82 T340 84 L340 90 L0 90Z" fill="url(#g-grass)"/>
+          <ellipse cx="110" cy="80" rx="28" ry="6" fill="#ffb347" opacity=".5" filter="url(#f-blur3)"/>
+          <path d="M40 40 L78 80" stroke="#f08a12" stroke-width="3.5" marker-end="url(#arr-o)"/><text x="54" y="30" class="tb" style="font-size:12px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">radiação</text>
+          <path d="M110 82 L110 60" stroke="#e0313b" stroke-width="3.5" marker-end="url(#arr-r)"/><text x="116" y="74" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">condução</text>
+          <path d="M190 80 C170 60 210 40 190 14" stroke="#e0313b" stroke-width="3.5" fill="none" marker-end="url(#arr-r)"/><text x="200" y="52" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">convecção (vertical)</text>
+          <path d="M250 64 L330 64" stroke="#1d6fd1" stroke-width="3.5" marker-end="url(#arr-b)"/><text x="336" y="78" text-anchor="end" class="tb" style="font-size:12px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">advecção (horizontal)</text>
+          <text x="170" y="102" text-anchor="middle" class="tw" style="font-size:12px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">o Sol aquece o SOLO; o solo aquece o ar de baixo para cima</text>
         </svg>
         <div class="small">Por isso a troposfera esfria com a altura: a “fonte de calor” está embaixo.</div>
       </div>

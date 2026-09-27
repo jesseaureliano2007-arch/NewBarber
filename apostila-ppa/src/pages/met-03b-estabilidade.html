@@ -30,14 +30,14 @@
       <div class="bb">
         <div class="row">
           <svg class="f1" viewBox="0 0 250 170" width="100%">
-            <line x1="26" y1="150" x2="245" y2="150" stroke="#334155" stroke-width="1.5"/><line x1="26" y1="150" x2="26" y2="6" stroke="#334155" stroke-width="1.5"/>
-            <text x="135" y="166" text-anchor="middle" class="t" style="font-size:13px">temperatura →</text><text x="12" y="80" text-anchor="middle" class="t" style="font-size:13px" transform="rotate(-90 12 80)">altitude →</text>
-            <line x1="200" y1="150" x2="80" y2="14" stroke="#e0313b" stroke-width="3.5"/><text x="80" y="12" class="tb" style="font-size:13px;fill:#8f1219" text-anchor="middle">bolha 3°</text>
-            <line x1="200" y1="150" x2="40" y2="30" stroke="#1d6fd1" stroke-width="3" stroke-dasharray="7 4"/><text x="32" y="44" class="tb" style="font-size:13px;fill:#0f3f86">amb. 4°</text>
-            <line x1="200" y1="150" x2="170" y2="14" stroke="#2e9b45" stroke-width="3" stroke-dasharray="7 4"/><text x="178" y="16" class="tb" style="font-size:13px;fill:#16582a">amb. 1°</text>
-            <circle cx="133" cy="74" r="8" fill="#e0313b"/>
-            <text x="30" y="118" class="tb" style="font-size:12.5px;fill:#0f3f86">4°: bolha mais</text><text x="30" y="132" class="tb" style="font-size:12.5px;fill:#0f3f86">quente → SOBE</text>
-            <text x="244" y="84" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">1°: bolha</text><text x="244" y="98" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">mais fria</text><text x="244" y="112" class="tb" style="font-size:12.5px;fill:#16582a" text-anchor="end">→ VOLTA</text>
+            <defs><radialGradient id="m3b-bub" cx=".35" cy=".3" r=".7"><stop offset="0" stop-color="#ffb4b4"/><stop offset=".55" stop-color="#e0313b"/><stop offset="1" stop-color="#7a0d13"/></radialGradient></defs><rect x="26" y="6" width="220" height="144" fill="url(#g-sky-clear)" opacity=".35"/><path d="M26 146 Q100 140 170 146 T246 144 L246 150 L26 150Z" fill="url(#g-grass)"/><line x1="26" y1="150" x2="245" y2="150" stroke="#334155" stroke-width="1.5"/><line x1="26" y1="150" x2="26" y2="6" stroke="#334155" stroke-width="1.5"/>
+            <text x="135" y="166" text-anchor="middle" class="t" style="font-size:13px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">temperatura →</text><text x="12" y="80" text-anchor="middle" class="t" style="font-size:13px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" transform="rotate(-90 12 80)">altitude →</text>
+            <line x1="200" y1="150" x2="80" y2="14" stroke="#e0313b" stroke-width="3.5"/><text x="80" y="12" class="tb" style="font-size:13px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="middle">bolha 3°</text>
+            <line x1="200" y1="150" x2="40" y2="30" stroke="#1d6fd1" stroke-width="3" stroke-dasharray="7 4"/><text x="32" y="44" class="tb" style="font-size:13px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">amb. 4°</text>
+            <line x1="200" y1="150" x2="170" y2="14" stroke="#2e9b45" stroke-width="3" stroke-dasharray="7 4"/><text x="178" y="16" class="tb" style="font-size:13px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">amb. 1°</text>
+            <circle cx="133" cy="76" r="9" fill="#0b1a33" opacity=".2" filter="url(#f-blur1)"/><circle cx="133" cy="74" r="9" fill="url(#m3b-bub)"/><circle cx="130" cy="71" r="2.5" fill="#fff" opacity=".7"/>
+            <text x="30" y="118" class="tb" style="font-size:12.5px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">4°: bolha mais</text><text x="30" y="132" class="tb" style="font-size:12.5px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">quente → SOBE</text>
+            <text x="244" y="84" class="tb" style="font-size:12.5px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">1°: bolha</text><text x="244" y="98" class="tb" style="font-size:12.5px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">mais fria</text><text x="244" y="112" class="tb" style="font-size:12.5px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">→ VOLTA</text>
           </svg>
           <div class="f1 small">Empurre uma bolha seca para cima: ela esfria 3 °C/1.000 ft.<br>• Se o <b>ambiente esfria mais</b> (ex.: 4 °C), a bolha fica <b>mais quente</b> e leve que o ar ao redor → <b>continua subindo</b> = <b style="color:#8f1219">INSTÁVEL</b>.<br>• Se o <b>ambiente esfria menos</b> (ex.: 1 °C), a bolha fica <b>mais fria</b> e pesada → <b>volta</b> = <b style="color:#16582a">ESTÁVEL</b>.</div>
         </div>
@@ -48,7 +48,7 @@
       <div class="bh"><span class="n">3</span>Classificação pelo gradiente ambiente</div>
       <div class="bb">
         <svg viewBox="0 0 340 72" width="100%">
-          <rect x="0" y="16" width="112" height="30" fill="#2e9b45"/><rect x="112" y="16" width="116" height="30" fill="#f6c945"/><rect x="228" y="16" width="112" height="30" fill="#e0313b"/>
+          <defs><linearGradient id="m3b-bar" x1="0" x2="1"><stop offset="0" stop-color="#16582a"/><stop offset=".3" stop-color="#2e9b45"/><stop offset=".34" stop-color="#f6c945"/><stop offset=".66" stop-color="#f6c945"/><stop offset=".7" stop-color="#e0313b"/><stop offset="1" stop-color="#8f1219"/></linearGradient><linearGradient id="m3b-gloss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".15"/></linearGradient></defs><g filter="url(#f-shadow)"><rect x="0" y="16" width="340" height="30" rx="8" fill="url(#m3b-bar)"/><rect x="0" y="16" width="340" height="30" rx="8" fill="url(#m3b-gloss)"/></g>
           <text x="112" y="12" text-anchor="middle" class="tb" style="font-size:12px">1,5 °C</text><text x="228" y="12" text-anchor="middle" class="tb" style="font-size:12px">3 °C</text>
           <text x="56" y="36" text-anchor="middle" class="tw" style="font-size:12.5px">ABS. ESTÁVEL</text><text x="170" y="36" text-anchor="middle" class="tb" style="font-size:12.5px">CONDICIONAL</text><text x="284" y="36" text-anchor="middle" class="tw" style="font-size:12.5px">ABS. INSTÁVEL</text>
           <text x="56" y="62" text-anchor="middle" class="t" style="font-size:11.5px">&lt; 1,5 °C/1.000 ft</text><text x="170" y="62" text-anchor="middle" class="t" style="font-size:11.5px">instável só se saturado</text><text x="284" y="62" text-anchor="middle" class="t" style="font-size:11.5px">&gt; 3 °C/1.000 ft</text>
@@ -77,15 +77,15 @@
       <div class="bb">
         <div class="row">
           <svg class="f1" viewBox="0 0 230 180" width="100%">
-            <rect x="26" y="98" width="204" height="62" fill="#f6c945" opacity=".35"/>
+            <rect x="26" y="6" width="204" height="154" fill="url(#g-sky-clear)" opacity=".45"/><rect x="26" y="98" width="204" height="62" fill="#c9a26a" opacity=".35"/><rect x="26" y="92" width="204" height="12" fill="#f6c945" opacity=".35" filter="url(#f-blur3)"/><use href="#city" x="120" y="128" width="100" height="32" opacity=".55"/><use href="#stratus" x="26" y="84" width="204" height="20" opacity=".7"/>
             <line x1="26" y1="160" x2="228" y2="160" stroke="#334155" stroke-width="1.5"/><line x1="26" y1="160" x2="26" y2="6" stroke="#334155" stroke-width="1.5"/>
-            <text x="128" y="176" text-anchor="middle" class="t" style="font-size:12px">temperatura →</text><text x="12" y="84" text-anchor="middle" class="t" style="font-size:12px" transform="rotate(-90 12 84)">altitude →</text>
+            <text x="128" y="176" text-anchor="middle" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">temperatura →</text><text x="12" y="84" text-anchor="middle" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" transform="rotate(-90 12 84)">altitude →</text>
             <polyline points="70,160 160,98 100,10" fill="none" stroke="#e0313b" stroke-width="3.5"/>
-            <text x="222" y="116" class="tb" style="font-size:12.5px;fill:#9a4d00" text-anchor="end">INVERSÃO</text><text x="222" y="130" class="t" style="font-size:12px" text-anchor="end">T sobe com</text><text x="222" y="143" class="t" style="font-size:12px" text-anchor="end">a altura</text>
-            <text x="150" y="40" class="t" style="font-size:12px">acima: T cai</text><text x="150" y="54" class="t" style="font-size:12px">normalmente</text>
+            <text x="222" y="116" class="tb" style="font-size:12.5px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">INVERSÃO</text><text x="222" y="130" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">T sobe com</text><text x="222" y="143" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round" text-anchor="end">a altura</text>
+            <text x="150" y="40" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">acima: T cai</text><text x="150" y="54" class="t" style="font-size:12px;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">normalmente</text>
             <use href="#fog" x="30" y="128" width="46" height="24"/>
-            <text x="30" y="122" class="tb" style="font-size:11.5px;fill:#475569">névoa presa</text>
-            <text x="30" y="92" class="tb" style="font-size:11.5px;fill:#9a4d00">topo: windshear</text>
+            <text x="30" y="122" class="tb" style="font-size:11.5px;fill:#475569;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">névoa presa</text>
+            <text x="30" y="92" class="tb" style="font-size:11.5px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">topo: windshear</text>
           </svg>
           <div class="f1 small">
             Camada em que a temperatura <b>aumenta</b> com a altitude: <b>muito estável</b>, uma “tampa”.
@@ -104,12 +104,20 @@
       <div class="bh"><span class="n">6</span>O que faz o ar subir</div>
       <div class="bb">
         <svg viewBox="0 0 280 92" width="100%" style="max-height:21mm">
-          <rect x="0" y="78" width="280" height="14" fill="#8b6b3d"/>
-          <path d="M30 76 C20 60 40 44 30 24" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/><use href="#sun" x="4" y="0" width="22" height="22"/>
-          <path d="M80 78 L120 30 L160 78Z" fill="#6b7f5e"/><path d="M70 72 L112 36" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/>
-          <path d="M180 78 L270 44 L270 78Z" fill="#93c5fd"/><path d="M180 70 L262 30" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
-          <text x="30" y="90" text-anchor="middle" class="tw" style="font-size:11px">convecção</text><text x="120" y="90" text-anchor="middle" class="tw" style="font-size:11px">orográfico</text><text x="226" y="90" text-anchor="middle" class="tw" style="font-size:11px">frontal</text>
-          <text x="226" y="70" text-anchor="middle" class="tb" style="font-size:11px;fill:#0f3f86">ar frio</text>
+          <defs><linearGradient id="m3b-cold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4ed8" stop-opacity=".25"/><stop offset="1" stop-color="#1d4ed8" stop-opacity=".6"/></linearGradient></defs>
+          <rect x="0" y="0" width="280" height="80" rx="4" fill="url(#g-sky-clear)"/>
+          <circle cx="14" cy="12" r="16" fill="url(#rg-sunglow)"/><use href="#sun" x="3" y="1" width="22" height="22"/>
+          <use href="#cloud" x="12" y="4" width="40" height="24"/>
+          <path d="M80 80 L120 30 L160 80Z" fill="url(#g-mount)"/><path d="M120 30 L128 40 L122 39 L116 43 L112 40Z" fill="#fff"/>
+          <use href="#cloud" x="98" y="12" width="46" height="26"/>
+          <path d="M180 80 C220 70 250 56 280 40 L280 80Z" fill="url(#m3b-cold)"/>
+          <use href="#cloud-dark" x="222" y="4" width="54" height="30"/>
+          <path d="M0 76 Q70 72 140 76 T280 76 L280 92 L0 92Z" fill="url(#g-grass)"/>
+          <path d="M30 76 C20 60 40 44 30 30" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/>
+          <path d="M70 74 L106 42" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/>
+          <path d="M180 70 L250 36" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
+          <text x="30" y="90" text-anchor="middle" class="tw" style="font-size:11px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">convecção</text><text x="120" y="90" text-anchor="middle" class="tw" style="font-size:11px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">orográfico</text><text x="226" y="90" text-anchor="middle" class="tw" style="font-size:11px;paint-order:stroke;stroke:#0b1a33;stroke-opacity:.55;stroke-width:3px;stroke-linejoin:round">frontal</text>
+          <text x="240" y="72" text-anchor="middle" class="tb" style="font-size:11px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3.2px;stroke-linejoin:round">ar frio</text>
         </svg>
         <div class="small">+ <b>convergência</b> (ex.: ZCIT). Levantamento + umidade + instabilidade = <b>trovoada</b>.</div>
         <div class="ex small"><span class="et">Exemplo</span> Sondagem: 30 °C na superfície e 18 °C a 3.000 ft → 4 °C/1.000 ft → <b>absolutamente instável</b>: Cu e turbulência.</div>

@@ -19,42 +19,43 @@
       <div class="bb">
         <svg viewBox="0 0 720 300" width="100%">
           <!-- ligações -->
-          <g stroke="#0e9fb3" stroke-width="3" fill="none" stroke-linecap="round">
+          <rect width="720" height="300" rx="10" fill="url(#g-sky-clear)" opacity=".18"/>
+          <g stroke="#0e9fb3" stroke-width="3.5" fill="none" stroke-linecap="round" opacity=".85">
             <path d="M360 150 C300 150 250 60 175 45"/><path d="M360 150 C300 150 250 110 175 112"/><path d="M360 150 C300 160 250 180 175 180"/><path d="M360 150 C300 170 250 250 175 250"/>
             <path d="M360 150 C420 150 470 60 545 45"/><path d="M360 150 C420 150 470 110 545 112"/><path d="M360 150 C420 160 470 180 545 180"/><path d="M360 150 C420 170 470 250 545 250"/>
             <path d="M360 150 L360 262"/>
           </g>
           <!-- centro -->
-          <circle cx="360" cy="150" r="58" fill="#0b5c68"/><circle cx="360" cy="150" r="52" fill="#0e9fb3"/>
-          <use href="#cloud" x="330" y="104" width="60" height="36"/>
+          <defs><radialGradient id="m0-core" cx=".4" cy=".3" r=".75"><stop offset="0" stop-color="#5fd3e2"/><stop offset=".6" stop-color="#0e9fb3"/><stop offset="1" stop-color="#0b5c68"/></radialGradient></defs><g filter="url(#f-shadow)"><circle cx="360" cy="150" r="60" fill="url(#rg-ring)"/><circle cx="360" cy="150" r="54" fill="url(#m0-core)"/></g>
+          <use href="#cloud" x="322" y="100" width="76" height="44"/>
           <text x="360" y="160" text-anchor="middle" class="tw" style="font-size:15px">METEOROLOGIA</text>
           <text x="360" y="178" text-anchor="middle" class="tw" style="font-size:12px">20 questões</text>
           <!-- nós esquerdos -->
           <g>
-            <rect x="8" y="20" width="170" height="52" rx="10" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><use href="#thermo" x="14" y="26" width="14" height="40"/>
+            <rect x="8" y="20" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="2"/><use href="#thermo" x="14" y="26" width="14" height="40"/>
             <text x="34" y="40" class="tb" style="font-size:13px;fill:#0f3f86">ATMOSFERA E ISA</text><text x="34" y="57" class="t" style="font-size:11.5px">15 °C · 1013,25 hPa · 2 °C/1.000 ft</text>
-            <rect x="8" y="86" width="170" height="52" rx="10" fill="#fdebf2" stroke="#e0457b" stroke-width="2"/><use href="#alt-face" x="12" y="92" width="38" height="38"/>
+            <rect x="8" y="86" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#fdebf2" stroke="#e0457b" stroke-width="2"/><use href="#alt-face" x="12" y="92" width="38" height="38"/>
             <text x="54" y="106" class="tb" style="font-size:13px;fill:#8a1c47">ALTIMETRIA</text><text x="54" y="123" class="t" style="font-size:11.5px">QNH · QFE · QNE · TA/TL</text>
-            <rect x="8" y="154" width="170" height="52" rx="10" fill="#e4f7fa" stroke="#0e9fb3" stroke-width="2"/><use href="#drop" x="14" y="162" width="26" height="34"/>
+            <rect x="8" y="154" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#e4f7fa" stroke="#0e9fb3" stroke-width="2"/><use href="#drop" x="14" y="162" width="26" height="34"/>
             <text x="44" y="174" class="tb" style="font-size:13px;fill:#0b5c68">UMIDADE · ESTABILIDADE</text><text x="44" y="191" class="t" style="font-size:11.5px">spread × 400 ft = base</text>
-            <rect x="8" y="224" width="170" height="52" rx="10" fill="#f1f5f9" stroke="#475569" stroke-width="2"/><use href="#cloud" x="12" y="232" width="40" height="24"/><use href="#fog" x="12" y="252" width="40" height="20"/>
+            <rect x="8" y="224" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#f1f5f9" stroke="#475569" stroke-width="2"/><use href="#cloud" x="12" y="232" width="40" height="24"/><use href="#fog" x="12" y="252" width="40" height="20"/>
             <text x="56" y="244" class="tb" style="font-size:13px;fill:#1e293b">NUVENS E NEVOEIROS</text><text x="56" y="261" class="t" style="font-size:11.5px">FEW/SCT/BKN/OVC · FG/BR</text>
           </g>
           <!-- nós direitos -->
           <g>
-            <rect x="542" y="20" width="170" height="52" rx="10" fill="#eaf7ec" stroke="#2e9b45" stroke-width="2"/><use href="#windsock" x="546" y="26" width="36" height="36"/>
+            <rect x="542" y="20" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#eaf7ec" stroke="#2e9b45" stroke-width="2"/><use href="#windsock" x="544" y="24" width="40" height="40"/>
             <text x="586" y="40" class="tb" style="font-size:13px;fill:#16582a">VENTOS E PRESSÃO</text><text x="586" y="57" class="t" style="font-size:11.5px">Coriolis à ESQUERDA (HS)</text>
-            <rect x="542" y="86" width="170" height="52" rx="10" fill="#f3ebfc" stroke="#8b46d6" stroke-width="2"/>
+            <rect x="542" y="86" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#f3ebfc" stroke="#8b46d6" stroke-width="2"/>
             <path d="M552 118 L580 118" stroke="#1d6fd1" stroke-width="3"/><path d="M556 118 l5 -8 l5 8z M568 118 l5 -8 l5 8z" fill="#1d6fd1"/>
             <text x="586" y="106" class="tb" style="font-size:13px;fill:#4c1d95">MASSAS E FRENTES</text><text x="586" y="123" class="t" style="font-size:11.5px">fria · quente · oclusa</text>
-            <rect x="542" y="154" width="170" height="52" rx="10" fill="#fff4e3" stroke="#f08a12" stroke-width="2"/>
-            <path d="M550 182 q6 -10 12 0 t12 0 t12 0" stroke="#f08a12" stroke-width="3" fill="none"/>
+            <rect x="542" y="154" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#fff4e3" stroke="#f08a12" stroke-width="2"/>
+            <use href="#cb" x="546" y="158" width="40" height="40"/>
             <text x="590" y="174" class="tb" style="font-size:13px;fill:#9a4d00">PERIGOS AO VOO</text><text x="590" y="191" class="t" style="font-size:11.5px">turbulência · gelo · CB</text>
-            <rect x="542" y="224" width="170" height="52" rx="10" fill="#fdecee" stroke="#e0313b" stroke-width="2"/><use href="#chart" x="546" y="234" width="38" height="24"/>
+            <rect x="542" y="224" width="170" height="52" rx="10" filter="url(#f-shadow)" fill="#fdecee" stroke="#e0313b" stroke-width="2"/><use href="#chart" x="546" y="234" width="38" height="24"/>
             <text x="588" y="244" class="tb" style="font-size:13px;fill:#8f1219">METAR · TAF · CARTAS</text><text x="588" y="261" class="t" style="font-size:11.5px">SIGMET · satélite · radar</text>
           </g>
           <!-- base -->
-          <rect x="250" y="248" width="220" height="44" rx="10" fill="#13294b"/>
+          <rect x="250" y="248" width="220" height="44" rx="10" fill="url(#g-panel)" filter="url(#f-shadow)"/>
           <text x="360" y="266" text-anchor="middle" class="tw" style="font-size:14px">DECISÃO VFR: VOU OU NÃO VOU?</text>
           <text x="360" y="283" text-anchor="middle" style="font-size:11.5px;fill:#ffe46b;font-weight:700">briefing · mínimos · alternativa</text>
         </svg>

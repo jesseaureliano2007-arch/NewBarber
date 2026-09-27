@@ -15,10 +15,10 @@
         <svg viewBox="0 0 729 246" width="100%">
           <!-- tanques -->
           <g font-size="11.5" font-weight="700">
-            <rect x="10" y="30" width="230" height="44" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/>
+            <rect filter="url(#f-shadow)" x="10" y="30" width="230" height="44" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/>
             <rect x="12" y="52" width="226" height="20" rx="8" fill="#60a5fa"/>
             <text x="125" y="46" text-anchor="middle" fill="#0f3f86">TANQUE ESQUERDO (asa)</text>
-            <rect x="489" y="30" width="230" height="44" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/>
+            <rect filter="url(#f-shadow)" x="489" y="30" width="230" height="44" rx="10" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2.5"/>
             <rect x="491" y="52" width="226" height="20" rx="8" fill="#60a5fa"/>
             <text x="604" y="46" text-anchor="middle" fill="#0f3f86">TANQUE DIREITO (asa)</text>
           </g>
@@ -35,30 +35,33 @@
           <g stroke="#1d6fd1" stroke-width="5" fill="none" stroke-linejoin="round">
             <path d="M125 74 V110 H330"/><path d="M604 74 V110 H398"/>
             <path d="M364 140 V160"/><path d="M364 200 H300"/><path d="M252 200 H220"/><path d="M168 200 H140"/><path d="M92 200 H70 V150"/>
+          </g><g stroke="#ffffff" stroke-width="1.5" opacity=".5" fill="none" stroke-linejoin="round">
+            <path d="M125 74 V110 H330"/><path d="M604 74 V110 H398"/>
+            <path d="M364 140 V160"/><path d="M364 200 H300"/><path d="M252 200 H220"/><path d="M168 200 H140"/><path d="M92 200 H70 V150"/>
           </g>
           <!-- seletora -->
-          <circle cx="364" cy="112" r="28" fill="#1f2937"/>
+          <circle cx="364" cy="112" r="31" fill="url(#rg-ring)" filter="url(#f-shadow)"/><circle cx="364" cy="112" r="27" fill="#1f2937"/>
           <g font-size="11" font-weight="700" fill="#0f172a"><text x="336" y="86" text-anchor="end">LEFT</text><text x="364" y="76" text-anchor="middle">BOTH</text><text x="392" y="86">RIGHT</text></g>
           <path d="M364 112 V88" stroke="#f6c945" stroke-width="6" stroke-linecap="round"/><circle cx="364" cy="112" r="6" fill="#94a3b8"/>
           <text x="410" y="140" font-size="11.5" font-weight="700">seletora de tanques</text>
           <!-- corte -->
           <rect x="350" y="146" width="28" height="14" rx="3" fill="#e0313b"/><text x="386" y="158" font-size="11" font-weight="700" fill="#8f1219">válvula de corte (ON/OFF)</text>
-          <path d="M364 160 V172" stroke="#1d6fd1" stroke-width="5"/>
+          <path d="M364 160 V172" stroke="#1d6fd1" stroke-width="5"/><path d="M364 160 V172" stroke="#ffffff" stroke-width="1.5" opacity=".5"/>
           <!-- filtro -->
-          <rect x="330" y="172" width="68" height="44" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+          <rect filter="url(#f-shadow)" x="330" y="172" width="68" height="44" rx="6" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
           <path d="M338 204 H390" stroke="#b45309" stroke-dasharray="3 2"/><circle cx="364" cy="210" r="3" fill="#0ea5e9"/>
           <text x="364" y="190" text-anchor="middle" font-size="11" font-weight="700" fill="#7a5a00">FILTRO</text>
           <path d="M358 216 l6 10 l6 -10Z" fill="#e0313b"/><text x="376" y="232" font-size="10.5" font-weight="700" fill="#8f1219">dreno (ponto mais baixo)</text>
-          <path d="M330 200 H300" stroke="#1d6fd1" stroke-width="5"/>
+          <path d="M330 200 H300" stroke="#1d6fd1" stroke-width="5"/><path d="M330 200 H300" stroke="#ffffff" stroke-width="1.5" opacity=".5"/>
           <!-- bombas -->
-          <rect x="252" y="184" width="48" height="32" rx="6" fill="#fdecee" stroke="#e0313b" stroke-width="2"/><text x="276" y="204" text-anchor="middle" font-size="10.5" font-weight="700">ELÉTR.</text>
+          <rect filter="url(#f-shadow)" x="252" y="184" width="48" height="32" rx="6" fill="#fdecee" stroke="#e0313b" stroke-width="2"/><text x="276" y="204" text-anchor="middle" font-size="10.5" font-weight="700">ELÉTR.</text>
           <text x="276" y="232" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8f1219">bomba auxiliar</text>
-          <rect x="168" y="184" width="52" height="32" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="2"/><text x="194" y="204" text-anchor="middle" font-size="10.5" font-weight="700">MECÂN.</text>
+          <rect filter="url(#f-shadow)" x="168" y="184" width="52" height="32" rx="6" fill="#f1f5f9" stroke="#334155" stroke-width="2"/><text x="194" y="204" text-anchor="middle" font-size="10.5" font-weight="700">MECÂN.</text>
           <text x="194" y="232" text-anchor="middle" font-size="10.5" font-weight="700">bomba do motor</text>
           <!-- carburador/injeção -->
-          <rect x="92" y="180" width="48" height="40" rx="6" fill="#ede9fe" stroke="#8b46d6" stroke-width="2"/><text x="116" y="198" text-anchor="middle" font-size="10" font-weight="700">CARB. ou</text><text x="116" y="211" text-anchor="middle" font-size="10" font-weight="700">INJEÇÃO</text>
+          <rect filter="url(#f-shadow)" x="92" y="180" width="48" height="40" rx="6" fill="#ede9fe" stroke="#8b46d6" stroke-width="2"/><text x="116" y="198" text-anchor="middle" font-size="10" font-weight="700">CARB. ou</text><text x="116" y="211" text-anchor="middle" font-size="10" font-weight="700">INJEÇÃO</text>
           <!-- motor -->
-          <rect x="30" y="112" width="80" height="38" rx="8" fill="#475569"/><text x="70" y="136" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">MOTOR</text>
+          <rect x="30" y="112" width="80" height="38" rx="8" fill="#475569" filter="url(#f-shadow)"/><text x="70" y="136" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">MOTOR</text>
           <!-- primer -->
           <path d="M318 200 V168 H150 Q126 168 110 140" stroke="#16a34a" stroke-width="2.5" stroke-dasharray="6 3" fill="none" marker-end="url(#arr-g)"/>
           <text x="210" y="162" font-size="11" font-weight="700" fill="#16582a">primer → cilindros (partida)</text>

@@ -6,34 +6,30 @@
         <linearGradient id="cv-sky" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#0a2a66"/><stop offset=".38" stop-color="#1d6fd1"/><stop offset=".72" stop-color="#7cc0f5"/><stop offset="1" stop-color="#ffe2a8"/>
         </linearGradient>
-        <linearGradient id="cv-field" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stop-color="#5f9b4a"/><stop offset="1" stop-color="#2f5f2a"/>
-        </linearGradient>
-        <radialGradient id="cv-glow" cx=".5" cy=".5" r=".5">
-          <stop offset="0" stop-color="#fff7c2" stop-opacity=".95"/><stop offset=".4" stop-color="#ffd23f" stop-opacity=".55"/><stop offset="1" stop-color="#ffd23f" stop-opacity="0"/>
-        </radialGradient>
       </defs>
       <rect width="800" height="610" fill="url(#cv-sky)"/>
-      <circle cx="650" cy="420" r="150" fill="url(#cv-glow)"/>
+      <circle cx="650" cy="420" r="170" fill="url(#rg-sunglow)" opacity=".85"/>
       <circle cx="650" cy="420" r="40" fill="url(#g-sun)"/>
-      <use href="#cirrus" x="420" y="40" width="220" height="70" opacity=".7"/>
-      <use href="#cirrus" x="80" y="250" width="180" height="60" opacity=".45"/>
-      <use href="#cloud" x="610" y="150" width="170" height="100" opacity=".95"/>
-      <use href="#cloud" x="30" y="330" width="190" height="110" opacity=".9"/>
-      <use href="#tcu" x="690" y="300" width="100" height="110" opacity=".85"/>
+      <use style="overflow:visible" href="#cirrus" x="420" y="40" width="220" height="70" opacity=".7"/>
+      <use style="overflow:visible" href="#cirrus" x="80" y="250" width="180" height="60" opacity=".45"/>
+      <use style="overflow:visible" href="#cloud" x="610" y="150" width="170" height="100" opacity=".95"/>
+      <use style="overflow:visible" href="#cloud" x="30" y="330" width="190" height="110" opacity=".9"/>
+      <use style="overflow:visible" href="#tcu" x="690" y="300" width="100" height="110" opacity=".85"/>
       <!-- serras e cidade no horizonte -->
-      <use href="#mountain" x="-20" y="410" width="300" height="130" opacity=".75"/>
+      <use href="#mountain" x="-20" y="410" width="300" height="130" opacity=".9"/>
       <use href="#mountain" x="210" y="440" width="220" height="100" opacity=".6"/>
       <use href="#city" x="360" y="470" width="260" height="75" opacity=".7"/>
       <!-- campo e pista em perspectiva -->
-      <path d="M0 530 Q400 515 800 530 V610 H0Z" fill="url(#cv-field)"/>
-      <path d="M300 536 L420 536 L640 610 L60 610Z" fill="#3a3f47"/>
+      <path d="M0 530 Q400 515 800 530 V610 H0Z" fill="url(#g-grass)"/>
+      <path d="M0 530 Q400 515 800 530 V540 Q400 526 0 541Z" fill="#fff" opacity=".12"/>
+      <path d="M300 536 L420 536 L640 610 L60 610Z" fill="url(#g-asphalt)"/>
+      <path d="M300 536 L420 536 L440 543 L282 543Z" fill="#fff" opacity=".08"/>
       <path d="M300 536 L420 536 L640 610 L60 610Z" fill="none" stroke="#f8fafc" stroke-width="2"/>
       <g fill="#fff"><path d="M357 541 L363 541 L364 550 L356 550Z"/><path d="M355 560 L365 560 L367 576 L353 576Z"/><path d="M352 590 L368 590 L371 610 L349 610Z"/></g>
       <text x="360" y="534" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="12" fill="#ffe46b">27</text>
-      <g fill="#2e9b45"><circle cx="300" cy="537" r="3"/><circle cx="420" cy="537" r="3"/></g>
-      <use href="#hangar" x="560" y="480" width="120" height="60"/>
-      <use href="#tower" x="690" y="410" width="66" height="132"/>
+      <g><circle cx="300" cy="537" r="9" fill="url(#rg-light)"/><circle cx="420" cy="537" r="9" fill="url(#rg-light)"/><circle cx="300" cy="537" r="3" fill="#35c759"/><circle cx="420" cy="537" r="3" fill="#35c759"/></g>
+      <g filter="url(#f-shadow)"><use href="#hangar" x="560" y="480" width="120" height="60"/></g>
+      <g filter="url(#f-shadow)"><use href="#tower" x="690" y="410" width="66" height="132"/></g>
       <use href="#windsock" x="500" y="500" width="40" height="40"/>
       <use href="#tree" x="20" y="500" width="30" height="50"/><use href="#tree" x="46" y="508" width="24" height="40"/><use href="#tree" x="758" y="512" width="26" height="42"/>
       <!-- trajetória de subida -->
@@ -43,7 +39,8 @@
         <path d="M250 300 Q360 280 420 292"/><path d="M230 330 Q350 318 430 330"/><path d="M260 360 Q360 356 440 366"/>
       </g>
       <!-- Cessna em voo -->
-      <g transform="rotate(-12 560 300)"><use href="#plane-side" x="380" y="220" width="370" height="148"/></g>
+      <ellipse cx="520" cy="575" rx="120" ry="9" fill="#0b1a33" opacity=".18" filter="url(#f-blur3)"/>
+      <g transform="rotate(-12 560 300)" filter="url(#f-shadow)"><use href="#plane-side" x="380" y="220" width="370" height="148"/></g>
     </svg>
 
     <div style="position:absolute;left:8mm;top:7mm;right:8mm;z-index:2;color:#fff;">
@@ -51,7 +48,7 @@
       <div style="font:700 50pt/0.98 'Oswald',sans-serif;text-transform:uppercase;letter-spacing:.5px;margin-top:3mm;text-shadow:0 3px 0 rgba(0,0,0,.35),0 0 24px rgba(0,0,0,.35);">Apostila<br>infográfica <span style="color:#ffe46b;">PPA</span></div>
       <div style="font:600 15pt 'Barlow Condensed',sans-serif;margin-top:2.5mm;text-shadow:0 1px 4px rgba(0,0,0,.7);">Prova teórica de Piloto Privado de Avião — ANAC</div>
       <div style="display:inline-flex;align-items:center;gap:3mm;margin-top:4mm;background:#ffe46b;color:#13294b;border-radius:3mm;padding:1.8mm 4.5mm;box-shadow:0 3px 10px rgba(0,0,0,.35);transform:rotate(-2deg);">
-        <svg width="34" height="34" viewBox="0 0 60 60"><use href="#clock"/></svg>
+        <svg width="34" height="34" viewBox="0 0 60 60"><g filter="url(#f-shadow)"><use href="#clock"/></g></svg>
         <div style="font:700 21pt/1 'Oswald',sans-serif;text-transform:uppercase;">Prova: 03/11/2026</div>
       </div>
     <div style="display:flex;gap:2mm;flex-wrap:wrap;margin-top:4mm;max-width:100mm;">
@@ -65,27 +62,27 @@
   <!-- ===== AS 5 MATÉRIAS ===== -->
   <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:2.4mm;flex:none;">
     <div style="border-radius:3mm;background:linear-gradient(180deg,#1d6fd1,#0f3f86);color:#fff;padding:2.2mm 2.4mm;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1mm;">
-      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".18"/><use href="#book" x="6" y="4" width="48" height="40"/></svg>
+      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".2"/><rect x="4" y="2" width="52" height="20" rx="6" fill="url(#g-glare)"/><g filter="url(#f-shadow)"><use href="#book" x="6" y="4" width="48" height="40"/></g></svg>
       <div style="font:700 22pt/1 'Oswald',sans-serif;">REG</div>
       <div style="font:600 9pt/1.1 'Barlow Condensed',sans-serif;">Regulamentos de Tráfego Aéreo</div>
     </div>
     <div style="border-radius:3mm;background:linear-gradient(180deg,#0e9fb3,#0b5c68);color:#fff;padding:2.2mm 2.4mm;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1mm;">
-      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".18"/><use href="#cb" x="8" y="2" width="40" height="40"/><use href="#bolt" x="34" y="24" width="12" height="22"/></svg>
+      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".2"/><rect x="4" y="2" width="52" height="20" rx="6" fill="url(#g-glare)"/><g filter="url(#f-shadow)"><use href="#cb" x="8" y="2" width="40" height="40"/><use href="#bolt" x="34" y="24" width="12" height="22"/></g></svg>
       <div style="font:700 22pt/1 'Oswald',sans-serif;">MET</div>
       <div style="font:600 9pt/1.1 'Barlow Condensed',sans-serif;">Meteorologia</div>
     </div>
     <div style="border-radius:3mm;background:linear-gradient(180deg,#2e9b45,#16582a);color:#fff;padding:2.2mm 2.4mm;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1mm;">
-      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".18"/><use href="#compass-rose" x="9" y="3" width="42" height="42"/></svg>
+      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".2"/><rect x="4" y="2" width="52" height="20" rx="6" fill="url(#g-glare)"/><g filter="url(#f-shadow)"><use href="#compass-rose" x="9" y="3" width="42" height="42"/></g></svg>
       <div style="font:700 22pt/1 'Oswald',sans-serif;">NAV</div>
       <div style="font:600 9pt/1.1 'Barlow Condensed',sans-serif;">Navegação Aérea</div>
     </div>
     <div style="border-radius:3mm;background:linear-gradient(180deg,#e0313b,#8f1219);color:#fff;padding:2.2mm 2.4mm;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1mm;">
-      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".18"/><use href="#plane-front" x="6" y="20" width="48" height="24"/><path d="M30 24 V6" stroke="#ffe46b" stroke-width="3.5" marker-end="url(#arr)"/></svg>
+      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".2"/><rect x="4" y="2" width="52" height="20" rx="6" fill="url(#g-glare)"/><g filter="url(#f-shadow)"><use href="#plane-front" x="6" y="20" width="48" height="24"/><path d="M30 24 V6" stroke="#ffe46b" stroke-width="3.5" marker-end="url(#arr)"/></g></svg>
       <div style="font:700 22pt/1 'Oswald',sans-serif;">TV</div>
       <div style="font:600 9pt/1.1 'Barlow Condensed',sans-serif;">Teoria de Voo</div>
     </div>
     <div style="border-radius:3mm;background:linear-gradient(180deg,#8b46d6,#4c1d95);color:#fff;padding:2.2mm 2.4mm;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1mm;">
-      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".18"/><use href="#piston" x="10" y="4" width="21" height="42"/><use href="#propeller" x="33" y="4" width="21" height="42"/></svg>
+      <svg width="54" height="46" viewBox="0 0 60 50"><rect x="4" y="2" width="52" height="46" rx="6" fill="#fff" opacity=".2"/><rect x="4" y="2" width="52" height="20" rx="6" fill="url(#g-glare)"/><g filter="url(#f-shadow)"><use href="#piston" x="10" y="4" width="21" height="42"/><use href="#propeller" x="33" y="4" width="21" height="42"/></g></svg>
       <div style="font:700 22pt/1 'Oswald',sans-serif;">CTA</div>
       <div style="font:600 9pt/1.1 'Barlow Condensed',sans-serif;">Conhecimentos Técnicos de Aeronaves</div>
     </div>
@@ -94,7 +91,7 @@
   <!-- ===== EXTRAS ===== -->
   <div style="display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:2.4mm;flex:none;">
     <div style="border:2px solid #f08a12;border-radius:3mm;background:#fff4e3;padding:2mm 3mm;display:flex;align-items:center;gap:3mm;">
-      <svg width="78" height="32" viewBox="0 0 200 80" style="flex:none"><use href="#plane-side" x="0" y="0" width="200" height="80"/></svg>
+      <svg width="78" height="34" viewBox="0 0 200 86" style="flex:none"><ellipse cx="110" cy="80" rx="70" ry="4" fill="#0b1a33" opacity=".2" filter="url(#f-blur1)"/><g filter="url(#f-shadow)"><use href="#plane-side" x="0" y="0" width="200" height="80"/></g></svg>
       <div><div style="font:700 11pt/1.05 'Oswald',sans-serif;color:#9a4d00;text-transform:uppercase;">Cessna 172R · PT-WVR</div><div class="small">Sistemas, velocidades e limitações do modelo — confira no POH/AFM.</div></div>
     </div>
     <div style="border:2px solid #13294b;border-radius:3mm;background:#e9eef6;padding:2mm 3mm;display:flex;align-items:center;gap:3mm;">
@@ -102,7 +99,7 @@
       <div><div style="font:700 11pt/1.05 'Oswald',sans-serif;color:#13294b;text-transform:uppercase;">Formulário</div><div class="small">Todas as contas da prova, passo a passo.</div></div>
     </div>
     <div style="border:2px solid #e0457b;border-radius:3mm;background:#fdebf2;padding:2mm 3mm;display:flex;align-items:center;gap:3mm;">
-      <svg width="36" height="44" viewBox="0 0 50 60"><use href="#checklist"/></svg>
+      <svg width="36" height="44" viewBox="0 0 50 60"><g filter="url(#f-shadow)"><use href="#checklist"/></g></svg>
       <div><div style="font:700 11pt/1.05 'Oswald',sans-serif;color:#8a1c47;text-transform:uppercase;">Simulado · 100 questões</div><div class="small">Em condições de prova, com gabarito comentado.</div></div>
     </div>
   </div>
@@ -112,8 +109,8 @@
     <div style="display:flex;justify-content:space-between;align-items:baseline;"><span style="font:700 12pt 'Oswald',sans-serif;text-transform:uppercase;color:#13294b;">Sua rota até a prova · 38 dias</span><span class="small" style="color:#475569;">cronograma diário completo nas páginas seguintes</span></div>
     <svg viewBox="0 0 800 100" width="100%" style="max-height:30mm;">
       <path d="M40 62 L160 50 L280 62 L400 50 L520 62 L640 50 L760 62" fill="none" stroke="#94a3b8" stroke-width="4" stroke-dasharray="12 8"/>
-      <g transform="translate(118 42) rotate(8)"><use href="#plane-top" x="-15" y="-15" width="30" height="30" transform="rotate(90)"/></g>
-      <circle cx="40" cy="62" r="11" fill="#0e9fb3" stroke="#fff" stroke-width="3"/><circle cx="40" cy="62" r="3.5" fill="#fff"/><text x="40" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#0e9fb3">MET</text><text x="40" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">27/09</text><circle cx="160" cy="50" r="11" fill="#2e9b45" stroke="#fff" stroke-width="3"/><circle cx="160" cy="50" r="3.5" fill="#fff"/><text x="160" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#2e9b45">NAV</text><text x="160" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">04/10</text><circle cx="280" cy="62" r="11" fill="#1d6fd1" stroke="#fff" stroke-width="3"/><circle cx="280" cy="62" r="3.5" fill="#fff"/><text x="280" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#1d6fd1">REG</text><text x="280" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">12/10</text><circle cx="400" cy="50" r="11" fill="#e0313b" stroke="#fff" stroke-width="3"/><circle cx="400" cy="50" r="3.5" fill="#fff"/><text x="400" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#e0313b">TV</text><text x="400" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">18/10</text><circle cx="520" cy="62" r="11" fill="#8b46d6" stroke="#fff" stroke-width="3"/><circle cx="520" cy="62" r="3.5" fill="#fff"/><text x="520" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#8b46d6">CTA</text><text x="520" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">24/10</text><circle cx="640" cy="50" r="11" fill="#13294b" stroke="#fff" stroke-width="3"/><circle cx="640" cy="50" r="3.5" fill="#fff"/><text x="640" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#13294b">SIMULADO</text><text x="640" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">31/10</text><g transform="translate(760 62)"><circle r="17" fill="#e0457b" stroke="#fff" stroke-width="3"/><path d="M-6 -9 V9 M-6 -9 L8 -5 L-6 -1" stroke="#fff" stroke-width="2.6" fill="#fff"/></g><text x="760" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#e0457b">PROVA</text><text x="760" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">03/11</text>
+      <g transform="translate(118 42) rotate(8)" filter="url(#f-shadow)"><use href="#plane-top" x="-15" y="-15" width="30" height="30" transform="rotate(90)"/></g>
+      <circle cx="40" cy="62" r="11" fill="#0e9fb3" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="40" cy="62" r="3.5" fill="#fff"/><text x="40" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#0e9fb3">MET</text><text x="40" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">27/09</text><circle cx="160" cy="50" r="11" fill="#2e9b45" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="160" cy="50" r="3.5" fill="#fff"/><text x="160" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#2e9b45">NAV</text><text x="160" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">04/10</text><circle cx="280" cy="62" r="11" fill="#1d6fd1" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="280" cy="62" r="3.5" fill="#fff"/><text x="280" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#1d6fd1">REG</text><text x="280" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">12/10</text><circle cx="400" cy="50" r="11" fill="#e0313b" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="400" cy="50" r="3.5" fill="#fff"/><text x="400" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#e0313b">TV</text><text x="400" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">18/10</text><circle cx="520" cy="62" r="11" fill="#8b46d6" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="520" cy="62" r="3.5" fill="#fff"/><text x="520" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#8b46d6">CTA</text><text x="520" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">24/10</text><circle cx="640" cy="50" r="11" fill="#13294b" stroke="#fff" stroke-width="3" filter="url(#f-shadow)"/><circle cx="640" cy="50" r="3.5" fill="#fff"/><text x="640" y="30" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#13294b">SIMULADO</text><text x="640" y="82" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">31/10</text><g transform="translate(760 62)"><circle r="17" filter="url(#f-shadow)" fill="#e0457b" stroke="#fff" stroke-width="3"/><path d="M-6 -9 V9 M-6 -9 L8 -5 L-6 -1" stroke="#fff" stroke-width="2.6" fill="#fff"/></g><text x="760" y="42" text-anchor="middle" font-family="Oswald" font-weight="700" font-size="17" fill="#e0457b">PROVA</text><text x="760" y="94" text-anchor="middle" class="tb" style="font-size:15px;fill:#334155">03/11</text>
     </svg>
     <div style="display:flex;flex-wrap:wrap;gap:1.2mm 1.6mm;justify-content:center;">
       <span class="chip" style="--c:#1d6fd1">blocos numerados</span><span class="chip" style="--c:#475569">ilustrações</span><span class="chip" style="--c:#e0313b">pegadinhas</span><span class="chip" style="--c:#13294b">conversões</span><span class="chip" style="--c:#2e9b45">memorize</span><span class="chip" style="--c:#8b46d6">questão relâmpago</span><span class="chip" style="--c:#f08a12">confirme na fonte</span><span class="chip" style="--c:#e0457b">30 questões por matéria</span>

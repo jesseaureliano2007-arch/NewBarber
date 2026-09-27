@@ -15,7 +15,8 @@
       <div class="bh"><span class="n">1</span>Rota, proa, vento, deriva e GS</div>
       <div class="bb">
         <svg viewBox="0 0 440 236" width="100%">
-<rect x="2" y="2" width="214" height="232" rx="8" fill="#fdecee"/>
+<defs><linearGradient id="der-a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff5f5"/><stop offset="1" stop-color="#fbd5d8"/></linearGradient><linearGradient id="der-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3fbf4"/><stop offset="1" stop-color="#cfe9d4"/></linearGradient></defs>
+<rect x="2" y="2" width="214" height="232" rx="8" fill="url(#der-a)" stroke="#f3b4b9" filter="url(#f-shadow)"/>
 <text x="109" y="228" text-anchor="middle" class="tb" style="font-size:15px;fill:#8f1219">A) sem correção</text>
 <line x1="128" y1="200" x2="128" y2="20" stroke="#13294b" stroke-width="2.5" stroke-dasharray="8 5"/>
 <text x="136" y="52" class="tb" style="font-size:14px">rumo 360°</text>
@@ -29,8 +30,8 @@
 <text x="92.0" y="32.0" class="tb" style="font-size:14px;fill:#8f1219">vento 090°/20 kt</text>
 <text x="78" y="170" text-anchor="end" class="tb" style="font-size:14px;fill:#16582a">trajetória</text>
 <text x="78" y="186" text-anchor="end" class="tb" style="font-size:14px;fill:#16582a">GS ≈ 102</text>
-<g transform="translate(128 182)"><use href="#plane-top" x="-15" y="-15" width="30" height="30"/></g>
-<rect x="222" y="2" width="216" height="232" rx="8" fill="#eaf7ec"/>
+<g transform="translate(128 182)" filter="url(#f-shadow)"><use href="#plane-top" x="-15" y="-15" width="30" height="30"/></g>
+<rect x="222" y="2" width="216" height="232" rx="8" fill="url(#der-b)" stroke="#a7d8b1" filter="url(#f-shadow)"/>
 <text x="330" y="228" text-anchor="middle" class="tb" style="font-size:15px;fill:#16582a">B) corrigido: proa no vento</text>
 <line x1="330" y1="200" x2="362.0" y2="43.2" stroke="#1d6fd1" stroke-width="4" marker-end="url(#arr-b)"/>
 <line x1="362.0" y1="43.2" x2="330.0" y2="43.2" stroke="#e0313b" stroke-width="4" marker-end="url(#arr-r)"/>
@@ -40,7 +41,7 @@
 <text x="368.0" y="67.2" class="tb" style="font-size:14px;fill:#0f3f86">proa 012°</text>
 <text x="358.0" y="33.2" text-anchor="middle" class="tb" style="font-size:14px;fill:#8f1219">vento</text>
 <text x="320" y="80" text-anchor="end" class="tb" style="font-size:14px;fill:#16582a">trajetória =</text><text x="320" y="96" text-anchor="end" class="tb" style="font-size:14px;fill:#16582a">rumo 360°</text><text x="320" y="112" text-anchor="end" class="tb" style="font-size:14px;fill:#16582a">GS ≈ 98 kt</text>
-<g transform="translate(330 182) rotate(11.5)"><use href="#plane-top" x="-15" y="-15" width="30" height="30"/></g>
+<g transform="translate(330 182) rotate(11.5)" filter="url(#f-shadow)"><use href="#plane-top" x="-15" y="-15" width="30" height="30"/></g>
 </svg>
         <div class="small">Vento de <b>090°/20 kt</b> (da direita), TAS 100 kt, rumo 360°. <b>A</b>: proa 360° → o vento empurra para a esquerda: deriva ≈ 11° e a trajetória se afasta do rumo. <b>B</b>: proa ≈ 012° (11,5° para o lado do vento) → trajetória sobre o rumo, GS ≈ 98 kt.</div>
       </div>
@@ -75,7 +76,7 @@
       <div class="bh"><span class="n">4</span>As quatro velocidades</div>
       <div class="bb">
         <svg viewBox="0 0 800 96" width="100%">
-          <g class="tb" text-anchor="middle">
+          <g class="tb" text-anchor="middle" filter="url(#f-shadow)">
             <rect x="4" y="12" width="150" height="54" rx="10" fill="#e8f2fd" stroke="#1d6fd1" stroke-width="3"/><text x="79" y="38" style="font-size:22px;fill:#0f3f86">IAS</text><text x="79" y="58" style="font-size:14px">indicada (velocímetro)</text>
             <rect x="214" y="12" width="150" height="54" rx="10" fill="#f3ebfc" stroke="#8b46d6" stroke-width="3"/><text x="289" y="38" style="font-size:22px;fill:#4c1d95">CAS</text><text x="289" y="58" style="font-size:14px">calibrada</text>
             <rect x="424" y="12" width="150" height="54" rx="10" fill="#fff4e3" stroke="#f08a12" stroke-width="3"/><text x="499" y="38" style="font-size:22px;fill:#9a4d00">TAS</text><text x="499" y="58" style="font-size:14px">verdadeira (no ar)</text>

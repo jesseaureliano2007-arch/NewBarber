@@ -13,6 +13,7 @@
       <div class="bh"><span class="n">1</span>Quadro de símbolos (padrão OACI — confira sempre a legenda da carta)</div>
       <div class="bb">
         <svg viewBox="0 0 800 222" width="100%">
+          <rect x="2" y="2" width="796" height="200" rx="8" fill="url(#g-paper)" stroke="#a8986a" filter="url(#f-shadow)"/>
           <g class="tb" style="font-size:15px" text-anchor="middle">
             <!-- linha 1 -->
             <g transform="translate(55 34)"><circle r="18" fill="#fff" stroke="#8b46d6" stroke-width="3"/><rect x="-14" y="-4" width="28" height="8" fill="#8b46d6" transform="rotate(-30)"/></g>
@@ -54,19 +55,19 @@
       <div class="bh"><span class="n">2</span>Elevação × altura × altitude</div>
       <div class="bb">
         <svg viewBox="0 0 400 150" width="100%" style="height:36mm">
-          <rect x="0" y="0" width="400" height="136" fill="#e8f2fd"/>
-          <path d="M0 136 L0 112 L60 112 Q110 60 150 92 L180 92 L260 92 Q300 70 330 96 L400 104 L400 136Z" fill="#b8dcaa" stroke="#16582a" stroke-width="2"/>
-          <rect x="0" y="136" width="400" height="14" fill="#3b8fd6"/><text x="200" y="147" text-anchor="middle" class="tw" style="font-size:12px">nível médio do mar (MSL)</text>
-          <rect x="180" y="88" width="80" height="5" fill="#475569"/><text x="220" y="84" text-anchor="middle" class="tb" style="font-size:12px">aeródromo</text>
-          <use href="#plane-side" x="290" y="14" width="60" height="24"/>
+          <rect x="0" y="0" width="400" height="136" fill="url(#g-sky-clear)"/><use href="#cloud" x="40" y="6" width="60" height="34" opacity=".9"/><use href="#mountain" x="96" y="56" width="90" height="46" opacity=".9"/>
+          <path d="M0 136 L0 112 L60 112 Q110 60 150 92 L180 92 L260 92 Q300 70 330 96 L400 104 L400 136Z" fill="url(#g-grass)" stroke="#16582a" stroke-width="2"/>
+          <rect x="0" y="136" width="400" height="14" fill="url(#g-wet)" opacity=".0"/><rect x="0" y="136" width="400" height="14" fill="#1d6fd1"/><text x="200" y="147" text-anchor="middle" class="tw" style="font-size:12px">nível médio do mar (MSL)</text>
+          <rect x="180" y="87" width="80" height="6" fill="url(#g-asphalt)"/><use href="#tower" x="250" y="66" width="10" height="22"/><text x="220" y="84" text-anchor="middle" class="tb" style="font-size:12px">aeródromo</text>
+          <use href="#plane-side" x="290" y="14" width="60" height="24" filter="url(#f-shadow)"/>
           <line x1="40" y1="136" x2="40" y2="112" stroke="#16582a" stroke-width="3" marker-end="url(#arr-g)"/>
-          <text x="4" y="104" class="tb" style="font-size:13px;fill:#16582a">ELEVAÇÃO</text>
+          <text x="4" y="104" class="tb" style="font-size:13px;fill:#fff;paint-order:stroke;stroke:#16582a;stroke-width:3px">ELEVAÇÃO</text>
           <line x1="190" y1="136" x2="190" y2="94" stroke="#16582a" stroke-width="3" marker-end="url(#arr-g)"/>
-          <text x="148" y="122" class="tb" style="font-size:13px;fill:#16582a">2.000 ft</text>
+          <text x="148" y="122" class="tb" style="font-size:13px;fill:#fff;paint-order:stroke;stroke:#16582a;stroke-width:3px">2.000 ft</text>
           <line x1="370" y1="136" x2="370" y2="34" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/>
-          <text x="376" y="70" class="tb" style="font-size:13px;fill:#0f3f86" transform="rotate(90 376 70)">ALTITUDE 3.500</text>
+          <text x="376" y="70" class="tb" style="font-size:13px;fill:#fff;paint-order:stroke;stroke:#0f3f86;stroke-width:3px" transform="rotate(90 376 70)">ALTITUDE 3.500 ft</text>
           <line x1="320" y1="92" x2="320" y2="40" stroke="#e0313b" stroke-width="3" marker-end="url(#arr-r)"/>
-          <text x="262" y="60" class="tb" style="font-size:13px;fill:#8f1219">ALTURA</text><text x="262" y="75" class="tb" style="font-size:13px;fill:#8f1219">1.500 ft</text>
+          <text x="262" y="60" class="tb" style="font-size:13px;fill:#fff;paint-order:stroke;stroke:#8f1219;stroke-width:3px">ALTURA</text><text x="262" y="75" class="tb" style="font-size:13px;fill:#fff;paint-order:stroke;stroke:#8f1219;stroke-width:3px">1.500 ft</text>
         </svg>
         <ul class="l small">
           <li><b>Elevação</b>: distância vertical do <b>MSL</b> a um ponto <b>fixo na superfície</b> (terreno, aeródromo).</li>
@@ -81,6 +82,7 @@
       <div class="bb">
         <div class="row c">
           <svg class="none" width="96" height="100" viewBox="0 0 110 116">
+            <rect x="0" y="0" width="110" height="116" rx="6" fill="url(#g-paper)"/>
             <path d="M40 104 L55 20 L70 104" fill="none" stroke="#13294b" stroke-width="4"/><circle cx="55" cy="96" r="4" fill="#13294b"/>
             <g stroke="#e0313b" stroke-width="3"><line x1="55" y1="14" x2="55" y2="2"/><line x1="46" y1="16" x2="38" y2="6"/><line x1="64" y1="16" x2="72" y2="6"/></g>
             <text x="55" y="116" text-anchor="middle" class="tb" style="font-size:17px">1.250</text>
@@ -97,7 +99,7 @@
       <div class="bb">
         <div class="row c">
           <svg class="none" width="120" height="74" viewBox="0 0 150 92">
-            <rect width="150" height="92" fill="#dcfce7"/>
+            <rect width="150" height="92" rx="4" fill="url(#g-paper)"/>
             <ellipse cx="80" cy="48" rx="68" ry="40" fill="#fef9c3" stroke="#a16207" stroke-width="1.5"/>
             <ellipse cx="86" cy="48" rx="46" ry="27" fill="#fde68a" stroke="#a16207" stroke-width="1.5"/>
             <ellipse cx="92" cy="46" rx="24" ry="14" fill="#fdba74" stroke="#a16207" stroke-width="1.5"/>
@@ -123,6 +125,7 @@
       <div class="bb">
         <div class="row c">
           <svg class="none" width="150" height="62" viewBox="0 0 210 86">
+            <rect x="0" y="0" width="210" height="86" rx="6" fill="url(#g-paper)"/>
             <g stroke-width="3">
               <rect x="6" y="10" width="60" height="44" fill="#fdecee" stroke="#e0313b"/><rect x="6" y="10" width="60" height="44" fill="url(#p-hatch)" opacity=".5"/>
               <rect x="76" y="10" width="60" height="44" fill="#fff4e3" stroke="#f08a12"/>

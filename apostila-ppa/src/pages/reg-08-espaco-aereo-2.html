@@ -17,26 +17,26 @@
       <div class="bh"><span class="n">1</span>Perfil de um voo — quem cuida de você em cada trecho</div>
       <div class="bb">
         <svg viewBox="0 0 725 150" width="100%" style="max-height:36mm;margin:0 auto">
-          <rect x="0" y="0" width="725" height="130" fill="#f3f8fe"/>
-          <rect x="0" y="128" width="725" height="22" fill="#86c28f"/>
-          <rect x="10" y="124" width="100" height="5" fill="#475569"/><rect x="615" y="124" width="100" height="5" fill="#475569"/>
-          <use href="#tower" x="112" y="96" width="14" height="30"/><use href="#tower" x="598" y="96" width="14" height="30"/>
+          <defs><linearGradient id="r8-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4f97e0"/><stop offset=".6" stop-color="#a9d3f5"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient></defs><rect x="0" y="0" width="725" height="130" rx="6" fill="url(#r8-sky)"/><use href="#cloud" x="250" y="84" width="70" height="36"/><use href="#cloud" x="420" y="92" width="60" height="30"/><use href="#mountain" x="300" y="104" width="130" height="28"/>
+          <rect x="0" y="128" width="725" height="22" fill="url(#g-grass)"/>
+          <rect x="10" y="124" width="100" height="6" fill="url(#g-asphalt)"/><rect x="615" y="124" width="100" height="6" fill="url(#g-asphalt)"/>
+          <use href="#tower" x="112" y="94" width="15" height="32" filter="url(#f-shadow)"/><use href="#tower" x="598" y="94" width="15" height="32" filter="url(#f-shadow)"/>
           <path d="M40 124 L110 100" stroke="#f08a12" stroke-width="5" fill="none"/>
           <path d="M110 100 L230 40" stroke="#8b46d6" stroke-width="5" fill="none"/>
           <path d="M230 40 L495 40" stroke="#1d6fd1" stroke-width="5" fill="none"/>
           <path d="M495 40 L615 100" stroke="#8b46d6" stroke-width="5" fill="none"/>
           <path d="M615 100 L685 124" stroke="#f08a12" stroke-width="5" fill="none" marker-end="url(#arr-o)"/>
-          <g transform="translate(362 40) rotate(90) translate(-14 -14)"><use href="#plane-top" width="28" height="28"/></g>
-          <text x="60" y="88" text-anchor="middle" class="tb" style="font-size:13px;fill:#9a4d00">TWR</text>
-          <text x="60" y="102" text-anchor="middle" class="t" style="font-size:11px">pista · ATZ</text>
-          <text x="150" y="52" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95">APP</text>
-          <text x="150" y="66" text-anchor="middle" class="t" style="font-size:11px">TMA · CTR</text>
-          <text x="362" y="24" text-anchor="middle" class="tb" style="font-size:13px;fill:#0f3f86">ACC — aerovias · CTA · FIR</text>
-          <text x="362" y="72" text-anchor="middle" class="t" style="font-size:11.5px">em rota: controle (espaço controlado) ou informação de voo</text>
-          <text x="575" y="52" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95">APP</text>
-          <text x="575" y="66" text-anchor="middle" class="t" style="font-size:11px">TMA · CTR</text>
-          <text x="665" y="88" text-anchor="middle" class="tb" style="font-size:13px;fill:#9a4d00">TWR</text>
-          <text x="665" y="102" text-anchor="middle" class="t" style="font-size:11px">circuito · pouso</text>
+          <g transform="translate(362 40) rotate(90) translate(-14 -14)"><use href="#plane-top" width="28" height="28" filter="url(#f-shadow)"/></g>
+          <text x="60" y="88" text-anchor="middle" class="tb" style="font-size:13px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3px;">TWR</text>
+          <text x="60" y="102" text-anchor="middle" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">pista · ATZ</text>
+          <text x="150" y="52" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95;paint-order:stroke;stroke:#fff;stroke-width:3px;">APP</text>
+          <text x="150" y="66" text-anchor="middle" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">TMA · CTR</text>
+          <text x="362" y="24" text-anchor="middle" class="tb" style="font-size:13px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3px;">ACC — aerovias · CTA · FIR</text>
+          <text x="362" y="72" text-anchor="middle" class="t" style="font-size:11.5px;paint-order:stroke;stroke:#fff;stroke-width:3px;">em rota: controle (espaço controlado) ou informação de voo</text>
+          <text x="575" y="52" text-anchor="middle" class="tb" style="font-size:13px;fill:#4c1d95;paint-order:stroke;stroke:#fff;stroke-width:3px;">APP</text>
+          <text x="575" y="66" text-anchor="middle" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">TMA · CTR</text>
+          <text x="665" y="88" text-anchor="middle" class="tb" style="font-size:13px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3px;">TWR</text>
+          <text x="665" y="102" text-anchor="middle" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">circuito · pouso</text>
           <text x="60" y="144" text-anchor="middle" class="tw" style="font-size:11.5px">GND: táxi</text>
           <text x="665" y="144" text-anchor="middle" class="tw" style="font-size:11.5px">GND: táxi</text>
         </svg>
@@ -46,7 +46,7 @@
     <div class="blk c-red s7">
       <div class="bh"><span class="n">2</span>Áreas proibidas, restritas e perigosas</div>
       <div class="bb">
-        <svg viewBox="0 0 409 112" width="100%" style="max-height:25mm;margin:0 auto">
+        <svg viewBox="0 0 409 112" width="100%" style="max-height:25mm;margin:0 auto"><rect x="0" y="0" width="409" height="112" rx="4" fill="url(#g-paper)"/><g stroke="#d8cda4" stroke-width=".7"><line x1="0" y1="28" x2="409" y2="28"/><line x1="0" y1="56" x2="409" y2="56"/><line x1="0" y1="84" x2="409" y2="84"/><line x1="102" y1="0" x2="102" y2="112"/><line x1="204" y1="0" x2="204" y2="112"/><line x1="306" y1="0" x2="306" y2="112"/></g>
           <defs><pattern id="reg-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="6" fill="#e0313b"/></pattern></defs>
           <g>
             <circle cx="66" cy="50" r="40" fill="#fdecee" stroke="#e0313b" stroke-width="2.5"/>

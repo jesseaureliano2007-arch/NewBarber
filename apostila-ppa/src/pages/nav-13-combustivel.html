@@ -4,7 +4,6 @@
     <div class="ht">
       <span class="kicker">Navegação · Combustível</span>
       <div class="title sm">Combustível e autonomia</div>
-      <div class="sub">Litros · galões · quilos · tempo de voo</div>
     </div>
     <div class="def"><b>Autonomia</b> = quanto <b>tempo</b> o avião voa com o combustível utilizável. <b>Consumo</b> = quanto gasta por hora. Planejamento: <b>rota + reserva</b> (+ táxi, subida e margem).</div>
     <div class="postit"><div class="pt">Ordem mental</div><ol><li>Consumo (L/h ou gal/h)</li><li>× tempo de voo</li><li>+ reserva regulamentar</li><li>+ táxi e margem</li><li>≤ combustível utilizável?</li></ol></div>
@@ -16,12 +15,12 @@
       <div class="bb">
         <div class="row">
           <svg class="none" width="104" height="220" viewBox="0 0 110 232">
-            <rect x="20" y="6" width="70" height="220" rx="12" fill="#fff" stroke="#13294b" stroke-width="3"/>
+            <defs><linearGradient id="tk-sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".28"/><stop offset=".3" stop-color="#fff" stop-opacity=".35"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></linearGradient></defs><rect x="20" y="6" width="70" height="220" rx="12" fill="url(#g-cyl)" stroke="#13294b" stroke-width="3" filter="url(#f-shadow)"/>
             <rect x="23" y="9" width="64" height="31" rx="9" fill="#e2e8f0"/>
             <rect x="23" y="40" width="64" height="18" fill="#94a3b8"/>
             <rect x="23" y="58" width="64" height="54" fill="#f6c945"/>
             <rect x="23" y="112" width="64" height="100" fill="#2e9b45"/>
-            <rect x="23" y="212" width="64" height="11" fill="#8f1219"/>
+            <rect x="23" y="212" width="64" height="11" fill="#8f1219"/><rect x="23" y="9" width="64" height="214" rx="9" fill="url(#tk-sh)"/>
             <g class="tb" style="font-size:13px" text-anchor="middle">
               <text x="55" y="29">vazio</text><text x="55" y="53" style="fill:#fff">táxi</text><text x="55" y="84">reserva</text><text x="55" y="100">30 min</text><text x="55" y="160" style="fill:#fff">ROTA</text><text x="55" y="178" style="fill:#fff">54 L</text>
             </g>
@@ -83,7 +82,7 @@
       <div class="bh"><span class="n">3</span>Unidades de combustível</div>
       <div class="bb">
         <div class="row c">
-          <svg class="none" width="64" height="70" viewBox="0 0 50 60"><use href="#fuel-pump"/></svg>
+          <svg class="none" width="64" height="70" viewBox="0 0 50 60"><use href="#fuel-pump" filter="url(#f-shadow)"/></svg>
           <table class="tb f1" style="--c:var(--teal)"><tr><th>De</th><th>Para</th><th>Faça</th></tr>
             <tr><td>US gal</td><td>L</td><td>× 3,785</td></tr>
             <tr><td>L</td><td>kg (AvGas)</td><td>× 0,72</td></tr>

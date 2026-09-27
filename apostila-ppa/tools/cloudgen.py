@@ -27,12 +27,13 @@ def cloud(cid, seed, x0, x1, ybase, height, n, rmin, rmax, grads, shadow=True, f
         body.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r:.1f}" fill="url(#{g})"/>')
     s=''
     if shadow: s+=f'<ellipse cx="{(x0+x1)/2:.1f}" cy="{ybase+4:.1f}" rx="{(x1-x0)/2:.1f}" ry="3" fill="#41557a" opacity=".22" filter="url(#f-blur1)"/>'
-    if clip: s+=f'<clipPath id="clip-{cid}"><rect x="-50" y="-50" width="400" height="{ybase+50+1.5:.1f}"/></clipPath>'
+    if clip: s+=(f'<linearGradient id="mg-{cid}" gradientUnits="userSpaceOnUse" x1="0" y1="{ybase-3:.1f}" x2="0" y2="{ybase+2:.1f}"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>'
+                 f'<mask id="clip-{cid}" maskUnits="userSpaceOnUse" x="-50" y="-50" width="400" height="400"><rect x="-50" y="-50" width="400" height="400" fill="url(#mg-{cid})"/></mask>')
     pts=[]
     for i in range(41):
         u=i/40; x=x0+(x1-x0)*u; top=ybase-height*(math.sin(math.pi*u)**power)+rmax*0.8
         pts.append(f'{x:.1f},{min(top,ybase):.1f}')
     corep=f'<polygon points="{" ".join(pts)}" fill="url(#{core})"/>'
-    cp=f' clip-path="url(#clip-{cid})"' if clip else ''
+    cp=f' mask="url(#clip-{cid})"' if clip else ''
     s+=f'<g{cp}><g filter="url(#{flt})">{corep}{"".join(body)}</g></g>'
     return s

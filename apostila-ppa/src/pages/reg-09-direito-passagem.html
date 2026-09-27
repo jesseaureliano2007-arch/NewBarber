@@ -16,15 +16,18 @@
     <div class="blk c-blue s4">
       <div class="bh"><span class="n">1</span>De frente</div>
       <div class="bb">
-        <svg viewBox="0 0 220 150" width="100%">
-          <rect width="220" height="150" rx="6" fill="#e8f2fd"/>
+        <svg viewBox="0 0 220 150" width="100%"><defs><radialGradient id="r9-air" cx=".5" cy=".4" r=".8"><stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#a9d3f5"/></radialGradient>
+<radialGradient id="r9-ball" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffc2d6"/><stop offset=".5" stop-color="#e0457b"/><stop offset="1" stop-color="#7a1238"/></radialGradient>
+<linearGradient id="r9-zep" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f6"/><stop offset=".5" stop-color="#a7b3c2"/><stop offset="1" stop-color="#5b6677"/></linearGradient>
+<linearGradient id="r9-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7db8ee"/><stop offset="1" stop-color="#eaf6ff"/></linearGradient></defs>
+          <rect width="220" height="150" rx="6" fill="url(#r9-air)"/><rect width="220" height="150" rx="6" fill="#e8f2fd" opacity=".35"/><use href="#cloud" x="150" y="112" width="60" height="30" opacity=".75"/>
           <line x1="110" y1="10" x2="110" y2="140" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
-          <g transform="translate(110 118) translate(-23 -23)"><use href="#plane-top" width="46" height="46"/></g>
-          <g transform="translate(110 32) rotate(180) translate(-23 -23)"><use href="#plane-top" width="46" height="46"/></g>
+          <g transform="translate(110 118) translate(-23 -23)"><use href="#plane-top" width="46" height="46" filter="url(#f-shadow)"/></g>
+          <g transform="translate(110 32) rotate(180) translate(-23 -23)"><use href="#plane-top" width="46" height="46" filter="url(#f-shadow)"/></g>
           <path d="M116 96 Q122 70 160 58" stroke="#2e9b45" stroke-width="3" fill="none" marker-end="url(#arr-g)"/>
           <path d="M104 54 Q98 80 60 92" stroke="#2e9b45" stroke-width="3" fill="none" marker-end="url(#arr-g)"/>
-          <text x="166" y="76" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">direita</text>
-          <text x="54" y="80" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">direita</text>
+          <text x="166" y="76" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">direita</text>
+          <text x="54" y="80" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">direita</text>
         </svg>
         <div class="small"><b>Ambas</b> guinam para a <b>DIREITA</b> (cada uma para a sua direita).</div>
       </div>
@@ -33,16 +36,16 @@
       <div class="bh"><span class="n">2</span>Convergindo</div>
       <div class="bb">
         <svg viewBox="0 0 220 150" width="100%">
-          <rect width="220" height="150" rx="6" fill="#fdecee"/>
-          <g transform="translate(62 118) translate(-23 -23)"><use href="#plane-top" width="46" height="46"/></g>
-          <g transform="translate(176 42) rotate(270) translate(-23 -23)"><use href="#plane-top" width="46" height="46"/></g>
+          <rect width="220" height="150" rx="6" fill="url(#r9-air)"/><rect width="220" height="150" rx="6" fill="#fdecee" opacity=".35"/><use href="#cloud" x="150" y="112" width="60" height="30" opacity=".75"/>
+          <g transform="translate(62 118) translate(-23 -23)"><use href="#plane-top" width="46" height="46" filter="url(#f-shadow)"/></g>
+          <g transform="translate(176 42) rotate(270) translate(-23 -23)"><use href="#plane-top" width="46" height="46" filter="url(#f-shadow)"/></g>
           <line x1="76" y1="108" x2="160" y2="50" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 3"/>
           <path d="M156 42 L110 42" stroke="#2e9b45" stroke-width="3" marker-end="url(#arr-g)"/>
           <path d="M66 96 Q72 70 108 70" stroke="#e0313b" stroke-width="3" fill="none" marker-end="url(#arr-r)"/>
-          <text x="18" y="146" class="tb" style="font-size:12px;fill:#8f1219">A cede</text>
-          <text x="186" y="72" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">B mantém</text>
-          <text x="126" y="98" class="t" style="font-size:11px">B à direita</text>
-          <text x="126" y="110" class="t" style="font-size:11px">de A</text>
+          <text x="18" y="146" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3px;">A cede</text>
+          <text x="186" y="72" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">B mantém</text>
+          <text x="126" y="98" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">B à direita</text>
+          <text x="126" y="110" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">de A</text>
         </svg>
         <div class="small">Quem vê a outra <b>à sua DIREITA</b> cede (A), desviando para passar por trás. B mantém.</div>
       </div>
@@ -51,15 +54,15 @@
       <div class="bh"><span class="n">3</span>Ultrapassagem</div>
       <div class="bb">
         <svg viewBox="0 0 220 150" width="100%">
-          <rect width="220" height="150" rx="6" fill="#eaf7ec"/>
-          <g transform="translate(90 42) translate(-23 -23)"><use href="#plane-top" width="46" height="46"/></g>
-          <g transform="translate(90 124) translate(-20 -20)"><use href="#plane-top" width="40" height="40"/></g>
+          <rect width="220" height="150" rx="6" fill="url(#r9-air)"/><rect width="220" height="150" rx="6" fill="#eaf7ec" opacity=".35"/><use href="#cloud" x="150" y="112" width="60" height="30" opacity=".75"/>
+          <g transform="translate(90 42) translate(-23 -23)"><use href="#plane-top" width="46" height="46" filter="url(#f-shadow)"/></g>
+          <g transform="translate(90 124) translate(-20 -20)"><use href="#plane-top" width="40" height="40" filter="url(#f-shadow)"/></g>
           <path d="M96 106 Q150 86 150 26" stroke="#1d6fd1" stroke-width="3" fill="none" marker-end="url(#arr-b)"/>
-          <text x="40" y="84" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">lenta:</text>
-          <text x="40" y="98" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">preferência</text>
-          <text x="186" y="70" text-anchor="middle" class="tb" style="font-size:12px;fill:#0f3f86">passa pela</text>
-          <text x="186" y="84" text-anchor="middle" class="tb" style="font-size:12px;fill:#0f3f86">DIREITA</text>
-          <text x="140" y="140" class="t" style="font-size:11px">mais rápida</text>
+          <text x="40" y="84" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">lenta:</text>
+          <text x="40" y="98" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">preferência</text>
+          <text x="186" y="70" text-anchor="middle" class="tb" style="font-size:12px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3px;">passa pela</text>
+          <text x="186" y="84" text-anchor="middle" class="tb" style="font-size:12px;fill:#0f3f86;paint-order:stroke;stroke:#fff;stroke-width:3px;">DIREITA</text>
+          <text x="140" y="140" class="t" style="font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3px;">mais rápida</text>
         </svg>
         <div class="small">A <b>ultrapassada</b> tem preferência; quem ultrapassa desvia para a <b>DIREITA</b>.</div>
       </div>
@@ -69,15 +72,15 @@
       <div class="bh"><span class="n">4</span>Prioridade no pouso</div>
       <div class="bb">
         <svg viewBox="0 0 346 116" width="100%">
-          <rect width="346" height="100" fill="#fff4e3"/><rect y="98" width="346" height="18" fill="#86c28f"/>
-          <rect x="200" y="96" width="140" height="6" fill="#475569"/>
-          <use href="#plane-side" x="112" y="54" width="60" height="24"/>
-          <use href="#plane-side" x="30" y="12" width="60" height="24"/>
+          <rect width="346" height="100" rx="4" fill="url(#r9-sky)"/><use href="#cloud" x="250" y="6" width="70" height="34"/><rect y="98" width="346" height="18" fill="url(#g-grass)"/>
+          <rect x="200" y="96" width="140" height="7" fill="url(#g-asphalt)"/><line x1="206" y1="99.5" x2="334" y2="99.5" stroke="#fff" stroke-dasharray="8 6"/>
+          <use href="#plane-side" x="112" y="54" width="60" height="24" filter="url(#f-shadow)"/>
+          <use href="#plane-side" x="30" y="12" width="60" height="24" filter="url(#f-shadow)"/>
           <line x1="20" y1="36" x2="200" y2="97" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5 4"/>
-          <text x="142" y="92" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a">mais baixa: pousa 1º</text>
-          <text x="120" y="18" class="tb" style="font-size:12px;fill:#8f1219">mais alta: não “corta” a outra</text>
-          <g transform="translate(186 106) rotate(90) translate(-9 -9)"><use href="#plane-top" width="18" height="18"/></g>
-          <text x="246" y="84" class="tb" style="font-size:12px;fill:#9a4d00">no solo: aguarda</text>
+          <text x="142" y="92" text-anchor="middle" class="tb" style="font-size:12px;fill:#16582a;paint-order:stroke;stroke:#fff;stroke-width:3px;">mais baixa: pousa 1º</text>
+          <text x="120" y="18" class="tb" style="font-size:12px;fill:#8f1219;paint-order:stroke;stroke:#fff;stroke-width:3px;">mais alta: não “corta” a outra</text>
+          <g transform="translate(186 106) rotate(90) translate(-9 -9)"><use href="#plane-top" width="18" height="18" filter="url(#f-shadow)"/></g>
+          <text x="246" y="84" class="tb" style="font-size:12px;fill:#9a4d00;paint-order:stroke;stroke:#fff;stroke-width:3px;">no solo: aguarda</text>
           <line x1="242" y1="88" x2="194" y2="104" stroke="#9a4d00" stroke-width="1.5" marker-end="url(#arr-o)"/>
         </svg>
         <ul class="l small"><li>Aeronave em <b>voo/pouso</b> tem prioridade sobre as que estão no <b>solo</b>.</li><li>Entre duas na aproximação: a <b>mais baixa</b> tem prioridade, sem cortar a frente da outra.</li><li>Aeronave em <b>emergência</b> tem prioridade sobre todas.</li></ul>
@@ -88,19 +91,19 @@
       <div class="bb">
         <svg viewBox="0 0 346 124" width="100%">
           <g>
-            <ellipse cx="30" cy="24" rx="19" ry="21" fill="#e0457b"/><path d="M19 41 L26 54 H34 L41 41" fill="none" stroke="#8a1c47" stroke-width="1.5"/><rect x="24" y="52" width="12" height="7" fill="#9a4d00"/>
+            <ellipse cx="30" cy="24" rx="19" ry="21" fill="url(#r9-ball)" filter="url(#f-shadow)"/><path d="M30 3 Q20 24 30 45 M30 3 Q40 24 30 45" stroke="#7a1238" stroke-width=".8" fill="none" opacity=".6"/><path d="M19 41 L26 54 H34 L41 41" fill="none" stroke="#8a1c47" stroke-width="1.5"/><rect x="24" y="52" width="12" height="7" fill="#9a4d00"/>
             <text x="30" y="74" text-anchor="middle" class="tb" style="font-size:12px">balão</text>
           </g>
           <text x="62" y="38" text-anchor="middle" class="th" style="font-size:18px;fill:#8b46d6">&gt;</text>
-          <g><path d="M72 34 L156 28 L156 32 L72 38Z" fill="#e2e8f0" stroke="#334155" stroke-width="1"/><path d="M108 28 Q116 24 126 28 L124 42 L110 42Z" fill="#fff" stroke="#334155"/>
+          <g><path d="M72 34 L156 28 L156 32 L72 38Z" fill="url(#g-wing-top)" stroke="#334155" stroke-width="1" filter="url(#f-shadow)"/><path d="M108 28 Q116 24 126 28 L124 42 L110 42Z" fill="#fff" stroke="#334155"/>
             <text x="114" y="74" text-anchor="middle" class="tb" style="font-size:12px">planador</text></g>
           <text x="166" y="38" text-anchor="middle" class="th" style="font-size:18px;fill:#8b46d6">&gt;</text>
-          <g><ellipse cx="208" cy="32" rx="28" ry="12" fill="#94a3b8" stroke="#334155"/><path d="M234 32 L244 24 V40Z" fill="#475569"/><rect x="200" y="43" width="14" height="6" fill="#334155"/>
+          <g><ellipse cx="208" cy="32" rx="28" ry="12" fill="url(#r9-zep)" stroke="#334155" filter="url(#f-shadow)"/><path d="M234 32 L244 24 V40Z" fill="#475569"/><rect x="200" y="43" width="14" height="6" fill="#334155"/>
             <text x="210" y="74" text-anchor="middle" class="tb" style="font-size:12px">dirigível</text></g>
           <text x="258" y="38" text-anchor="middle" class="th" style="font-size:18px;fill:#8b46d6">&gt;</text>
-          <g><use href="#plane-side" x="268" y="18" width="74" height="30"/>
+          <g><use href="#plane-side" x="268" y="18" width="74" height="30" filter="url(#f-shadow)"/>
             <text x="304" y="74" text-anchor="middle" class="tb" style="font-size:12px">motorizado</text></g>
-          <rect x="0" y="84" width="346" height="40" rx="6" fill="#fff4e3" stroke="#f08a12" stroke-width="1.5"/>
+          <rect x="0" y="84" width="346" height="40" rx="6" fill="#fff4e3" stroke="#f08a12" stroke-width="1.5" filter="url(#f-shadow)"/>
           <use href="#plane-side" x="54" y="86" width="50" height="20"/><path d="M58 97 L40 100" stroke="#334155" stroke-width="1"/><path d="M8 100 L40 98 L40 101 L8 103Z" fill="#e2e8f0" stroke="#334155" stroke-width="1"/>
           <text x="54" y="118" text-anchor="middle" class="tb" style="font-size:11.5px;fill:#9a4d00">rebocando</text>
           <text x="112" y="101" class="tb" style="font-size:12px;fill:#9a4d00">TODA aeronave motorizada cede a ela</text>
