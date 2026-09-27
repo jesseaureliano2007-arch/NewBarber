@@ -1,0 +1,126 @@
+<section class="page mod-cta" id="cta-bussola" data-toc="Bússola magnética: declinação, desvio e erros">
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-map"/></svg>
+    <div class="ht">
+      <span class="kicker">CTA · Instrumentos</span>
+      <div class="title sm">Bússola magnética</div>
+    </div>
+    <div class="def">Único instrumento de proa <b>independente</b> de energia. Só é confiável em <b>voo reto, nivelado e sem aceleração</b>. Erros: declinação, desvio e os da <b>inclinação magnética</b> (curva e aceleração).</div>
+    <div class="postit"><div class="pt">Hemisfério SUL (Brasil)</div>
+      <ol><li>Acelerando em E/W: indica curva para o SUL</li><li>Desacelerando: para o NORTE</li><li>Curvando p/ o SUL: pare ANTES</li><li>Curvando p/ o NORTE: pare DEPOIS</li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s5">
+      <div class="bh"><span class="n">1</span>Como é por dentro</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="120" height="96" viewBox="0 0 120 96">
+            <rect x="6" y="10" width="108" height="72" rx="10" fill="#1f2937"/>
+            <rect x="20" y="24" width="80" height="44" rx="6" fill="#fef3c7"/>
+            <g font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a"><text x="36" y="52">33</text><text x="60" y="52">N</text><text x="84" y="52">3</text></g>
+            <path d="M60 18 V74" stroke="#e0313b" stroke-width="2.5"/>
+            <text x="60" y="94" text-anchor="middle" font-size="10.5" font-weight="700">linha de fé</text>
+          </svg>
+          <ul class="l f1 small">
+            <li><b>Cartão</b> com ímãs, flutuando em <b>líquido</b> (amortece).</li>
+            <li><b>Linha de fé</b>: referência da proa.</li>
+            <li><b>Compensadores</b> (ímãs ajustáveis) reduzem o desvio; o resto vai para o <b>cartão de desvios</b>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-green s7">
+      <div class="bh"><span class="n">2</span>Declinação e desvio: V → M → B</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="150" height="112" viewBox="0 0 150 112">
+            <path d="M75 106 V10" stroke="#0f172a" stroke-width="3" marker-end="url(#arr-k)"/><text x="75" y="8" text-anchor="middle" font-size="11" font-weight="700">NV</text>
+            <path d="M75 106 L45 16" stroke="#1d6fd1" stroke-width="3" marker-end="url(#arr-b)"/><text x="30" y="16" font-size="11" font-weight="700" fill="#0f3f86">NM</text>
+            <path d="M75 106 L34 24" stroke="#e0313b" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#arr-r)"/><text x="4" y="34" font-size="11" font-weight="700" fill="#8f1219">NB</text>
+            <path d="M75 60 A46 46 0 0 0 60 62" stroke="#1d6fd1" stroke-width="2" fill="none"/>
+            <text x="82" y="62" font-size="10.5" font-weight="700" fill="#0f3f86">declinação W</text>
+            <text x="4" y="84" font-size="10.5" font-weight="700" fill="#8f1219">desvio</text>
+          </svg>
+          <div class="f1">
+            <div class="formula"><span class="fx">RM = RV ± dmg</span><small>W soma, E subtrai (“Oeste é Mais, lEste é mEnos”); depois RB = RM ± desvio</small></div>
+            <div class="ex"><span class="et">Exemplo</span> RV 090°, declinação 21°W → RM <b>111°</b>. Cartão: para 110° desvio +2° → RB ≈ <b>113°</b>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s12">
+      <div class="bh"><span class="n">3</span>Inclinação magnética: por que existem os erros de curva e aceleração</div>
+      <div class="bb">
+        <div class="row c">
+          <svg class="none" width="330" height="150" viewBox="0 0 330 150">
+            <circle cx="150" cy="75" r="62" fill="#dbeafe" stroke="#1d6fd1" stroke-width="2"/>
+            <path d="M88 75 H212" stroke="#f08a12" stroke-width="2.5" stroke-dasharray="6 3"/>
+            <text x="226" y="79" font-size="10.5" font-weight="700" fill="#9a4d00">equador magnético</text><text x="226" y="93" font-size="10.5" font-weight="700" fill="#9a4d00">(inclinação ≈ 0)</text>
+            <g stroke="#94a3b8" stroke-width="1.5" fill="none"><path d="M150 13 C60 30 60 120 150 137"/><path d="M150 13 C240 30 240 120 150 137"/><path d="M150 13 C110 40 110 110 150 137"/><path d="M150 13 C190 40 190 110 150 137"/></g>
+            <g transform="translate(118 32) rotate(-50)"><rect x="-14" y="-3" width="14" height="6" fill="#e0313b"/><rect x="0" y="-3" width="14" height="6" fill="#1f2937"/></g>
+            <g transform="translate(150 75)"><rect x="-14" y="-3" width="14" height="6" fill="#1f2937"/><rect x="0" y="-3" width="14" height="6" fill="#e0313b"/></g>
+            <g transform="translate(120 116) rotate(50)"><rect x="-14" y="-3" width="14" height="6" fill="#1f2937"/><rect x="0" y="-3" width="14" height="6" fill="#e0313b"/></g>
+            <text x="4" y="30" font-size="10.5" font-weight="700" fill="#8f1219">HN: ponta N</text><text x="4" y="44" font-size="10.5" font-weight="700" fill="#8f1219">mergulha</text>
+            <text x="4" y="120" font-size="10.5" font-weight="700" fill="#0f172a">HS: ponta S</text><text x="4" y="134" font-size="10.5" font-weight="700" fill="#0f172a">mergulha</text>
+            <text x="150" y="8" text-anchor="middle" font-size="10.5" font-weight="700">N</text><text x="150" y="150" text-anchor="middle" font-size="10.5" font-weight="700">S</text>
+          </svg>
+          <div class="f1 small">
+            As linhas do campo magnético da Terra são <b>inclinadas</b> em relação ao solo, exceto no <b>equador magnético</b>. A componente vertical puxa uma ponta do conjunto de ímãs para baixo; quando o avião <b>inclina ou acelera</b>, essa componente gira o cartão e gera indicações falsas.<br>
+            <b>No Hemisfério Sul os erros são o espelho dos do Hemisfério Norte.</b> O equador magnético cruza o norte/nordeste do Brasil: ali os erros quase somem; crescem rumo ao sul do país.
+            <div class="warn small" style="margin-top:1mm">Convenção desta apostila: regras para o <b>Hemisfério SUL</b>. Livros estrangeiros (FAA) trazem as do Norte (ANDS, UNOS). Leia na questão qual hemisfério ela considera.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">4</span>Erro de aceleração (proas E ou W)</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--orange)">
+          <tr><th></th><th>Hemisfério Norte</th><th>Hemisfério SUL</th></tr>
+          <tr><td><b>Acelerando</b></td><td>indica curva p/ o <b>Norte</b></td><td>indica curva p/ o <b>SUL</b></td></tr>
+          <tr><td><b>Desacelerando</b></td><td>indica curva p/ o <b>Sul</b></td><td>indica curva p/ o <b>NORTE</b></td></tr>
+          <tr><td><b>Proas N ou S</b></td><td colspan="2">erro de aceleração ≈ nulo</td></tr>
+        </table>
+        <div class="small">HN: “ANDS” (Accelerate North, Decelerate South). HS: “<b>ASDN</b>” — <b>A</b>celera <b>S</b>ul, <b>D</b>esacelera <b>N</b>orte.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s6">
+      <div class="bh"><span class="n">5</span>Erro de curva (proas próximas de N ou S)</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--red)">
+          <tr><th></th><th>Hemisfério Norte</th><th>Hemisfério SUL</th></tr>
+          <tr><td><b>Perto do Norte</b></td><td>bússola <b>atrasa</b> → pare antes</td><td>bússola <b>adianta</b> → pare <b>depois</b></td></tr>
+          <tr><td><b>Perto do Sul</b></td><td>bússola <b>adianta</b> → pare depois</td><td>bússola <b>atrasa</b> → pare <b>antes</b></td></tr>
+          <tr><td><b>Proas E ou W</b></td><td colspan="2">erro de curva ≈ nulo</td></tr>
+        </table>
+        <div class="small">HN: “UNOS” (Undershoot North, Overshoot South). HS: “<b>USON</b>” — antecipe o Sul, ultrapasse o Norte. O tamanho do erro cresce com a latitude magnética.</div>
+      </div>
+    </div>
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">6</span>Outros erros e como usar a bússola na prática</div>
+      <div class="bb">
+        <div class="row">
+          <ul class="l f1 small">
+            <li><b>Oscilação</b>: turbulência e manobras fazem o cartão balançar — leia a média.</li>
+            <li><b>Giro do líquido</b>: após uma curva, o fluido continua girando por alguns segundos.</li>
+            <li><b>Desvio extra</b>: fones, celulares, objetos metálicos e equipamentos ligados perto da bússola.</li>
+          </ul>
+          <div class="f1"><div class="ex"><span class="et">Curva cronometrada</span><ol class="small"><li>Proa atual 090°, desejada 180° (pela bússola): diferença 90°.</li><li>Curva padrão (3°/s): 90 ÷ 3 = <b>30 s</b>.</li><li>Nivele as asas aos 30 s, espere a bússola estabilizar e corrija.</li></ol></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>A questão pode dar a regra do Hemisfério Norte. <b>Veja o hemisfério</b> antes de marcar.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>RV 200°, dmg 15°W → RM 215°<br>RV 200°, dmg 15°E → RM 185°</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div>Brasil: “<b>Acelera Sul; curva: antecipa o Sul</b>”. Tudo o que envolve SUL no HS é “antes/para o sul”.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>No Brasil (HS), em proa 270°, o piloto acelera. O que a bússola indica?<div class="ans">Uma curva aparente para o <b>SUL</b> (proa diminuindo para ~260°). Ao estabilizar a velocidade, volta a 270°.</div></div>
+  </div>
+</section>

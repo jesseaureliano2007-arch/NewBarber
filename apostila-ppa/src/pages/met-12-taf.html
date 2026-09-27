@@ -1,0 +1,120 @@
+<section class="page mod-met" id="met-taf" data-toc="TAF — previsão de aeródromo, grupos de mudança e 2 decodificações">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-airport"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Mensagens de aeródromo</span>
+      <div class="title">TAF</div>
+      <div class="sub">Previsão de aeródromo · mesmos códigos do METAR + tempo</div>
+    </div>
+    <div class="postit" style="top:2mm"><div class="pt">Ordem do TAF</div>
+      <ol><li><span class="pi">TAF · local · emissão (Z)</span></li><li><span class="pi">Validade DDHH/DDHH</span></li><li><span class="pi">Vento · vis. · tempo · nuvens · TX/TN · mudanças</span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-blue s7">
+      <div class="bh"><span class="n">1</span>O que é e como se lê</div>
+      <div class="bb">
+        <div class="small"><b>TAF</b> é uma <b>PREVISÃO</b> para o aeródromo (o METAR é <b>observação</b>). Emitido em horários fixos; validade típica de <b>24 ou 30 h</b>, conforme o aeródromo. Horas em <b>UTC</b>.</div>
+        <div class="tokrow">
+          <span class="tok t-gray"><b>TAF</b><small>AMD = emendado</small></span>
+          <span class="tok t-blue"><b>SBGR</b><small>local</small></span>
+          <span class="tok t-yellow"><b>271100Z</b><small>emitido 27, 11Z</small></span>
+          <span class="tok t-orange"><b>2712/2818</b><small>27 12Z → 28 18Z</small></span>
+          <span class="tok t-pink"><b>TX28/2718Z</b><small>máx. 28 °C, 27 18Z</small></span>
+          <span class="tok t-teal"><b>TN17/2809Z</b><small>mín. 17 °C, 28 09Z</small></span>
+        </div>
+        <div class="small"><span class="code">2724</span> = dia 27 às 24h = dia 28 às 00Z. <span class="code">NSW</span> = fim do tempo significativo. <span class="code">CNL</span> = cancelado.</div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s5">
+      <div class="bh"><span class="n">2</span>Grupos de mudança</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--purple)">
+          <tr><th>Grupo</th><th>Significado</th></tr>
+          <tr><td><b>BECMG</b> DDHH/DDHH</td><td>mudança <b>gradual</b> dentro do intervalo; depois <b>permanece</b></td></tr>
+          <tr><td><b>TEMPO</b> DDHH/DDHH</td><td>flutuações <b>temporárias</b> (cada &lt; 1 h, somando &lt; metade do intervalo); depois volta</td></tr>
+          <tr><td><b>FM</b>DDHHMM</td><td>a <b>partir de</b> — mudança rápida; tudo que vinha antes é substituído</td></tr>
+          <tr><td><b>PROB30/40</b></td><td>probabilidade de 30 ou 40 % (sozinho ou com TEMPO)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-navy s12 solid">
+      <div class="bh"><span class="n">★</span>TAF 1 — nevoeiro na madrugada (Guarulhos)</div>
+      <div class="bb">
+        <div class="msg">TAF SBGR 271100Z 2712/2818 16008KT 9999 SCT030 TX28/2718Z TN17/2809Z <span class="hl2">BECMG 2722/2724</span> VRB03KT 6000 BR BKN012 <span class="hl2">TEMPO 2803/2809</span> 2000 BR BKN006 <span class="hl2">BECMG 2811/2813</span> 14010KT 9999 SCT025</div>
+        <div class="row">
+          <ol class="l small f1">
+            <li><b>27 12Z → 22Z</b>: vento 160°/8 kt, vis. ≥ 10 km, esparsas a 3.000 ft — bom.</li>
+            <li><b>Entre 22Z e 24Z</b> muda gradualmente para vento variável 3 kt, vis. 6 km com névoa úmida, <b>teto 1.200 ft</b> (abaixo de 1.500 ft).</li>
+            <li><b>28 03Z–09Z</b>, temporariamente: vis. <b>2.000 m</b>, BR, teto <b>600 ft</b>.</li>
+            <li><b>Entre 11Z e 13Z</b> melhora: 140°/10 kt, 9999, SCT025 até o fim (18Z).</li>
+          </ol>
+          <svg class="f1" viewBox="0 0 350 104" width="100%">
+            <rect x="10" y="30" width="110" height="26" fill="#2e9b45"/>
+            <defs><linearGradient id="gB1" x1="0" x2="1"><stop offset="0" stop-color="#2e9b45"/><stop offset="1" stop-color="#f6c945"/></linearGradient><linearGradient id="gB2" x1="0" x2="1"><stop offset="0" stop-color="#f6c945"/><stop offset="1" stop-color="#2e9b45"/></linearGradient></defs>
+            <rect x="120" y="30" width="22" height="26" fill="url(#gB1)"/><rect x="142" y="30" width="99" height="26" fill="#f6c945"/>
+            <rect x="241" y="30" width="22" height="26" fill="url(#gB2)"/><rect x="263" y="30" width="77" height="26" fill="#2e9b45"/>
+            <rect x="175" y="12" width="66" height="18" fill="#e0313b"/><text x="208" y="25" text-anchor="middle" class="tw" style="font-size:12px">TEMPO</text>
+            <g class="t" style="font-size:12px" text-anchor="middle"><text x="10" y="72">12Z</text><text x="120" y="72">22</text><text x="142" y="86">00</text><text x="175" y="72">03</text><text x="241" y="72">09</text><text x="263" y="86">13</text><text x="340" y="72">18Z</text></g>
+            <text x="64" y="47" text-anchor="middle" class="tw" style="font-size:12px">VMC</text><text x="192" y="47" text-anchor="middle" class="tb" style="font-size:12px">teto 1.200</text><text x="300" y="47" text-anchor="middle" class="tw" style="font-size:12px">VMC</text>
+            <text x="175" y="102" text-anchor="middle" class="tb" style="font-size:12px">dia 27 ◂ │ ▸ dia 28</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-red s12 solid">
+      <div class="bh"><span class="n">★</span>TAF 2 — frente fria com trovoada (Porto Alegre)</div>
+      <div class="bb">
+        <div class="msg">TAF SBPA 201700Z 2018/2118 34012KT 9999 FEW030 TX30/2018Z TN19/2109Z <span class="hl2">FM202300</span> 32015G28KT 5000 TSRA BKN025 FEW030CB <span class="hl2">PROB40 TEMPO 2100/2104</span> 2000 +TSRA BKN010 FEW025CB <span class="hl2">FM210800</span> 20012KT 9999 SCT020</div>
+        <div class="row">
+          <ol class="l small f1">
+            <li><b>20 18Z–23Z</b>: 340°/12 kt, ≥ 10 km, poucas a 3.000 ft; máx. 30 °C às 18Z.</li>
+            <li><b>A partir de 20 23:00Z</b> (mudança rápida): 320°/15 kt com rajadas de 28, vis. 5 km, trovoada com chuva, teto 2.500 ft, CB.</li>
+            <li><b>40 %</b> de chance, entre 00Z e 04Z do dia 21, de vis. 2 km, trovoada forte e teto 1.000 ft.</li>
+            <li><b>A partir de 21 08:00Z</b>: vento 200°/12 kt (frente passou), 9999, SCT020.</li>
+          </ol>
+          <svg class="f1" viewBox="0 0 350 104" width="100%">
+            <rect x="10" y="30" width="69" height="26" fill="#2e9b45"/><rect x="79" y="30" width="124" height="26" fill="#f08a12"/><rect x="203" y="30" width="137" height="26" fill="#2e9b45"/>
+            <rect x="93" y="12" width="56" height="18" fill="#e0313b" opacity=".85"/><text x="121" y="25" text-anchor="middle" class="tw" style="font-size:11.5px">PROB40</text>
+            <line x1="79" y1="4" x2="79" y2="60" stroke="#0f172a" stroke-width="2.5"/><line x1="203" y1="4" x2="203" y2="60" stroke="#0f172a" stroke-width="2.5"/>
+            <g class="t" style="font-size:12px" text-anchor="middle"><text x="10" y="72">18Z</text><text x="79" y="72">23</text><text x="121" y="86">00–04</text><text x="203" y="72">08</text><text x="340" y="72">18Z</text></g>
+            <text x="44" y="47" text-anchor="middle" class="tw" style="font-size:12px">VMC</text><text x="141" y="47" text-anchor="middle" class="tw" style="font-size:12px">TS · CB</text><text x="270" y="47" text-anchor="middle" class="tw" style="font-size:12px">VMC</text>
+            <text x="175" y="102" text-anchor="middle" class="tb" style="font-size:12px">FM = corte vertical (troca total)</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-green s6">
+      <div class="bh"><span class="n">3</span>Como usar no planejamento</div>
+      <div class="bb">
+        <ul class="chk small">
+          <li>Olhe a janela da sua <b>chegada</b> com margem antes e depois (boa prática), considerando o <b>pior</b> cenário de BECMG/TEMPO/PROB.</li>
+          <li>Compare com os mínimos VFR (teto 1.500 ft, vis. 5 km no aeródromo controlado).</li>
+          <li>TX/TN altos → alta altitude-densidade; spread pequeno + noite → nevoeiro.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">4</span>Erros frequentes</div>
+      <div class="bb">
+        <ul class="chk x small">
+          <li>Achar que após o <b>TEMPO</b> as condições ficam: elas <b>voltam</b> ao anterior.</li>
+          <li>Ler <span class="code">BECMG 2722/2724</span> como “às 22Z”: a mudança ocorre em <b>algum momento</b> entre 22Z e 24Z.</li>
+          <li>Esquecer que o TAF é <b>previsão</b>: confirme com o METAR mais recente.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>No <b>FM</b> tudo o que não for repetido deixa de valer; no <b>BECMG</b> só muda o que aparece no grupo.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>FM202300 = dia 20, 23:00 UTC = 20:00 em Brasília (UTC−3)</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div><b>BECMG</b> = “Be Coming” (vem e fica). <b>TEMPO</b> = temporário (vai e volta). <b>FM</b> = From (a partir de).</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>No TAF 1, qual o teto previsto para as 06Z do dia 28?<div class="ans"><b>600 ft</b> temporariamente (TEMPO 2803/2809), com teto de 1.200 ft entre as flutuações.</div></div>
+  </div>
+</section>

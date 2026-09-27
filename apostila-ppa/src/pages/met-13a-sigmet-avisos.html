@@ -1,0 +1,90 @@
+<section class="page mod-met" id="met-sigmet" data-toc="SIGMET, AIRMET, GAMET e avisos de aeródromo">
+  <div class="hero short">
+    <svg class="scene" viewBox="0 0 800 170" preserveAspectRatio="xMidYMid slice"><use href="#scene-storm"/></svg>
+    <div class="ht">
+      <span class="kicker">Meteorologia · Informações em rota</span>
+      <div class="title sm">SIGMET · AIRMET · GAMET</div>
+      <div class="sub">Os alertas de perigo para a rota e para o aeródromo</div>
+    </div>
+    <div class="postit" style="top:2mm"><div class="pt">Validade</div>
+      <ol><li><span class="pi">SIGMET: até <b>4 h</b></span></li><li><span class="pi">SIGMET VA/TC: até <b>6 h</b></span></li><li><span class="pi">AIRMET: até <b>4 h</b></span></li></ol>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="blk c-teal s12">
+      <div class="bh"><span class="n">1</span>Quem avisa o quê</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--teal)">
+          <tr><th>Produto</th><th>Tipo</th><th>Abrangência</th><th>Conteúdo</th></tr>
+          <tr><td><b>METAR / SPECI</b></td><td>observação</td><td>aeródromo</td><td>condições atuais (SPECI = mudança significativa)</td></tr>
+          <tr><td><b>TAF</b></td><td>previsão</td><td>aeródromo</td><td>condições previstas na validade</td></tr>
+          <tr><td><b>SIGMET</b></td><td>aviso</td><td>FIR, <b>todos os níveis</b></td><td>fenômenos <b>severos</b> em rota, perigosos a <b>todas</b> as aeronaves</td></tr>
+          <tr><td><b>AIRMET</b></td><td>aviso</td><td>FIR, <b>níveis baixos</b></td><td>fenômenos <b>moderados</b>/restrições para voos até o FL100 (FL150 em áreas montanhosas) não cobertos por SIGMET</td></tr>
+          <tr><td><b>GAMET</b></td><td>previsão de área</td><td>área/FIR, níveis baixos</td><td>previsão em linguagem abreviada para voos em níveis baixos</td></tr>
+          <tr><td><b>Aviso de aeródromo</b></td><td>aviso</td><td>aeródromo</td><td>vento forte/rajadas, trovoada, granizo, geada etc. no aeródromo</td></tr>
+          <tr><td><b>Aviso de cortante do vento</b></td><td>aviso</td><td>aeródromo</td><td>windshear observado ou previsto na decolagem/aproximação</td></tr>
+        </table>
+        <div class="warn small">Formatos, critérios e disponibilidade dos produtos no Brasil: consulte as publicações do DECEA e a <b>REDEMET</b> vigentes.</div>
+      </div>
+    </div>
+
+    <div class="blk c-red s12 solid">
+      <div class="bh"><span class="n">★</span>SIGMET decodificado</div>
+      <div class="bb">
+        <div class="msg">SBAZ SIGMET 3 VALID 151800/152200 SBAZ- SBAZ AMAZONICA FIR <span class="hl2">EMBD TS</span> OBS AT 1740Z WI S0530 W06000 - S0530 W05500 - S0900 W05500 - S0900 W06000 - S0530 W06000 <span class="hl2">TOP FL450</span> MOV E 10KT NC=</div>
+        <div class="row">
+          <div class="tokrow f2">
+            <span class="tok t-blue"><b>SBAZ</b><small>FIR Amazônica (órgão ATS)</small></span>
+            <span class="tok t-gray"><b>SIGMET 3</b><small>nº de série do dia</small></span>
+            <span class="tok t-yellow"><b>151800/152200</b><small>válido dia 15, 18Z–22Z (4 h)</small></span>
+            <span class="tok t-red"><b>EMBD TS</b><small>trovoadas embutidas em outras nuvens</small></span>
+            <span class="tok t-orange"><b>OBS AT 1740Z</b><small>observado às 17:40Z</small></span>
+            <span class="tok t-purple"><b>WI S0530 W06000 …</b><small>dentro do polígono (lat/long)</small></span>
+            <span class="tok t-teal"><b>TOP FL450</b><small>topos no FL450</small></span>
+            <span class="tok t-green"><b>MOV E 10KT NC</b><small>move-se p/ leste a 10 kt, sem mudança de intensidade</small></span>
+          </div>
+          <svg class="f1" viewBox="0 0 220 150" width="100%">
+            <rect width="220" height="150" fill="#eaf7ec"/>
+            <g stroke="#cbd5e1"><line x1="20" y1="0" x2="20" y2="150"/><line x1="200" y1="0" x2="200" y2="150"/><line x1="0" y1="20" x2="220" y2="20"/><line x1="0" y1="130" x2="220" y2="130"/></g>
+            <polygon points="20,20 200,20 200,130 20,130" fill="#e0313b" opacity=".2" stroke="#e0313b" stroke-width="3"/>
+            <use href="#cb" x="70" y="30" width="80" height="80"/>
+            <text x="20" y="14" class="tb" style="font-size:12px">W060</text><text x="200" y="14" text-anchor="end" class="tb" style="font-size:12px">W055</text>
+            <text x="24" y="36" class="tb" style="font-size:12px">S05°30'</text><text x="24" y="126" class="tb" style="font-size:12px">S09°00'</text>
+            <path d="M150 80 L196 80" stroke="#8f1219" stroke-width="3" marker-end="url(#arr-r)"/><text x="190" y="100" text-anchor="end" class="tb" style="font-size:12px;fill:#8f1219">MOV E</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="blk c-purple s6">
+      <div class="bh"><span class="n">2</span>Fenômenos de SIGMET</div>
+      <div class="bb">
+        <table class="tb" style="--c:var(--purple)"><col style="width:22mm">
+          <tr><td><b>TS</b></td><td>trovoadas <b>OBSC</b> (obscurecidas), <b>EMBD</b> (embutidas), <b>FRQ</b> (frequentes), <b>SQL</b> (linha de instabilidade); + <b>GR</b> se granizo</td></tr>
+          <tr><td style="white-space:nowrap"><b>SEV TURB</b></td><td>turbulência forte</td></tr>
+          <tr><td style="white-space:nowrap"><b>SEV ICE</b></td><td>gelo forte (FZRA = chuva congelante)</td></tr>
+          <tr><td style="white-space:nowrap"><b>SEV MTW</b></td><td>onda de montanha forte</td></tr>
+          <tr><td><b>TC · VA</b></td><td>ciclone tropical · cinzas vulcânicas</td></tr>
+          <tr><td style="white-space:nowrap"><b>HVY DS/SS</b></td><td>tempestade de poeira/areia forte</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="blk c-orange s6">
+      <div class="bh"><span class="n">3</span>AIRMET — o aviso do voo baixo</div>
+      <div class="bb">
+        <div class="msg" style="font-size:8.6pt">SBCW AIRMET 2 VALID 101200/101600 SBCW- SBCW CURITIBA FIR BKN CLD 300/1000FT OBS WI … STNR NC=</div>
+        <div class="small">Nuvens BKN com base entre 300 e 1.000 ft, observadas, estacionárias. Outros exemplos: <b>SFC VIS</b> abaixo de 5.000 m, <b>ISOL TS</b>, <b>MOD TURB</b>, <b>MOD ICE</b>, <b>MT OBSC</b> (montanhas encobertas), vento forte à superfície.</div>
+        <div class="small"><b>OBS/FCST</b> observado/previsto · <b>MOV</b> movendo · <b>STNR</b> estacionário · <b>INTSF</b> intensificando · <b>WKN</b> enfraquecendo · <b>NC</b> sem mudança · <b>CNL</b> cancela.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-trap"><div class="fh">⚠ Pegadinha</div>SIGMET é emitido para a <b>FIR</b> (área), não para um aeródromo. Para o aeródromo existem o aviso de aeródromo e o de cortante.</div>
+    <div class="f-conv"><div class="fh">⇄ Conversão</div>S0530 = 5°30' S<br>W06000 = 60°00' W</div>
+    <div class="f-mem"><div class="fh">🧠 Memorize</div><b>SIG</b>MET = <b>SIG</b>nificativo e <b>S</b>evero · <b>AIR</b>MET = <b>A</b>baixo (níveis baixos), moderado.</div>
+    <div class="f-q"><div class="fh">⚡ Questão relâmpago</div>Um SIGMET por cinzas vulcânicas pode ter validade de até quanto?<div class="ans">Até <b>6 h</b> (VA e ciclone tropical); os demais SIGMET, até <b>4 h</b>.</div></div>
+  </div>
+</section>
