@@ -3,8 +3,6 @@
 **Arquivo principal:** [`dist/Apostila-PPA-ANAC-2026.pdf`](dist/Apostila-PPA-ANAC-2026.pdf) — 159 páginas A4, texto pesquisável e selecionável,
 sumário clicável, marcadores por matéria, número em todas as páginas (toque no rodapé para voltar ao sumário).
 
-**Versão leve (iPad/celular):** [`dist/Apostila-PPA-ANAC-2026-leve.pdf`](dist/Apostila-PPA-ANAC-2026-leve.pdf) — mesmo conteúdo, imagens em resolução de tela.
-
 **Versão editável:** [`dist/Apostila-PPA-ANAC-2026-editavel.html`](dist/Apostila-PPA-ANAC-2026-editavel.html) — arquivo único
 (abre em qualquer navegador, inclusive Safari no iPad) — e as fontes em `src/pages/*.html` (uma página A4 por `<section>`).
 
@@ -34,5 +32,5 @@ Os números exatos estão no sumário do PDF (gerado automaticamente).
 node build.js --check --only=met- --shots=true   # revisar um prefixo (verifica estouros e gera PNG)
 PDF_PY=/caminho/python-com-pypdf-e-pymupdf node build.js   # HTML + PDF final
 ```
-Requisitos: Node + Playwright (Chromium), Python com `pypdf`, `pymupdf` e `pillow`.
+Requisitos: Node + Playwright (Chromium), Python com `pypdf`, `pillow` e `pikepdf`.
 Guia de autoria e fatos de referência: [`AUTHORING.md`](AUTHORING.md).
