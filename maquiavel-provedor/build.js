@@ -127,7 +127,7 @@ async function main() {
         if (b.bottom > limit + 1) flag(`${el.className.split(' ')[0]} ultrapassa o rodapé em ${((b.bottom - limit) / mm).toFixed(1)} mm`);
         if (b.right > r.right + 1) flag(`${el.className.split(' ')[0]} ultrapassa a margem direita em ${((b.right - r.right) / mm).toFixed(1)} mm`);
       });
-      sec.querySelectorAll('.blk, .foot > div, .hero, .postit, .br, .moves > div').forEach(el => {
+      sec.querySelectorAll('.blk, .foot > div, .hero, .postit, .br, .moves > div, .card, .dcard, .tool, .node').forEach(el => {
         const box = el.getBoundingClientRect();
         let maxB = 0;
         el.querySelectorAll('*').forEach(c => { if (c.closest('svg.scene') || c.closest('defs') || c.closest('symbol')) return; const cb = c.getBoundingClientRect(); if (cb.height > 0 && cb.width > 0) maxB = Math.max(maxB, cb.bottom); });
