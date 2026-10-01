@@ -6,59 +6,55 @@ como o anúncio "30 Estratégias de Maquiavel explicadas em mapas mentais", mas 
 **concorrência forte** (operadoras nacionais e provedores vizinhos), **cancelamentos/inadimplência (churn)**,
 **crescer e vender mais** e **gestão da equipe** (técnicos, vendedores, atendimento).
 
-Página-modelo OBRIGATÓRIA: `src/pages/p1-01-raposa-leao.html`. Copie a estrutura exatamente.
-Veja-a renderizada: `node build.js --check --only=p1-01 --shots=true` e abra `build/shots-p1_01/*.png` com Read.
+## ⚠ VERSÃO 2 DO DESIGN — "Ouro sobre azul-noite" (renascentista premium)
+O cliente reprovou a V1 (pergaminho sépia, ilustrações fracas, não parecia mapa mental). A V2 é OBRIGATÓRIA:
+fundo azul-noite com moldura dourada, gravuras em traço dourado (como folha de ouro), mapa mental com
+medalhão central grande e 6 ramos dourados afunilados com ícones em anel dourado, POUCO texto por ramo,
+cartão marfim para a ferramenta pronta.
 
-## Montagem e verificação
-- Cada `<section class="page mod-pX">` = 1 folha A4. Conteúdo que não couber é cortado.
-- Módulos/cores: `mod-p1` Livro I (bordô), `mod-p2` Livro II (verde-oliva), `mod-p3` Livro III (azul real),
-  `mod-p4` Livro IV (sépia), `mod-gen` (geral).
-- Atributos: `id="e07"` (estratégia nº 07) · `data-toc="07 · Título — subtítulo curto"` · página de abertura de Livro
-  com `data-toc-level="1"`.
-- Os 4 cantos ornamentais: copie as 4 linhas `<svg class="corner k-tl">…` da página-modelo (classes k-tl/k-tr/k-bl/k-br).
-- NÃO use h1–h6. Não escreva número de página. Não edite style.css, sprite.svg, build.js, mmap.js nem arquivos de
-  outros prefixos. Estilos extras só inline (`style=""`).
-- Verificação: `cd /home/user/NewBarber/maquiavel-provedor && node build.js --check --only=p2- --shots=true`
-  (troque o prefixo) até "✔ Nenhum estouro de layout detectado." e revise cada PNG em `build/shots-<prefixo>/`
-  com Read. Alta resolução: `node tools/zoom.js dist/preview-p2_.html e09 build/z.png "" 1.3`.
+Página-modelo V2 OBRIGATÓRIA: `src/pages/p1-01-raposa-leao.html` — copie a estrutura exatamente.
+Veja: `node build.js --check --only=p1-01 --shots=true` e abra `build/shots-p1_01/*.png` com Read;
+alta resolução: `node tools/zoom.js dist/preview-p1_01.html e01 build/z.png "" 1.3`.
 
-## Estrutura de CADA estratégia (1 página, igual à modelo)
-1. `.hero` — cenário (`scene-florence`, `scene-chess` ou `scene-network`) + ilustração à direita (SVG ~64×44 mm,
-   combinando símbolos do sprite: animais, peças, fortaleza, torre, CTO, OLT…), `.kicker` (Livro · tema),
-   `.num` (dois dígitos), `.title` (2 linhas curtas, use `<br>`; `.title.sm` se longo), `.sub` (≤ 55 caracteres,
-   1 linha!), `.quote` (PARÁFRASE fiel de Maquiavel, 1–2 linhas, com `<cite>O PRÍNCIPE · CAP. X (PARÁFRASE)</cite>`
-   ou `DISCURSOS · LIVRO I, CAP. X`). Não invente capítulos: use o indicado na lista abaixo.
-2. `.mmap` — mapa mental: 3 cartões à esquerda + medalhão central `.hub` (símbolo `medal` + ícones + 2 palavras-chave
-   + `.hubtxt` com a ideia central) + 3 cartões à direita. Cartões (`.br` com `.bt`):
-   esquerda: **O que Maquiavel ensina** · **No seu provedor** · **Como aplicar** (4 passos numerados);
-   direita: **Exemplo · 2.200 clientes** (cenário concreto com números plausíveis) · **Indicadores** (`.kpi` com 2–3
-   metas) · **Alerta de uso** (`.warn` — limite ético/legal).
-   As linhas curvas são desenhadas automaticamente pelo `mmap.js`. Equilibre o tamanho dos textos esquerda × direita.
-3. `.moves` — 4 movimentos: Discernir · Planejar · Agir · Conquistar (1 frase cada, ação concreta).
-4. `.tool` — **Ferramenta pronta** (o diferencial prático): uma planilha-modelo (`table.tb` com 1–2 linhas de exemplo +
-   1 linha em branco com `<span class="fill">____</span>`), OU um roteiro/script de mensagem (`.script`, ex.: WhatsApp
-   para cliente), OU um checklist. Algo que o dono do provedor usa na segunda-feira.
-5. `.foot` — Máxima para a parede (frase marcante) · Pergunta de reflexão · Erro comum.
+Conteúdo da V1 (texto já escrito, aprovado): `src/v1/pages/*.html`. REAPROVEITE o conteúdo (números,
+exemplos, alertas, ferramentas), mas CONDENSE para caber no novo formato. Não copie o HTML/visual da V1.
 
-Ícones nos títulos dos cartões: `<svg width="16" height="16" viewBox="…"><use href="#id"/></svg>` com o viewBox do símbolo.
+### Estrutura da página-estratégia V2
+1. `<svg class="frame" …><use href="#frame"/></svg>` (moldura) — primeira linha da section.
+2. `.head`: medalhão do número (`numring` + `<text>` com `fill="url(#gl)"`), `.kicker`, `.title` (1 linha se
+   possível; `.title.sm` se longo), `.sub` (1 linha, ≤ 70 caracteres).
+3. `.quote`: paráfrase fiel + `<cite>O PRÍNCIPE · CAPÍTULO X · PARÁFRASE</cite>` (≤ 2 linhas).
+4. `.mm` (mapa mental): 3 `.node.l` (grid-row 1–3) + `.hub` + 3 `.node.r`. Cada node: `svg.orb` (`#orb` + ícone
+   `#i-…` em x=27 y=27 w=46 h=46) + `.txt` com `.nt` (título) e `.nb` (texto). Ramos: O que Maquiavel ensina ·
+   No seu provedor · Como aplicar (4 passos curtos ①②③④) · Exemplo · 2.200 clientes · Indicadores (`.kpis` com
+   2–3 `<span>valor<small>legenda</small></span>`) · Alerta de uso (`.node.r.warnode` + ícone `#i-warn`).
+   LIMITE: cada `.nb` com no máximo ~45 palavras (o Exemplo pode ter até ~55).
+5. `.hub`: `svg.medallion` com `<use href="#medallion"/>`, um `<clipPath>` próprio (id único, ex. `clip-e07`,
+   círculo cx=100 cy=100 r=74), a CENA da estratégia dentro do clip, depois `<use href="#medallion-top"/>`;
+   e `.hubcap` (2–4 palavras em caixa-alta).
+   A CENA é o coração visual: gravura em traço dourado (stroke `url(#gl)`/`url(#gl-u)`, preenchimento dourado
+   translúcido `fill="#c9a44f" fill-opacity=".14"`), fundo `url(#p-goldhatch)` e halo `url(#rg-halo)`.
+   Use as gravuras do sprite (`g-lion`, `g-fox`, `g-king`, `g-fortress`, `g-florence`, `g-radio`) e os ícones
+   `i-*` ampliados, e DESENHE elementos próprios no mesmo estilo (mapa com rotas de fibra, dique e onda, balança,
+   arqueiro, escada, máscara, espelho, ampulheta, coroa de louros, aperto de mãos, casas, CTO, OLT…).
+   Composição centrada, legível, com 1 ideia forte. Rótulos curtos em Cinzel 8px `fill="#e6c97a"` se ajudar.
+6. `.moves`: 4 movimentos (I DISCERNIR · II PLANEJAR · III AGIR · IV CONQUISTAR), 1 frase curta cada.
+7. `.tool` (cartão marfim): `.th` com ícone + título + `<small>` + tabela (1 linha exemplo + 1 linha em branco
+   `<td class="fill">____</td>`) OU `.script` (mensagem) OU lista/checklist curta (use `.cols2` para 2 colunas).
+8. `.maxim`: frase da parede entre dois `#fleuron`.
+Sem `.foot` na V2 (a pergunta de reflexão/erro comum podem virar 1 linha dentro da ferramenta, se couber).
 
-## Biblioteca (src/sprite.svg) — `<use href="#id" x y width height/>`
-Ornamentos: `corner` 48×48, `fleur` 40×44, `divider` 200×14, `laurel` 120×120, `seal` 100×100 (selo de cera; escreva
-número/texto por cima no centro), `medal` 200×200 (medalhão central; desenhe ícones dentro do círculo r≈60 em 100,96),
-`ribbon` 200×40. Xadrez bronze 60×120: `king`, `knight`, `rook`, `pawn`; `crown` 80×56.
-Renascença: `fortress` 160×110, `florence` 300×110, `quill` 80×120, `compass` 100×100, `scroll` 120×80,
-`hourglass` 60×100, `scales` 100×100, `key` 100×50, `shield` 80×96, `lion` 100×100, `fox` 100×100.
-Provedor: `fiber` 120×40, `cto` 60×120, `olt` 100×120, `router` 100×70, `tower` 70×140, `house` 100×90,
-`headset` 80×80, `van` 140×70, `coins` 90×70, `chart-up` 100×70, `people` 120×70, `pin` 40×52.
-Cenários 800×240: `scene-florence`, `scene-chess`, `scene-network`.
-Gradientes: `g-bronze`, `g-bronze-v`, `g-gold`, `rg-gold`, `rg-wax`, `g-stone`, `g-terracotta`, `g-dusk`, `g-hills`,
-`g-parch`, `g-fiber`, `g-dark`, `g-glass`, `rg-glow`, `rg-sun`, `rg-lightfiber`. Filtro `f-shadow`. Hachura `p-hatch`.
-Você pode (e deve) desenhar ilustrações próprias no mesmo estilo (sépia/bronze/ouro, sombreado, gravura).
-
-## Classes de texto
-`.k` destaque na cor do Livro · `.hl` grifo dourado · `.small` · `ol.l`/`ul.l` · `.kpi` · `.warn` · `.ex` · `.script`
-· `.code` · `.fill` (campo a preencher) · `table.tb`. Fonte mínima: nada abaixo de 8,5 pt em HTML; texto SVG ≥ 7 pt
-na escala final (o verificador acusa).
+### Biblioteca V2 (src/sprite.svg)
+Estrutura: `frame` (210×297), `orb` 100, `numring` 100, `medallion` 200, `medallion-top` 200, `fleuron` 60×20.
+Ícones dourados 48×48: `i-quill i-scroll i-fiber i-house i-chart i-shield i-warn i-compass i-crown i-key i-scales
+i-hourglass i-coins i-people i-headset i-tower i-router i-olt i-cto i-van i-pin i-eye i-target i-hand i-castle
+i-wave i-sword i-book i-flag i-bolt i-heart i-mask i-gear i-laurel i-megaphone i-calendar i-check i-knight i-lion i-fox`.
+Gravuras: `g-florence` 200×110, `g-lion` 120, `g-fox` 120, `g-king` 60×120, `g-fortress` 160×110, `g-radio` 80×140.
+Gradientes/padrões: `gl` (ouro vertical), `gl-h` (ouro horizontal), `gl-u` (ouro em userSpace 0–200), `rg-ring`,
+`rg-night`, `rg-halo`, `p-goldhatch`; filtro `f-glow`. Cores de destaque por Livro: var(--mod)/(--modd).
+Classes extras para páginas gerais/aberturas: `.card` (marfim), `.dcard` (escuro com borda dourada), `.grid` +
+`.s3…s12`, `table.tb`, `.lbl`, `.gold`, `.k`, `.small`, `.cols2`. Mapa genérico: container `.mapx` com um
+elemento `.hubx` e vários `.nodex` → o mmap.js desenha ramos dourados do hub até cada nodex.
 
 ## Regras de conteúdo
 - Português do Brasil, tom de consultor experiente: direto, prático, com números.
