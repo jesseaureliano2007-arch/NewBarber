@@ -1,0 +1,104 @@
+<section class="page mod-p1" id="e05" data-toc="05 · Armas Próprias — equipe e infraestrutura sob seu controle">
+  <svg class="corner k-tl"><use href="#corner"/></svg><svg class="corner k-tr"><use href="#corner"/></svg><svg class="corner k-bl"><use href="#corner"/></svg><svg class="corner k-br"><use href="#corner"/></svg>
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice"><use href="#scene-chess"/></svg>
+    <svg style="position:absolute;right:4mm;top:3mm;width:64mm;height:44mm;z-index:2" viewBox="0 0 220 150">
+      <circle cx="92" cy="72" r="70" fill="url(#rg-sun)" opacity=".7"/>
+      <!-- armas próprias: OLT + cavaleiro + escudo com fibra -->
+      <use href="#olt" x="8" y="30" width="66" height="80"/>
+      <use href="#knight" x="64" y="4" width="60" height="120"/>
+      <g filter="url(#f-shadow)">
+        <path d="M100 66 H140 V92 Q140 112 120 120 Q100 112 100 92Z" fill="#7d1e1e" stroke="url(#g-gold)" stroke-width="3"/>
+        <path d="M106 96 Q114 80 120 92 T134 84" fill="none" stroke="#9fd2ff" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="134" cy="84" r="4" fill="url(#rg-lightfiber)"/>
+      </g>
+      <!-- mercenário: peão apagado com moedas -->
+      <g opacity=".55">
+        <use href="#pawn" x="162" y="30" width="44" height="88"/>
+      </g>
+      <use href="#coins" x="140" y="96" width="42" height="33"/>
+      <text x="72" y="146" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="12" fill="#f0dca0" stroke="#2a1c10" stroke-width="3" paint-order="stroke">PRÓPRIAS</text>
+      <text x="186" y="146" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="11" fill="#d2b062" stroke="#2a1c10" stroke-width="3" paint-order="stroke">ALUGADAS</text>
+    </svg>
+    <div class="ht">
+      <div class="kicker">Livro I · O Território · Concorrência</div>
+      <div class="num">05</div>
+      <div class="title">Armas<br>Próprias</div>
+      <div class="sub">O que é vital fica nas suas mãos; terceiro é reforço.</div>
+    </div>
+    <div class="quote">As armas mercenárias e auxiliares são inúteis e perigosas; sem armas próprias nenhum principado está seguro, fica à mercê da fortuna.<cite>O PRÍNCIPE · CAPS. XII–XIII (PARÁFRASE)</cite></div>
+  </div>
+
+  <div class="mmap">
+    <div class="br" style="grid-column:1;grid-row:1">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 80 120"><use href="#quill"/></svg>O que Maquiavel ensina</div>
+      Mercenários são desunidos, ambiciosos e infiéis: na paz te espoliam, na guerra fogem. Tropas auxiliares, se perdem, te arruínam; se vencem, <span class="k">te deixam prisioneiro delas</span>. Só as armas próprias defendem o Estado.
+    </div>
+    <div class="br" style="grid-column:1;grid-row:2">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 120 40"><use href="#fiber"/></svg>No seu provedor</div>
+      <b>Mercenário</b> = terceirizada que instala para você e para o rival. <b>Auxiliar</b> = um único link de trânsito, rede alugada ou o “técnico que sabe tudo” e não documenta nada. <b>Armas próprias</b> = equipe treinada, rede documentada e 2+ fornecedores.
+    </div>
+    <div class="br" style="grid-column:1;grid-row:3">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 120 80"><use href="#scroll"/></svg>Como aplicar</div>
+      <ol class="l small">
+        <li>Mapeie dependências: link, OLT, ERP, terceirizadas e pessoas-chave.</li>
+        <li>Mantenha próprio o núcleo: NOC, reparo e rede-tronco.</li>
+        <li>Terceiro só com contrato, SLA, POP e sem monopólio de conhecimento.</li>
+        <li>Documente a rede (diagramas, senhas em cofre) e treine substitutos.</li>
+      </ol>
+    </div>
+
+    <div class="hub">
+      <svg class="medal" viewBox="0 0 200 200">
+        <use href="#medal"/>
+        <use href="#knight" x="60" y="42" width="38" height="76"/>
+        <use href="#shield" x="102" y="54" width="40" height="48"/>
+        <text x="100" y="128" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="13" fill="#f0dca0">ARMAS</text>
+        <text x="100" y="143" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="11" fill="#d2b062">PRÓPRIAS</text>
+      </svg>
+      <div class="hubtxt">Controle o que<br>é vital</div>
+    </div>
+
+    <div class="br" style="grid-column:3;grid-row:1">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 100 90"><use href="#house"/></svg>Exemplo · 2.200 clientes</div>
+      Com terceirizada, cada instalação custa <b>R$ 140</b> (90/mês = R$ 12,6 mil), <b>14%</b> voltam com defeito em 30 dias e a mesma equipe atende o rival. Duas equipes próprias (≈ <b>R$ 16 mil/mês</b>, com carro) fazem instalação e reparo: o retorno cai para <b>4%</b> e o reparo médio, de 9 h para <b>3 h</b>. E o link único virou dois, mais o IX.br.
+    </div>
+    <div class="br" style="grid-column:3;grid-row:2">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 100 70"><use href="#chart-up"/></svg>Indicadores</div>
+      <div class="kpi">
+        <div><b>≥ 2</b><span>fornecedores de trânsito</span></div>
+        <div><b>&lt; 5%</b><span>retorno técnico em 30 dias</span></div>
+        <div><b>0</b><span>processo vital na mão de 1 pessoa</span></div>
+      </div>
+    </div>
+    <div class="br" style="grid-column:3;grid-row:3">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 80 96"><use href="#shield"/></svg>Alerta de uso</div>
+      <div class="warn">Terceirizar não é errado; depender é. Contrate com registro e direitos trabalhistas (CLT e Lei 13.429/17, sem “pejotização” irregular) e exija NR-10 e NR-35 de quem sobe em poste. Não alicie a equipe do rival com promessa de levar clientes ou dados dele.</div>
+    </div>
+  </div>
+
+  <div class="moves">
+    <div><div class="mt"><i>I</i>Discernir</div>Liste tudo o que, se falhar, para a operação inteira.</div>
+    <div><div class="mt"><i>II</i>Planejar</div>Para cada item, um plano B com prazo e custo.</div>
+    <div><div class="mt"><i>III</i>Agir</div>Comece pelo maior risco: segundo link ou equipe de reparo própria.</div>
+    <div><div class="mt"><i>IV</i>Conquistar</div>Divulgue: “técnicos da casa, rede própria, reparo no mesmo dia”.</div>
+  </div>
+
+  <div class="tool">
+    <div class="th"><svg width="18" height="14" viewBox="0 0 120 80"><use href="#scroll"/></svg>Ferramenta pronta · Matriz de dependências (revise a cada semestre)</div>
+    <div class="tb2">
+      <table class="tb">
+        <tr><th>Recurso vital</th><th>Hoje depende de</th><th>Se falhar…</th><th>Plano B (arma própria)</th><th>Prazo</th></tr>
+        <tr><td>Link de trânsito</td><td>1 operadora</td><td>rede inteira fora</td><td>2º link por outra rota + IX.br</td><td>60 dias</td></tr>
+        <tr><td>Instalação</td><td>terceirizada X</td><td>qualidade baixa, serve ao rival</td><td>2 equipes próprias no núcleo</td><td>90 dias</td></tr>
+        <tr><td><span class="fill">______________</span></td><td><span class="fill">__________</span></td><td><span class="fill">______________</span></td><td><span class="fill">____________________</span></td><td><span class="fill">______</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-maxim"><div class="fh">Máxima para a parede</div>“Quem defende a rede com braços alugados a perde no primeiro dia de crise.”</div>
+    <div><div class="fh">Pergunta de reflexão</div>Se seu melhor técnico sair amanhã, quem sabe onde está cada caixa e cada senha?</div>
+    <div><div class="fh">Erro comum</div>Economizar no núcleo (NOC, reparo) e virar refém de um fornecedor.</div>
+  </div>
+</section>

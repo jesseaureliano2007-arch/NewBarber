@@ -1,0 +1,114 @@
+<section class="page mod-p1" id="e02" data-toc="02 · Conhecer o Terreno — geomarketing: casas cobertas, ruas e rivais">
+  <svg class="corner k-tl"><use href="#corner"/></svg><svg class="corner k-tr"><use href="#corner"/></svg><svg class="corner k-bl"><use href="#corner"/></svg><svg class="corner k-br"><use href="#corner"/></svg>
+  <div class="hero">
+    <svg class="scene" viewBox="0 0 800 240" preserveAspectRatio="xMidYMid slice"><use href="#scene-network"/></svg>
+    <svg style="position:absolute;right:4mm;top:3mm;width:64mm;height:44mm;z-index:2" viewBox="0 0 220 150">
+      <circle cx="122" cy="72" r="74" fill="url(#rg-sun)" opacity=".55"/>
+      <g transform="rotate(-4 120 72)" filter="url(#f-shadow)">
+        <path d="M30 10 H204 Q210 10 210 16 V128 Q210 134 204 134 H30 Q24 134 24 128 V16 Q24 10 30 10Z" fill="url(#g-parch)" stroke="#a8822f" stroke-width="1.6"/>
+        <path d="M30 14 H204 V130 H30Z" fill="none" stroke="#a8822f" stroke-width=".6"/>
+        <!-- rio -->
+        <path d="M30 104 Q70 92 98 110 T160 108 T204 96 V112 Q180 124 160 122 T98 124 T30 118Z" fill="#8fa4a0" opacity=".55"/>
+        <!-- quarteirões -->
+        <g fill="#e2cc98" stroke="#a8822f" stroke-width=".7">
+          <rect x="38" y="20" width="30" height="20"/><rect x="74" y="20" width="30" height="20"/><rect x="110" y="20" width="26" height="20"/><rect x="142" y="20" width="26" height="20"/><rect x="174" y="20" width="26" height="20"/>
+          <rect x="38" y="46" width="30" height="20"/><rect x="74" y="46" width="30" height="20"/><rect x="110" y="46" width="26" height="20"/><rect x="142" y="46" width="26" height="20"/><rect x="174" y="46" width="26" height="20"/>
+          <rect x="38" y="72" width="30" height="16"/><rect x="74" y="72" width="30" height="16"/><rect x="110" y="72" width="26" height="16"/><rect x="142" y="72" width="26" height="16"/><rect x="174" y="72" width="26" height="16"/>
+        </g>
+        <!-- penetração (hachura = clientes) -->
+        <g fill="url(#p-hatch)"><rect x="38" y="20" width="30" height="20"/><rect x="74" y="20" width="30" height="20"/><rect x="38" y="46" width="30" height="20"/><rect x="74" y="46" width="30" height="20"/><rect x="38" y="72" width="30" height="16"/></g>
+        <!-- zona do rival -->
+        <path d="M140 18 H202 V90 H140Z" fill="#7d1e1e" opacity=".16" stroke="#7d1e1e" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <!-- rota de fibra -->
+        <path d="M30 43 H71 V69 H139 V43 H171" fill="none" stroke="url(#g-fiber)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M30 43 H71 V69 H139 V43 H171" fill="none" stroke="#9fd2ff" stroke-width=".8" opacity=".9"/>
+        <g fill="url(#rg-gold)" stroke="#6b4a14" stroke-width=".8"><circle cx="71" cy="43" r="4"/><circle cx="107" cy="69" r="4"/><circle cx="139" cy="43" r="4"/><circle cx="171" cy="43" r="4"/></g>
+        <use href="#pin" x="48" y="10" width="16" height="21"/>
+        <use href="#pin" x="160" y="52" width="16" height="21"/>
+        <text x="171" y="84" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="11" fill="#7d1e1e">RIVAL</text>
+        <text x="72" y="100" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="11" fill="#2a1c10">SEUS HPs</text>
+      </g>
+      <use href="#compass" x="176" y="104" width="44" height="44"/>
+    </svg>
+    <div class="ht">
+      <div class="kicker">Livro I · O Território · Concorrência</div>
+      <div class="num">02</div>
+      <div class="title">Conhecer<br>o Terreno</div>
+      <div class="sub">Geomarketing: cada casa, cada rua, cada rival.</div>
+    </div>
+    <div class="quote">O príncipe deve aprender a natureza dos lugares; quem conhece bem a própria terra sabe melhor defendê-la e entende depressa as terras novas.<cite>O PRÍNCIPE · CAP. XIV (PARÁFRASE)</cite></div>
+  </div>
+
+  <div class="mmap">
+    <div class="br" style="grid-column:1;grid-row:1">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 80 120"><use href="#quill"/></svg>O que Maquiavel ensina</div>
+      Mesmo na paz, o príncipe deve percorrer seu território, caçando, e estudá-lo com o olhar de quem vai defendê-lo. Quem conhece montes, vales, rios e pântanos <span class="k">escolhe onde lutar</span>, prevê por onde virá o inimigo e entende depressa qualquer terra nova.
+    </div>
+    <div class="br" style="grid-column:1;grid-row:2">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 120 40"><use href="#fiber"/></svg>No seu provedor</div>
+      O terreno é o <b>mapa de HPs</b> (casas cobertas): a ocupação de cada CTO, a densidade por rua e onde estão clientes, cancelados, inadimplentes e <b>os rivais</b>. Sem mapa, a expansão vira palpite.
+    </div>
+    <div class="br" style="grid-column:1;grid-row:3">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 120 80"><use href="#scroll"/></svg>Como aplicar</div>
+      <ol class="l small">
+        <li>Exporte do ERP os clientes com endereço e coordenada e plote no QGIS ou no Google My Maps.</li>
+        <li>Crie camadas: CTOs e portas livres, cancelados em 12 meses e cobertura dos rivais.</li>
+        <li>Calcule a penetração por setor (clientes ÷ HPs).</li>
+        <li>Viabilidade por rua: custo por HP × potencial antes de lançar cabo.</li>
+      </ol>
+    </div>
+
+    <div class="hub">
+      <svg class="medal" viewBox="0 0 200 200">
+        <use href="#medal"/>
+        <use href="#compass" x="56" y="50" width="56" height="56"/>
+        <use href="#pin" x="106" y="52" width="38" height="50"/>
+        <text x="100" y="128" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="13" fill="#f0dca0">TERRENO</text>
+        <text x="100" y="143" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="11" fill="#d2b062">+ DADOS</text>
+      </svg>
+      <div class="hubtxt">Quem conhece a terra<br>escolhe onde lutar</div>
+    </div>
+
+    <div class="br" style="grid-column:3;grid-row:1">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 100 90"><use href="#house"/></svg>Exemplo · 2.200 clientes</div>
+      A rede passa por <b>6.800 HPs</b>: penetração média de 32%. O mapa revela o Jardim América com <b>61%</b> e a Vila Nova com só <b>14%</b>, onde um provedor vizinho chegou há 8 meses e há <b>120 portas livres</b> nas CTOs. Campanha porta a porta só nessas ruas: <b>+70 clientes</b> em 90 dias, sem um metro de cabo novo.
+    </div>
+    <div class="br" style="grid-column:3;grid-row:2">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 100 70"><use href="#chart-up"/></svg>Indicadores</div>
+      <div class="kpi">
+        <div><b>&gt; 40%</b><span>penetração sobre HPs</span></div>
+        <div><b>&gt; 70%</b><span>ocupação das CTOs</span></div>
+        <div><b>100%</b><span>clientes georreferenciados</span></div>
+      </div>
+    </div>
+    <div class="br" style="grid-column:3;grid-row:3">
+      <div class="bt"><svg width="16" height="16" viewBox="0 0 80 96"><use href="#shield"/></svg>Alerta de uso</div>
+      <div class="warn">Endereço e localização do cliente são dados pessoais (LGPD): finalidade clara, acesso restrito, nada em planilha no celular de vendedor. Sobre rivais, só fontes públicas: anúncios, dados abertos da Anatel e o que se vê na rua. Nunca entre em sistemas, caixas ou CTOs de terceiros.</div>
+    </div>
+  </div>
+
+  <div class="moves">
+    <div><div class="mt"><i>I</i>Discernir</div>Plote clientes, CTOs e rivais num único mapa por setor.</div>
+    <div><div class="mt"><i>II</i>Planejar</div>Ranqueie setores por portas livres × baixa penetração.</div>
+    <div><div class="mt"><i>III</i>Agir</div>Vendas porta a porta nas ruas já cobertas e ociosas.</div>
+    <div><div class="mt"><i>IV</i>Conquistar</div>Só expanda cabo onde o custo por HP se paga em 24 meses.</div>
+  </div>
+
+  <div class="tool">
+    <div class="th"><svg width="18" height="14" viewBox="0 0 120 80"><use href="#scroll"/></svg>Ferramenta pronta · Planilha de viabilidade por setor (atualize por trimestre)</div>
+    <div class="tb2">
+      <table class="tb">
+        <tr><th>Setor</th><th>HPs</th><th>Clientes</th><th>Penetração</th><th>Portas livres</th><th>Rival dominante</th><th>Ação</th></tr>
+        <tr><td>Vila Nova</td><td>1.150</td><td>160</td><td><b style="color:#7d1e1e">14%</b></td><td>120</td><td>provedor vizinho · R$ 79</td><td>porta a porta + Wi-Fi grátis</td></tr>
+        <tr><td>Jardim América</td><td>900</td><td>550</td><td>61%</td><td>18</td><td>operadora nacional</td><td>ampliar CTOs, defender</td></tr>
+        <tr><td><span class="fill">__________</span></td><td><span class="fill">_____</span></td><td><span class="fill">_____</span></td><td><span class="fill">_____</span></td><td><span class="fill">_____</span></td><td><span class="fill">______________</span></td><td><span class="fill">______________</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="f-maxim"><div class="fh">Máxima para a parede</div>“Quem conhece cada rua do seu território não é surpreendido em nenhuma delas.”</div>
+    <div><div class="fh">Pergunta de reflexão</div>Em quais ruas você tem portas livres na CTO e quase nenhum cliente?</div>
+    <div><div class="fh">Erro comum</div>Levar rede a um bairro novo antes de ocupar a que já está construída e paga.</div>
+  </div>
+</section>
