@@ -1,0 +1,78 @@
+<section class="page mod-gen" id="painel" data-toc="Painel de indicadores do provedor">
+  <svg class="frame" viewBox="0 0 210 297" preserveAspectRatio="none"><use href="#frame"/></svg>
+  <style>
+    #painel .pn-top{flex:none;display:grid;grid-template-columns:1.25fr 1fr;gap:3mm}
+    #painel .pn-top ol{margin:0;padding-left:4.6mm}
+    #painel .pn-top li{margin:.3mm 0}
+    #painel .dot{display:inline-block;width:2.6mm;height:2.6mm;border-radius:50%;vertical-align:-.2mm;margin-right:.6mm;box-shadow:0 0 0 .3mm rgba(255,255,255,.4)}
+    #painel .ltv{display:flex;gap:2.4mm;align-items:center}
+    #painel .ltv svg{flex:none;width:15mm;height:15mm}
+    #painel table.tb{font-size:9.4pt;line-height:1.13}
+    #painel table.tb td{padding:.62mm 1.2mm;vertical-align:middle}
+    #painel td.n{text-align:center;font:900 9pt "Cinzel",serif;color:var(--c)}
+    #painel td.f{font-style:italic;color:var(--ink2)}
+    #painel td.m{font-weight:700;color:var(--c)}
+    #painel tr.gr td{background:linear-gradient(90deg,#14223a,#1d3050);border-left:4px solid var(--c);padding:.7mm 2mm}
+    #painel tr.gr b{font:700 8.8pt "Cinzel",serif;letter-spacing:.8px;color:var(--gold2)}
+    #painel tr.gr i{font-style:normal;color:var(--c);filter:brightness(1.6)}
+  </style>
+
+  <div class="head">
+    <svg class="numsvg" viewBox="0 0 100 100"><use href="#numring"/><use href="#i-chart" x="30" y="30" width="40" height="40"/></svg>
+    <div>
+      <div class="kicker">Ferramenta mestra · 16 indicadores · 3 meses</div>
+      <div class="title sm">Painel de Indicadores</div>
+      <div class="sub">O que não se mede, não se governa.</div>
+    </div>
+  </div>
+
+  <div class="quote">Os males previstos de longe curam-se com facilidade; se esperamos que cheguem, o remédio já não serve, pois a doença ficou incurável.<cite>O PRÍNCIPE · CAPÍTULO III · PARÁFRASE</cite></div>
+
+  <div class="pn-top">
+    <div class="dcard small">
+      <div class="ct">Como usar o painel</div>
+      <ol>
+        <li>Feche os números <b class="k">até o dia 5</b> de cada mês, sempre com a mesma fórmula.</li>
+        <li>Pinte o farol: <span class="dot" style="background:#4f9a74"></span>na meta · <span class="dot" style="background:#d2a248"></span>até 20 % fora · <span class="dot" style="background:#c0503f"></span>pior que isso.</li>
+        <li>Cada vermelho vira uma ação com dono no <b class="k">Plano de 90 dias</b>.</li>
+        <li>Nunca mude a fórmula no meio do caminho: o churn come o crescimento em silêncio.</li>
+      </ol>
+      <div style="margin-top:.6mm;font-style:italic;color:var(--ivory2)">Metas de referência para ≈ 2.200 clientes: compare-se com você mesmo.</div>
+    </div>
+    <div class="dcard small">
+      <div class="ct">Conta rápida · LTV ÷ CAC</div>
+      <div class="ltv"><svg viewBox="0 0 100 100"><use href="#orb"/><use href="#i-coins" x="27" y="27" width="46" height="46"/></svg>
+        <div>ARPU R$ 100 × margem 60 % ÷ churn 1,5 % = <b class="k">LTV ≈ R$ 4.000</b>. Com CAC de R$ 350, cada cliente devolve <b class="k">≈ 11 vezes</b> o que custou. Com churn de 3 %, o LTV cai para R$ 2.000: reter vale tanto quanto vender.</div></div>
+    </div>
+  </div>
+
+  <div class="tool" style="flex:none">
+    <div class="th"><svg width="15" height="15" viewBox="0 0 48 48"><use href="#i-chart"/></svg>Painel mensal · preencha 3 meses e compare<small>farol: verde · amarelo · vermelho</small></div>
+    <table class="tb">
+      <tr><th style="width:6mm">#</th><th style="width:37mm">Indicador</th><th>Fórmula</th><th style="width:36mm">Meta de referência</th><th style="width:12mm">Mês 1</th><th style="width:12mm">Mês 2</th><th style="width:12mm">Mês 3</th></tr>
+      <tr class="gr" style="--c:var(--p2)"><td colspan="7"><b><i>II ·</i> Base e receita</b></td></tr>
+      <tr style="--c:var(--p2)"><td class="n">1</td><td><b>Clientes ativos</b></td><td class="f">contratos ativos no último dia do mês</td><td class="m">crescer todo mês</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p2)"><td class="n">2</td><td><b>Crescimento líquido</b></td><td class="f">(ativações − cancelamentos) ÷ base inicial × 100</td><td class="m">≥ +1 % ao mês</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p2)"><td class="n">3</td><td><b>ARPU (ticket médio)</b></td><td class="f">receita recorrente do mês ÷ clientes ativos</td><td class="m">R$ 95–110, subindo</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p2)"><td class="n">4</td><td><b>CAC</b></td><td class="f">(marketing + comissões + instalação grátis) ÷ ativações</td><td class="m">≤ 3 × ARPU (≈ R$ 300)</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p2)"><td class="n">5</td><td><b>LTV</b></td><td class="f">ARPU × margem bruta (%) ÷ churn mensal</td><td class="m">LTV ÷ CAC ≥ 3</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr class="gr" style="--c:var(--p3)"><td colspan="7"><b><i>III ·</i> Clientes e retenção</b></td></tr>
+      <tr style="--c:var(--p3)"><td class="n">6</td><td><b>Churn</b></td><td class="f">cancelamentos do mês ÷ base do início × 100</td><td class="m">1–2 %; ideal &lt; 1,5 %</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p3)"><td class="n">7</td><td><b>Inadimplência</b></td><td class="f">vencido há mais de 30 dias ÷ faturamento do mês</td><td class="m">&lt; 5 %</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p3)"><td class="n">8</td><td><b>NPS</b></td><td class="f">% de notas 9–10 − % de notas 0–6</td><td class="m">&gt; 50</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p3)"><td class="n">9</td><td><b>Reclamações formais</b></td><td class="f">(Anatel + Consumidor.gov + Reclame Aqui) ÷ clientes × 1.000</td><td class="m">&lt; 1 por 1.000 ao mês</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr class="gr" style="--c:var(--p1)"><td colspan="7"><b><i>I ·</i> Rede e operação</b></td></tr>
+      <tr style="--c:var(--p1)"><td class="n">10</td><td><b>MTTR</b></td><td class="f">horas somadas até o reparo ÷ nº de reparos</td><td class="m">&lt; 4 h na área urbana</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p1)"><td class="n">11</td><td><b>Uptime do link</b></td><td class="f">horas com trânsito ativo ÷ horas do mês × 100</td><td class="m">≥ 99,9 % (2 links)</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p1)"><td class="n">12</td><td><b>Pico de uso do link</b></td><td class="f">tráfego no horário de pico ÷ banda contratada</td><td class="m">&lt; 70–80 %: amplie antes</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p1)"><td class="n">13</td><td><b>Ocupação das portas PON</b></td><td class="f">ONUs ativas ÷ capacidade (ex.: 64 por porta)</td><td class="m">expandir acima de 70 %</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr class="gr" style="--c:var(--p4)"><td colspan="7"><b><i>IV ·</i> Equipe e campo</b></td></tr>
+      <tr style="--c:var(--p4)"><td class="n">14</td><td><b>Chamados / 100 clientes</b></td><td class="f">chamados técnicos do mês ÷ clientes × 100</td><td class="m">&lt; 8 ao mês</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p4)"><td class="n">15</td><td><b>% de reparo em 24 h</b></td><td class="f">reparos resolvidos em até 24 h ÷ total de reparos</td><td class="m">≥ 95 %</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+      <tr style="--c:var(--p4)"><td class="n">16</td><td><b>Retorno técnico 30 d</b></td><td class="f">visitas repetidas em 30 dias ÷ total de visitas</td><td class="m">&lt; 5 %</td><td class="fill">____</td><td class="fill">____</td><td class="fill">____</td></tr>
+    </table>
+  </div>
+
+
+  <div class="maxim"><svg width="48" height="16" viewBox="0 0 60 20"><use href="#fleuron"/></svg>“Quem lê os números todo mês vê os males de longe; quem não lê, só os vê no caixa.”<svg width="48" height="16" viewBox="0 0 60 20"><use href="#fleuron"/></svg></div>
+</section>

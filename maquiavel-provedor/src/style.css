@@ -141,3 +141,8 @@ table.tb td{padding:.7mm 1.2mm;border-bottom:1px solid rgba(201,164,79,.25);vert
 .toc .tm{font:700 10.4pt "Cinzel",serif;color:var(--night);background:linear-gradient(90deg,var(--gold2),var(--gold));border-radius:1mm;padding:1mm 2.6mm;margin:2.4mm 0 1mm;display:flex;justify-content:space-between;letter-spacing:1.2px;}
 
 svg text{font-family:"EB Garamond",serif;}
+
+/* mapa genérico (aberturas / mapa geral) */
+.mapx{position:relative;}
+.mapx > svg.links{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;}
+.mapx > *:not(svg.links){position:relative;z-index:1;}
