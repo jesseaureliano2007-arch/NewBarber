@@ -1,0 +1,9 @@
+gen-00-*.html
+gen-01-*.html
+gen-02-*.html
+gen-03-*.html
+p1-*.html
+p2-*.html
+p3-*.html
+p4-*.html
+gen-9*.html
