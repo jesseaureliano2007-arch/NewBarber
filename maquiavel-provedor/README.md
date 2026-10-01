@@ -1,6 +1,6 @@
 # 30 Estratégias de Maquiavel para o seu Provedor de Internet
 
-**Arquivo:** [`dist/Maquiavel-no-Provedor.pdf`](dist/Maquiavel-no-Provedor.pdf) — 42 páginas A4, estilo renascentista,
+**Arquivo:** [`dist/Maquiavel-no-Provedor.pdf`](dist/Maquiavel-no-Provedor.pdf) — 42 páginas A4, estilo renascentista premium (ouro sobre azul-noite, gravuras douradas, mapas mentais),
 sumário clicável e marcadores. Versão editável: [`dist/Maquiavel-no-Provedor-editavel.html`](dist/Maquiavel-no-Provedor-editavel.html).
 
 Feito para um provedor FTTH de ~2.200 clientes, com os desafios de concorrência, crescimento, cancelamentos e equipe.
